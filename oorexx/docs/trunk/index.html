@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+    <style>
+        body { font-family: Verdana, sans-serif; font-size: 12px;}
+        a { text-decoration: none; color: #00A; }
+        a:hover { text-decoration: underline; }
+        #dropbox-index-header { padding: 0; margin: 0.5em auto 0.5em 1em; }
+        table#dropbox-index-list { text-align: center; margin: 0 auto 0 1.5em; border-collapse: collapse; }
+        #dropbox-index-list thead { border-bottom: 1px solid #555; }
+        #dropbox-index-list th:hover { cursor: pointer; cursor: hand; background-color: #EEE; }
+        #direction { border: 0; vertical-align: bottom; margin: 0 0.5em;}
+        #dropbox-index-list tbody { border-bottom: 1px solid #555;}
+        #dropbox-index-list tr, th { line-height: 1.7em; min-height: 25px; }
+        #dropbox-index-list tbody tr:hover { background-color: #EEE; }
+        .name { text-align: left; width: 35em; }
+        .name a, thead .name { padding-left: 22px; }
+        .name a { display: block; }
+        .size { text-align: right; width: 7em; padding-right: 1em;}
+        .date { text-align: right; width: 15em; padding-right: 1em;}
+        #dropbox-index-dir-info { margin: 1em auto 0.5em 2em; }
+        #dropbox-index-footer { margin: 1em auto 0.5em 2em; font-size: smaller;}
+        /* Icons */
+        .dir, .back, .file { background-repeat: no-repeat; background-position: 2px 4px;}
+        .back { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/back.png'); }
+        .dir { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/folder.png'); }
+        .file { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/file.png'); }
+        .image { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/image.png'); }
+        .video { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/video.png'); }
+        .music { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/music.png'); }
+        .archive { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/archive.png'); }
+        .package { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/package.png'); }
+        .pdf { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/pdf.png'); }
+        .txt { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/txt.png'); }
+        .markup { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/markup.png'); }
+        .code { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/code.png'); }
+        .font { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/font.png'); }
+        .document { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/document.png'); }
+        .spreadsheet { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/spreadsheet.png'); }
+        .presentation { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/presentation.png'); }
+        .application { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/application.png'); }
+        .plugin { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/plugin.png'); }
+        .iso { background-image: url('http://dl.dropbox.com/u/69843/dropbox-index/icons/iso.png'); }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+    function sort() {
+        column = $(this).attr("class").split(' ')[0];
+        $("#direction").remove();
+        if ($(this).hasClass("desc")) {
+            $("#dropbox-index-list thead tr th").each(function(i) { $(this).removeClass("asc").removeClass("desc") });
+            $(this).addClass("asc");
+            reverse = -1;
+        } else {
+            $("#dropbox-index-list thead tr th").each(function(i) { $(this).removeClass("asc").removeClass("desc") });
+            $(this).addClass("desc");
+            reverse = 1;
+        }
+        if (column == "name") {
+            $(this).append('<img src="http://dl.dropbox.com/u/69843/dropbox-index/icons/'+((reverse == 1) ? 'desc' : 'asc')+'.png" id="direction" />');
+        } else {
+            $(this).prepend('<img src="http://dl.dropbox.com/u/69843/dropbox-index/icons/'+((reverse == 1) ? 'desc' : 'asc')+'.png" id="direction" />');
+        }
+        rows = $("#dropbox-index-list tbody tr").detach()
+        rows.sort(function(a, b) {
+            result = $(a).data('type') - $(b).data('type')
+            if (result != 0) { return result }
+            
+            return (($(a).data(column) < $(b).data(column)) - ($(a).data(column) > $(b).data(column))) * reverse
+            
+        });
+        $("#dropbox-index-list tbody").append(rows);
+    }
+    
+    function prepare() {
+        $("#dropbox-index-list tbody tr").each(function(i) {
+            if ($(this).children(".name").hasClass("back")) {
+                $(this).data('type', 1);
+            } else if ($(this).children(".name").hasClass("dir")) {
+                $(this).data('type', 2);
+            } else {
+                $(this).data('type', 3);
+            }
+            $(this).data('name', $(this).children(".name").text().toLowerCase());
+            $(this).data('size', parseInt($(this).children(".size").attr("sort")));
+            $(this).data('date', parseInt($(this).children(".date").attr("sort")));
+        });
+        
+        $("#dropbox-index-list thead tr th").each(function(i) {
+            $(this).bind('click', sort);
+        });
+    }
+
+    $(document).ready(function(){
+        prepare();
+    });
+</script>
+        <title>ooRexx Docs Trunk</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="http://dl.dropbox.com/u/69843/dropbox-index/icons/favicon.ico"/>
+		<!-- you can also give custom styles to the display table -->
+	<head>
+	<body>
+        <h1>ooRexx trunk documentation...</h1>
+        <p>...with graphical syntax diagrams</p>
+        <p><img src="images/sd_Built_in_Functions_DATE.png"></p>
+		<a href="../index.html">parent folder</a>
+        <p/>
+        
+		<!-- the file table will be placed inside any element with the id "dropbox-index" -->
+		<div id="dropbox-index">
+		
+<table id="dropbox-index-list">
+    <thead>
+        <tr>
+            <th class="name">Name</th><th class="size">Size</th><th class="date">Last Modified</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr><td class="name file archive"><a href="all-html.zip">all-html.zip</a></td><td class="size" sort="47602908">45.4 MB</td><td class="date" sort="1342267434.61">2012-07-14&nbsp;14:03:54</td></tr>
+<tr><td class="name file archive"><a href="all-pdf.zip">all-pdf.zip</a></td><td class="size" sort="51034371">48.7 MB</td><td class="date" sort="1342267397.88">2012-07-14&nbsp;14:03:17</td></tr>
+<tr><td class="name file archive"><a href="oodguide-html.zip">oodguide-html.zip</a></td><td class="size" sort="1221649">1.2 MB</td><td class="date" sort="1342264390.33">2012-07-14&nbsp;13:13:10</td></tr>
+<tr><td class="name file pdf"><a href="oodguide.pdf">oodguide.pdf</a></td><td class="size" sort="1018611">994.7 KB</td><td class="date" sort="1342264383.08">2012-07-14&nbsp;13:13:03</td></tr>
+<tr><td class="name file archive"><a href="oodialog-html.zip">oodialog-html.zip</a></td><td class="size" sort="26788403">25.5 MB</td><td class="date" sort="1342264347.67">2012-07-14&nbsp;13:12:27</td></tr>
+<tr><td class="name file pdf"><a href="oodialog.pdf">oodialog.pdf</a></td><td class="size" sort="32092570">30.6 MB</td><td class="date" sort="1342264164.86">2012-07-14&nbsp;13:09:24</td></tr>
+<tr><td class="name file pdf"><a href="ooRexxBuild.pdf">ooRexxBuild.pdf</a></td><td class="size" sort="206826">202.0 KB</td><td class="date" sort="1287985439.42">2010-10-25&nbsp;07:43:59</td></tr>
+<tr><td class="name file archive"><a href="oosqlite-html.zip">oosqlite-html.zip</a></td><td class="size" sort="942261">920.2 KB</td><td class="date" sort="1342267151.14">2012-07-14&nbsp;13:59:11</td></tr>
+<tr><td class="name file pdf"><a href="oosqlite.pdf">oosqlite.pdf</a></td><td class="size" sort="3593379">3.4 MB</td><td class="date" sort="1342266668.27">2012-07-14&nbsp;13:51:08</td></tr>
+<tr><td class="name file archive"><a href="ootest-html.zip">ootest-html.zip</a></td><td class="size" sort="71635">70.0 KB</td><td class="date" sort="1304856707.97">2011-05-08&nbsp;14:11:47</td></tr>
+<tr><td class="name file pdf"><a href="ootest.pdf">ootest.pdf</a></td><td class="size" sort="405850">396.3 KB</td><td class="date" sort="1262731963.86">2010-01-05&nbsp;23:52:43</td></tr>
+<tr><td class="name file archive"><a href="orxncurses-html.zip">orxncurses-html.zip</a></td><td class="size" sort="445715">435.3 KB</td><td class="date" sort="1304856822.5">2011-05-08&nbsp;14:13:42</td></tr>
+<tr><td class="name file pdf"><a href="readme.pdf">readme.pdf</a></td><td class="size" sort="323338">315.8 KB</td><td class="date" sort="1342264413.3">2012-07-14&nbsp;13:13:33</td></tr>
+<tr><td class="name file archive"><a href="rexxextensions-html.zip">rexxextensions-html.zip</a></td><td class="size" sort="231432">226.0 KB</td><td class="date" sort="1342265823.52">2012-07-14&nbsp;13:37:03</td></tr>
+<tr><td class="name file pdf"><a href="rexxextensions.pdf">rexxextensions.pdf</a></td><td class="size" sort="341117">333.1 KB</td><td class="date" sort="1342265817.52">2012-07-14&nbsp;13:36:57</td></tr>
+<tr><td class="name file archive"><a href="rexxgtk-html.zip">rexxgtk-html.zip</a></td><td class="size" sort="2004076">1.9 MB</td><td class="date" sort="1304857473.61">2011-05-08&nbsp;14:24:33</td></tr>
+<tr><td class="name file pdf"><a href="rexxgtk.pdf">rexxgtk.pdf</a></td><td class="size" sort="8466359">8.1 MB</td><td class="date" sort="1304857450.08">2011-05-08&nbsp;14:24:10</td></tr>
+<tr><td class="name file archive"><a href="rexxpg-html.zip">rexxpg-html.zip</a></td><td class="size" sort="2978117">2.8 MB</td><td class="date" sort="1342264727.53">2012-07-14&nbsp;13:18:47</td></tr>
+<tr><td class="name file pdf"><a href="rexxpg.pdf">rexxpg.pdf</a></td><td class="size" sort="5428279">5.2 MB</td><td class="date" sort="1342264701.34">2012-07-14&nbsp;13:18:21</td></tr>
+<tr><td class="name file archive"><a href="rexxref-html.zip">rexxref-html.zip</a></td><td class="size" sort="8952039">8.5 MB</td><td class="date" sort="1342265658.09">2012-07-14&nbsp;13:34:18</td></tr>
+<tr><td class="name file pdf"><a href="rexxref.pdf">rexxref.pdf</a></td><td class="size" sort="16635689">15.9 MB</td><td class="date" sort="1342265556.97">2012-07-14&nbsp;13:32:36</td></tr>
+<tr><td class="name file archive"><a href="rxftp-html.zip">rxftp-html.zip</a></td><td class="size" sort="458506">447.8 KB</td><td class="date" sort="1342265695.59">2012-07-14&nbsp;13:34:55</td></tr>
+<tr><td class="name file pdf"><a href="rxftp.pdf">rxftp.pdf</a></td><td class="size" sort="757863">740.1 KB</td><td class="date" sort="1342265687.88">2012-07-14&nbsp;13:34:47</td></tr>
+<tr><td class="name file archive"><a href="rxmath-html.zip">rxmath-html.zip</a></td><td class="size" sort="351986">343.7 KB</td><td class="date" sort="1342265726.45">2012-07-14&nbsp;13:35:26</td></tr>
+<tr><td class="name file pdf"><a href="rxmath.pdf">rxmath.pdf</a></td><td class="size" sort="566022">552.8 KB</td><td class="date" sort="1342265720.17">2012-07-14&nbsp;13:35:20</td></tr>
+<tr><td class="name file archive"><a href="rxsock-html.zip">rxsock-html.zip</a></td><td class="size" sort="1046940">1.0 MB</td><td class="date" sort="1342265796.45">2012-07-14&nbsp;13:36:36</td></tr>
+<tr><td class="name file pdf"><a href="rxsock.pdf">rxsock.pdf</a></td><td class="size" sort="1864779">1.8 MB</td><td class="date" sort="1342265785.77">2012-07-14&nbsp;13:36:25</td></tr>
+<tr><td class="name file archive"><a href="unixextensions-html.zip">unixextensions-html.zip</a></td><td class="size" sort="520413">508.2 KB</td><td class="date" sort="1342265988.34">2012-07-14&nbsp;13:39:48</td></tr>
+<tr><td class="name file pdf"><a href="unixextensions.pdf">unixextensions.pdf</a></td><td class="size" sort="923131">901.5 KB</td><td class="date" sort="1342265979.89">2012-07-14&nbsp;13:39:39</td></tr>
+<tr><td class="name file archive"><a href="winextensions-html.zip">winextensions-html.zip</a></td><td class="size" sort="1588162">1.5 MB</td><td class="date" sort="1342265946.66">2012-07-14&nbsp;13:39:06</td></tr>
+<tr><td class="name file pdf"><a href="winextensions.pdf">winextensions.pdf</a></td><td class="size" sort="2270238">2.2 MB</td><td class="date" sort="1342265929.05">2012-07-14&nbsp;13:38:49</td></tr>
+
+    </tbody>
+</table>
+<div id="dropbox-index-footer">Generated on <strong>2012-07-14&nbsp;14:04:16</strong> using <a href="http://code.google.com/p/kosciak-misc/wiki/DropboxIndex">Dropbox-index</a>-0.4.1</a></div>
+		</div>
+		
+	</body>
+</html>

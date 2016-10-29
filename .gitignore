@@ -1,0 +1,17 @@
+*.dll
+*.exe
+*.exp
+*.img
+*.lib
+*.la
+*.lo
+*.o
+*.obj
+*.pdb
+*.res
+*.so*
+.*~
+*~
+.#*
+.DS_Store
+/dropbox.bbprojectd/
