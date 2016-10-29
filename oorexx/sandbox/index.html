@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+	<base href="http://dl.dropbox.com/u/20049088/oorexx/sandbox/">
     <style>
         body { font-family: Verdana, sans-serif; font-size: 12px;}
         a { text-decoration: none; color: #00A; }
@@ -65,13 +66,13 @@
         rows.sort(function(a, b) {
             result = $(a).data('type') - $(b).data('type')
             if (result != 0) { return result }
-            
+
             return (($(a).data(column) < $(b).data(column)) - ($(a).data(column) > $(b).data(column))) * reverse
-            
+
         });
         $("#dropbox-index-list tbody").append(rows);
     }
-    
+
     function prepare() {
         $("#dropbox-index-list tbody tr").each(function(i) {
             if ($(this).children(".name").hasClass("back")) {
@@ -85,7 +86,7 @@
             $(this).data('size', parseInt($(this).children(".size").attr("sort")));
             $(this).data('date', parseInt($(this).children(".date").attr("sort")));
         });
-        
+
         $("#dropbox-index-list thead tr th").each(function(i) {
             $(this).bind('click', sort);
         });
@@ -106,12 +107,12 @@
         <div>First delivery 2011 dec 27</div>
         <div>Updated 2012 may 09</div>
         <p/>
-		<a href="../index.html">parent folder</a>
+		<a href="https://jlfaucher.github.io/oorexx/index.html">parent folder</a>
         <p/>
-		
+
 		<!-- the file table will be placed inside any element with the id "dropbox-index" -->
 		<div id="dropbox-index">
-		
+
 <table id="dropbox-index-list">
     <thead>
         <tr>
@@ -130,6 +131,6 @@
 </table>
 <div id="dropbox-index-footer">Generated on <strong>2012-05-09&nbsp;01:15:48</strong> using <a href="http://code.google.com/p/kosciak-misc/wiki/DropboxIndex">Dropbox-index</a>-0.4.1</a></div>
 		</div>
-		
+
 	</body>
 </html>
