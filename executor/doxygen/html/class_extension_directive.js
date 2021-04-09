@@ -1,0 +1,26 @@
+var class_extension_directive =
+[
+    [ "ExtensionDirective", "class_extension_directive.html#a48b1fb9b15877f4df104d12b3d837d3e", null ],
+    [ "ExtensionDirective", "class_extension_directive.html#ab075db98be050b33f7a725bd4616dcaf", null ],
+    [ "addConstantMethod", "class_extension_directive.html#a62cc73903bce799afc3f711ef0499f66", null ],
+    [ "addInherits", "class_extension_directive.html#ac2f6cd6db37293061ac9f40bf846f335", null ],
+    [ "addMethod", "class_extension_directive.html#a10968b0e341681a058542ee8ffe99d1f", null ],
+    [ "checkDuplicateMethod", "class_extension_directive.html#a611ca73263882fd50b43f45da0f591c1", null ],
+    [ "flatten", "class_extension_directive.html#ac611ce1e235083694e6507134243c5dd", null ],
+    [ "getClassMethods", "class_extension_directive.html#a43750ea6b29f97efb3e7f1a98b773b92", null ],
+    [ "getInstanceMethods", "class_extension_directive.html#a4d952c531d0891c9b65a17bd664647c8", null ],
+    [ "getName", "class_extension_directive.html#ac2243edce3533ab7223ada7f897207c9", null ],
+    [ "install", "class_extension_directive.html#ac7f9ea1d07e42a00ac91aca067d24caa", null ],
+    [ "live", "class_extension_directive.html#a4c97b1baa60835971e2c04785da692a6", null ],
+    [ "liveGeneral", "class_extension_directive.html#a28817ca56554b1fe0cf11570176662c2", null ],
+    [ "operator delete", "class_extension_directive.html#a64f959ba21bb709d6119ad0d634544f4", null ],
+    [ "operator delete", "class_extension_directive.html#a53e3aa681a843e1b96dc98c629e3cef4", null ],
+    [ "operator new", "class_extension_directive.html#a7192285d294fd29e9036bd79354c0c1e", null ],
+    [ "operator new", "class_extension_directive.html#af76ff5203ab10d7e7a9f57137bd41a2c", null ],
+    [ "RexxSource", "class_extension_directive.html#af311159cc678f8e8af40f36fc03ac26c", null ],
+    [ "classMethods", "class_extension_directive.html#a6322598259494421ea95f85b4612ec52", null ],
+    [ "idName", "class_extension_directive.html#a0213cd1a9fd3071601921b8b89c6009a", null ],
+    [ "inheritsClasses", "class_extension_directive.html#ab4f2aa0d6af6241cd155d5d6079108b3", null ],
+    [ "instanceMethods", "class_extension_directive.html#a85cbcf5a65efd0b5eac5865e0b9a1e8f", null ],
+    [ "publicName", "class_extension_directive.html#a960283525b4d3610e2d6d24043acb9f4", null ]
+];

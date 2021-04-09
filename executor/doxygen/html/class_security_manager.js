@@ -1,0 +1,28 @@
+var class_security_manager =
+[
+    [ "SecurityManager", "class_security_manager.html#a75e0d4cbd199b62e0c5f5efc3ca2b927", null ],
+    [ "SecurityManager", "class_security_manager.html#abf8da933df7b2243c9e464af99fe7c23", null ],
+    [ "callSecurityManager", "class_security_manager.html#a1d90abb1f50835b06d551ccc5f04959d", null ],
+    [ "checkCommand", "class_security_manager.html#a85d27d90eea8ba75c8d8eb2763d5e368", null ],
+    [ "checkEnvironmentAccess", "class_security_manager.html#a08bac256c53d4f3ac988464482ccd0e0", null ],
+    [ "checkFunctionCall", "class_security_manager.html#a0499f0d985b66bf184fec23a8421bcb3", null ],
+    [ "checkLocalAccess", "class_security_manager.html#a13a462f2038093275ad7d52fd4973252", null ],
+    [ "checkProtectedMethod", "class_security_manager.html#aac2195a831abdfa13538c3f520509041", null ],
+    [ "checkRequiresAccess", "class_security_manager.html#a54fbdaf88c3a5ddcd4ad5df8559c07c2", null ],
+    [ "checkStreamAccess", "class_security_manager.html#a67aaefa775a1a2dde8d27f7cd49bbca6", null ],
+    [ "isManaged", "class_security_manager.html#adba6abac5e3f6d6dc82ec2b51d1a7fa8", null ],
+    [ "live", "class_security_manager.html#a0c108d37ae7ea34100792211cb7247a2", null ],
+    [ "liveGeneral", "class_security_manager.html#a7bca1304d77176242ccb14ab89602add", null ],
+    [ "operator delete", "class_security_manager.html#ae5a625fefb6275e5c475d322a991dbae", null ],
+    [ "operator delete", "class_security_manager.html#a64bc420f8ee64fafd4f96257e06cbbbe", null ],
+    [ "operator new", "class_security_manager.html#a5ed3554be4d5d7459b3ceaaff8ae9ee2", null ],
+    [ "operator new", "class_security_manager.html#a3002e23c2d2b53496f3a5dc638ea2c8a", null ],
+    [ "manager", "class_security_manager.html#a9f10298f373cf512f7e4c8d158ca0917", null ],
+    [ "supportCall", "class_security_manager.html#a9fb60e5ced6eed4fe0d13882c0ae1e9c", null ],
+    [ "supportCommand", "class_security_manager.html#a57fd31edaa8b6e5802167f24cae3c65b", null ],
+    [ "supportEnvironment", "class_security_manager.html#ad5ac72d172a188fad8242bd245db6895", null ],
+    [ "supportLocal", "class_security_manager.html#abbb7585f553c60d2ec41575157e4a320", null ],
+    [ "supportMethod", "class_security_manager.html#a024e546814bee814da23ea78dc11979f", null ],
+    [ "supportRequires", "class_security_manager.html#a5de751b8a9854691b7b232c1e04fec26", null ],
+    [ "supportStream", "class_security_manager.html#ac7fc7decffa481cd6be491e90e178181", null ]
+];

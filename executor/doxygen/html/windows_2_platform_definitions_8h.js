@@ -1,0 +1,26 @@
+var windows_2_platform_definitions_8h =
+[
+    [ "BASEIMAGE", "windows_2_platform_definitions_8h.html#a57a6e9b5d94779fa257a279c949ae6cc", null ],
+    [ "BASEIMAGELOAD", "windows_2_platform_definitions_8h.html#afade9663732d71e92df6ddab49a67672", null ],
+    [ "C_STACK_SIZE", "windows_2_platform_definitions_8h.html#a19b75767af2a11dfb32e4dfa2dd9e805", null ],
+    [ "DEFRXSTRING", "windows_2_platform_definitions_8h.html#aee6b8399bc542aa1b8a50718c047f875", null ],
+    [ "delimiter", "windows_2_platform_definitions_8h.html#aabd48b83d8ea7bed681765a9ccadf37a", null ],
+    [ "FIXEDTIMERS", "windows_2_platform_definitions_8h.html#a40bdbba42a925710eabd4d8185cadf93", null ],
+    [ "isnan", "windows_2_platform_definitions_8h.html#a2e1baae9134e580910322362dc23290e", null ],
+    [ "line_end", "windows_2_platform_definitions_8h.html#a58f38f0d2d91763ecd599af6f16291e6", null ],
+    [ "line_end_size", "windows_2_platform_definitions_8h.html#ad8dce243ce6ddbb82c328287b423f9ba", null ],
+    [ "MIN_C_STACK", "windows_2_platform_definitions_8h.html#a5285172acdf99f1e56e1d85c63823308", null ],
+    [ "REXXMESSAGEFILE", "windows_2_platform_definitions_8h.html#abcdf5a573b42c526e95a0ff6c4339d78", null ],
+    [ "SCRIPTING", "windows_2_platform_definitions_8h.html#a9145c1a43ba703db91ead0ddb233a3da", null ],
+    [ "STACKCHECK", "windows_2_platform_definitions_8h.html#ac909a8e7c57d7a59c0d7ce6b7c03025f", null ],
+    [ "SysCall", "windows_2_platform_definitions_8h.html#ac4611f8bb010f353da4de79119e4cb5c", null ],
+    [ "SYSINITIALADDRESS", "windows_2_platform_definitions_8h.html#af79ec3c590d0c25b220387f30cc70f87", null ],
+    [ "TIMESLICE", "windows_2_platform_definitions_8h.html#ae586204918bfbea259810829a239d886", null ],
+    [ "TOTAL_STACK_SIZE", "windows_2_platform_definitions_8h.html#a43fc48e9dd914bef68be744606b2948c", null ],
+    [ "WinBeginExceptions", "windows_2_platform_definitions_8h.html#aef5de26091c9dc123de3c7d3e5b90084", null ],
+    [ "WinEndExceptions", "windows_2_platform_definitions_8h.html#a6c179e17ce7ef719be36c04979f2d3af", null ],
+    [ "WINREXX_H", "windows_2_platform_definitions_8h.html#a0e5d24ee95c16e5bf626ca17575c97e5", null ],
+    [ "CONSOLECTRLHANDLER", "windows_2_platform_definitions_8h.html#ad8d08ca59cac980cad5c3121d4e0dab7", null ],
+    [ "WinExceptionFilter", "windows_2_platform_definitions_8h.html#afbb05da6f4257709e94ab0f17d6fff6c", null ],
+    [ "WinConsoleCtrlHandler", "windows_2_platform_definitions_8h.html#aaabd366c0d87e3399105be38200cd1ac", null ]
+];

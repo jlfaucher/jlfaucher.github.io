@@ -1,0 +1,26 @@
+var class_registration_data =
+[
+    [ "RegistrationData", "class_registration_data.html#a6026e362786fb038c60da289f948a9af", null ],
+    [ "RegistrationData", "class_registration_data.html#a8ed4b4d8ddc7dc52f529426860b01aeb", null ],
+    [ "~RegistrationData", "class_registration_data.html#af0f5f8da9723cf2cf5bb77a078dfc89e", null ],
+    [ "addSessionReference", "class_registration_data.html#aa8623789b2162caf3ec760e27fc4b92f", null ],
+    [ "findSessionReference", "class_registration_data.html#a48dba9f1433669a472a2cad61d06009f", null ],
+    [ "getRegistrationData", "class_registration_data.html#a355cd47aa0e25b30be444384bba0c66b", null ],
+    [ "hasReferences", "class_registration_data.html#adff50f2431f2bd2c99ee7e488556105e", null ],
+    [ "isEntryPoint", "class_registration_data.html#a36f885a13b6639c17a4ba2bb18c00c00", null ],
+    [ "isLibrary", "class_registration_data.html#ae51084f38c8ab25a28975c063d1f9a2d", null ],
+    [ "matches", "class_registration_data.html#a2a6802ea6e1f51b6931b8cbf85e8d02d", null ],
+    [ "matches", "class_registration_data.html#a2d6274d6c347fc40679cb07b18f45e73", null ],
+    [ "matches", "class_registration_data.html#a90da89c6fbecf58475f9086ca1c03451", null ],
+    [ "removeSessionReference", "class_registration_data.html#a68148f634d635f117bd445b7d9199e64", null ],
+    [ "removeSessionReference", "class_registration_data.html#ad24c0c9633c06c5d432eec7a625d5533", null ],
+    [ "dropAuthority", "class_registration_data.html#a0f85d6e2b0eca288656e308a8d1a5625", null ],
+    [ "entryPoint", "class_registration_data.html#a090a02fbd0dc5bc582fff8acc285f914", null ],
+    [ "moduleName", "class_registration_data.html#acacc3a90fed1bbf15368af312ca8ca0c", null ],
+    [ "name", "class_registration_data.html#a9cd3a391b4fa8366ac441c931a8090c3", null ],
+    [ "next", "class_registration_data.html#a19005fb8b21bf81d0d475591c96e2cd9", null ],
+    [ "owner", "class_registration_data.html#a5a286f67f3e1a6600d23d28cce531f4f", null ],
+    [ "procedureName", "class_registration_data.html#ae4c13fcf6363ddfd64d7e6f88a6717c6", null ],
+    [ "references", "class_registration_data.html#ad58f0a2f63e7bf3400d73c1c223279e7", null ],
+    [ "userData", "class_registration_data.html#a78815dc16c6b26c020d27e6e3c554dbe", null ]
+];

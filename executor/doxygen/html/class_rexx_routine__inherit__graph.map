@@ -1,0 +1,9 @@
+<map id="RexxRoutine" name="RexxRoutine">
+<area shape="rect" id="node1" title=" " alt="" coords="100,315,197,343"/>
+<area shape="rect" id="node6" href="$class_registered_routine.html" title=" " alt="" coords="5,393,136,421"/>
+<area shape="rect" id="node7" href="$class_rexx_native_routine.html" title=" " alt="" coords="160,393,295,421"/>
+<area shape="rect" id="node2" href="$class_rexx_native_code.html" title=" " alt="" coords="89,238,209,266"/>
+<area shape="rect" id="node3" href="$class_base_code.html" title=" " alt="" coords="108,161,191,189"/>
+<area shape="rect" id="node4" href="$class_rexx_internal_object.html" title=" " alt="" coords="82,83,216,111"/>
+<area shape="rect" id="node5" href="$class_rexx_virtual_base.html" title=" " alt="" coords="90,6,208,34"/>
+</map>

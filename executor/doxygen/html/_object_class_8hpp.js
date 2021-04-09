@@ -1,0 +1,38 @@
+var _object_class_8hpp =
+[
+    [ "ObjectHeader", "class_object_header.html", "class_object_header" ],
+    [ "RexxVirtualBase", "class_rexx_virtual_base.html", "class_rexx_virtual_base" ],
+    [ "RexxInternalObject", "class_rexx_internal_object.html", "class_rexx_internal_object" ],
+    [ "RexxObject", "class_rexx_object.html", "class_rexx_object" ],
+    [ "RexxNilObject", "class_rexx_nil_object.html", "class_rexx_nil_object" ],
+    [ "RexxActivationBase", "class_rexx_activation_base.html", "class_rexx_activation_base" ],
+    [ "GuardLock", "class_guard_lock.html", "class_guard_lock" ],
+    [ "CPPM", "_object_class_8hpp.html#a5339ae30448255691efd09285d3afe9f", null ],
+    [ "OREFSHIFT", "_object_class_8hpp.html#a4c36d7a9706a76ac9925acd70ef963b2", null ],
+    [ "HashCode", "_object_class_8hpp.html#ad5f20fce69bde49cb4dfbb40dca26b6d", null ],
+    [ "PCPPM", "_object_class_8hpp.html#ab11862908509506f45a153805eb8a3a1", null ],
+    [ "PCPPM0", "_object_class_8hpp.html#af3080aa96fa8044858ab00c23193d8be", null ],
+    [ "PCPPM0N", "_object_class_8hpp.html#aecf976140ca6dc6d70f0c53d10aa27ab", null ],
+    [ "PCPPM1", "_object_class_8hpp.html#a6e7bee6f67011a1ac398b27a32c55cb3", null ],
+    [ "PCPPM1N", "_object_class_8hpp.html#a3e24dc076d6641349c12b34e0811fd7d", null ],
+    [ "PCPPM2", "_object_class_8hpp.html#a8d1c062e049e0a81545d29a2807c606f", null ],
+    [ "PCPPM2N", "_object_class_8hpp.html#a3bf402f913020c16ff00c030015c9be1", null ],
+    [ "PCPPM3", "_object_class_8hpp.html#a821be6f5cc79601f755712c74a06feda", null ],
+    [ "PCPPM3N", "_object_class_8hpp.html#ae8877fb665307a920666bcf3340f2dd2", null ],
+    [ "PCPPM4", "_object_class_8hpp.html#aca7b49f781d3d92f6bd9aaad875964e7", null ],
+    [ "PCPPM4N", "_object_class_8hpp.html#a5631d98e7de4a2904bc552d36b5b09aa", null ],
+    [ "PCPPM5", "_object_class_8hpp.html#a8be4f65b06b820c8c5d982d02ac4889b", null ],
+    [ "PCPPM5N", "_object_class_8hpp.html#a363aab58175d11351929e9639bc9b58f", null ],
+    [ "PCPPM6", "_object_class_8hpp.html#ab14c67eecbb558b037c46c4914b5ef7a", null ],
+    [ "PCPPM6N", "_object_class_8hpp.html#ad50ed73e3c4f03b6e0384dfde414524f", null ],
+    [ "PCPPM7", "_object_class_8hpp.html#a0d11346a7eee509ba33657653a8506b4", null ],
+    [ "PCPPM7N", "_object_class_8hpp.html#a37bd1577ee5fb1ff6ae3fff28da410f6", null ],
+    [ "PCPPMA1", "_object_class_8hpp.html#a4c07726525993295bc2fc05f65105c22", null ],
+    [ "PCPPMC1", "_object_class_8hpp.html#a99969d063ef8942df698001d1246052b", null ],
+    [ "RESTORETYPE", "_object_class_8hpp.html#a58dbc619099815c0eff7dd88059635d7", [
+      [ "RESTOREIMAGE", "_object_class_8hpp.html#a58dbc619099815c0eff7dd88059635d7af1e87ac8bff8bca0668d778d015bd3cc", null ],
+      [ "MOBILEUNFLATTEN", "_object_class_8hpp.html#a58dbc619099815c0eff7dd88059635d7a60a740883cb9e4141a09c53fe6282ffd", null ],
+      [ "METHODUNFLATTEN", "_object_class_8hpp.html#a58dbc619099815c0eff7dd88059635d7ad6e28fb9a77e6fbc2b1088c7b7ff32bd", null ]
+    ] ],
+    [ "HASHOREF", "_object_class_8hpp.html#a8f6f10fa6b26177cd5ef5c68f90ceaf1", null ]
+];

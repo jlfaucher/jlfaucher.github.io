@@ -1,0 +1,40 @@
+<map id="RexxObject" name="RexxObject">
+<area shape="rect" id="node1" title=" " alt="" coords="358,602,448,630"/>
+<area shape="rect" id="node4" href="$class_base_executable.html" title=" " alt="" coords="524,30,642,58"/>
+<area shape="rect" id="node7" href="$class_package_class.html" title=" " alt="" coords="529,82,636,110"/>
+<area shape="rect" id="node8" href="$class_rexx_array.html" title=" " alt="" coords="541,134,624,162"/>
+<area shape="rect" id="node9" href="$class_rexx_block.html" title=" " alt="" coords="541,186,625,214"/>
+<area shape="rect" id="node10" href="$class_rexx_buffer_base.html" title=" " alt="" coords="524,238,641,266"/>
+<area shape="rect" id="node12" href="$class_rexx_class.html" title=" " alt="" coords="540,290,625,318"/>
+<area shape="rect" id="node16" href="$class_rexx_closure.html" title=" " alt="" coords="534,342,631,370"/>
+<area shape="rect" id="node17" href="$class_rexx_context.html" title=" " alt="" coords="534,394,631,422"/>
+<area shape="rect" id="node18" href="$class_rexx_hash_table_collection.html" title=" " alt="" coords="496,446,669,474"/>
+<area shape="rect" id="node23" href="$class_rexx_integer.html" title=" " alt="" coords="536,498,629,526"/>
+<area shape="rect" id="node24" href="$class_rexx_list.html" title=" " alt="" coords="546,550,619,578"/>
+<area shape="rect" id="node26" href="$class_rexx_local.html" title=" " alt="" coords="541,602,624,630"/>
+<area shape="rect" id="node27" href="$class_rexx_message.html" title=" " alt="" coords="530,654,636,682"/>
+<area shape="rect" id="node28" href="$class_rexx_mutable_buffer.html" title=" " alt="" coords="515,706,650,734"/>
+<area shape="rect" id="node29" href="$class_rexx_nil_object.html" title=" " alt="" coords="530,758,636,786"/>
+<area shape="rect" id="node30" href="$class_rexx_number_string_base.html" title=" " alt="" coords="500,810,665,838"/>
+<area shape="rect" id="node32" href="$class_rexx_pointer.html" title=" " alt="" coords="536,862,630,890"/>
+<area shape="rect" id="node33" href="$class_rexx_stem.html" title=" " alt="" coords="541,914,624,942"/>
+<area shape="rect" id="node34" href="$class_rexx_string.html" title=" " alt="" coords="539,966,626,994"/>
+<area shape="rect" id="node35" href="$class_rexx_supplier.html" title=" " alt="" coords="532,1018,633,1046"/>
+<area shape="rect" id="node36" href="$class_rexx_text.html" title=" " alt="" coords="545,1070,621,1098"/>
+<area shape="rect" id="node37" href="$class_stack_frame_class.html" title=" " alt="" coords="519,1122,646,1150"/>
+<area shape="rect" id="node38" href="$class_weak_reference.html" title=" " alt="" coords="524,1174,641,1202"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="174,602,309,630"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="6,602,125,630"/>
+<area shape="rect" id="node5" href="$class_rexx_method.html" title=" " alt="" coords="753,5,849,33"/>
+<area shape="rect" id="node6" href="$class_routine_class.html" title=" " alt="" coords="751,57,852,85"/>
+<area shape="rect" id="node11" href="$class_rexx_buffer.html" title=" " alt="" coords="758,211,845,239"/>
+<area shape="rect" id="node13" href="$class_rexx_integer_class.html" title=" " alt="" coords="738,263,865,291"/>
+<area shape="rect" id="node14" href="$class_rexx_mutable_buffer_class.html" title=" " alt="" coords="717,315,885,343"/>
+<area shape="rect" id="node15" href="$class_rexx_supplier_class.html" title=" " alt="" coords="734,367,868,395"/>
+<area shape="rect" id="node19" href="$class_rexx_directory.html" title=" " alt="" coords="749,433,854,461"/>
+<area shape="rect" id="node20" href="$class_rexx_table.html" title=" " alt="" coords="760,485,843,513"/>
+<area shape="rect" id="node21" href="$class_rexx_identity_table.html" title=" " alt="" coords="934,459,1061,487"/>
+<area shape="rect" id="node22" href="$class_rexx_relation.html" title=" " alt="" coords="947,511,1048,539"/>
+<area shape="rect" id="node25" href="$class_rexx_queue.html" title=" " alt="" coords="755,550,847,578"/>
+<area shape="rect" id="node31" href="$class_rexx_number_string.html" title=" " alt="" coords="734,810,868,838"/>
+</map>

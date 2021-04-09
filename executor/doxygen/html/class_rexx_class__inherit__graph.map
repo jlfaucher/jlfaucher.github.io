@@ -1,0 +1,9 @@
+<map id="RexxClass" name="RexxClass">
+<area shape="rect" id="node1" title=" " alt="" coords="196,238,280,266"/>
+<area shape="rect" id="node5" href="$class_rexx_integer_class.html" title=" " alt="" coords="5,315,131,343"/>
+<area shape="rect" id="node6" href="$class_rexx_mutable_buffer_class.html" title=" " alt="" coords="155,315,321,343"/>
+<area shape="rect" id="node7" href="$class_rexx_supplier_class.html" title=" " alt="" coords="346,315,480,343"/>
+<area shape="rect" id="node2" href="$class_rexx_object.html" title=" " alt="" coords="194,161,283,189"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="171,83,305,111"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="179,6,297,34"/>
+</map>

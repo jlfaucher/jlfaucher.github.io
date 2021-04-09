@@ -1,0 +1,16 @@
+<map id="BaseCode" name="BaseCode">
+<area shape="rect" id="node1" title=" " alt="" coords="362,161,445,189"/>
+<area shape="rect" id="node4" href="$class_abstract_code.html" title=" " alt="" coords="5,238,107,266"/>
+<area shape="rect" id="node5" href="$class_attribute_getter_code.html" title=" " alt="" coords="131,238,271,266"/>
+<area shape="rect" id="node7" href="$class_c_p_p_code.html" title=" " alt="" coords="296,238,376,266"/>
+<area shape="rect" id="node8" href="$class_constant_getter_code.html" title=" " alt="" coords="400,238,543,266"/>
+<area shape="rect" id="node9" href="$class_rexx_code.html" title=" " alt="" coords="568,238,651,266"/>
+<area shape="rect" id="node10" href="$class_rexx_native_code.html" title=" " alt="" coords="675,238,796,266"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="337,83,471,111"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="344,6,463,34"/>
+<area shape="rect" id="node6" href="$class_attribute_setter_code.html" title=" " alt="" coords="132,315,269,343"/>
+<area shape="rect" id="node11" href="$class_rexx_native_method.html" title=" " alt="" coords="598,315,732,343"/>
+<area shape="rect" id="node12" href="$class_rexx_routine.html" title=" " alt="" coords="756,315,853,343"/>
+<area shape="rect" id="node13" href="$class_registered_routine.html" title=" " alt="" coords="661,393,792,421"/>
+<area shape="rect" id="node14" href="$class_rexx_native_routine.html" title=" " alt="" coords="816,393,951,421"/>
+</map>

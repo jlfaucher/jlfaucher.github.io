@@ -1,0 +1,28 @@
+var class_normal_segment_set =
+[
+    [ "NormalSegmentSet", "class_normal_segment_set.html#ac782818c3b2b503faeebba5af4421262", null ],
+    [ "NormalSegmentSet", "class_normal_segment_set.html#a0c8926bd04cd2e63f8e8ca8a9863cd15", null ],
+    [ "~NormalSegmentSet", "class_normal_segment_set.html#aea8fa13e0d734f41283b453d7955554d", null ],
+    [ "addDeadObject", "class_normal_segment_set.html#a0f52ea2915723176e59591cab5b32b59", null ],
+    [ "addDeadObject", "class_normal_segment_set.html#a141f8eeff1a51dc36324f9b559357faa", null ],
+    [ "allocateObject", "class_normal_segment_set.html#af8ed711532e1ee74d72128ef69532b83", null ],
+    [ "checkObjectOverlap", "class_normal_segment_set.html#a92fb3c72b863ae7ffa9d2deb67bda275", null ],
+    [ "completeSweepOperation", "class_normal_segment_set.html#a8d543da5d1ad0f6dbf606c2f5c398951", null ],
+    [ "donateObject", "class_normal_segment_set.html#a50e91263b4c77ab35acc766b21b99634", null ],
+    [ "dumpMemoryProfile", "class_normal_segment_set.html#a55a5c1a67d650232679a397e0f7caec4", null ],
+    [ "findLargeDeadObject", "class_normal_segment_set.html#a8374d91f07d84aca1e810e026489a6dc", null ],
+    [ "findObject", "class_normal_segment_set.html#a31d58541bb128116fa059a840db84865", null ],
+    [ "getInitialSet", "class_normal_segment_set.html#a6a863dffe8483a6d557016748c9cc117", null ],
+    [ "handleAllocationFailure", "class_normal_segment_set.html#a77df9525fcdbdfb8d9295d53b008afa6", null ],
+    [ "mapLengthToDeadPool", "class_normal_segment_set.html#ac1c9212087d8ba635bd599300faf2bf1", null ],
+    [ "prepareForSweep", "class_normal_segment_set.html#a74dc65ef70fa15612f38d8b90ca25c65", null ],
+    [ "recommendedMaximumMemorySize", "class_normal_segment_set.html#a0494bfe08376b08535753a86235283c0", null ],
+    [ "recommendedMemorySize", "class_normal_segment_set.html#ac61049646d46e3293f706cfb6557643d", null ],
+    [ "splitNormalDeadObject", "class_normal_segment_set.html#a4e7f200db9b3687afd16bd53c2d6d174", null ],
+    [ "suggestMemoryContraction", "class_normal_segment_set.html#a318a7460c27133c5a48756ab5f522411", null ],
+    [ "suggestMemoryExpansion", "class_normal_segment_set.html#af2cef0bc2610af9a53c3af7a2538f965", null ],
+    [ "largeDead", "class_normal_segment_set.html#a766ab6a1566c1302bd4b8e4b449a300a", null ],
+    [ "lastUsedSubpool", "class_normal_segment_set.html#ab83fecc011405c69e0b15849144cf571", null ],
+    [ "recoverSegment", "class_normal_segment_set.html#a46247417b1f4b4fece9559c00c3328ef", null ],
+    [ "subpools", "class_normal_segment_set.html#a6931728c87ac47644de894630e6e291d", null ]
+];
