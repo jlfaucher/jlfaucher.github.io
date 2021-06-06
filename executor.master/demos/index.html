@@ -11,7 +11,26 @@
         <link rel="stylesheet" href="https://jlfaucher.github.io/assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
         <style>
-            table.center { margin-left: auto; margin-right: auto; }
+            #toc_container {
+                background: #f9f9f9 none repeat scroll 0 0;
+                border: 1px solid #aaa;
+                display: table;
+                font-size: 95%;
+                margin-bottom: 1em;
+                padding: 20px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .toc_title {
+                font-weight: 700;
+                text-align: center;
+            }
+
+            #toc_container li, #toc_container ul, #toc_container ul li{
+                list-style: outside none none !important;
+            }
         </style>
 
     </head>
@@ -24,6 +43,20 @@
 
         <section class="main-content" style="font-size: 14px;">
 
+            <div id="toc_container">
+                <p class="toc_title">Contents</p>
+                <ul class="toc_list">
+                    <li><a href="#interpreters">ooRexxShell interpreters</a></li>
+                    <li><a href="#queries">ooRexxShell queries</a></li>
+                    <li><a href="#helpers">ooRexxShell helpers</a></li>
+                    <li><a href="#classic_rexx">Executor classic rexx</a></li>
+                    <li><a href="#extensions">Executor extensions</a></li>
+                    <li><a href="#array_foundations">Executor array foundations</a></li>
+                    <li><a href="#array_programming">Executor array programming</a></li>
+                    <li><a href="#unicode">Executor Unicode</a></li>
+                </ul>
+            </div>
+
             <h3>Keyboard shortcuts</h3>
             <p>The following keyboard shortcuts are currently available (when the player
             element is focused):</p>
@@ -35,8 +68,36 @@
             <li><code>&lt;</code> / <code>&gt;</code> - decrease / increase playback speed</li>
             </ul>
 
-            <h3>ooRexxshell interpreters</h3>
-            <asciinema-player src="ooRexxShell-demo-interpreters.cast" cols="130" rows="45" poster="npt:0:30"></asciinema-player>
+            <h3 id="interpreters">ooRexxshell interpreters</h3>
+            <asciinema-player src="ooRexxShell-demo-interpreters.cast" cols="135" rows="45" poster="npt:0:30" title="ooRexxshell interpreters"></asciinema-player>
+            <p><a href="ooRexxShell-demo-interpreters-output.html">Demo output</a></p>
+
+            <h3 id="queries">ooRexxshell queries</h3>
+            <asciinema-player src="ooRexxShell-demo-queries.cast" cols="135" rows="45" poster="npt:0:30" title="ooRexxshell queries"></asciinema-player>
+            <p><a href="ooRexxShell-demo-queries-output.html">Demo output</a></p>
+
+            <h3 id="helpers">ooRexxshell helpers</h3>
+            <asciinema-player src="ooRexxShell-demo-helpers.cast" cols="135" rows="45" poster="npt:0:30" title="ooRexxshell helpers"></asciinema-player>
+            <p><a href="ooRexxShell-demo-helpers-output.html">Demo output</a></p>
+
+            <h3 id="classic_rexx">Executor classic rexx</h3>
+            <asciinema-player src="executor-demo-classic_rexx.cast" cols="135" rows="45" poster="npt:0:30" title="Executor classic rexx"></asciinema-player>
+            <p><a href="executor-demo-classic_rexx-output.html">Demo output</a></p>
+
+            <h3 id="extensions">Executor extensions</h3>
+            <asciinema-player src="executor-demo-extensions.cast" cols="135" rows="45" poster="npt:0:30" title="Executor extensions"></asciinema-player>
+            <p><a href="executor-demo-extensions-output.html">Demo output</a></p>
+
+            <h3 id="array_foundations">Executor array foundations</h3>
+            <asciinema-player src="executor-demo-array.cast" cols="135" rows="45" poster="npt:0:30" title="Executor array foundations"></asciinema-player>
+            <p><a href="executor-demo-array-output.html">Demo output</a></p>
+
+            <h3 id="array_programming">Executor array programming</h3>
+            <p>To be done.</p>
+
+            <h3 id="unicode">Executor Unicode</h3>
+            <asciinema-player src="executor-demo-text.cast" cols="135" rows="45" poster="npt:0:30" title="Executor Unicode"></asciinema-player>
+            <p><a href="executor-demo-text-output.html">Demo output</a></p>
 
             <footer class="site-footer" style="font-size: 12px;">
                 <span class="site-footer-owner" style="text-align: center;">This page is maintained by <a href="https://github.com/jlfaucher">jlfaucher</a>.</span>
