@@ -32,7 +32,7 @@
 </span><span style="font-weight:bold;color:green;">loadPackage OK for rgf_util2/rgf_util2_wrappers.rex
 </span><span style="font-weight:bold;color:green;">
 </span><span style="font-weight:bold;color:green;">REXX-ooRexx_4.3.0(MT)_64-bit 6.04 26 Mar 2023
-</span><span style="font-weight:bold;color:green;">Input queue name: S5406Q600000810410
+</span><span style="font-weight:bold;color:green;">Input queue name: Se7ceQ60000081c000
 </span>
 <span style="font-weight:bold;color:blue;">--------------------
 </span><span style="font-weight:bold;color:blue;">-- Unicode libraries
@@ -212,6 +212,8 @@ ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">result~name~length=<
 </span><span style="font-weight:bold;color:blue;">    \U{X..X}            same as \u{X..X}
 </span><span style="font-weight:bold;color:blue;">    \uXXXX              Unicode character denoted by 4 hex digits ('u' lowercase)
 </span><span style="font-weight:bold;color:blue;">    \UXXXXXXXX          Unicode character denoted by 8 hex digits ('U' uppercase)
+</span><span style="font-weight:bold;color:blue;">    \xXX                1 byte denoted by 2 hex digits ('x' lowercase)
+</span><span style="font-weight:bold;color:blue;">    \XXXXX              2 bytes denoted by 4 hex digits ('X' uppercase)
 </span><span style="font-weight:bold;color:blue;">*/
 </span>
 <span style="font-weight:bold;color:blue;">-- Character by name
@@ -777,7 +779,7 @@ ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">textNFD = text~NFD</
 ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">text~isNFC=                                     </span><span style="font-weight:bold;color:blue;">-- 1</span>
  1
 ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">text~isNFD=                                     </span><span style="font-weight:bold;color:blue;">-- 0</span>
--1
+ 0
 ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">textNFC~isNFC=                                  </span><span style="font-weight:bold;color:blue;">-- 1</span>
  1
 ooRexx[sh]&gt; <span style="font-weight:bold;color:purple;">textNFD~isNFD=                                  </span><span style="font-weight:bold;color:blue;">-- 1</span>
