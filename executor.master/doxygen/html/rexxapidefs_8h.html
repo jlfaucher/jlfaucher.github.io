@@ -337,7 +337,7 @@ Macros</h2></td></tr>
 <tr class="separator:a82f5692587b766e864090b94a456ef9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978f37ac5c5808c86184797d540fa9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a978f37ac5c5808c86184797d540fa9ac">RXQUEUE_LIFO</a>&#160;&#160;&#160;1    /* Access queue last-in-first-out  */</td></tr>
 <tr class="separator:a978f37ac5c5808c86184797d540fa9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33fca0a89a7459954fb1f0b5cede179"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#ac33fca0a89a7459954fb1f0b5cede179">RXQUEUE_NOWAIT</a>&#160;&#160;&#160;0    /* Wait for data if queue empty    */</td></tr>
+<tr class="memitem:ac33fca0a89a7459954fb1f0b5cede179"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#ac33fca0a89a7459954fb1f0b5cede179">RXQUEUE_NOWAIT</a>&#160;&#160;&#160;0    /* Wait for data <a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> queue empty    */</td></tr>
 <tr class="separator:ac33fca0a89a7459954fb1f0b5cede179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127e8bc26c52499425967392d757af7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a127e8bc26c52499425967392d757af7b">RXQUEUE_WAIT</a>&#160;&#160;&#160;1    /* Don't wait on an empty queue    */</td></tr>
 <tr class="separator:a127e8bc26c52499425967392d757af7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,7 +355,7 @@ Macros</h2></td></tr>
 <tr class="separator:a37c7338b2705dd065543183999cec83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47c7e4c4d6f42f144b419bdeac38fa16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a47c7e4c4d6f42f144b419bdeac38fa16">RXQUEUE_BADQNAME</a>&#160;&#160;&#160;5        /* Not a valid queue name      */</td></tr>
 <tr class="separator:a47c7e4c4d6f42f144b419bdeac38fa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95975a9c9735964fe6f4bb2c94d6da3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a95975a9c9735964fe6f4bb2c94d6da3c">RXQUEUE_PRIORITY</a>&#160;&#160;&#160;6        /* Not accessed as <a class="el" href="cmdparse_8cpp.html#ab1557843d0366f15d4f5dcad7d514ff4">LIFO</a>|<a class="el" href="cmdparse_8cpp.html#af6bc2702f6a1a4bb063b0726d90999da">FIFO</a>   */</td></tr>
+<tr class="memitem:a95975a9c9735964fe6f4bb2c94d6da3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a95975a9c9735964fe6f4bb2c94d6da3c">RXQUEUE_PRIORITY</a>&#160;&#160;&#160;6        /* Not accessed as <a class="el" href="cmdparse_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aa01d7974609bd0111390748dc20f1633">LIFO</a>|<a class="el" href="cmdparse_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9a7795ebef271efe70b28f37deb9a07a83">FIFO</a>   */</td></tr>
 <tr class="separator:a95975a9c9735964fe6f4bb2c94d6da3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9cd90147495f4bbdcecbfd6233a8cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rexxapidefs_8h.html#a0d9cd90147495f4bbdcecbfd6233a8cc">RXQUEUE_BADWAITFLAG</a>&#160;&#160;&#160;7        /* Not accessed as WAIT|NOWAIT */</td></tr>
 <tr class="separator:a0d9cd90147495f4bbdcecbfd6233a8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1738,7 +1738,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RXQUEUE_NOWAIT&#160;&#160;&#160;0    /* Wait for data if queue empty    */</td>
+          <td class="memname">#define RXQUEUE_NOWAIT&#160;&#160;&#160;0    /* Wait for data <a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> queue empty    */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1770,7 +1770,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RXQUEUE_PRIORITY&#160;&#160;&#160;6        /* Not accessed as <a class="el" href="cmdparse_8cpp.html#ab1557843d0366f15d4f5dcad7d514ff4">LIFO</a>|<a class="el" href="cmdparse_8cpp.html#af6bc2702f6a1a4bb063b0726d90999da">FIFO</a>   */</td>
+          <td class="memname">#define RXQUEUE_PRIORITY&#160;&#160;&#160;6        /* Not accessed as <a class="el" href="cmdparse_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aa01d7974609bd0111390748dc20f1633">LIFO</a>|<a class="el" href="cmdparse_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9a7795ebef271efe70b28f37deb9a07a83">FIFO</a>   */</td>
         </tr>
       </table>
 </div><div class="memdoc">

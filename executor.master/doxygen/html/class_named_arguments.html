@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('class_named_arguments.html',''); initR
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_named_arguments-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,17 +99,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5418cc1b1ba0f0892bf6c66f57ac47f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa73cd31fc50a94402f76331fb875eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_named_argument.html">NamedArgument</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#afa73cd31fc50a94402f76331fb875eb5">operator[]</a> (size_t index)</td></tr>
 <tr class="separator:afa73cd31fc50a94402f76331fb875eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319d081d7f530cecf500b4c0122c76aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#a319d081d7f530cecf500b4c0122c76aa">check</a> (<a class="el" href="class_rexx_object.html">RexxObject</a> **namedArglist, size_t namedArgCount, bool strict, bool extraAllowed, size_t minimumRequired=0)</td></tr>
-<tr class="separator:a319d081d7f530cecf500b4c0122c76aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390c641b2461756fac1e63779e3bb7e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#a390c641b2461756fac1e63779e3bb7e5">check</a> (<a class="el" href="class_rexx_string.html">RexxString</a> *name, <a class="el" href="class_rexx_object.html">RexxObject</a> *value, bool strict=true, <a class="el" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> name_minimumLength=-1, size_t from=0)</td></tr>
-<tr class="separator:a390c641b2461756fac1e63779e3bb7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfcf53ed313680141bd30efa98d8e041"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#acfcf53ed313680141bd30efa98d8e041">check</a> (const char *name, <a class="el" href="class_rexx_object.html">RexxObject</a> *value, bool strict=true, <a class="el" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> name_minimumLength=-1, size_t from=0)</td></tr>
-<tr class="separator:acfcf53ed313680141bd30efa98d8e041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68647318850d210b4fc0e4c7279f8a51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#a68647318850d210b4fc0e4c7279f8a51">match</a> (<a class="el" href="class_rexx_object.html">RexxObject</a> **namedArglist, size_t namedArgCount, bool strict, bool extraAllowed, size_t minimumRequired=0)</td></tr>
+<tr class="separator:a68647318850d210b4fc0e4c7279f8a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91a2b3f0df16a6e0729e4c03dc7a712"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#af91a2b3f0df16a6e0729e4c03dc7a712">match</a> (<a class="el" href="class_rexx_string.html">RexxString</a> *name, <a class="el" href="class_rexx_object.html">RexxObject</a> *value, bool strict=true, size_t from=0, bool parse_time=false)</td></tr>
+<tr class="separator:af91a2b3f0df16a6e0729e4c03dc7a712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae336fd02b7e2e55e4fc7ffe6df002211"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#ae336fd02b7e2e55e4fc7ffe6df002211">match</a> (const char *name, size_t nameLength, <a class="el" href="class_rexx_object.html">RexxObject</a> *value, bool strict=true, size_t from=0, bool parse_time=false)</td></tr>
+<tr class="separator:ae336fd02b7e2e55e4fc7ffe6df002211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a49c9d7382bd407acd48c7a3df3c94b9d"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#a49c9d7382bd407acd48c7a3df3c94b9d">count</a></td></tr>
 <tr class="separator:a49c9d7382bd407acd48c7a3df3c94b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7654f8e066939c98ef8de659b51330ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_named_arguments.html#a7654f8e066939c98ef8de659b51330ba">checkNameMatching</a> (const char *name, size_t nameLength, size_t i, bool parse_time)</td></tr>
+<tr class="separator:a7654f8e066939c98ef8de659b51330ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -117,7 +123,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00490">490</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00519">519</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91c2e31464743f56f8207340e8d8407e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91c2e31464743f56f8207340e8d8407e">&#9670;&nbsp;</a></span>NamedArguments()</h2>
@@ -143,9 +149,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00493">493</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00522">522</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00522">count</a>, and <a class="el" href="_rexx_core_8h_source.html#l00525">namedArguments</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00552">count</a>, and <a class="el" href="_rexx_core_8h_source.html#l00557">namedArguments</a>.</p>
 
 </div>
 </div>
@@ -172,24 +178,84 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00498">498</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00529">529</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00525">namedArguments</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00557">namedArguments</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acfcf53ed313680141bd30efa98d8e041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfcf53ed313680141bd30efa98d8e041">&#9670;&nbsp;</a></span>check() <span class="overload">[1/3]</span></h2>
+<a id="a7654f8e066939c98ef8de659b51330ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7654f8e066939c98ef8de659b51330ba">&#9670;&nbsp;</a></span>checkNameMatching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NamedArguments::checkNameMatching </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nameLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parse_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00589">589</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00513">NamedArgument::name</a>, and <a class="el" href="_rexx_core_8h_source.html#l00557">namedArguments</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00548">match()</a>.</p>
+
+</div>
+</div>
+<a id="ae336fd02b7e2e55e4fc7ffe6df002211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae336fd02b7e2e55e4fc7ffe6df002211">&#9670;&nbsp;</a></span>match() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool NamedArguments::check </td>
+          <td class="memname">bool NamedArguments::match </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nameLength</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,14 +272,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
-          <td class="paramname"><em>name_minimumLength</em> = <code>-1</code>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>from</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>from</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parse_time</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -223,20 +289,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00526">526</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00548">548</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00487">NamedArgument::assigned</a>, <a class="el" href="_rexx_core_8h_source.html#l00522">count</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00429">Error_Invalid_argument_general</a>, <a class="el" href="_rexx_core_8h_source.html#l00485">NamedArgument::minimumLength</a>, <a class="el" href="_rexx_core_8h_source.html#l00482">NamedArgument::name</a>, <a class="el" href="_rexx_core_8h_source.html#l00525">namedArguments</a>, <a class="el" href="_string_class_8hpp_source.html#l00568">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00486">NamedArgument::value</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00516">NamedArgument::assigned</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00589">checkNameMatching()</a>, <a class="el" href="_rexx_core_8h_source.html#l00552">count</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00479">Error_Invalid_argument_general</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00523">nameCollision()</a>, <a class="el" href="_rexx_core_8h_source.html#l00557">namedArguments</a>, <a class="el" href="_string_class_8hpp_source.html#l00600">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00515">NamedArgument::value</a>.</p>
 
 </div>
 </div>
-<a id="a319d081d7f530cecf500b4c0122c76aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a319d081d7f530cecf500b4c0122c76aa">&#9670;&nbsp;</a></span>check() <span class="overload">[2/3]</span></h2>
+<a id="a68647318850d210b4fc0e4c7279f8a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68647318850d210b4fc0e4c7279f8a51">&#9670;&nbsp;</a></span>match() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void NamedArguments::check </td>
+          <td class="memname">void NamedArguments::match </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_rexx_object.html">RexxObject</a> **&#160;</td>
           <td class="paramname"><em>namedArglist</em>, </td>
@@ -273,22 +339,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00462">462</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00459">459</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00487">NamedArgument::assigned</a>, <a class="el" href="_rexx_core_8h_source.html#l00522">count</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00464">Error_Incorrect_method_maxarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00462">Error_Incorrect_method_minarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00465">Error_Incorrect_method_noarg</a>, <a class="el" href="_rexx_core_8h_source.html#l00482">NamedArgument::name</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00486">NamedArgument::value</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00516">NamedArgument::assigned</a>, <a class="el" href="_rexx_core_8h_source.html#l00552">count</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00524">Error_Incorrect_method_maxarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00523">Error_Incorrect_method_minarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00525">Error_Incorrect_method_noarg</a>, <a class="el" href="_rexx_core_8h_source.html#l00513">NamedArgument::name</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00515">NamedArgument::value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_routine_class_8cpp_source.html#l00282">RoutineClass::callWithRexx()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00520">check()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00431">RexxInstructionUseStrict::checkNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00293">RexxInstructionUseStrict::executeNamedArguments()</a>, <a class="el" href="_object_class_8cpp_source.html#l02038">RexxObject::run()</a>, <a class="el" href="_object_class_8cpp_source.html#l01744">RexxObject::sendWith()</a>, <a class="el" href="_context_class_8cpp_source.html#l00288">RexxContext::setArgs()</a>, <a class="el" href="_object_class_8cpp_source.html#l01854">RexxObject::startWith()</a>, and <a class="el" href="_object_class_8cpp_source.html#l02741">RexxObject::unknownRexx()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_routine_class_8cpp_source.html#l00282">RoutineClass::callWithRexx()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00423">RexxInstructionUseStrict::checkNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00285">RexxInstructionUseStrict::executeNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00517">match()</a>, <a class="el" href="_object_class_8cpp_source.html#l02197">RexxObject::run()</a>, <a class="el" href="_object_class_8cpp_source.html#l01901">RexxObject::sendWith()</a>, <a class="el" href="_context_class_8cpp_source.html#l00288">RexxContext::setArgs()</a>, <a class="el" href="_object_class_8cpp_source.html#l02011">RexxObject::startWith()</a>, <a class="el" href="_object_class_8cpp_source.html#l02918">RexxObject::unknownRexx()</a>, and <a class="el" href="_text_class_8cpp_source.html#l00681">Unicode::utf8proc_transform()</a>.</p>
 
 </div>
 </div>
-<a id="a390c641b2461756fac1e63779e3bb7e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a390c641b2461756fac1e63779e3bb7e5">&#9670;&nbsp;</a></span>check() <span class="overload">[3/3]</span></h2>
+<a id="af91a2b3f0df16a6e0729e4c03dc7a712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91a2b3f0df16a6e0729e4c03dc7a712">&#9670;&nbsp;</a></span>match() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool NamedArguments::check </td>
+          <td class="memname">bool NamedArguments::match </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_rexx_string.html">RexxString</a> *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -308,14 +374,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a>&#160;</td>
-          <td class="paramname"><em>name_minimumLength</em> = <code>-1</code>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>from</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>from</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parse_time</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -325,9 +391,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00520">520</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_use_strict_instruction_8cpp_source.html#l00517">517</a> of file <a class="el" href="_use_strict_instruction_8cpp_source.html">UseStrictInstruction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_use_strict_instruction_8cpp_source.html#l00462">check()</a>, and <a class="el" href="_string_class_8hpp_source.html#l00355">RexxString::getStringData()</a>.</p>
+<p class="reference">References <a class="el" href="_string_class_8hpp_source.html#l00341">RexxString::getLength()</a>, <a class="el" href="_string_class_8hpp_source.html#l00344">RexxString::getStringData()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00459">match()</a>.</p>
 
 </div>
 </div>
@@ -355,9 +421,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00504">504</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00535">535</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00525">namedArguments</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00552">count</a>, and <a class="el" href="_rexx_core_8h_source.html#l00557">namedArguments</a>.</p>
 
 </div>
 </div>
@@ -374,9 +440,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00522">522</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00552">552</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00462">check()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00493">NamedArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00459">match()</a>, <a class="el" href="_rexx_core_8h_source.html#l00522">NamedArguments()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00535">operator[]()</a>.</p>
 
 </div>
 </div>
@@ -400,9 +466,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00525">525</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_core_8h_source.html#l00557">557</a> of file <a class="el" href="_rexx_core_8h_source.html">RexxCore.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00526">check()</a>, <a class="el" href="_rexx_core_8h_source.html#l00493">NamedArguments()</a>, <a class="el" href="_rexx_core_8h_source.html#l00504">operator[]()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00498">~NamedArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00589">checkNameMatching()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00548">match()</a>, <a class="el" href="_rexx_core_8h_source.html#l00522">NamedArguments()</a>, <a class="el" href="_rexx_core_8h_source.html#l00535">operator[]()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00529">~NamedArguments()</a>.</p>
 
 </div>
 </div>

@@ -103,7 +103,7 @@ Include dependency graph for Scanner.cpp:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a3df548212a57745f8556e63f1fdc0d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scanner_8cpp.html#a3df548212a57745f8556e63f1fdc0d4a">HIGHEST_PRECEDENCE</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:a3df548212a57745f8556e63f1fdc0d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23596fe6473b0f59d4a582d5dd3dfc71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scanner_8cpp.html#a23596fe6473b0f59d4a582d5dd3dfc71">GETCHAR</a>()&#160;&#160;&#160;((unsigned char)(this-&gt;current[<a class="el" href="rexx_8h.html#aa769893f0fa96a4162e9f96b85e2200c">size_v</a>(this-&gt;line_offset)]))</td></tr>
+<tr class="memitem:a23596fe6473b0f59d4a582d5dd3dfc71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scanner_8cpp.html#a23596fe6473b0f59d4a582d5dd3dfc71">GETCHAR</a>()&#160;&#160;&#160;((unsigned char)(this-&gt;current[this-&gt;line_offset]))</td></tr>
 <tr class="separator:a23596fe6473b0f59d4a582d5dd3dfc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e7bde98db0bfe94fc63726b5bce428"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scanner_8cpp.html#a32e7bde98db0bfe94fc63726b5bce428">MORELINE</a>()&#160;&#160;&#160;(this-&gt;line_offset &lt; this-&gt;current_length)</td></tr>
 <tr class="separator:a32e7bde98db0bfe94fc63726b5bce428"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +313,7 @@ Macros</h2></td></tr>
           <td class="memname">#define GETCHAR</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned char)(this-&gt;current[<a class="el" href="rexx_8h.html#aa769893f0fa96a4162e9f96b85e2200c">size_v</a>(this-&gt;line_offset)]))</td>
+          <td>&#160;&#160;&#160;((unsigned char)(this-&gt;current[this-&gt;line_offset]))</td>
         </tr>
       </table>
 </div><div class="memdoc">

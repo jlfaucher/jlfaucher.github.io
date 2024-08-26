@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['windowsversiontype_15153',['WindowsVersionType',['../windows_2_a_p_i_service_8cpp.html#ac7c596526f9e0fd9e9adbf618e2bf815',1,'APIService.cpp']]],
-  ['winservicestatust_15154',['WinServiceStatusT',['../windows_2_sys_local_a_p_i_manager_8cpp.html#a69cc148ce8af5aa004a07763e5ce1658',1,'SysLocalAPIManager.cpp']]]
+  ['threadpriority_15762',['ThreadPriority',['../class_sys_thread.html#a74814ba1512bb5cd0334c5dc3b4ce910',1,'SysThread::ThreadPriority()'],['../class_sys_thread.html#a74814ba1512bb5cd0334c5dc3b4ce910',1,'SysThread::ThreadPriority()']]],
+  ['traceprefixes_15763',['TracePrefixes',['../_rexx_activity_8hpp.html#a0b8b5588789c97dea145836f93b841d3',1,'RexxActivity.hpp']]],
+  ['treedatabuffers_15764',['TreeDataBuffers',['../unix_2rexxutil_8cpp.html#ae5b9920b9b0b3c175c128cea5b486c20',1,'rexxutil.cpp']]]
 ];

@@ -10,6 +10,7 @@ var class_rexx_activation_base =
     [ "getExecutable", "class_rexx_activation_base.html#a8f7e905f92aaeed027b0dd63b38eb687", null ],
     [ "getExecutableObject", "class_rexx_activation_base.html#a71e1d1e17a9907cbc606011bb4322cab", null ],
     [ "getNumericSettings", "class_rexx_activation_base.html#a0ab9f2805d057d3e210702aa7776fef1", null ],
+    [ "getPackage", "class_rexx_activation_base.html#acf549aab4ecf4cadd1d6a507bc4d3161", null ],
     [ "getPreviousStackFrame", "class_rexx_activation_base.html#a80ae1399be4641e71596a43d2c3e7653", null ],
     [ "getReceiver", "class_rexx_activation_base.html#a8911562af47daa575cddaf200d4344c9", null ],
     [ "getRexxContext", "class_rexx_activation_base.html#a1e9238d320c0c3ef3c5e03b797d56b86", null ],

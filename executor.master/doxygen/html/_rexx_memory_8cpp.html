@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('_rexx_memory_8cpp.html',''); initResiz
 <code>#include &quot;SysFileSystem.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="_uninit_dispatcher_8hpp_source.html">UninitDispatcher.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_global_protected_object_8hpp_source.html">GlobalProtectedObject.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_text_class_8hpp_source.html">TextClass.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for RexxMemory.cpp:</div>
 <div class="dyncontent">
@@ -135,7 +136,7 @@ Macros</h2></td></tr>
 <tr class="separator:a0e8424ed703355ce1fec17288824fc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74403b0d13c3e38b90012eee5f2b81c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rexx_memory_8cpp.html#a74403b0d13c3e38b90012eee5f2b81c5">SaveStackAllocSize</a>&#160;&#160;&#160;500       /* pre-allocation for save stack  */</td></tr>
 <tr class="separator:a74403b0d13c3e38b90012eee5f2b81c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f34aa35780f5dbe9de37ca48aa83b07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rexx_memory_8cpp.html#a4f34aa35780f5dbe9de37ca48aa83b07">MaxImageSize</a>&#160;&#160;&#160;1800000         /* maximum startup image size */</td></tr>
+<tr class="memitem:a4f34aa35780f5dbe9de37ca48aa83b07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rexx_memory_8cpp.html#a4f34aa35780f5dbe9de37ca48aa83b07">MaxImageSize</a>&#160;&#160;&#160;3000000         /* maximum startup image size */</td></tr>
 <tr class="separator:a4f34aa35780f5dbe9de37ca48aa83b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -163,7 +164,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00087">87</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00088">88</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
 </div>
 </div>
@@ -174,12 +175,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MaxImageSize&#160;&#160;&#160;1800000         /* maximum startup image size */</td>
+          <td class="memname">#define MaxImageSize&#160;&#160;&#160;3000000         /* maximum startup image size */</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00092">92</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00098">98</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +210,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00079">79</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00080">80</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +226,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00090">90</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00091">91</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +242,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00089">89</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00090">90</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
 </div>
 </div>
@@ -286,9 +287,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00106">106</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00113">113</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l02091">RexxMemory::checkSetOref()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00263">RexxMemory::dumpObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00243">RexxMemory::logVerboseOutput()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l01563">RexxMemory::orphanCheckMark()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l02128">RexxMemory::checkSetOref()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00270">RexxMemory::dumpObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00250">RexxMemory::logVerboseOutput()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l01586">RexxMemory::orphanCheckMark()</a>.</p>
 
 </div>
 </div>
@@ -323,9 +324,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00085">85</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rexx_memory_8cpp_source.html#l00086">86</a> of file <a class="el" href="_rexx_memory_8cpp_source.html">RexxMemory.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_table_class_8cpp_source.html#l00064">RexxTable::addOffset()</a>, <a class="el" href="_rexx_activation_8hpp_source.html#l00613">RexxActivation::cacheLocalVariable()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02325">RexxMemory::create()</a>, <a class="el" href="_setup_8cpp_source.html#l00146">RexxMemory::createImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00428">discardHoldObject()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00426">discardObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01796">RexxMemory::dump()</a>, <a class="el" href="_options_instruction_8cpp_source.html#l00059">RexxInstructionOptions::execute()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l00185">RexxActivity::exitCurrentThread()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00089">MemorySegment::firstDeadObject()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00095">RexxEnvelope::flattenReference()</a>, <a class="el" href="_global_protected_object_8hpp_source.html#l00050">GlobalProtectedObject::GlobalProtectedObject()</a>, <a class="el" href="_source_file_8cpp_source.html#l01242">RexxSource::globalSetup()</a>, <a class="el" href="_object_class_8cpp_source.html#l02028">RexxInternalObject::hasUninit()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00427">holdObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00172">RexxMemory::initialize()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00062">MemorySegment::lastDeadObject()</a>, <a class="el" href="_rexx_behaviour_8cpp_source.html#l00099">RexxBehaviour::liveGeneral()</a>, <a class="el" href="_activity_manager_8cpp_source.html#l00101">ActivityManager::liveGeneral()</a>, <a class="el" href="_source_file_8cpp_source.html#l00642">RexxSource::liveGeneral()</a>, <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00170">SystemInterpreter::liveGeneral()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00090">Interpreter::liveGeneral()</a>, <a class="el" href="unix_2_file_system_8cpp_source.html#l00142">SystemInterpreter::loadImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00434">new_arrayOfObject()</a>, <a class="el" href="_token_8hpp_source.html#l00455">new_arrayOfTokens()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00431">new_object()</a>, <a class="el" href="_rexx_hash_table_8cpp_source.html#l00101">RexxHashTable::newInstance()</a>, <a class="el" href="unix_2_memory_support_8cpp_source.html#l00227">MemorySegmentPool::newLargeSegment()</a>, <a class="el" href="_rexx_activation_8hpp_source.html#l00599">RexxActivation::newLocalVariable()</a>, <a class="el" href="unix_2_memory_support_8cpp_source.html#l00182">MemorySegmentPool::newSegment()</a>, <a class="el" href="_stack_class_8cpp_source.html#l00153">RexxStack::operator new()</a>, <a class="el" href="_rexx_list_table_8cpp_source.html#l00100">RexxListTable::operator new()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00168">RexxEnvelope::pack()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00242">RexxEnvelope::puff()</a>, <a class="el" href="_memory_stats_8cpp_source.html#l00063">SegmentStats::recordObject()</a>, <a class="el" href="_object_class_8cpp_source.html#l02295">RexxInternalObject::removedUninit()</a>, <a class="el" href="_array_class_8cpp_source.html#l01678">RexxArray::resize()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02342">RexxMemory::restore()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00810">RexxMemory::restoreImage()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l03383">RexxActivity::run()</a>, <a class="el" href="_rexx_activation_8cpp_source.html#l00484">RexxActivation::run()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l00085">RexxActivity::runThread()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01681">RexxMemory::saveImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00425">saveObject()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00578">MemorySegmentSet::splitSegment()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00124">Interpreter::startInterpreter()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l01106">MemorySegmentSet::sweep()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00448">InterpreterInstance::terminate()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00187">Interpreter::terminateInterpreter()</a>, <a class="el" href="_weak_reference_class_8cpp_source.html#l00144">WeakReference::unflatten()</a>, <a class="el" href="_weak_reference_class_8cpp_source.html#l00072">WeakReference::WeakReference()</a>, and <a class="el" href="_global_protected_object_8hpp_source.html#l00089">GlobalProtectedObject::~GlobalProtectedObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_table_class_8cpp_source.html#l00064">RexxTable::addOffset()</a>, <a class="el" href="_rexx_activation_8hpp_source.html#l00629">RexxActivation::cacheLocalVariable()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02371">RexxMemory::create()</a>, <a class="el" href="_setup_8cpp_source.html#l00219">RexxMemory::createImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00433">discardHoldObject()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00431">discardObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01833">RexxMemory::dump()</a>, <a class="el" href="_options_instruction_8cpp_source.html#l00059">RexxInstructionOptions::execute()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l00187">RexxActivity::exitCurrentThread()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00089">MemorySegment::firstDeadObject()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00095">RexxEnvelope::flattenReference()</a>, <a class="el" href="_global_protected_object_8hpp_source.html#l00050">GlobalProtectedObject::GlobalProtectedObject()</a>, <a class="el" href="_object_class_8cpp_source.html#l02187">RexxInternalObject::hasUninit()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00432">holdObject()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00179">RexxMemory::initialize()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00062">MemorySegment::lastDeadObject()</a>, <a class="el" href="_rexx_behaviour_8cpp_source.html#l00099">RexxBehaviour::liveGeneral()</a>, <a class="el" href="_activity_manager_8cpp_source.html#l00101">ActivityManager::liveGeneral()</a>, <a class="el" href="_source_file_8cpp_source.html#l00642">RexxSource::liveGeneral()</a>, <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00170">SystemInterpreter::liveGeneral()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00090">Interpreter::liveGeneral()</a>, <a class="el" href="unix_2_file_system_8cpp_source.html#l00142">SystemInterpreter::loadImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00439">new_arrayOfObject()</a>, <a class="el" href="_token_8hpp_source.html#l00456">new_arrayOfTokens()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00436">new_object()</a>, <a class="el" href="_rexx_hash_table_8cpp_source.html#l00101">RexxHashTable::newInstance()</a>, <a class="el" href="unix_2_memory_support_8cpp_source.html#l00227">MemorySegmentPool::newLargeSegment()</a>, <a class="el" href="_rexx_activation_8hpp_source.html#l00615">RexxActivation::newLocalVariable()</a>, <a class="el" href="unix_2_memory_support_8cpp_source.html#l00182">MemorySegmentPool::newSegment()</a>, <a class="el" href="_stack_class_8cpp_source.html#l00153">RexxStack::operator new()</a>, <a class="el" href="_rexx_list_table_8cpp_source.html#l00100">RexxListTable::operator new()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00168">RexxEnvelope::pack()</a>, <a class="el" href="_rexx_envelope_8cpp_source.html#l00242">RexxEnvelope::puff()</a>, <a class="el" href="_memory_stats_8cpp_source.html#l00063">SegmentStats::recordObject()</a>, <a class="el" href="_object_class_8cpp_source.html#l02454">RexxInternalObject::removedUninit()</a>, <a class="el" href="_array_class_8cpp_source.html#l01678">RexxArray::resize()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02388">RexxMemory::restore()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00817">RexxMemory::restoreImage()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l03390">RexxActivity::run()</a>, <a class="el" href="_rexx_activation_8cpp_source.html#l00517">RexxActivation::run()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l00085">RexxActivity::runThread()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01704">RexxMemory::saveImage()</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00430">saveObject()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l00578">MemorySegmentSet::splitSegment()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00124">Interpreter::startInterpreter()</a>, <a class="el" href="_memory_segment_8cpp_source.html#l01106">MemorySegmentSet::sweep()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00448">InterpreterInstance::terminate()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00187">Interpreter::terminateInterpreter()</a>, <a class="el" href="_weak_reference_class_8cpp_source.html#l00144">WeakReference::unflatten()</a>, <a class="el" href="_weak_reference_class_8cpp_source.html#l00072">WeakReference::WeakReference()</a>, and <a class="el" href="_global_protected_object_8hpp_source.html#l00089">GlobalProtectedObject::~GlobalProtectedObject()</a>.</p>
 
 </div>
 </div>

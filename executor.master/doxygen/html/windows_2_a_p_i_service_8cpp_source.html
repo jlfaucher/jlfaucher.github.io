@@ -198,20 +198,20 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="windows_2_a_p_i_service_8cpp.html#aee50b830b6eba5b46093d05381d9e898">  115</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="windows_2_a_p_i_service_8cpp.html#aee50b830b6eba5b46093d05381d9e898">isAtLeastVersion</a>(<a class="code" href="windows_2_a_p_i_service_8cpp.html#ac7c596526f9e0fd9e9adbf618e2bf815">WindowsVersionType</a> <a class="code" href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a>)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    OSVERSIONINFO <a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    OSVERSIONINFO version_info;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> answer = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>.dwOSVersionInfoSize = <span class="keyword">sizeof</span>(<a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    GetVersionEx(&amp;<a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    version_info.dwOSVersionInfoSize = <span class="keyword">sizeof</span>(version_info);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    GetVersionEx(&amp;version_info);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">switch</span> ( <a class="code" href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a> )</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="windows_2_a_p_i_service_8cpp.html#ac7c596526f9e0fd9e9adbf618e2bf815acb9da7f09e73b1a6eed5000606d2c5bd">Windows_NT</a> :</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            answer = <a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>.dwPlatformId != <a class="code" href="windows_2_a_p_i_service_8cpp.html#acb0f1321940d926d618ec2b3af70403e">WINDOWS_95_98_ME</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            answer = version_info.dwPlatformId != <a class="code" href="windows_2_a_p_i_service_8cpp.html#acb0f1321940d926d618ec2b3af70403e">WINDOWS_95_98_ME</a>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="windows_2_a_p_i_service_8cpp.html#ac7c596526f9e0fd9e9adbf618e2bf815a71176e3a910ac13880a59b1628147ff6">Windows_2K</a> :</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            answer = <a class="code" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a>.dwMajorVersion &gt;= 5;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            answer = version_info.dwMajorVersion &gt;= 5;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        default :</div>
@@ -542,24 +542,24 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            psd = (PSECURITY_DESCRIPTOR)LocalAlloc(LPTR, size);</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="keywordflow">if</span> (psd == NULL)</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            {</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            }</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <span class="keywordflow">if</span> ( ! QueryServiceObjectSecurity( hService, DACL_SECURITY_INFORMATION, psd, size, &amp;needed) )</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            {</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            }</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        }</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        {</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        }</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    }</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="comment">// Get the current DACL from the security descriptor.</span></div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">if</span> ( ! GetSecurityDescriptorDacl(psd, &amp;bDaclPresent, &amp;pacl, &amp;bDaclDefaulted) )</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    {</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    }</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="comment">// Build the ACE.</span></div>
@@ -568,25 +568,25 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    dwError = SetEntriesInAcl(1, (PEXPLICIT_ACCESS)&amp;ea, pacl, &amp;pNewAcl);</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordflow">if</span> ( dwError != ERROR_SUCCESS )</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    {</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    }</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="comment">// Initialize a new security descriptor.</span></div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">if</span> ( ! InitializeSecurityDescriptor(&amp;sd, SECURITY_DESCRIPTOR_REVISION) )</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    {</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="comment">// Set the new DACL in the security descriptor.</span></div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordflow">if</span> ( ! SetSecurityDescriptorDacl(&amp;sd, TRUE, pNewAcl, FALSE) )</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    {</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="comment">// Set the new security descriptor for the service object.</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    SetServiceObjectSecurity(hService, DACL_SECURITY_INFORMATION, &amp;sd);</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>:</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;cleanup:</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">if</span>( pNewAcl != NULL )</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        LocalFree((HLOCAL)pNewAcl);</div>
@@ -616,7 +616,7 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    SC_HANDLE hSCM = OpenSCManager(NULL, NULL, SC_MANAGER_CREATE_SERVICE | SC_MANAGER_CONNECT);</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">if</span> ( hSCM == NULL )</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    {</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;      <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;      <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    }</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160; </div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="comment">// Get the executable file path.  The docs for Services say that if the path</span></div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160; </div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">if</span> ( hService == NULL )</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    {</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    }</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="comment">// At this point, the service is installed, so success is set to true.  The</span></div>
@@ -681,7 +681,7 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        RegCloseKey(hKey);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    }</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<a class="code" href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a>:</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;cleanup:</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordflow">if</span> ( hService != NULL )</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    {</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        CloseServiceHandle(hService);</div>
@@ -1121,8 +1121,7 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="ttc" id="aclass_a_p_i_server_html_a5323f78df981e82f09e8428fb300132a"><div class="ttname"><a href="class_a_p_i_server.html#a5323f78df981e82f09e8428fb300132a">APIServer::terminateServer</a></div><div class="ttdeci">void terminateServer()</div><div class="ttdef"><b>Definition:</b> <a href="_a_p_i_server_8cpp_source.html#l00069">APIServer.cpp:69</a></div></div>
 <div class="ttc" id="aclass_a_p_i_server_html_a91fbbfde0e42d5d498d03a6911a20d72"><div class="ttname"><a href="class_a_p_i_server.html#a91fbbfde0e42d5d498d03a6911a20d72">APIServer::listenForConnections</a></div><div class="ttdeci">void listenForConnections()</div><div class="ttdef"><b>Definition:</b> <a href="_a_p_i_server_8cpp_source.html#l00082">APIServer.cpp:82</a></div></div>
 <div class="ttc" id="aclass_service_exception_html"><div class="ttname"><a href="class_service_exception.html">ServiceException</a></div><div class="ttdef"><b>Definition:</b> <a href="_service_exception_8hpp_source.html#l00067">ServiceException.hpp:68</a></div></div>
-<div class="ttc" id="acmdparse_8cpp_html_ac765329451135abec74c45e1897abf26"><div class="ttname"><a href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="cmdparse_8cpp_source.html#l00383">cmdparse.cpp:383</a></div></div>
-<div class="ttc" id="arxsock_8h_html_ab7778d715a528c193b316a8519d62bda"><div class="ttname"><a href="rxsock_8h.html#ab7778d715a528c193b316a8519d62bda">cleanup</a></div><div class="ttdeci">void cleanup(RexxCallContext *context)</div><div class="ttdef"><b>Definition:</b> <a href="rxsock_8cpp_source.html#l00584">rxsock.cpp:584</a></div></div>
+<div class="ttc" id="acmdparse_8cpp_html_ac765329451135abec74c45e1897abf26"><div class="ttname"><a href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="cmdparse_8cpp_source.html#l01888">cmdparse.cpp:1888</a></div></div>
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_a1122673f59be78a3997ec7dd1c4688f9"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#a1122673f59be78a3997ec7dd1c4688f9">WinMain</a></div><div class="ttdeci">int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l01003">windows/APIService.cpp:1003</a></div></div>
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_a196495707f4f3c6541853e97825a2bf6"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#a196495707f4f3c6541853e97825a2bf6">m_Status</a></div><div class="ttdeci">static SERVICE_STATUS m_Status</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l00063">windows/APIService.cpp:63</a></div></div>
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_a1aad658895859bc0e7c1f6abae799b19"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#a1aad658895859bc0e7c1f6abae799b19">startAsWindowsService</a></div><div class="ttdeci">bool startAsWindowsService(void)</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l00813">windows/APIService.cpp:813</a></div></div>
@@ -1164,7 +1163,6 @@ $(document).ready(function(){initNavTree('windows_2_a_p_i_service_8cpp_source.ht
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_aebee0c998e0babaa2e0ae259b22a9f0f"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#aebee0c998e0babaa2e0ae259b22a9f0f">showMessage</a></div><div class="ttdeci">void showMessage(const char *msg, unsigned int icon)</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l00108">windows/APIService.cpp:108</a></div></div>
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_aee50b830b6eba5b46093d05381d9e898"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#aee50b830b6eba5b46093d05381d9e898">isAtLeastVersion</a></div><div class="ttdeci">bool isAtLeastVersion(WindowsVersionType type)</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l00115">windows/APIService.cpp:115</a></div></div>
 <div class="ttc" id="awindows_2_a_p_i_service_8cpp_html_afd6369e26b6811ece83b5818ace1b572"><div class="ttname"><a href="windows_2_a_p_i_service_8cpp.html#afd6369e26b6811ece83b5818ace1b572">apiServer</a></div><div class="ttdeci">APIServer apiServer</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_a_p_i_service_8cpp_source.html#l00105">windows/APIService.cpp:105</a></div></div>
-<div class="ttc" id="awindows_2_misc_system_8cpp_html_a0433fb1c906371af070782c15cb8e86a"><div class="ttname"><a href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a></div><div class="ttdeci">static OSVERSIONINFO version_info</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_misc_system_8cpp_source.html#l00062">windows/MiscSystem.cpp:62</a></div></div>
 <div class="ttc" id="awindows_2rexxapitypes_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="windows_2rexxapitypes_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="windows_2rexxapitypes_8h_source.html#l00073">windows/rexxapitypes.h:73</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

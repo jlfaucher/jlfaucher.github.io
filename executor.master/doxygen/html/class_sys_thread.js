@@ -34,8 +34,6 @@ var class_sys_thread =
     [ "dispatch", "class_sys_thread.html#ac495766eadf7b4fd08ef501c59484b8a", null ],
     [ "equals", "class_sys_thread.html#ac99ec3716c86d766a42d61c33d647d96", null ],
     [ "equals", "class_sys_thread.html#ac99ec3716c86d766a42d61c33d647d96", null ],
-    [ "getStackBase", "class_sys_thread.html#afcb6aab5d0a7980e20f03633ab8a071a", null ],
-    [ "getStackBase", "class_sys_thread.html#adfb18456fb47f2e96e5ed23d49d27a19", null ],
     [ "hash", "class_sys_thread.html#a43e8c0cfd8053bb062876a10f0d5246f", null ],
     [ "hash", "class_sys_thread.html#a43e8c0cfd8053bb062876a10f0d5246f", null ],
     [ "setPriority", "class_sys_thread.html#aafb018c869a845c84fbc34a774e1bfdf", null ],

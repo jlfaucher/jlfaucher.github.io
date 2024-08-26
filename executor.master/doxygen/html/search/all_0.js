@@ -55,5 +55,6 @@ var searchData=
   ['_shvblock_52',['_SHVBLOCK',['../struct___s_h_v_b_l_o_c_k.html',1,'']]],
   ['_sort_mem_53',['_SORT_MEM',['../struct___s_o_r_t___m_e_m.html',1,'']]],
   ['_threadhandle_54',['_threadHandle',['../class_sys_thread.html#a63bcb6a0a2b11da48e25a129281cd03e',1,'SysThread']]],
-  ['_threadid_55',['_threadID',['../class_sys_thread.html#a14fcf0e430f9335cb22d4ebfb41d0d7f',1,'SysThread::_threadID()'],['../class_sys_thread.html#a0c43bc5f0f46ae6791d9f3048459e57d',1,'SysThread::_threadID()']]]
+  ['_threadid_55',['_threadID',['../class_sys_thread.html#a14fcf0e430f9335cb22d4ebfb41d0d7f',1,'SysThread::_threadID()'],['../class_sys_thread.html#a0c43bc5f0f46ae6791d9f3048459e57d',1,'SysThread::_threadID()']]],
+  ['_valuedescriptor_56',['_ValueDescriptor',['../struct___value_descriptor.html',1,'']]]
 ];

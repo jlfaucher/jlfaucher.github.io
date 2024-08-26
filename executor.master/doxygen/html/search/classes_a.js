@@ -1,19 +1,16 @@
 var searchData=
 [
-  ['macroitem_9589',['MacroItem',['../class_macro_item.html',1,'']]],
-  ['macrospacedescriptor_9590',['MacroSpaceDescriptor',['../class_macro_space_descriptor.html',1,'']]],
-  ['macrospacefile_9591',['MacroSpaceFile',['../class_macro_space_file.html',1,'']]],
-  ['macrospacefileheader_9592',['MacroSpaceFileHeader',['../class_macro_space_file_header.html',1,'']]],
-  ['macrotable_9593',['MacroTable',['../class_macro_table.html',1,'']]],
-  ['managedrxstring_9594',['ManagedRxstring',['../class_managed_rxstring.html',1,'']]],
-  ['memorysegment_9595',['MemorySegment',['../class_memory_segment.html',1,'']]],
-  ['memorysegmentheader_9596',['MemorySegmentHeader',['../class_memory_segment_header.html',1,'']]],
-  ['memorysegmentpool_9597',['MemorySegmentPool',['../class_memory_segment_pool.html',1,'']]],
-  ['memorysegmentpoolheader_9598',['MemorySegmentPoolHeader',['../class_memory_segment_pool_header.html',1,'']]],
-  ['memorysegmentset_9599',['MemorySegmentSet',['../class_memory_segment_set.html',1,'']]],
-  ['memorystats_9600',['MemoryStats',['../class_memory_stats.html',1,'']]],
-  ['messagedispatcher_9601',['MessageDispatcher',['../class_message_dispatcher.html',1,'']]],
-  ['methodcontext_9602',['MethodContext',['../struct_method_context.html',1,'']]],
-  ['methodcontextinterface_9603',['MethodContextInterface',['../struct_method_context_interface.html',1,'']]],
-  ['msgentry_9604',['msgEntry',['../structmsg_entry.html',1,'']]]
+  ['largesegmentset_10091',['LargeSegmentSet',['../class_large_segment_set.html',1,'']]],
+  ['librarydirective_10092',['LibraryDirective',['../class_library_directive.html',1,'']]],
+  ['libraryloaderdispatcher_10093',['LibraryLoaderDispatcher',['../class_library_loader_dispatcher.html',1,'']]],
+  ['librarypackage_10094',['LibraryPackage',['../class_library_package.html',1,'']]],
+  ['libraryunloaderdispatcher_10095',['LibraryUnloaderDispatcher',['../class_library_unloader_dispatcher.html',1,'']]],
+  ['listentry_10096',['listentry',['../structlistentry.html',1,'']]],
+  ['localapicontext_10097',['LocalAPIContext',['../class_local_a_p_i_context.html',1,'']]],
+  ['localapimanager_10098',['LocalAPIManager',['../class_local_a_p_i_manager.html',1,'']]],
+  ['localapisubsystem_10099',['LocalAPISubsystem',['../class_local_a_p_i_subsystem.html',1,'']]],
+  ['localmacrospacemanager_10100',['LocalMacroSpaceManager',['../class_local_macro_space_manager.html',1,'']]],
+  ['localqueuemanager_10101',['LocalQueueManager',['../class_local_queue_manager.html',1,'']]],
+  ['localregistrationmanager_10102',['LocalRegistrationManager',['../class_local_registration_manager.html',1,'']]],
+  ['lock_10103',['Lock',['../class_lock.html',1,'']]]
 ];

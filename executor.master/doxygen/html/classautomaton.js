@@ -7,7 +7,7 @@ var classautomaton =
     [ "factor", "classautomaton.html#aee4530dc29cab926facfc5bde8bca2af", null ],
     [ "getCurrentPos", "classautomaton.html#a0cb33692964fd3703cf1a6e79dc80587", null ],
     [ "getMinimal", "classautomaton.html#aae7e0ef84aa5d84827df9198363d07da", null ],
-    [ "insertSet", "classautomaton.html#a556b0c7cd9c9f27a5d92daf8d1ec2859", null ],
+    [ "insertSet", "classautomaton.html#a4c9ac209887045d8ef2ba19d2f6d5784", null ],
     [ "letter", "classautomaton.html#a7e18446cec1c93ba66c3bf5c62d1483b", null ],
     [ "match", "classautomaton.html#a1fa05c864d2d3a046dfdaf02ab4af0a7", null ],
     [ "parse", "classautomaton.html#aad114b2cf57b397c09c3731b0a6f2d2a", null ],

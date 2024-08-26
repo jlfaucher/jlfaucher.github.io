@@ -4,7 +4,7 @@ var oorexxapi_8h =
     [ "_RexxRoutineEntry", "struct___rexx_routine_entry.html", "struct___rexx_routine_entry" ],
     [ "_RexxMethodEntry", "struct___rexx_method_entry.html", "struct___rexx_method_entry" ],
     [ "_RexxPackageEntry", "struct___rexx_package_entry.html", "struct___rexx_package_entry" ],
-    [ "ValueDescriptor", "struct_value_descriptor.html", "struct_value_descriptor" ],
+    [ "_ValueDescriptor", "struct___value_descriptor.html", "struct___value_descriptor" ],
     [ "RexxContextEnvironment", "struct_rexx_context_environment.html", "struct_rexx_context_environment" ],
     [ "RexxRegisteredEnvironment", "struct_rexx_registered_environment.html", "struct_rexx_registered_environment" ],
     [ "RexxLibraryPackage", "struct_rexx_library_package.html", "struct_rexx_library_package" ],
@@ -253,5 +253,6 @@ var oorexxapi_8h =
     [ "RexxThreadContext", "oorexxapi_8h.html#a72fe1ede0f3fc1e4687edf7ee768be04", null ],
     [ "SCOPE", "oorexxapi_8h.html#a187d66a3fc3a6d6e6ac72d67ad6305d1", null ],
     [ "SUPER", "oorexxapi_8h.html#a6fa7805b61a2de141b4e1c00c338237f", null ],
+    [ "ValueDescriptor", "oorexxapi_8h.html#ad481e7f6a1c51a2dee372670c9dbddbd", null ],
     [ "RexxCreateInterpreter", "oorexxapi_8h.html#a6b75c4ec7654fe664946ee1e23d7b4cc", null ]
 ];

@@ -16,6 +16,8 @@ var _builtin_functions_8hpp =
     [ "required_big_integer", "_builtin_functions_8hpp.html#a9d5270b55594e63723661cd8b8a09a7e", null ],
     [ "required_integer", "_builtin_functions_8hpp.html#a54988f538b28774c0ff732aa49419daf", null ],
     [ "required_string", "_builtin_functions_8hpp.html#a777ec8085b23a0f55b4ffb12ef6f6df6", null ],
+    [ "required_text", "_builtin_functions_8hpp.html#ae3700beb654bc543d3319aad49ec939a", null ],
+    [ "set_arg", "_builtin_functions_8hpp.html#aa8076adea21aef35ce705f34c979225d", null ],
     [ "expandArgs", "_builtin_functions_8hpp.html#a5b77e21d6e8852c261605f12633896d5", null ],
     [ "optionalBigIntegerArg", "_builtin_functions_8hpp.html#aa20d57419d35696081c41f616b737be9", null ],
     [ "optionalIntegerArg", "_builtin_functions_8hpp.html#aa4454b574ccda4391f8c04081e6fdd0e", null ],

@@ -1,5 +1,10 @@
 var class_class_directive =
 [
+    [ "ClassProperties", "class_class_directive.html#aab82e0d5040da86e8cfe673367fc84d7", [
+      [ "PUBLIC", "class_class_directive.html#aab82e0d5040da86e8cfe673367fc84d7a6b594414c501a8aa3551b06a54236b05", null ],
+      [ "MIXIN", "class_class_directive.html#aab82e0d5040da86e8cfe673367fc84d7ae6afdfa22457d0104c7db4de63fcc2f8", null ],
+      [ "ABSTRACT", "class_class_directive.html#aab82e0d5040da86e8cfe673367fc84d7a683725366d904dd1d543b067633b1509", null ]
+    ] ],
     [ "ClassDirective", "class_class_directive.html#a2fec63d84f641d5ede5f0c6a1f0f719e", null ],
     [ "ClassDirective", "class_class_directive.html#a27f7ee75908c938adb15d90f127e4232", null ],
     [ "addConstantMethod", "class_class_directive.html#a82492ad7cfaa5bb606bf8ab0a31b1bf6", null ],
@@ -16,6 +21,9 @@ var class_class_directive =
     [ "getName", "class_class_directive.html#a88537f34c2bb3ca30e22250fbac665e1", null ],
     [ "getSubClass", "class_class_directive.html#a7e9c7488e4437e9b25637df0024c6cff", null ],
     [ "install", "class_class_directive.html#a628786c67d134a72b1df292ed5fb09c7", null ],
+    [ "isAbstract", "class_class_directive.html#a821792fece4a8bb7b730e1c99cd8ac84", null ],
+    [ "isMixinClass", "class_class_directive.html#a04e6c73a763cde313e60dfb75b8ddeca", null ],
+    [ "isPublic", "class_class_directive.html#a4994262972e60fb19a634c1cc50abc6a", null ],
     [ "live", "class_class_directive.html#a2549e4b6455058a316c4e3350d067f0d", null ],
     [ "liveGeneral", "class_class_directive.html#af5a4d2f22f85588348fa26287b34177b", null ],
     [ "operator delete", "class_class_directive.html#a027aa39de67e1433273116ef79911309", null ],
@@ -23,19 +31,19 @@ var class_class_directive =
     [ "operator new", "class_class_directive.html#ab329e05ba97a7e165d8e8defb0c208c9", null ],
     [ "operator new", "class_class_directive.html#a12175cf70978a6481327429834d51210", null ],
     [ "removeDependency", "class_class_directive.html#a4752d0845d5ff3bd74847f31e1000de7", null ],
+    [ "setAbstract", "class_class_directive.html#a51aca1fc67cd4d86d4fee39e772282ee", null ],
     [ "setMetaClass", "class_class_directive.html#a1b249bd74639c17d9460920b66ab2576", null ],
     [ "setMixinClass", "class_class_directive.html#a9a820e23ba2615b8acc574ad5677ba19", null ],
     [ "setPublic", "class_class_directive.html#a6ba51e2e0682f79b4e79e53f62a52b70", null ],
     [ "setSubClass", "class_class_directive.html#a64d1667e415ff25d5c7d21eb9969011e", null ],
     [ "RexxSource", "class_class_directive.html#af311159cc678f8e8af40f36fc03ac26c", null ],
+    [ "classFlags", "class_class_directive.html#a2b8093701fb5f2d3de574e501e4ab533", null ],
     [ "classMethods", "class_class_directive.html#a8e3e26cd18bc58623f084ab478df559a", null ],
     [ "dependencies", "class_class_directive.html#ade5499536e15bfc4c6aea00ada30e36c", null ],
     [ "idName", "class_class_directive.html#a783d90592cfc8f00b4705ac4e99b0831", null ],
     [ "inheritsClasses", "class_class_directive.html#a40e1ed715dc24e916dfbacfbb1c4021a", null ],
     [ "instanceMethods", "class_class_directive.html#af09c351232f4c36f42530322c11decaa", null ],
     [ "metaclassName", "class_class_directive.html#a131575fe6779a72417832a085bd3f815", null ],
-    [ "mixinClass", "class_class_directive.html#a42f16dc29e15fe04fbfefae30c656f3c", null ],
-    [ "publicClass", "class_class_directive.html#a03341cdbb001b5dc8ca6519241d35a93", null ],
     [ "publicName", "class_class_directive.html#aab89c3b6590d89822353c273082f6577", null ],
     [ "subclassName", "class_class_directive.html#a053d029319a7e7183dc1b3007b98334f", null ]
 ];

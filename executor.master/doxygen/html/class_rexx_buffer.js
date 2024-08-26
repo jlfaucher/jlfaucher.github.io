@@ -3,7 +3,7 @@ var class_rexx_buffer =
     [ "RexxBuffer", "class_rexx_buffer.html#ac7e4b95200c68ec2c37eb62c01d1800c", null ],
     [ "RexxBuffer", "class_rexx_buffer.html#ac98041fcd0d88fdb92d51fcbbaf3121a", null ],
     [ "createInstance", "class_rexx_buffer.html#a267d4cd0f6144bfd2e38bf103c7badf8", null ],
-    [ "expand", "class_rexx_buffer.html#a77eed2359dfc97e4c5192a30d01f0a38", null ],
+    [ "expand", "class_rexx_buffer.html#a560b30012903cf0da431425f37ccb173", null ],
     [ "getData", "class_rexx_buffer.html#a509aff24d9b4e280f35b0beede789e6b", null ],
     [ "newRexx", "class_rexx_buffer.html#a7712dd9250e90d1346c907d5e3490315", null ],
     [ "operator delete", "class_rexx_buffer.html#a796852748f3c762470b5afd7b89346b2", null ],

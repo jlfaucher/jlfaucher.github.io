@@ -242,11 +242,11 @@ $(document).ready(function(){initNavTree('unix_2linux_2_a_p_i_service_8cpp_sourc
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    unlink(<a class="code" href="unix_2linux_2_a_p_i_service_8cpp.html#abba3fbb315eab0a0f658aed2561acde4">OOREXX_PIDFILE</a>);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> pfile = open(<a class="code" href="unix_2linux_2_a_p_i_service_8cpp.html#abba3fbb315eab0a0f658aed2561acde4">OOREXX_PIDFILE</a>, O_WRONLY | O_CREAT, 0640);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    snprintf(pid_buf, <span class="keyword">sizeof</span>(pid_buf), <span class="stringliteral">&quot;%d\n&quot;</span>, (<span class="keywordtype">int</span>)getpid());</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    write(pfile, pid_buf, strlen(pid_buf));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> writeResult = write(pfile, pid_buf, strlen(pid_buf));</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    close(pfile);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// housekeeping</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    chdir(<span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">int</span> chdirResult = chdir(<span class="stringliteral">&quot;/&quot;</span>);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    umask(0);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 1024; i++) {</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        close(i);</div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('unix_2linux_2_a_p_i_service_8cpp_sourc
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    snprintf(pid_buf, <span class="keyword">sizeof</span>(pid_buf), <span class="stringliteral">&quot;%d\n&quot;</span>, (<span class="keywordtype">int</span>)getpid());</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    write(pfile, pid_buf, strlen(pid_buf));</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a> r = write(pfile, pid_buf, strlen(pid_buf));</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    close(pfile);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// make ourselves a daemon</span></div>
@@ -353,6 +353,7 @@ $(document).ready(function(){initNavTree('unix_2linux_2_a_p_i_service_8cpp_sourc
 <div class="ttc" id="aunix_2linux_2_a_p_i_service_8cpp_html_abba3fbb315eab0a0f658aed2561acde4"><div class="ttname"><a href="unix_2linux_2_a_p_i_service_8cpp.html#abba3fbb315eab0a0f658aed2561acde4">OOREXX_PIDFILE</a></div><div class="ttdeci">#define OOREXX_PIDFILE</div><div class="ttdef"><b>Definition:</b> <a href="unix_2linux_2_a_p_i_service_8cpp_source.html#l00060">unix/linux/APIService.cpp:60</a></div></div>
 <div class="ttc" id="aunix_2linux_2_a_p_i_service_8cpp_html_acfc03c73b3d285e94e26e9b45332fe77"><div class="ttname"><a href="unix_2linux_2_a_p_i_service_8cpp.html#acfc03c73b3d285e94e26e9b45332fe77">run_as_daemon</a></div><div class="ttdeci">bool run_as_daemon</div><div class="ttdef"><b>Definition:</b> <a href="unix_2linux_2_a_p_i_service_8cpp_source.html#l00061">unix/linux/APIService.cpp:61</a></div></div>
 <div class="ttc" id="aunix_2linux_2_a_p_i_service_8cpp_html_afd6369e26b6811ece83b5818ace1b572"><div class="ttname"><a href="unix_2linux_2_a_p_i_service_8cpp.html#afd6369e26b6811ece83b5818ace1b572">apiServer</a></div><div class="ttdeci">APIServer apiServer</div><div class="ttdef"><b>Definition:</b> <a href="unix_2linux_2_a_p_i_service_8cpp_source.html#l00067">unix/linux/APIService.cpp:67</a></div></div>
+<div class="ttc" id="awindows_2rexxapitypes_8h_html_a894c4d58faeee7675b9e7e8244de1386"><div class="ttname"><a href="windows_2rexxapitypes_8h.html#a894c4d58faeee7675b9e7e8244de1386">ssize_t</a></div><div class="ttdeci">SSIZE_T ssize_t</div><div class="ttdef"><b>Definition:</b> <a href="windows_2rexxapitypes_8h_source.html#l00048">windows/rexxapitypes.h:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.2-->

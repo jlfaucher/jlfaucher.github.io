@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['largesegmentset_15593',['LargeSegmentSet',['../class_memory_segment_header.html#a2cb15f7678d725cc1805a5484e007584',1,'MemorySegmentHeader::LargeSegmentSet()'],['../class_memory_segment.html#a2cb15f7678d725cc1805a5484e007584',1,'MemorySegment::LargeSegmentSet()']]],
-  ['linebuffer_15594',['LineBuffer',['../class_stream_info.html#a6f03461ff780ebcbde1a80169e78a7b0',1,'StreamInfo']]]
+  ['flagset_3c_20tenum_2c_20tmaxflags_20_3e_16239',['FlagSet&lt; TEnum, TMaxFlags &gt;',['../class_flag_set_1_1_flag_set_reference.html#a0be45795a3cb95cf51ea33f7f4b95463',1,'FlagSet::FlagSetReference']]]
 ];

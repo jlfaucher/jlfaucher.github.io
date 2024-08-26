@@ -1,6 +1,6 @@
 <map id="RexxInstructionDrop" name="RexxInstructionDrop">
-<area shape="rect" id="node1" title=" " alt="" coords="5,238,147,266"/>
-<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="19,161,132,189"/>
-<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="9,83,143,111"/>
-<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="16,6,135,34"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,230,147,257"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="19,155,133,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="9,80,143,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="16,5,136,32"/>
 </map>

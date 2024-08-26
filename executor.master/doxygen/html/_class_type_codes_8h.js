@@ -55,6 +55,8 @@ var _class_type_codes_8h =
       [ "T_RexxBlockClass", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a0cb835edc8b09ec6305cdf30155fea78", null ],
       [ "T_RexxText", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a0f7e08b1b7bea8572b59eb11be28d6ef", null ],
       [ "T_RexxTextClass", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02aab4bacc6762c014b62c421e7d1042bea", null ],
+      [ "T_Unicode", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a91fc68e93d4263b3c32f369e21ee1a92", null ],
+      [ "T_UnicodeClass", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a40632e37ca684ffd33a738a498d3e2b9", null ],
       [ "T_Last_Exported_Class", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a5df2c9bc873422800495681c3f8c2b4a", null ],
       [ "T_First_Internal_Class", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02a5e843dde90cf8fd0effda9168f4d3bbd", null ],
       [ "T_NilObject", "_class_type_codes_8h.html#a9b8ca21e3e1d826b3a2be53bde5c6c02ae569021091ecd4c919ab6c17c1830ad9", null ],

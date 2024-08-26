@@ -1,9 +1,9 @@
 <map id="RexxTable" name="RexxTable">
-<area shape="rect" id="node1" title=" " alt="" coords="94,315,177,343"/>
-<area shape="rect" id="node6" href="$class_rexx_identity_table.html" title=" " alt="" coords="5,393,131,421"/>
-<area shape="rect" id="node7" href="$class_rexx_relation.html" title=" " alt="" coords="155,393,255,421"/>
-<area shape="rect" id="node2" href="$class_rexx_hash_table_collection.html" title=" " alt="" coords="49,238,221,266"/>
-<area shape="rect" id="node3" href="$class_rexx_object.html" title=" " alt="" coords="91,161,180,189"/>
-<area shape="rect" id="node4" href="$class_rexx_internal_object.html" title=" " alt="" coords="69,83,203,111"/>
-<area shape="rect" id="node5" href="$class_rexx_virtual_base.html" title=" " alt="" coords="76,6,195,34"/>
+<area shape="rect" id="node1" title=" " alt="" coords="95,305,178,332"/>
+<area shape="rect" id="node6" href="$class_rexx_identity_table.html" title=" " alt="" coords="5,380,132,407"/>
+<area shape="rect" id="node7" href="$class_rexx_relation.html" title=" " alt="" coords="156,380,256,407"/>
+<area shape="rect" id="node2" href="$class_rexx_hash_table_collection.html" title=" " alt="" coords="50,230,223,257"/>
+<area shape="rect" id="node3" href="$class_rexx_object.html" title=" " alt="" coords="91,155,182,182"/>
+<area shape="rect" id="node4" href="$class_rexx_internal_object.html" title=" " alt="" coords="70,80,203,107"/>
+<area shape="rect" id="node5" href="$class_rexx_virtual_base.html" title=" " alt="" coords="77,5,196,32"/>
 </map>

@@ -34,7 +34,6 @@ var rxunixsys_8cpp =
     [ "RexxRoutine1", "rxunixsys_8cpp.html#a44f16acdcbd7c75f96c5d01953e5fec5", null ],
     [ "RexxRoutine2", "rxunixsys_8cpp.html#a9cdff0bc83e669142ecb7a859cb471b5", null ],
     [ "RexxRoutine2", "rxunixsys_8cpp.html#a662e32ecda1a9dacc78878e821f8d3cf", null ],
-    [ "RexxRoutine2", "rxunixsys_8cpp.html#a1f724f13cbdbd4f1d3d7c3f850a78b83", null ],
     [ "RexxRoutine2", "rxunixsys_8cpp.html#a5c685bde8efa585f61b3db66e666a76b", null ],
     [ "RexxRoutine2", "rxunixsys_8cpp.html#a0bffcab7df1d79cbae4e6d533a6b9c06", null ],
     [ "RexxRoutine2", "rxunixsys_8cpp.html#ae02539828e38b58d80083661de0a5088", null ],

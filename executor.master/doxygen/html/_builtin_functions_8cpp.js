@@ -262,6 +262,8 @@ var _builtin_functions_8cpp =
     [ "SYMBOL_MAX", "_builtin_functions_8cpp.html#a5d426e730da55b642498295712eb0639", null ],
     [ "SYMBOL_MIN", "_builtin_functions_8cpp.html#a44199dbc886b089531b88df7fffc66fb", null ],
     [ "SYMBOL_name", "_builtin_functions_8cpp.html#a29eae165e30f5b08f21ca6f5a29389da", null ],
+    [ "TEXT_BIF_TARGET1", "_builtin_functions_8cpp.html#af5aef67a231127cc0a9cef3fe56918e7", null ],
+    [ "TEXT_BIF_TARGET2", "_builtin_functions_8cpp.html#a967617b1c1077f13961b58c67396210c", null ],
     [ "TIME_intime", "_builtin_functions_8cpp.html#ad48931431d49b97b6d5215d59ac80471", null ],
     [ "TIME_MAX", "_builtin_functions_8cpp.html#a0540485394df82add6b7c4f2137c7f21", null ],
     [ "TIME_MIN", "_builtin_functions_8cpp.html#ab287604687d62a91fdc2b510eb380ff1", null ],
@@ -426,5 +428,6 @@ var _builtin_functions_8cpp =
     [ "optionalStringArg", "_builtin_functions_8cpp.html#a975dc2d06e32eecfcc7069b3e51fd1af", null ],
     [ "requiredBigIntegerArg", "_builtin_functions_8cpp.html#ac002d77a0f4a9b4e12723d00fbc353d2", null ],
     [ "requiredIntegerArg", "_builtin_functions_8cpp.html#a60abcb7f18cbbd7c2a499dfbb8770175", null ],
-    [ "requiredStringArg", "_builtin_functions_8cpp.html#a48f79db57794ae48e157d646208ddc29", null ]
+    [ "requiredStringArg", "_builtin_functions_8cpp.html#a48f79db57794ae48e157d646208ddc29", null ],
+    [ "requiredTextArg", "_builtin_functions_8cpp.html#ab26cbbeb1d1500cc7e0cedd3df572448", null ]
 ];

@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_builtin_functions_8hpp.html',''); ini
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_builtin_functions_8hpp__dep__incl.svg" width="330" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_builtin_functions_8hpp__dep__incl.svg" width="326" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -102,10 +102,14 @@ Macros</h2></td></tr>
 <tr class="separator:ac6ca57a8950152282d6fc567382d3430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a078e00ee6a87d2df7fc83d6bf18c810c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a078e00ee6a87d2df7fc83d6bf18c810c">get_arg</a>(x,  n)&#160;&#160;&#160;arguments[x##_##n - 1]</td></tr>
 <tr class="separator:a078e00ee6a87d2df7fc83d6bf18c810c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8076adea21aef35ce705f34c979225d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#aa8076adea21aef35ce705f34c979225d">set_arg</a>(x,  n1,  n2)&#160;&#160;&#160;arguments[x##_##n1 - 1] = arguments[x##_##n2 - 1]</td></tr>
+<tr class="separator:aa8076adea21aef35ce705f34c979225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a777ec8085b23a0f55b4ffb12ef6f6df6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a777ec8085b23a0f55b4ffb12ef6f6df6">required_string</a>(x,  n)&#160;&#160;&#160;<a class="el" href="_builtin_functions_8hpp.html#a48f79db57794ae48e157d646208ddc29">requiredStringArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td></tr>
 <tr class="separator:a777ec8085b23a0f55b4ffb12ef6f6df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a8fcdf9417c4f4d34c50f65a10b041"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a07a8fcdf9417c4f4d34c50f65a10b041">optional_string</a>(x,  n)&#160;&#160;&#160;<a class="el" href="_builtin_functions_8hpp.html#a975dc2d06e32eecfcc7069b3e51fd1af">optionalStringArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td></tr>
 <tr class="separator:a07a8fcdf9417c4f4d34c50f65a10b041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3700beb654bc543d3319aad49ec939a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#ae3700beb654bc543d3319aad49ec939a">required_text</a>(x,  n)&#160;&#160;&#160;<a class="el" href="_builtin_functions_8cpp.html#ab26cbbeb1d1500cc7e0cedd3df572448">requiredTextArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td></tr>
+<tr class="separator:ae3700beb654bc543d3319aad49ec939a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54988f538b28774c0ff732aa49419daf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a54988f538b28774c0ff732aa49419daf">required_integer</a>(x,  n)&#160;&#160;&#160;<a class="el" href="_builtin_functions_8hpp.html#a60abcb7f18cbbd7c2a499dfbb8770175">requiredIntegerArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td></tr>
 <tr class="separator:a54988f538b28774c0ff732aa49419daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef7f5851e40012ffac16940f96265ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a3ef7f5851e40012ffac16940f96265ab">optional_integer</a>(x,  n)&#160;&#160;&#160;<a class="el" href="_builtin_functions_8hpp.html#aa4454b574ccda4391f8c04081e6fdd0e">optionalIntegerArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td></tr>
@@ -122,9 +126,9 @@ Macros</h2></td></tr>
 <tr class="separator:ae92dfeb952d4aa2fc8559a8dd2fe0715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb87c0c26897098d1364ae0171db97c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#acb87c0c26897098d1364ae0171db97c6">BUILTIN</a>(x)&#160;&#160;&#160;<a class="el" href="class_rexx_object.html">RexxObject</a> *builtin_function_##x ( <a class="el" href="class_rexx_activation.html">RexxActivation</a> * context, <a class="el" href="class_rexx_object.html">RexxObject</a> **arguments, size_t argcount, size_t named_argcount, <a class="el" href="class_rexx_expression_stack.html">RexxExpressionStack</a> *stack )</td></tr>
 <tr class="separator:acb87c0c26897098d1364ae0171db97c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9907c602c499c1f14cbedbb75a5b385a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a9907c602c499c1f14cbedbb75a5b385a">positive_integer</a>(n,  f,  p)&#160;&#160;&#160;if (n &lt;= 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#ae9542d5dd66c966fbf11ec07779ff2b1">Error_Incorrect_call_positive</a>, CHAR_##f, OREF_positional, p, n)</td></tr>
+<tr class="memitem:a9907c602c499c1f14cbedbb75a5b385a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a9907c602c499c1f14cbedbb75a5b385a">positive_integer</a>(n,  f,  p)&#160;&#160;&#160;<a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (n &lt;= 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#ae9542d5dd66c966fbf11ec07779ff2b1">Error_Incorrect_call_positive</a>, CHAR_##f, OREF_positional, p, n)</td></tr>
 <tr class="separator:a9907c602c499c1f14cbedbb75a5b385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ce6a282ed698d9e6c692b7e4db665e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a11ce6a282ed698d9e6c692b7e4db665e">nonnegative_integer</a>(n,  f,  p)&#160;&#160;&#160;if (n &lt; 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#a81113d03f82c3217747f8b97855e36a5">Error_Incorrect_call_nonnegative</a>, CHAR_##f, OREF_positional, p, n)</td></tr>
+<tr class="memitem:a11ce6a282ed698d9e6c692b7e4db665e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a11ce6a282ed698d9e6c692b7e4db665e">nonnegative_integer</a>(n,  f,  p)&#160;&#160;&#160;<a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (n &lt; 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#a81113d03f82c3217747f8b97855e36a5">Error_Incorrect_call_nonnegative</a>, CHAR_##f, OREF_positional, p, n)</td></tr>
 <tr class="separator:a11ce6a282ed698d9e6c692b7e4db665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae55a730fdba23a56f795bdb8159392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_builtin_functions_8hpp.html#a9ae55a730fdba23a56f795bdb8159392">ALPHANUM</a>&#160;&#160;&#160;&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&quot;</td></tr>
 <tr class="separator:a9ae55a730fdba23a56f795bdb8159392"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +163,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00114">114</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00117">117</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00106">106</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00109">109</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -219,7 +223,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00107">107</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00110">110</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +243,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00109">109</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00112">112</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -340,12 +344,12 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if (n &lt; 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#a81113d03f82c3217747f8b97855e36a5">Error_Incorrect_call_nonnegative</a>, CHAR_##f, OREF_positional, p, n)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (n &lt; 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#a81113d03f82c3217747f8b97855e36a5">Error_Incorrect_call_nonnegative</a>, CHAR_##f, OREF_positional, p, n)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00112">112</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00115">115</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +379,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00105">105</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00108">108</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +409,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00103">103</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00106">106</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +439,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00100">100</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00103">103</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +469,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00097">97</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00098">98</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -496,12 +500,12 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if (n &lt;= 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#ae9542d5dd66c966fbf11ec07779ff2b1">Error_Incorrect_call_positive</a>, CHAR_##f, OREF_positional, p, n)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (n &lt;= 0) <a class="el" href="_activity_manager_8hpp.html#ab3f38b1b392578a5c96e3669ada831f5">reportException</a>(<a class="el" href="_rexx_error_codes_8h.html#ae9542d5dd66c966fbf11ec07779ff2b1">Error_Incorrect_call_positive</a>, CHAR_##f, OREF_positional, p, n)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00111">111</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00114">114</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +535,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00102">102</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00105">105</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -561,7 +565,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00099">99</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00102">102</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -591,7 +595,73 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00096">96</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00097">97</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae3700beb654bc543d3319aad49ec939a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3700beb654bc543d3319aad49ec939a">&#9670;&nbsp;</a></span>required_text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define required_text</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="_builtin_functions_8cpp.html#ab26cbbeb1d1500cc7e0cedd3df572448">requiredTextArg</a>(x##_##n, arguments, argcount, CHAR_##x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00100">100</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8076adea21aef35ce705f34c979225d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8076adea21aef35ce705f34c979225d">&#9670;&nbsp;</a></span>set_arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define set_arg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n2&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;arguments[x##_##n1 - 1] = arguments[x##_##n2 - 1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8hpp_source.html#l00095">95</a> of file <a class="el" href="_builtin_functions_8hpp_source.html">BuiltinFunctions.hpp</a>.</p>
 
 </div>
 </div>
@@ -651,9 +721,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Nothing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00075">75</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00076">76</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00335">Error_Incorrect_call_maxarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00334">Error_Incorrect_call_minarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00336">Error_Incorrect_call_noarg</a>, <a class="el" href="_array_class_8cpp_source.html#l00082">min</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00375">Error_Incorrect_call_maxarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00374">Error_Incorrect_call_minarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00376">Error_Incorrect_call_noarg</a>, <a class="el" href="_array_class_8cpp_source.html#l00082">min</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +775,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An object that can be converted to a 64-bit value for pass-on to a native function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00283">283</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00309">309</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00338">Error_Incorrect_call_whole</a>, <a class="el" href="_numerics_8cpp_source.html#l00447">Numerics::int64Object()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00378">Error_Incorrect_call_whole</a>, <a class="el" href="_numerics_8cpp_source.html#l00447">Numerics::int64Object()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
 
 </div>
 </div>
@@ -759,9 +829,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An object that can be converted to an integer argument. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00216">216</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00242">242</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_numerics_8hpp_source.html#l00068">Numerics::ARGUMENT_DIGITS</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00338">Error_Incorrect_call_whole</a>, <a class="el" href="_rexx_core_8h_source.html#l00212">isOfClass</a>, <a class="el" href="_integer_class_8hpp_source.html#l00200">new_integer()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01403">RexxObject::requestNumber()</a>.</p>
+<p class="reference">References <a class="el" href="_numerics_8hpp_source.html#l00068">Numerics::ARGUMENT_DIGITS</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00378">Error_Incorrect_call_whole</a>, <a class="el" href="_rexx_core_8h_source.html#l00224">isOfClass</a>, <a class="el" href="_integer_class_8hpp_source.html#l00200">new_integer()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01555">RexxObject::requestNumber()</a>.</p>
 
 </div>
 </div>
@@ -813,9 +883,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The string representation of the argument. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00155">155</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00156">156</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00212">isOfClass</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, and <a class="el" href="_object_class_8cpp_source.html#l01172">RexxObject::requestString()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00224">isOfClass</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, and <a class="el" href="_object_class_8cpp_source.html#l01288">RexxObject::requestString()</a>.</p>
 
 </div>
 </div>
@@ -867,9 +937,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An object that can be converted to a 64-bit value for pass-on to a native function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00252">252</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00278">278</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00336">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00338">Error_Incorrect_call_whole</a>, <a class="el" href="_numerics_8cpp_source.html#l00447">Numerics::int64Object()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00376">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00378">Error_Incorrect_call_whole</a>, <a class="el" href="_numerics_8cpp_source.html#l00447">Numerics::int64Object()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, and <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>.</p>
 
 </div>
 </div>
@@ -921,9 +991,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An object that can be converted to an integer argument. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00184">184</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00210">210</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_numerics_8hpp_source.html#l00068">Numerics::ARGUMENT_DIGITS</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00336">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00338">Error_Incorrect_call_whole</a>, <a class="el" href="_rexx_core_8h_source.html#l00212">isOfClass</a>, <a class="el" href="_integer_class_8hpp_source.html#l00200">new_integer()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01403">RexxObject::requestNumber()</a>.</p>
+<p class="reference">References <a class="el" href="_numerics_8hpp_source.html#l00068">Numerics::ARGUMENT_DIGITS</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00376">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_error_codes_8h_source.html#l00378">Error_Incorrect_call_whole</a>, <a class="el" href="_rexx_core_8h_source.html#l00224">isOfClass</a>, <a class="el" href="_integer_class_8hpp_source.html#l00200">new_integer()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01555">RexxObject::requestNumber()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +1045,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The string representation of the argument. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00128">128</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_builtin_functions_8cpp_source.html#l00129">129</a> of file <a class="el" href="_builtin_functions_8cpp_source.html">BuiltinFunctions.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00336">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_core_8h_source.html#l00212">isOfClass</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01172">RexxObject::requestString()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00376">Error_Incorrect_call_noarg</a>, <a class="el" href="_rexx_core_8h_source.html#l00224">isOfClass</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_object_class_8cpp_source.html#l01288">RexxObject::requestString()</a>.</p>
 
 </div>
 </div>

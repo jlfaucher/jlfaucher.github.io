@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('rxwinsys_8cpp.html',''); initResizable
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for rxwinsys.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rxwinsys_8cpp__incl.svg" width="100%" height="504"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="rxwinsys_8cpp__incl.svg" width="100%" height="497"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -121,7 +121,7 @@ Macros</h2></td></tr>
 <tr class="separator:adada93f8bb67eb09cc09eaf8fa985c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d442f6d8ad1ae6a5e00c3bc1ea09d26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#a5d442f6d8ad1ae6a5e00c3bc1ea09d26">VALID_ROUTINE</a>&#160;&#160;&#160;0            /* Successful completion      */</td></tr>
 <tr class="separator:a5d442f6d8ad1ae6a5e00c3bc1ea09d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e90d24d2e874254636c77f97d91457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#aa7e90d24d2e874254636c77f97d91457">CHECKARG</a>(argexpctl,  argexpcth)&#160;&#160;&#160;   if ((argc &lt; argexpctl) || (argc &gt; argexpcth)) return <a class="el" href="rxwinsys_8cpp.html#a0b8dab23e0c8f6aa54b19ae8e5163afd">HandleArgError</a>(retstr, (argc &gt; argexpcth))</td></tr>
+<tr class="memitem:aa7e90d24d2e874254636c77f97d91457"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#aa7e90d24d2e874254636c77f97d91457">CHECKARG</a>(argexpctl,  argexpcth)&#160;&#160;&#160;   <a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> ((argc &lt; argexpctl) || (argc &gt; argexpcth)) return <a class="el" href="rxwinsys_8cpp.html#a0b8dab23e0c8f6aa54b19ae8e5163afd">HandleArgError</a>(retstr, (argc &gt; argexpcth))</td></tr>
 <tr class="separator:aa7e90d24d2e874254636c77f97d91457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c09713e3a14c7c05f47d67c13bbc993"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#a3c09713e3a14c7c05f47d67c13bbc993">RETC</a>(retcode)</td></tr>
 <tr class="separator:a3c09713e3a14c7c05f47d67c13bbc993"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,8 +212,6 @@ Functions</h2></td></tr>
 <tr class="separator:adc61f50ce845794946655e4e64a0b1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cd77c4a2df65c8fec4fd2d81260b0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#a6cd77c4a2df65c8fec4fd2d81260b0bb">pointer2string</a> (<a class="el" href="rexx_8h.html#a708cb82539d799d1ae9b3cb0b5f81d81">PRXSTRING</a> result, void *pointer)</td></tr>
 <tr class="separator:a6cd77c4a2df65c8fec4fd2d81260b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af10dd7888fc203e5e55113f2b00769b7"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#af10dd7888fc203e5e55113f2b00769b7">IsRunningNT</a> ()</td></tr>
-<tr class="separator:af10dd7888fc203e5e55113f2b00769b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7046e5c2e30d1af95378157f4133b37d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#a7046e5c2e30d1af95378157f4133b37d">pointer2string</a> (char *result, void *pointer)</td></tr>
 <tr class="separator:a7046e5c2e30d1af95378157f4133b37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896d02ed0b3faddb7e6227458bb4b9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rexx_8h.html#a64dfe004825692637e2075467179fcd9">RexxStringObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxwinsys_8cpp.html#a896d02ed0b3faddb7e6227458bb4b9f5">pointer2string</a> (<a class="el" href="oorexxapi_8h.html#ab18ec38dea09ac66fede33c4b93d488c">RexxMethodContext</a> *c, void *pointer)</td></tr>
@@ -377,7 +375,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01815">1815</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01792">1792</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +391,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01816">1816</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01793">1793</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +416,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;   if ((argc &lt; argexpctl) || (argc &gt; argexpcth)) return <a class="el" href="rxwinsys_8cpp.html#a0b8dab23e0c8f6aa54b19ae8e5163afd">HandleArgError</a>(retstr, (argc &gt; argexpcth))</td>
+          <td></td><td>&#160;&#160;&#160;   <a class="el" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> ((argc &lt; argexpctl) || (argc &gt; argexpcth)) return <a class="el" href="rxwinsys_8cpp.html#a0b8dab23e0c8f6aa54b19ae8e5163afd">HandleArgError</a>(retstr, (argc &gt; argexpcth))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -439,7 +437,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01819">1819</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01796">1796</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -501,14 +499,15 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">     { \</div>
 <div class="line">     ghk = NULL; \</div>
 <div class="line">     if (strstr(argum,<span class="stringliteral">&quot;MACHINE&quot;</span>)) ghk = HKEY_LOCAL_MACHINE; else \</div>
-<div class="line">     if (strstr(argum,&quot;CLASSES&quot;)) ghk = HKEY_CLASSES_ROOT; else \</div>
-<div class="line">     if (strstr(argum,&quot;CURRENT_USER&quot;)) ghk = HKEY_CURRENT_USER; else \</div>
-<div class="line">     if (strstr(argum,&quot;USERS&quot;)) ghk = HKEY_USERS; else \</div>
-<div class="line">     if (strstr(argum,&quot;PERFORMANCE&quot;)) ghk = HKEY_PERFORMANCE_DATA; else \</div>
-<div class="line">     if (strstr(argum,&quot;CURRENT_CONFIG&quot;)) ghk = HKEY_CURRENT_CONFIG; else \</div>
-<div class="line">     if (strstr(argum,&quot;DYN_DATA&quot;)) ghk = HKEY_DYN_DATA; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;CLASSES&quot;)) ghk = HKEY_CLASSES_ROOT; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;CURRENT_USER&quot;)) ghk = HKEY_CURRENT_USER; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;USERS&quot;)) ghk = HKEY_USERS; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;PERFORMANCE&quot;)) ghk = HKEY_PERFORMANCE_DATA; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;CURRENT_CONFIG&quot;)) ghk = HKEY_CURRENT_CONFIG; else \</div>
+<div class="line">     <a class="code" href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a> (strstr(argum,&quot;DYN_DATA&quot;)) ghk = HKEY_DYN_DATA; else \</div>
 <div class="line">     <a class="code" href="rxwinsys_8cpp.html#adc61f50ce845794946655e4e64a0b1ce">string2pointer</a>(argum, (<span class="keywordtype">void</span> **)&amp;ghk); \</div>
 <div class="line">}</div>
+<div class="ttc" id="acmdparse_8cpp_html_ab3454b1e7e7c4c0b732dfeb74a0c040f"><div class="ttname"><a href="cmdparse_8cpp.html#ab3454b1e7e7c4c0b732dfeb74a0c040f">if</a></div><div class="ttdeci">if(!yymsg) yymsg</div></div>
 <div class="ttc" id="arxwinsys_8cpp_html_adc61f50ce845794946655e4e64a0b1ce"><div class="ttname"><a href="rxwinsys_8cpp.html#adc61f50ce845794946655e4e64a0b1ce">string2pointer</a></div><div class="ttdeci">BOOL string2pointer(const char *string, void **pointer)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00224">rxwinsys.cpp:224</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00149">149</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
@@ -565,7 +564,7 @@ Variables</h2></td></tr>
 <div class="line">        index=5;                      \</div>
 <div class="line">    }                                 \</div>
 <div class="line">}</div>
-<div class="ttc" id="acmdparse_8cpp_html_ac765329451135abec74c45e1897abf26"><div class="ttname"><a href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="cmdparse_8cpp_source.html#l00383">cmdparse.cpp:383</a></div></div>
+<div class="ttc" id="acmdparse_8cpp_html_ac765329451135abec74c45e1897abf26"><div class="ttname"><a href="cmdparse_8cpp.html#ac765329451135abec74c45e1897abf26">type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="cmdparse_8cpp_source.html#l01888">cmdparse.cpp:1888</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00179">179</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
@@ -583,7 +582,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01799">1799</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01776">1776</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -599,7 +598,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01451">1451</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01440">1440</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -615,7 +614,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01448">1448</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01437">1437</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -631,7 +630,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01396">1396</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01385">1385</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +646,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01450">1450</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01439">1439</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -663,7 +662,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01447">1447</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01436">1436</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +678,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01395">1395</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01384">1384</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -695,7 +694,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01801">1801</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01778">1778</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -727,7 +726,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01811">1811</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01788">1788</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -743,7 +742,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01810">1810</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01787">1787</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +758,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01807">1807</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01784">1784</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +806,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01813">1813</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01790">1790</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -823,7 +822,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01802">1802</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01779">1779</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -839,7 +838,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01812">1812</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01789">1789</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -855,7 +854,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01804">1804</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01781">1781</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -871,7 +870,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01803">1803</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01780">1780</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -919,7 +918,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01800">1800</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01777">1777</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1062,7 @@ Variables</h2></td></tr>
 <div class="line">             shvb.shvret = 0; \</div>
 <div class="line">             if (<a class="code" href="_interpreter_a_p_i_8cpp.html#a229a7d29867d80217a65b76efa1bf09f">RexxVariablePool</a>(&amp;shvb) == <a class="code" href="rexxapidefs_8h.html#a3b7f6d1c46549bc61f77491b5824a102">RXSHV_BADN</a>) <a class="code" href="rxwinsys_8cpp.html#a3c09713e3a14c7c05f47d67c13bbc993">RETC</a>(retc); \</div>
 <div class="line">        }</div>
-<div class="ttc" id="a_interpreter_a_p_i_8cpp_html_a229a7d29867d80217a65b76efa1bf09f"><div class="ttname"><a href="_interpreter_a_p_i_8cpp.html#a229a7d29867d80217a65b76efa1bf09f">RexxVariablePool</a></div><div class="ttdeci">RexxReturnCode RexxEntry RexxVariablePool(PSHVBLOCK pshvblock)</div><div class="ttdef"><b>Definition:</b> <a href="_interpreter_a_p_i_8cpp_source.html#l00392">InterpreterAPI.cpp:392</a></div></div>
+<div class="ttc" id="a_interpreter_a_p_i_8cpp_html_a229a7d29867d80217a65b76efa1bf09f"><div class="ttname"><a href="_interpreter_a_p_i_8cpp.html#a229a7d29867d80217a65b76efa1bf09f">RexxVariablePool</a></div><div class="ttdeci">RexxReturnCode RexxEntry RexxVariablePool(PSHVBLOCK pshvblock)</div><div class="ttdef"><b>Definition:</b> <a href="_interpreter_a_p_i_8cpp_source.html#l00393">InterpreterAPI.cpp:393</a></div></div>
 <div class="ttc" id="arexxapidefs_8h_html_a3b7f6d1c46549bc61f77491b5824a102"><div class="ttname"><a href="rexxapidefs_8h.html#a3b7f6d1c46549bc61f77491b5824a102">RXSHV_BADN</a></div><div class="ttdeci">#define RXSHV_BADN</div><div class="ttdef"><b>Definition:</b> <a href="rexxapidefs_8h_source.html#l00116">rexxapidefs.h:116</a></div></div>
 <div class="ttc" id="arexxapidefs_8h_html_ab6272ae3efe7604608fa2b9a9d809b08"><div class="ttname"><a href="rexxapidefs_8h.html#ab6272ae3efe7604608fa2b9a9d809b08">RXSHV_SYSET</a></div><div class="ttdeci">#define RXSHV_SYSET</div><div class="ttdef"><b>Definition:</b> <a href="rexxapidefs_8h_source.html#l00100">rexxapidefs.h:100</a></div></div>
 <div class="ttc" id="arxwinsys_8cpp_html_a3c09713e3a14c7c05f47d67c13bbc993"><div class="ttname"><a href="rxwinsys_8cpp.html#a3c09713e3a14c7c05f47d67c13bbc993">RETC</a></div><div class="ttdeci">#define RETC(retcode)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00116">rxwinsys.cpp:116</a></div></div>
@@ -1084,7 +1083,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01818">1818</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01795">1795</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1116,7 +1115,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01817">1817</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01794">1794</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1147,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01797">1797</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01774">1774</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1163,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01798">1798</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01775">1775</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1185,7 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ae59e555854effc5f3f936f271ca3e15ba19c5aa8fcb5755c3ec2a835229ac6ba2"></a>youngest_record&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01821">1821</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01798">1798</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -1265,11 +1264,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01534">1534</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01511">1511</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01454">GetAllUserDesktopLocation()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01398">GetCurrentUserDesktopLocation()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01443">GetAllUserDesktopLocation()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01387">GetCurrentUserDesktopLocation()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1299,11 +1298,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01257">1257</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01246">1246</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1375,11 +1374,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01308">1308</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01297">1297</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1454,11 +1453,11 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if things should continue, or false if they should not continue.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If false is returned, it is likely that an exception has been raised. But, it may just be an OS system error. In all cases the value of rc should be returned to the interpreter. If an exception has not been raised, it is the system error code that needs to be returned to the ooRexx programmer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02475">2475</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02452">2452</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03777">argumentExists</a>, <a class="el" href="oorexxapi_8h_source.html#l03778">argumentOmitted</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01819">END_RECORD_OUT_OF_RANGE_MSG</a>, <a class="el" href="oorexxerrors_8h_source.html#l00465">Rexx_Error_Incorrect_method_noarg</a>, <a class="el" href="oorexxerrors_8h_source.html#l00461">Rexx_Error_Incorrect_method_user_defined</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01818">START_RECORD_OUT_OF_RANGE_MSG</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02175">wrongArgValueException()</a>.</p>
+<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03777">argumentExists</a>, <a class="el" href="oorexxapi_8h_source.html#l03778">argumentOmitted</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01796">END_RECORD_OUT_OF_RANGE_MSG</a>, <a class="el" href="oorexxerrors_8h_source.html#l00525">Rexx_Error_Incorrect_method_noarg</a>, <a class="el" href="oorexxerrors_8h_source.html#l00522">Rexx_Error_Incorrect_method_user_defined</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01795">START_RECORD_OUT_OF_RANGE_MSG</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02152">wrongArgValueException()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -1486,11 +1485,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if there is no open handle, or on success. If there is an error closing an open handle, then the system error code is returned. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02351">2351</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02328">2328</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02206">getCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02193">setCurrentHandle()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02183">getCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02170">setCurrentHandle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03290">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02622">RexxMethod2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03267">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02599">RexxMethod2()</a>.</p>
 
 </div>
 </div>
@@ -1556,9 +1555,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01183">1183</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01172">1172</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
 </div>
 </div>
@@ -1578,11 +1577,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01278">1278</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01267">1267</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1602,11 +1601,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01352">1352</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01341">1341</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1636,11 +1635,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01682">1682</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01659">1659</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01454">GetAllUserDesktopLocation()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01398">GetCurrentUserDesktopLocation()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01443">GetAllUserDesktopLocation()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01387">GetCurrentUserDesktopLocation()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -1674,7 +1673,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="rexxapidefs_8h_source.html#l00058">RXAUTOBUFLEN</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03668">WSCtrlSend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03645">WSCtrlSend()</a>.</p>
 
 </div>
 </div>
@@ -1728,9 +1727,9 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the message was found and formatted, false if not found or any other error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>On success, lpMsgBuf will have been allocated by FormatMessage(). This buffer must be freed by the caller with LocalFree(). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01894">1894</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01871">1871</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01944">getEventDescription()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01921">getEventDescription()</a>.</p>
 
 </div>
 </div>
@@ -1760,11 +1759,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01454">1454</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01443">1443</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01451">IDS_ALL_9x_DESKTOP</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01448">IDS_ALL_NT_DESKTOP</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01450">IDS_REGISTRY_KEY_ALL_9x_SHELLFOLDER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01447">IDS_REGISTRY_KEY_ALL_NT_SHELLFOLDER</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00260">IsRunningNT()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01437">IDS_ALL_NT_DESKTOP</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01436">IDS_REGISTRY_KEY_ALL_NT_SHELLFOLDER</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01534">AddPMDesktopIcon()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01682">DelPMDesktopIcon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01511">AddPMDesktopIcon()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01659">DelPMDesktopIcon()</a>.</p>
 
 </div>
 </div>
@@ -1792,11 +1791,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An event handle. It is not unexpected that this handle is NULL. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02206">2206</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02183">2183</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01799">HANDLE_ATTRIBUTE</a>, and <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01776">HANDLE_ATTRIBUTE</a>, and <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02351">closeEventLog()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02310">getOpenEventLog()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02328">closeEventLog()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02287">getOpenEventLog()</a>.</p>
 
 </div>
 </div>
@@ -1826,11 +1825,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01398">1398</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01387">1387</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01396">IDS_CURRENT_DESKTOP</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01395">IDS_REGISTRY_KEY_CURRENT_SHELLFOLDER</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01385">IDS_CURRENT_DESKTOP</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01384">IDS_REGISTRY_KEY_CURRENT_SHELLFOLDER</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01534">AddPMDesktopIcon()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01682">DelPMDesktopIcon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01511">AddPMDesktopIcon()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01659">DelPMDesktopIcon()</a>.</p>
 
 </div>
 </div>
@@ -1870,9 +1869,9 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Number of characters used to represent the binary data bytes, with 0 having the special meaning that there was no binary data in the event record. When 0 is returned, the actual size of the buffer is 1.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The buffer is allocated using LocalAlloc and must be freed using LocalFree. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02136">2136</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02113">2113</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -1917,11 +1916,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01944">1944</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01921">1921</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01894">findAndFormatDescription()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01838">lookupMessageFile()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01871">findAndFormatDescription()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01815">lookupMessageFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -1975,11 +1974,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number requested on success, or the negated system error code on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02382">2382</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02359">2359</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02310">getOpenEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01821">oldest_record</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01821">record_count</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01821">youngest_record</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02287">getOpenEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01798">oldest_record</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01798">record_count</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">youngest_record</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02663">RexxMethod2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02640">RexxMethod2()</a>.</p>
 
 </div>
 </div>
@@ -2008,9 +2007,9 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Allocated string naming the user.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The string is allocated using LocalAlloc and must be freed using LocalFree. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02078">2078</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02055">2055</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -2038,11 +2037,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current minimum buffer size. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02227">2227</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02204">2204</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01813">MIN_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01802">MIN_READ_BUFFER_ATTRIBUTE</a>, and <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01790">MIN_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01779">MIN_READ_BUFFER_ATTRIBUTE</a>, and <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02977">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02954">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -2106,11 +2105,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True indicates that the event log handle was opened by this function and should be closed by the caller. False indicates that the handle comes from the currentHandle attribute and should not be closed by the caller. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02310">2310</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02287">2287</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02206">getCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">WSEL_DEFAULT_SOURCE</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02183">getCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01775">WSEL_DEFAULT_SOURCE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02382">getEventLogNumber()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02719">RexxMethod2()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02772">RexxMethod3()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02359">getEventLogNumber()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02696">RexxMethod2()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02749">RexxMethod3()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -2150,11 +2149,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A HKEY resolved from hkParent, which could be the null value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00338">338</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00327">327</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00206">isHex()</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00224">string2pointer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00436">RexxMethod2()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00472">RexxMethod3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00425">RexxMethod2()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00461">RexxMethod3()</a>.</p>
 
 </div>
 </div>
@@ -2183,11 +2182,11 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The empty records array on success, a null object on error.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If NULLOBJECT is returned an exception has been raised. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02252">2252</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02229">2229</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01815">BAD_RECORD_ARRAY_MSG</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01800">RECORDS_ATTRIBUTE</a>, and <a class="el" href="oorexxerrors_8h_source.html#l00530">Rexx_Error_Execution_user_defined</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01792">BAD_RECORD_ARRAY_MSG</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01777">RECORDS_ATTRIBUTE</a>, and <a class="el" href="oorexxerrors_8h_source.html#l00603">Rexx_Error_Execution_user_defined</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -2268,7 +2267,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p class="">Prior to 4.0.0, this function was documented as a work around to use the WindowObject class when no WindowManager object had been instantiated. So for now it needs to stay. Does nothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04071">4071</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04048">4048</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>.</p>
 
@@ -2298,11 +2297,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02575">2575</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02552">2552</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="cmdparse_8cpp_source.html#l00383">type</a>.</p>
+<p class="reference">References <a class="el" href="cmdparse_8cpp_source.html#l01888">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02849">RexxMethod7()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02826">RexxMethod7()</a>.</p>
 
 </div>
 </div>
@@ -2332,30 +2331,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00206">206</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00338">getParentKeyHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00224">string2pointer()</a>.</p>
-
-</div>
-</div>
-<a id="af10dd7888fc203e5e55113f2b00769b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af10dd7888fc203e5e55113f2b00769b7">&#9670;&nbsp;</a></span>IsRunningNT()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOL IsRunningNT </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00260">260</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="windows_2_misc_system_8cpp_source.html#l00062">version_info</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01454">GetAllUserDesktopLocation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00327">getParentKeyHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00224">string2pointer()</a>.</p>
 
 </div>
 </div>
@@ -2375,11 +2351,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01367">1367</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01356">1356</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -2409,9 +2385,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04049">4049</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04026">4026</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00641">WSRegistryValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00630">WSRegistryValue()</a>.</p>
 
 </div>
 </div>
@@ -2463,9 +2439,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01838">1838</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01815">1815</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01944">getEventDescription()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01921">getEventDescription()</a>.</p>
 
 </div>
 </div>
@@ -2541,11 +2517,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02170">2170</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02147">2147</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02165">systemServiceException()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02142">systemServiceException()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02772">RexxMethod3()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l03010">RexxMethod5()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02749">RexxMethod3()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02987">RexxMethod5()</a>.</p>
 
 </div>
 </div>
@@ -2586,7 +2562,7 @@ Variables</h2></td></tr>
 <p>For now, 0 is returned for null rather than 0x00000000 because many, many places in the Windows specific classes test for 0 to detect error.</p>
 <p class="">This function should go away when the Windows classes are converted to use .Pointer for all pointer-sized data types. </p>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00293">293</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00282">282</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2620,7 +2596,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00316">pointer2string()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00370">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00472">RexxMethod3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00305">pointer2string()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00359">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00461">RexxMethod3()</a>.</p>
 
 </div>
 </div>
@@ -2659,7 +2635,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string object representing the pointer as either 0xffff1111 if not null or as 0 if null. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00316">316</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00305">305</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00244">pointer2string()</a>.</p>
 
@@ -2681,11 +2657,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01195">1195</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01184">1184</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01183">DDECallback()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01172">DDECallback()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01257">AddPMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01308">AddPMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01278">DeletePMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01352">DeletePMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01367">LeavePM()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01292">ShowPMGroup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01246">AddPMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01297">AddPMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01267">DeletePMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01341">DeletePMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01356">LeavePM()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01281">ShowPMGroup()</a>.</p>
 
 </div>
 </div>
@@ -2717,9 +2693,9 @@ Variables</h2></td></tr>
 <p class="">WindowsEventLog::init()</p>
 <p class="">The init() method for the WindowsEventLog object. Sets the object attributes to their default values. </p>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02590">2590</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02567">2567</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01801">INITCODE_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01810">MAX_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01813">MIN_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01802">MIN_READ_BUFFER_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01812">MIN_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01804">MIN_READ_MAX_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01803">MIN_READ_MIN_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01800">RECORDS_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02193">setCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01797">WSEL_DEFAULT_EVENTS_ARRAY_SIZE</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01778">INITCODE_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01787">MAX_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01790">MIN_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01779">MIN_READ_BUFFER_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01789">MIN_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01781">MIN_READ_MAX_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01780">MIN_READ_MIN_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01777">RECORDS_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02170">setCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01774">WSEL_DEFAULT_EVENTS_ARRAY_SIZE</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +2725,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00402">402</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00391">391</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2779,7 +2755,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00412">412</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00401">401</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2809,7 +2785,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00392">392</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00381">381</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2839,7 +2815,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00387">387</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00376">376</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2869,7 +2845,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00407">407</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00396">396</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2899,7 +2875,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00397">397</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00386">386</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2929,7 +2905,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00376">376</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00365">365</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -2959,7 +2935,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00370">370</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00359">359</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00244">pointer2string()</a>.</p>
 
@@ -2994,9 +2970,9 @@ Variables</h2></td></tr>
 <p class="">If we have an open open event log handle, closes it.</p>
 <dl class="section return"><dt>Returns</dt><dd>Returns 0 on success and if there is no open handle to begin with. If there is an error attempting to close an open handle, the OS system error code is returned. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03290">3290</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03267">3267</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02351">closeEventLog()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02328">closeEventLog()</a>.</p>
 
 </div>
 </div>
@@ -3029,9 +3005,9 @@ Variables</h2></td></tr>
 <p class="">Returns the current setting for the minimum read buffer. The value returned is the size of the buffer in KiloBytes.</p>
 <dl class="section return"><dt>Returns</dt><dd>The minimum size allocation size of the event log read buffer buffer, in KiloBytes. E.g., if the minimum is set at a 4096 byte buffer, then the return will be 4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02977">2977</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02954">2954</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02227">getMinimumReadBufferSize()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02204">getMinimumReadBufferSize()</a>.</p>
 
 </div>
 </div>
@@ -3063,9 +3039,9 @@ Variables</h2></td></tr>
 <p class="">WindowsEventLog::uninit()</p>
 <p class="">Uninit method for the class. Simply makes sure, if we have an open handle, it gets closed. </p>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03300">3300</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03277">3277</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02351">closeEventLog()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02328">closeEventLog()</a>.</p>
 
 </div>
 </div>
@@ -3115,9 +3091,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02949">2949</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02926">2926</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01810">MAX_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01802">MIN_READ_BUFFER_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01812">MIN_READ_KB_COUNT</a>, and <a class="el" href="oorexxerrors_8h_source.html#l00419">Rexx_Error_Invalid_argument_range</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01787">MAX_READ_KB_COUNT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01779">MIN_READ_BUFFER_ATTRIBUTE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01789">MIN_READ_KB_COUNT</a>, and <a class="el" href="oorexxerrors_8h_source.html#l00469">Rexx_Error_Invalid_argument_range</a>.</p>
 
 </div>
 </div>
@@ -3159,7 +3135,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00381">381</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00370">370</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>.</p>
 
@@ -3213,9 +3189,9 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An OS return code, 0 on success, the system error code on failure.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The passed in array is emptied before the log names are added. On error, the array will also be empty. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03234">3234</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03211">3211</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00053">MAX_REGISTRY_KEY_SIZE</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02186">wrongClassException()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00053">MAX_REGISTRY_KEY_SIZE</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02163">wrongClassException()</a>.</p>
 
 </div>
 </div>
@@ -3279,9 +3255,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The record number of the first recorded event. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02685">2685</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02662">2662</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02382">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01821">oldest_record</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02359">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">oldest_record</a>.</p>
 
 </div>
 </div>
@@ -3345,9 +3321,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The record number of the last recorded event. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02707">2707</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02684">2684</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02382">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01821">youngest_record</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02359">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">youngest_record</a>.</p>
 
 </div>
 </div>
@@ -3411,9 +3387,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The count of records in the log. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02663">2663</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02640">2640</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02382">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01821">record_count</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02359">getEventLogNumber()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">record_count</a>.</p>
 
 </div>
 </div>
@@ -3470,9 +3446,9 @@ Variables</h2></td></tr>
 <p class="">Queries the event log to see if it is full.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if event log is full, othewise false. False is also returned if any system error happens. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02719">2719</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02696">2696</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02310">getOpenEventLog()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02287">getOpenEventLog()</a>.</p>
 
 </div>
 </div>
@@ -3536,9 +3512,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The event logging service will open the Application log if the specified log (the source arg) can not be found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02622">2622</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02599">2599</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02351">closeEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02193">setCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">WSEL_DEFAULT_SOURCE</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02328">closeEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02170">setCurrentHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01775">WSEL_DEFAULT_SOURCE</a>.</p>
 
 </div>
 </div>
@@ -3603,9 +3579,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>O on success, otherwise the Windows system error code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00436">436</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00425">425</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00338">getParentKeyHandle()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00327">getParentKeyHandle()</a>.</p>
 
 </div>
 </div>
@@ -3681,9 +3657,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00472">472</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00461">461</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03778">argumentOmitted</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00338">getParentKeyHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00244">pointer2string()</a>.</p>
+<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03778">argumentOmitted</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00327">getParentKeyHandle()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l00244">pointer2string()</a>.</p>
 
 </div>
 </div>
@@ -3761,9 +3737,9 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, the system error code otherwise.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Note for the ooRexx docs: The backup file can not exist on a remote machine. In particular, you can not use a backup file that is on a network mapped drive. The clear operation will fail with rc 3 'The system cannot find the path specified.' </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02772">2772</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02749">2749</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02310">getOpenEventLog()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02170">outOfMemoryException()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02287">getOpenEventLog()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02147">outOfMemoryException()</a>.</p>
 
 </div>
 </div>
@@ -3841,7 +3817,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03307">3307</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03284">3284</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -3945,9 +3921,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, the system error code on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03010">3010</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02987">2987</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02475">checkReadRecordsArgs()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00179">GET_TYPE_INDEX</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02136">getEventBinaryData()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01944">getEventDescription()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02078">getEventUserName()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02227">getMinimumReadBufferSize()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02310">getOpenEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02252">getRecordArray()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01811">MAX_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00050">MAX_TIME_DATE</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02170">outOfMemoryException()</a>, <a class="el" href="oorexxerrors_8h_source.html#l00530">Rexx_Error_Execution_user_defined</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01817">TOO_SMALLBUFFER_MSG</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">WSEL_DEFAULT_SOURCE</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02452">checkReadRecordsArgs()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00179">GET_TYPE_INDEX</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02113">getEventBinaryData()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01921">getEventDescription()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02055">getEventUserName()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02204">getMinimumReadBufferSize()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02287">getOpenEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02229">getRecordArray()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01788">MAX_READ_BUFFER</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00050">MAX_TIME_DATE</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02147">outOfMemoryException()</a>, <a class="el" href="oorexxerrors_8h_source.html#l00603">Rexx_Error_Execution_user_defined</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01794">TOO_SMALLBUFFER_MSG</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01775">WSEL_DEFAULT_SOURCE</a>.</p>
 
 </div>
 </div>
@@ -4076,9 +4052,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, system error code on failure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02849">2849</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02826">2826</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03777">argumentExists</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02575">isGoodEventType()</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="cmdparse_8cpp_source.html#l00383">type</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01798">WSEL_DEFAULT_SOURCE</a>.</p>
+<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l03777">argumentExists</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02552">isGoodEventType()</a>, <a class="el" href="rexx_8h_source.html#l00147">NULLOBJECT</a>, <a class="el" href="cmdparse_8cpp_source.html#l01888">type</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01775">WSEL_DEFAULT_SOURCE</a>.</p>
 
 </div>
 </div>
@@ -4116,11 +4092,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02193">2193</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02170">2170</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01799">HANDLE_ATTRIBUTE</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01776">HANDLE_ATTRIBUTE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02351">closeEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02590">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02622">RexxMethod2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02328">closeEventLog()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l02567">RexxMethod0()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02599">RexxMethod2()</a>.</p>
 
 </div>
 </div>
@@ -4150,11 +4126,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01292">1292</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01281">1281</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01195">ProgmanCmd()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01184">ProgmanCmd()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01712">WSProgManager()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l01689">WSProgManager()</a>.</p>
 
 </div>
 </div>
@@ -4188,7 +4164,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00206">isHex()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00338">getParentKeyHandle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l00327">getParentKeyHandle()</a>.</p>
 
 </div>
 </div>
@@ -4218,11 +4194,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02165">2165</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02142">2142</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00404">Rexx_Error_System_service_user_defined</a>.</p>
+<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00453">Rexx_Error_System_service_user_defined</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02170">outOfMemoryException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02147">outOfMemoryException()</a>.</p>
 
 </div>
 </div>
@@ -4264,9 +4240,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02181">2181</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02158">2158</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02175">wrongArgValueException()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l02152">wrongArgValueException()</a>.</p>
 
 </div>
 </div>
@@ -4308,11 +4284,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02175">2175</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02152">2152</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00475">Rexx_Error_Incorrect_method_list</a>.</p>
+<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00535">Rexx_Error_Incorrect_method_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02475">checkReadRecordsArgs()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02181">wrongArgValueException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l02452">checkReadRecordsArgs()</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l02158">wrongArgValueException()</a>.</p>
 
 </div>
 </div>
@@ -4356,11 +4332,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02186">2186</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l02163">2163</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00506">Rexx_Error_Incorrect_method_noclass</a>.</p>
+<p class="reference">References <a class="el" href="oorexxerrors_8h_source.html#l00567">Rexx_Error_Incorrect_method_noclass</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03234">RexxMethod1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rxwinsys_8cpp_source.html#l03211">RexxMethod1()</a>.</p>
 
 </div>
 </div>
@@ -4408,7 +4384,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03961">3961</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03938">3938</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
@@ -4458,7 +4434,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03850">3850</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03827">3827</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00162">GET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00138">RET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
@@ -4508,7 +4484,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03668">3668</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03645">3645</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00095">dwordPtrToRexx()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00162">GET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00059">MSG_TIMEOUT_OPTS</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
@@ -4558,7 +4534,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03314">3314</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l03291">3291</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00162">GET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00055">MSG_TIMEOUT</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00059">MSG_TIMEOUT_OPTS</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00138">RET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00123">RETERR</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="rexxapidefs_8h_source.html#l00058">RXAUTOBUFLEN</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
@@ -4608,9 +4584,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01712">1712</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01689">1689</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01534">AddPMDesktopIcon()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01257">AddPMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01308">AddPMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01278">DeletePMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01352">DeletePMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01682">DelPMDesktopIcon()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01367">LeavePM()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01292">ShowPMGroup()</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l01511">AddPMDesktopIcon()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01246">AddPMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01297">AddPMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01267">DeletePMGroup()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01341">DeletePMItem()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01659">DelPMDesktopIcon()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l01356">LeavePM()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, and <a class="el" href="rxwinsys_8cpp_source.html#l01281">ShowPMGroup()</a>.</p>
 
 </div>
 </div>
@@ -4658,7 +4634,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01029">1029</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l01018">1018</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00149">GET_HKEY</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00138">RET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, and <a class="el" href="rexx_8h_source.html#l00163">_CONSTRXSTRING::strptr</a>.</p>
 
@@ -4708,7 +4684,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00511">511</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00500">500</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00162">GET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00149">GET_HKEY</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00138">RET_HANDLE</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00165">SET_VARIABLE</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
@@ -4758,9 +4734,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00641">641</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l00630">630</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00149">GET_HKEY</a>, <a class="el" href="rxwinsys_8cpp_source.html#l04049">Little2BigEndian()</a>, <a class="el" href="unix_2hostemu_8cpp_source.html#l00095">pTail</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00123">RETERR</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="_registration_a_p_i_8cpp_source.html#l00553">RexxAllocateMemory()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00392">RexxVariablePool()</a>, <a class="el" href="rexxapidefs_8h_source.html#l00116">RXSHV_BADN</a>, <a class="el" href="rexxapidefs_8h_source.html#l00100">RXSHV_SYSET</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00165">SET_VARIABLE</a>, <a class="el" href="rexx_8h_source.html#l00210">_SHVBLOCK::shvcode</a>, <a class="el" href="rexx_8h_source.html#l00206">_SHVBLOCK::shvname</a>, <a class="el" href="rexx_8h_source.html#l00208">_SHVBLOCK::shvnamelen</a>, <a class="el" href="rexx_8h_source.html#l00205">_SHVBLOCK::shvnext</a>, <a class="el" href="rexx_8h_source.html#l00211">_SHVBLOCK::shvret</a>, <a class="el" href="rexx_8h_source.html#l00207">_SHVBLOCK::shvvalue</a>, <a class="el" href="rexx_8h_source.html#l00209">_SHVBLOCK::shvvaluelen</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00049">STR_BUFFER</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, <a class="el" href="rexx_8h_source.html#l00162">_CONSTRXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
+<p class="reference">References <a class="el" href="rxwinsys_8cpp_source.html#l00111">CHECKARG</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00149">GET_HKEY</a>, <a class="el" href="rxwinsys_8cpp_source.html#l04026">Little2BigEndian()</a>, <a class="el" href="unix_2hostemu_8cpp_source.html#l00096">pTail</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00116">RETC</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00123">RETERR</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00131">RETVAL</a>, <a class="el" href="_registration_a_p_i_8cpp_source.html#l00553">RexxAllocateMemory()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00393">RexxVariablePool()</a>, <a class="el" href="rexxapidefs_8h_source.html#l00116">RXSHV_BADN</a>, <a class="el" href="rexxapidefs_8h_source.html#l00100">RXSHV_SYSET</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00165">SET_VARIABLE</a>, <a class="el" href="rexx_8h_source.html#l00210">_SHVBLOCK::shvcode</a>, <a class="el" href="rexx_8h_source.html#l00206">_SHVBLOCK::shvname</a>, <a class="el" href="rexx_8h_source.html#l00208">_SHVBLOCK::shvnamelen</a>, <a class="el" href="rexx_8h_source.html#l00205">_SHVBLOCK::shvnext</a>, <a class="el" href="rexx_8h_source.html#l00211">_SHVBLOCK::shvret</a>, <a class="el" href="rexx_8h_source.html#l00207">_SHVBLOCK::shvvalue</a>, <a class="el" href="rexx_8h_source.html#l00209">_SHVBLOCK::shvvaluelen</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00049">STR_BUFFER</a>, <a class="el" href="rexx_8h_source.html#l00157">_RXSTRING::strlength</a>, <a class="el" href="rexx_8h_source.html#l00162">_CONSTRXSTRING::strlength</a>, and <a class="el" href="rexx_8h_source.html#l00158">_RXSTRING::strptr</a>.</p>
 
 </div>
 </div>
@@ -4790,17 +4766,17 @@ Variables</h2></td></tr>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="ttc" id="aoorexxapi_8h_html_a631b22840291b7d860a64ca824ad43eb"><div class="ttname"><a href="oorexxapi_8h.html#a631b22840291b7d860a64ca824ad43eb">REXX_CLASSIC_ROUTINE</a></div><div class="ttdeci">#define REXX_CLASSIC_ROUTINE(n, e)</div><div class="ttdef"><b>Definition:</b> <a href="oorexxapi_8h_source.html#l00192">oorexxapi.h:192</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a2bf76a4c885462297fa33be50621f23d"><div class="ttname"><a href="rxwinsys_8cpp.html#a2bf76a4c885462297fa33be50621f23d">InstWinSysFuncs</a></div><div class="ttdeci">size_t RexxEntry InstWinSysFuncs(const char *funcname, size_t argc, CONSTRXSTRING *argv, const char *qname, RXSTRING *retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04071">rxwinsys.cpp:4071</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a3f2d72d2d742fcd1b1304b1416e42fc1"><div class="ttname"><a href="rxwinsys_8cpp.html#a3f2d72d2d742fcd1b1304b1416e42fc1">WSRegistryFile</a></div><div class="ttdeci">size_t RexxEntry WSRegistryFile(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l01029">rxwinsys.cpp:1029</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a553d6a324d3fe6f2ba079a73b3d3d938"><div class="ttname"><a href="rxwinsys_8cpp.html#a553d6a324d3fe6f2ba079a73b3d3d938">WSProgManager</a></div><div class="ttdeci">size_t RexxEntry WSProgManager(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l01712">rxwinsys.cpp:1712</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a64769fa0a2d68f0f904e1b9cc10b33f7"><div class="ttname"><a href="rxwinsys_8cpp.html#a64769fa0a2d68f0f904e1b9cc10b33f7">WSCtrlSend</a></div><div class="ttdeci">size_t RexxEntry WSCtrlSend(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03668">rxwinsys.cpp:3668</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a6891bcb6f438ab4b0c39b0bbafeda798"><div class="ttname"><a href="rxwinsys_8cpp.html#a6891bcb6f438ab4b0c39b0bbafeda798">WSRegistryKey</a></div><div class="ttdeci">size_t RexxEntry WSRegistryKey(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00511">rxwinsys.cpp:511</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a7b8407ca317e5b94252f24c3d4278634"><div class="ttname"><a href="rxwinsys_8cpp.html#a7b8407ca317e5b94252f24c3d4278634">WSCtrlMenu</a></div><div class="ttdeci">size_t RexxEntry WSCtrlMenu(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03850">rxwinsys.cpp:3850</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_a8f9110a61183846d9639d03fcc472e6d"><div class="ttname"><a href="rxwinsys_8cpp.html#a8f9110a61183846d9639d03fcc472e6d">WSRegistryValue</a></div><div class="ttdeci">size_t RexxEntry WSRegistryValue(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00641">rxwinsys.cpp:641</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_ab25c779b25621573c1ae0bbfd588d988"><div class="ttname"><a href="rxwinsys_8cpp.html#ab25c779b25621573c1ae0bbfd588d988">WSClipboard</a></div><div class="ttdeci">size_t RexxEntry WSClipboard(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03961">rxwinsys.cpp:3961</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_ac4c60d2bbdb36c3210f28ecbb571e06c"><div class="ttname"><a href="rxwinsys_8cpp.html#ac4c60d2bbdb36c3210f28ecbb571e06c">WSCtrlWindow</a></div><div class="ttdeci">size_t RexxEntry WSCtrlWindow(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03314">rxwinsys.cpp:3314</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a2bf76a4c885462297fa33be50621f23d"><div class="ttname"><a href="rxwinsys_8cpp.html#a2bf76a4c885462297fa33be50621f23d">InstWinSysFuncs</a></div><div class="ttdeci">size_t RexxEntry InstWinSysFuncs(const char *funcname, size_t argc, CONSTRXSTRING *argv, const char *qname, RXSTRING *retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04048">rxwinsys.cpp:4048</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a3f2d72d2d742fcd1b1304b1416e42fc1"><div class="ttname"><a href="rxwinsys_8cpp.html#a3f2d72d2d742fcd1b1304b1416e42fc1">WSRegistryFile</a></div><div class="ttdeci">size_t RexxEntry WSRegistryFile(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l01018">rxwinsys.cpp:1018</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a553d6a324d3fe6f2ba079a73b3d3d938"><div class="ttname"><a href="rxwinsys_8cpp.html#a553d6a324d3fe6f2ba079a73b3d3d938">WSProgManager</a></div><div class="ttdeci">size_t RexxEntry WSProgManager(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l01689">rxwinsys.cpp:1689</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a64769fa0a2d68f0f904e1b9cc10b33f7"><div class="ttname"><a href="rxwinsys_8cpp.html#a64769fa0a2d68f0f904e1b9cc10b33f7">WSCtrlSend</a></div><div class="ttdeci">size_t RexxEntry WSCtrlSend(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03645">rxwinsys.cpp:3645</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a6891bcb6f438ab4b0c39b0bbafeda798"><div class="ttname"><a href="rxwinsys_8cpp.html#a6891bcb6f438ab4b0c39b0bbafeda798">WSRegistryKey</a></div><div class="ttdeci">size_t RexxEntry WSRegistryKey(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00500">rxwinsys.cpp:500</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a7b8407ca317e5b94252f24c3d4278634"><div class="ttname"><a href="rxwinsys_8cpp.html#a7b8407ca317e5b94252f24c3d4278634">WSCtrlMenu</a></div><div class="ttdeci">size_t RexxEntry WSCtrlMenu(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03827">rxwinsys.cpp:3827</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_a8f9110a61183846d9639d03fcc472e6d"><div class="ttname"><a href="rxwinsys_8cpp.html#a8f9110a61183846d9639d03fcc472e6d">WSRegistryValue</a></div><div class="ttdeci">size_t RexxEntry WSRegistryValue(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l00630">rxwinsys.cpp:630</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_ab25c779b25621573c1ae0bbfd588d988"><div class="ttname"><a href="rxwinsys_8cpp.html#ab25c779b25621573c1ae0bbfd588d988">WSClipboard</a></div><div class="ttdeci">size_t RexxEntry WSClipboard(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03938">rxwinsys.cpp:3938</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_ac4c60d2bbdb36c3210f28ecbb571e06c"><div class="ttname"><a href="rxwinsys_8cpp.html#ac4c60d2bbdb36c3210f28ecbb571e06c">WSCtrlWindow</a></div><div class="ttdeci">size_t RexxEntry WSCtrlWindow(const char *funcname, size_t argc, CONSTRXSTRING argv[], const char *qname, PRXSTRING retstr)</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l03291">rxwinsys.cpp:3291</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04078">4078</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04055">4055</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -4847,7 +4823,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aoorexxapi_8h_html_a3b7812132db743fbc8ed27b9a77136cd"><div class="ttname"><a href="oorexxapi_8h.html#a3b7812132db743fbc8ed27b9a77136cd">REXX_METHOD</a></div><div class="ttdeci">#define REXX_METHOD(n, e)</div><div class="ttdef"><b>Definition:</b> <a href="oorexxapi_8h_source.html#l00211">oorexxapi.h:211</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04093">4093</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04070">4070</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>
@@ -4875,10 +4851,10 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aoorexxapi_8h_html_a2fdcd4caf670858f48646a72cde7e620"><div class="ttname"><a href="oorexxapi_8h.html#a2fdcd4caf670858f48646a72cde7e620">REXX_INTERPRETER_4_0_0</a></div><div class="ttdeci">#define REXX_INTERPRETER_4_0_0</div><div class="ttdef"><b>Definition:</b> <a href="oorexxapi_8h_source.html#l00216">oorexxapi.h:216</a></div></div>
 <div class="ttc" id="aoorexxapi_8h_html_ad0c9dd799a5ddb561472ac8968ea3705"><div class="ttname"><a href="oorexxapi_8h.html#ad0c9dd799a5ddb561472ac8968ea3705">STANDARD_PACKAGE_HEADER</a></div><div class="ttdeci">#define STANDARD_PACKAGE_HEADER</div><div class="ttdef"><b>Definition:</b> <a href="oorexxapi_8h_source.html#l00230">oorexxapi.h:230</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_aea6576dd77c5ea1e5f74559f9d8e2c72"><div class="ttname"><a href="rxwinsys_8cpp.html#aea6576dd77c5ea1e5f74559f9d8e2c72">rxwinsys_functions</a></div><div class="ttdeci">RexxRoutineEntry rxwinsys_functions[]</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04078">rxwinsys.cpp:4078</a></div></div>
-<div class="ttc" id="arxwinsys_8cpp_html_af95a969590a9d7254ba1bd81dee2fb7a"><div class="ttname"><a href="rxwinsys_8cpp.html#af95a969590a9d7254ba1bd81dee2fb7a">rxwinsys_methods</a></div><div class="ttdeci">RexxMethodEntry rxwinsys_methods[]</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04093">rxwinsys.cpp:4093</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_aea6576dd77c5ea1e5f74559f9d8e2c72"><div class="ttname"><a href="rxwinsys_8cpp.html#aea6576dd77c5ea1e5f74559f9d8e2c72">rxwinsys_functions</a></div><div class="ttdeci">RexxRoutineEntry rxwinsys_functions[]</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04055">rxwinsys.cpp:4055</a></div></div>
+<div class="ttc" id="arxwinsys_8cpp_html_af95a969590a9d7254ba1bd81dee2fb7a"><div class="ttname"><a href="rxwinsys_8cpp.html#af95a969590a9d7254ba1bd81dee2fb7a">rxwinsys_methods</a></div><div class="ttdeci">RexxMethodEntry rxwinsys_methods[]</div><div class="ttdef"><b>Definition:</b> <a href="rxwinsys_8cpp_source.html#l04070">rxwinsys.cpp:4070</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04124">4124</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxwinsys_8cpp_source.html#l04101">4101</a> of file <a class="el" href="rxwinsys_8cpp_source.html">rxwinsys.cpp</a>.</p>
 
 </div>
 </div>

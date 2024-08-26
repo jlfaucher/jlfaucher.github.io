@@ -653,10 +653,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment"> * @return The length of the converted number.</span></div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="class_numerics.html#aef53a2d2ba6881f2e2f4bd2a022529c7">  572</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#aef53a2d2ba6881f2e2f4bd2a022529c7">Numerics::formatWholeNumber</a>(<a class="code" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a> integer, <span class="keywordtype">char</span> *dest)</div>
+<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="class_numerics.html#aef53a2d2ba6881f2e2f4bd2a022529c7">  572</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#aef53a2d2ba6881f2e2f4bd2a022529c7">Numerics::formatWholeNumber</a>(<a class="code" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a> <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a>, <span class="keywordtype">char</span> *dest)</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;{</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="comment">// zero? this is pretty easy</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordflow">if</span> (integer == 0)</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> == 0)</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    {</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        strcpy(dest, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -669,13 +669,13 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordtype">size_t</span> index = <span class="keyword">sizeof</span>(buffer);</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="comment">// negative number?  copy a negative sign, and take the abs value</span></div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">if</span> (integer &lt; 0)</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &lt; 0)</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    {</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        *dest++ = <span class="charliteral">&#39;-&#39;</span>;</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="comment">// work from an unsigned version that can hold all of the digits</span></div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="comment">// we need to use a version we can negate first, then add the</span></div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="comment">// digit back in</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordtype">size_t</span> working = (size_t)(-(integer + 1));</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordtype">size_t</span> working = (size_t)(-(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> + 1));</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        working++;      <span class="comment">// undoes the +1 above</span></div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        sign = 1;   <span class="comment">// added in to the length</span></div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
@@ -690,11 +690,11 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    }</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    {</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="keywordflow">while</span> (integer &gt; 0)</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &gt; 0)</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        {</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            <span class="comment">// get the digit and reduce the size of the integer</span></div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">int</span> digit = (int)(integer % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            integer = integer / 10;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">int</span> digit = (int)(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> = <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> / 10;</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            <span class="comment">// store the digit</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            buffer[--index] = digit;</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        }</div>
@@ -718,10 +718,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment"> * @return The length of the converted number.</span></div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno"><a class="line" href="class_numerics.html#abe2ec7a9dc94dfdfdb4abb70f09700a4">  637</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#abe2ec7a9dc94dfdfdb4abb70f09700a4">Numerics::normalizeWholeNumber</a>(<a class="code" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a> integer, <span class="keywordtype">char</span> *dest)</div>
+<div class="line"><a name="l00637"></a><span class="lineno"><a class="line" href="class_numerics.html#abe2ec7a9dc94dfdfdb4abb70f09700a4">  637</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#abe2ec7a9dc94dfdfdb4abb70f09700a4">Numerics::normalizeWholeNumber</a>(<a class="code" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a> <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a>, <span class="keywordtype">char</span> *dest)</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;{</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="comment">// zero? this is pretty easy</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordflow">if</span> (integer == 0)</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> == 0)</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    {</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        *dest = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -733,12 +733,12 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordtype">size_t</span> index = <span class="keyword">sizeof</span>(buffer);</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="comment">// negative number?  copy a negative sign, and take the abs value</span></div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordflow">if</span> (integer &lt; 0)</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &lt; 0)</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    {</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="comment">// work from an unsigned version that can hold all of the digits</span></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="comment">// we need to use a version we can negate first, then add the</span></div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="comment">// digit back in</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <span class="keywordtype">size_t</span> working = (size_t)(-(integer + 1));</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <span class="keywordtype">size_t</span> working = (size_t)(-(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> + 1));</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        working++;      <span class="comment">// undoes the +1 above</span></div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keywordflow">while</span> (working &gt; 0)</div>
@@ -752,11 +752,11 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordflow">while</span> (integer &gt; 0)</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &gt; 0)</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        {</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            <span class="comment">// get the digit and reduce the size of the integer</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            <span class="keywordtype">int</span> digit = (int)(integer % 10);</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            integer = integer / 10;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            <span class="keywordtype">int</span> digit = (int)(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> % 10);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> = <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> / 10;</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            <span class="comment">// store the digit</span></div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            buffer[--index] = digit;</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        }</div>
@@ -779,10 +779,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="comment"> * @return The length of the converted number.</span></div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00698"></a><span class="lineno"><a class="line" href="class_numerics.html#a31ab5564c60361207689726f754f314c">  698</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a31ab5564c60361207689726f754f314c">Numerics::formatStringSize</a>(<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> integer, <span class="keywordtype">char</span> *dest)</div>
+<div class="line"><a name="l00698"></a><span class="lineno"><a class="line" href="class_numerics.html#a31ab5564c60361207689726f754f314c">  698</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a31ab5564c60361207689726f754f314c">Numerics::formatStringSize</a>(<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a>, <span class="keywordtype">char</span> *dest)</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;{</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="comment">// zero? this is pretty easy</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordflow">if</span> (integer == 0)</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> == 0)</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    {</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        strcpy((<span class="keywordtype">char</span> *)dest, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -793,11 +793,11 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordtype">char</span> buffer[24];</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keywordtype">size_t</span> index = <span class="keyword">sizeof</span>(buffer);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keywordflow">while</span> (integer &gt; 0)</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &gt; 0)</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    {</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="comment">// get the digit and reduce the size of the integer</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <span class="keywordtype">int</span> digit = (int)(integer % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        integer = integer / 10;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        <span class="keywordtype">int</span> digit = (int)(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> = <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> / 10;</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="comment">// store the digit</span></div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        buffer[--index] = digit;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    }</div>
@@ -820,10 +820,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment"> * @return The length of the converted number.</span></div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno"><a class="line" href="class_numerics.html#a932777203e0459120d04c8a5be40eded">  739</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a932777203e0459120d04c8a5be40eded">Numerics::formatInt64</a>(<a class="code" href="windows_2rexxapitypes_8h.html#a414156feea104f8f75b4ed9e3121b2f6">int64_t</a> integer, <span class="keywordtype">char</span> *dest)</div>
+<div class="line"><a name="l00739"></a><span class="lineno"><a class="line" href="class_numerics.html#a932777203e0459120d04c8a5be40eded">  739</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a932777203e0459120d04c8a5be40eded">Numerics::formatInt64</a>(<a class="code" href="windows_2rexxapitypes_8h.html#a414156feea104f8f75b4ed9e3121b2f6">int64_t</a> <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a>, <span class="keywordtype">char</span> *dest)</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;{</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="comment">// zero? this is pretty easy</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordflow">if</span> (integer == 0)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> == 0)</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    {</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        strcpy((<span class="keywordtype">char</span> *)dest, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -836,13 +836,13 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordtype">size_t</span> sign = 0;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="comment">// negative number?  copy a negative sign, and take the abs value</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">if</span> (integer &lt; 0)</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &lt; 0)</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    {</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        *dest++ = <span class="charliteral">&#39;-&#39;</span>;</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="comment">// work from an unsigned version that can hold all of the digits</span></div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="comment">// we need to use a version we can negate first, then add the</span></div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="comment">// digit back in</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> working = (<a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)(-(integer + 1));</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> working = (<a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)(-(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> + 1));</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        working++;      <span class="comment">// undoes the +1 above</span></div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        sign = 1;   <span class="comment">// added in to the length</span></div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160; </div>
@@ -857,11 +857,11 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    }</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    {</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keywordflow">while</span> (integer &gt; 0)</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keywordflow">while</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &gt; 0)</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        {</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            <span class="comment">// get the digit and reduce the size of the integer</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            <span class="keywordtype">int</span> digit = (int)(integer % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;            integer = integer / 10;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            <span class="keywordtype">int</span> digit = (int)(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;            <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> = <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> / 10;</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            <span class="comment">// store the digit</span></div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            buffer[--index] = digit;</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        }</div>
@@ -885,10 +885,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment"> * @return The length of the converted number.</span></div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="class_numerics.html#a735fcf160d2a4c0bb57d2247fd6338e8">  804</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a735fcf160d2a4c0bb57d2247fd6338e8">Numerics::formatUnsignedInt64</a>(<a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> integer, <span class="keywordtype">char</span> *dest)</div>
+<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="class_numerics.html#a735fcf160d2a4c0bb57d2247fd6338e8">  804</a></span>&#160;<a class="code" href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a> <a class="code" href="class_numerics.html#a735fcf160d2a4c0bb57d2247fd6338e8">Numerics::formatUnsignedInt64</a>(<a class="code" href="windows_2rexxapitypes_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a>, <span class="keywordtype">char</span> *dest)</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;{</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="comment">// zero? this is pretty easy</span></div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <span class="keywordflow">if</span> (integer == 0)</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> == 0)</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    {</div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        strcpy(dest, <span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordflow">return</span> 1;</div>
@@ -899,11 +899,11 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <span class="keywordtype">char</span> buffer[32];</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keywordtype">size_t</span> index = <span class="keyword">sizeof</span>(buffer);</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordflow">while</span> (integer &gt; 0)</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> &gt; 0)</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    {</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="comment">// get the digit and reduce the size of the integer</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        <span class="keywordtype">int</span> digit = (int)(integer % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        integer = integer / 10;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        <span class="keywordtype">int</span> digit = (int)(<a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> % 10) + <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> = <a class="code" href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a> / 10;</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="comment">// store the digit</span></div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        buffer[--index] = digit;</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    }</div>
@@ -975,19 +975,19 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="comment">// to be just zero, so force it that way</span></div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">if</span> (p == 0)</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    {</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_string_class_8hpp.html#a99b9d2b62fa4976699b56b8781b4b8a3">new_string</a>(<span class="stringliteral">&quot;0x0&quot;</span>);</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_string_class_8hpp.html#a540f85fd2f7445d342f05f6c8545e60a">new_string</a>(<span class="stringliteral">&quot;0x0&quot;</span>);</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    }</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160; </div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="comment">// format this into a chracter string</span></div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <span class="keywordtype">char</span> temp[32];</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="comment">// unfortunately, the formation of %p is not consistent across platforms.</span></div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="comment">// We first format this directly, and if the value does not be</span></div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    sprintf(temp, <span class="stringliteral">&quot;%p&quot;</span>, p);</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    snprintf(temp, <span class="keyword">sizeof</span> temp, <span class="stringliteral">&quot;%p&quot;</span>, p);</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    <span class="keywordflow">if</span> (temp[1] != <span class="charliteral">&#39;x&#39;</span>)</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    {</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        sprintf(temp, <span class="stringliteral">&quot;0x%p&quot;</span>, p);</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        snprintf(temp, <span class="keyword">sizeof</span> temp, <span class="stringliteral">&quot;0x%p&quot;</span>, p);</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    }</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_string_class_8hpp.html#a99b9d2b62fa4976699b56b8781b4b8a3">new_string</a>(temp);</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_string_class_8hpp.html#a540f85fd2f7445d342f05f6c8545e60a">new_string</a>(temp);</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160; </div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;}</div>
 <div class="ttc" id="a_integer_class_8hpp_html"><div class="ttname"><a href="_integer_class_8hpp.html">IntegerClass.hpp</a></div></div>
@@ -999,9 +999,10 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="ttc" id="a_number_string_class_8hpp_html_accb2e2be5b29cd37ebe3b348d2f45429"><div class="ttname"><a href="_number_string_class_8hpp.html#accb2e2be5b29cd37ebe3b348d2f45429">new_numberstringFromStringsize</a></div><div class="ttdeci">RexxNumberString * new_numberstringFromStringsize(stringsize_t n)</div><div class="ttdef"><b>Definition:</b> <a href="_number_string_class_8hpp_source.html#l00286">NumberStringClass.hpp:286</a></div></div>
 <div class="ttc" id="a_numerics_8hpp_html"><div class="ttname"><a href="_numerics_8hpp.html">Numerics.hpp</a></div></div>
 <div class="ttc" id="a_rexx_core_8h_html"><div class="ttname"><a href="_rexx_core_8h.html">RexxCore.h</a></div></div>
-<div class="ttc" id="a_rexx_core_8h_html_a0c14cacf0f22234601be368950b6eb8b"><div class="ttname"><a href="_rexx_core_8h.html#a0c14cacf0f22234601be368950b6eb8b">isInteger</a></div><div class="ttdeci">bool isInteger(RexxObject *o)</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00270">RexxCore.h:270</a></div></div>
-<div class="ttc" id="a_rexx_core_8h_html_a181a36438ba4535dd7d22ab63239d1e1"><div class="ttname"><a href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a></div><div class="ttdeci">#define OREF_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00060">RexxCore.h:60</a></div></div>
-<div class="ttc" id="a_string_class_8hpp_html_a99b9d2b62fa4976699b56b8781b4b8a3"><div class="ttname"><a href="_string_class_8hpp.html#a99b9d2b62fa4976699b56b8781b4b8a3">new_string</a></div><div class="ttdeci">RexxString * new_string(const char *s, stringsizeB_t bl, sizeC_t cl=-1)</div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00568">StringClass.hpp:568</a></div></div>
+<div class="ttc" id="a_rexx_core_8h_html_a0c14cacf0f22234601be368950b6eb8b"><div class="ttname"><a href="_rexx_core_8h.html#a0c14cacf0f22234601be368950b6eb8b">isInteger</a></div><div class="ttdeci">bool isInteger(RexxObject *o)</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00282">RexxCore.h:282</a></div></div>
+<div class="ttc" id="a_rexx_core_8h_html_a181a36438ba4535dd7d22ab63239d1e1"><div class="ttname"><a href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a></div><div class="ttdeci">#define OREF_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00061">RexxCore.h:61</a></div></div>
+<div class="ttc" id="a_string_class_8hpp_html_a540f85fd2f7445d342f05f6c8545e60a"><div class="ttname"><a href="_string_class_8hpp.html#a540f85fd2f7445d342f05f6c8545e60a">new_string</a></div><div class="ttdeci">RexxString * new_string(const char *s, stringsize_t l)</div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00600">StringClass.hpp:600</a></div></div>
+<div class="ttc" id="a_text_class_8cpp_html_ab972e75d9b549e40f4365bca610ce7e1"><div class="ttname"><a href="_text_class_8cpp.html#ab972e75d9b549e40f4365bca610ce7e1">integer</a></div><div class="ttdeci">ssize_t integer(RexxObject *obj, const char *errorMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_text_class_8cpp_source.html#l00289">TextClass.cpp:289</a></div></div>
 <div class="ttc" id="aclass_numeric_settings_html"><div class="ttname"><a href="class_numeric_settings.html">NumericSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00049">Numerics.hpp:50</a></div></div>
 <div class="ttc" id="aclass_numeric_settings_html_a26e1dd747bd1a5d307f23311e250d155"><div class="ttname"><a href="class_numeric_settings.html#a26e1dd747bd1a5d307f23311e250d155">NumericSettings::NumericSettings</a></div><div class="ttdeci">NumericSettings()</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00124">Numerics.cpp:124</a></div></div>
 <div class="ttc" id="aclass_numeric_settings_html_a3d42c2a82bbf6dc076abc99f1966c3c1"><div class="ttname"><a href="class_numeric_settings.html#a3d42c2a82bbf6dc076abc99f1966c3c1">NumericSettings::form</a></div><div class="ttdeci">bool form</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00055">Numerics.hpp:55</a></div></div>
@@ -1019,7 +1020,7 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="ttc" id="aclass_numerics_html_a601c3a3bb95d0d6351395fc0fffcaf58"><div class="ttname"><a href="class_numerics.html#a601c3a3bb95d0d6351395fc0fffcaf58">Numerics::int64Object</a></div><div class="ttdeci">static RexxObject * int64Object(RexxObject *source)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00447">Numerics.cpp:447</a></div></div>
 <div class="ttc" id="aclass_numerics_html_a66e0feb62e79e53f8424bd3f5f2cb7a9"><div class="ttname"><a href="class_numerics.html#a66e0feb62e79e53f8424bd3f5f2cb7a9">Numerics::DEFAULT_FORM</a></div><div class="ttdeci">static const bool DEFAULT_FORM</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00081">Numerics.hpp:81</a></div></div>
 <div class="ttc" id="aclass_numerics_html_a6d71f6a07240bef67416c620a250c631"><div class="ttname"><a href="class_numerics.html#a6d71f6a07240bef67416c620a250c631">Numerics::MAX_EXPONENT</a></div><div class="ttdeci">static const wholenumber_t MAX_EXPONENT</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00064">Numerics.hpp:64</a></div></div>
-<div class="ttc" id="aclass_numerics_html_a72ab39ddc61fba4709ff837f92fb1209"><div class="ttname"><a href="class_numerics.html#a72ab39ddc61fba4709ff837f92fb1209">Numerics::settings</a></div><div class="ttdeci">static NumericSettings * settings</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00150">Numerics.hpp:150</a></div></div>
+<div class="ttc" id="aclass_numerics_html_a72ab39ddc61fba4709ff837f92fb1209"><div class="ttname"><a href="class_numerics.html#a72ab39ddc61fba4709ff837f92fb1209">Numerics::settings</a></div><div class="ttdeci">static NumericSettings * settings</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00142">Numerics.hpp:142</a></div></div>
 <div class="ttc" id="aclass_numerics_html_a735fcf160d2a4c0bb57d2247fd6338e8"><div class="ttname"><a href="class_numerics.html#a735fcf160d2a4c0bb57d2247fd6338e8">Numerics::formatUnsignedInt64</a></div><div class="ttdeci">static size_t formatUnsignedInt64(uint64_t integer, char *dest)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00804">Numerics.cpp:804</a></div></div>
 <div class="ttc" id="aclass_numerics_html_a7fbbab68a2a8673abafcea30f9a0ae2d"><div class="ttname"><a href="class_numerics.html#a7fbbab68a2a8673abafcea30f9a0ae2d">Numerics::objectToUnsignedInt64</a></div><div class="ttdeci">static bool objectToUnsignedInt64(RexxObject *o, uint64_t &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00483">Numerics.cpp:483</a></div></div>
 <div class="ttc" id="aclass_numerics_html_a932777203e0459120d04c8a5be40eded"><div class="ttname"><a href="class_numerics.html#a932777203e0459120d04c8a5be40eded">Numerics::formatInt64</a></div><div class="ttdeci">static size_t formatInt64(int64_t integer, char *dest)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00739">Numerics.cpp:739</a></div></div>
@@ -1029,7 +1030,7 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="ttc" id="aclass_numerics_html_aacbaa37da66a09939def0301f954153e"><div class="ttname"><a href="class_numerics.html#aacbaa37da66a09939def0301f954153e">Numerics::int64ToObject</a></div><div class="ttdeci">static RexxObject * int64ToObject(int64_t v)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00140">Numerics.cpp:140</a></div></div>
 <div class="ttc" id="aclass_numerics_html_aaedf9ca613710b977c7b088738e17011"><div class="ttname"><a href="class_numerics.html#aaedf9ca613710b977c7b088738e17011">Numerics::FORM_SCIENTIFIC</a></div><div class="ttdeci">static const bool FORM_SCIENTIFIC</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00076">Numerics.hpp:76</a></div></div>
 <div class="ttc" id="aclass_numerics_html_aaf300b4832f736986d38599698569fee"><div class="ttname"><a href="class_numerics.html#aaf300b4832f736986d38599698569fee">Numerics::DEFAULT_FUZZ</a></div><div class="ttdeci">static const size_t DEFAULT_FUZZ</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00079">Numerics.hpp:79</a></div></div>
-<div class="ttc" id="aclass_numerics_html_ab5b3355d223b539d9ef9095a72504e66"><div class="ttname"><a href="class_numerics.html#ab5b3355d223b539d9ef9095a72504e66">Numerics::defaultSettings</a></div><div class="ttdeci">static NumericSettings defaultSettings</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00151">Numerics.hpp:151</a></div></div>
+<div class="ttc" id="aclass_numerics_html_ab5b3355d223b539d9ef9095a72504e66"><div class="ttname"><a href="class_numerics.html#ab5b3355d223b539d9ef9095a72504e66">Numerics::defaultSettings</a></div><div class="ttdeci">static NumericSettings defaultSettings</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00143">Numerics.hpp:143</a></div></div>
 <div class="ttc" id="aclass_numerics_html_abc4c24499d7fb1aea6b5849b2a7afcb6"><div class="ttname"><a href="class_numerics.html#abc4c24499d7fb1aea6b5849b2a7afcb6">Numerics::FORM_ENGINEERING</a></div><div class="ttdeci">static const bool FORM_ENGINEERING</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8hpp_source.html#l00077">Numerics.hpp:77</a></div></div>
 <div class="ttc" id="aclass_numerics_html_abe2ec7a9dc94dfdfdb4abb70f09700a4"><div class="ttname"><a href="class_numerics.html#abe2ec7a9dc94dfdfdb4abb70f09700a4">Numerics::normalizeWholeNumber</a></div><div class="ttdeci">static size_t normalizeWholeNumber(wholenumber_t integer, char *dest)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00637">Numerics.cpp:637</a></div></div>
 <div class="ttc" id="aclass_numerics_html_ac0c6ae326109022a7d5c1a47739f3dfb"><div class="ttname"><a href="class_numerics.html#ac0c6ae326109022a7d5c1a47739f3dfb">Numerics::objectToIntptr</a></div><div class="ttdeci">static bool objectToIntptr(RexxObject *source, intptr_t &amp;result)</div><div class="ttdef"><b>Definition:</b> <a href="_numerics_8cpp_source.html#l00549">Numerics.cpp:549</a></div></div>
@@ -1048,9 +1049,9 @@ $(document).ready(function(){initNavTree('_numerics_8cpp_source.html',''); initR
 <div class="ttc" id="aclass_rexx_number_string_html"><div class="ttname"><a href="class_rexx_number_string.html">RexxNumberString</a></div><div class="ttdef"><b>Definition:</b> <a href="_number_string_class_8hpp_source.html#l00093">NumberStringClass.hpp:93</a></div></div>
 <div class="ttc" id="aclass_rexx_number_string_html_a52c96c6fd4497aaa28ea2e6dea43a897"><div class="ttname"><a href="class_rexx_number_string.html#a52c96c6fd4497aaa28ea2e6dea43a897">RexxNumberString::int64Value</a></div><div class="ttdeci">bool int64Value(int64_t *result, stringsize_t numDigits)</div><div class="ttdef"><b>Definition:</b> <a href="_number_string_class_8cpp_source.html#l00934">NumberStringClass.cpp:934</a></div></div>
 <div class="ttc" id="aclass_rexx_number_string_html_a5bb23e83ca75299dc8a03b3a33878dbb"><div class="ttname"><a href="class_rexx_number_string.html#a5bb23e83ca75299dc8a03b3a33878dbb">RexxNumberString::unsignedInt64Value</a></div><div class="ttdeci">bool unsignedInt64Value(uint64_t *result, stringsize_t numDigits)</div><div class="ttdef"><b>Definition:</b> <a href="_number_string_class_8cpp_source.html#l01034">NumberStringClass.cpp:1034</a></div></div>
-<div class="ttc" id="aclass_rexx_object_html"><div class="ttname"><a href="class_rexx_object.html">RexxObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8hpp_source.html#l00323">ObjectClass.hpp:323</a></div></div>
-<div class="ttc" id="aclass_rexx_object_html_a20869e1f8e747705dbdc9d4e828e366a"><div class="ttname"><a href="class_rexx_object.html#a20869e1f8e747705dbdc9d4e828e366a">RexxObject::numberString</a></div><div class="ttdeci">RexxNumberString * numberString()</div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8cpp_source.html#l01065">ObjectClass.cpp:1065</a></div></div>
-<div class="ttc" id="aclass_rexx_string_html"><div class="ttname"><a href="class_rexx_string.html">RexxString</a></div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00121">StringClass.hpp:121</a></div></div>
+<div class="ttc" id="aclass_rexx_object_html"><div class="ttname"><a href="class_rexx_object.html">RexxObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8hpp_source.html#l00335">ObjectClass.hpp:335</a></div></div>
+<div class="ttc" id="aclass_rexx_object_html_a20869e1f8e747705dbdc9d4e828e366a"><div class="ttname"><a href="class_rexx_object.html#a20869e1f8e747705dbdc9d4e828e366a">RexxObject::numberString</a></div><div class="ttdeci">RexxNumberString * numberString()</div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8cpp_source.html#l01138">ObjectClass.cpp:1138</a></div></div>
+<div class="ttc" id="aclass_rexx_string_html"><div class="ttname"><a href="class_rexx_string.html">RexxString</a></div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00122">StringClass.hpp:122</a></div></div>
 <div class="ttc" id="arexx_8h_html_aa0199524ada35d939fa20d4625d27d55"><div class="ttname"><a href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a></div><div class="ttdeci">ssize_t wholenumber_t</div><div class="ttdef"><b>Definition:</b> <a href="rexx_8h_source.html#l00230">rexx.h:230</a></div></div>
 <div class="ttc" id="arexx_8h_html_aebaaee111319541a721e954c64e4423c"><div class="ttname"><a href="rexx_8h.html#aebaaee111319541a721e954c64e4423c">stringsize_t</a></div><div class="ttdeci">size_t stringsize_t</div><div class="ttdef"><b>Definition:</b> <a href="rexx_8h_source.html#l00228">rexx.h:228</a></div></div>
 <div class="ttc" id="aunix_2rexxplatformdefs_8h_html_a4b8971e411b88166747d2a3c2425eaee"><div class="ttname"><a href="unix_2rexxplatformdefs_8h.html#a4b8971e411b88166747d2a3c2425eaee">__INT64_C</a></div><div class="ttdeci">#define __INT64_C(c)</div><div class="ttdef"><b>Definition:</b> <a href="unix_2rexxplatformdefs_8h_source.html#l00050">unix/rexxplatformdefs.h:50</a></div></div>

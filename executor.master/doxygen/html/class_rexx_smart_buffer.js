@@ -14,7 +14,7 @@ var class_rexx_smart_buffer =
     [ "operator new", "class_rexx_smart_buffer.html#ad45afa2af1d29d480d7b4ac899e32201", null ],
     [ "operator new", "class_rexx_smart_buffer.html#aa261128c0168b6a3fb9bf5aefeff887c", null ],
     [ "setBuffer", "class_rexx_smart_buffer.html#a7c24ed26e905a847aedf7c3a8a53174b", null ],
-    [ "space", "class_rexx_smart_buffer.html#a6ebad6dd4fcfa09225208db6fef7f508", null ],
+    [ "space", "class_rexx_smart_buffer.html#a97a175fd7597550270450ab94e002dce", null ],
     [ "buffer", "class_rexx_smart_buffer.html#a07d0aca15706d72148d9a053bce4aacf", null ],
     [ "current", "class_rexx_smart_buffer.html#aed251dea2155ef80590a6dffe82b4174", null ]
 ];

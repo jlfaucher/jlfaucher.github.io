@@ -80,8 +80,7 @@ $(document).ready(function(){initNavTree('windows_2_misc_system_8cpp.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">windows/MiscSystem.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -114,17 +113,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af9a313e54a0316e425d88d8c8d1e307b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windows_2_misc_system_8cpp.html#af9a313e54a0316e425d88d8c8d1e307b">which_system_is_running</a> ()</td></tr>
-<tr class="separator:af9a313e54a0316e425d88d8c8d1e307b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb05da6f4257709e94ab0f17d6fff6c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windows_2_misc_system_8cpp.html#afbb05da6f4257709e94ab0f17d6fff6c">WinExceptionFilter</a> (int xCode)</td></tr>
 <tr class="separator:afbb05da6f4257709e94ab0f17d6fff6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49ed118f54f942a6aa479232d8de9a8"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windows_2_misc_system_8cpp.html#ab49ed118f54f942a6aa479232d8de9a8">RexxSetProcessMessages</a> (BOOL turnOn)</td></tr>
 <tr class="separator:ab49ed118f54f942a6aa479232d8de9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0433fb1c906371af070782c15cb8e86a"><td class="memItemLeft" align="right" valign="top">static OSVERSIONINFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="windows_2_misc_system_8cpp.html#a0433fb1c906371af070782c15cb8e86a">version_info</a> ={0}</td></tr>
-<tr class="separator:a0433fb1c906371af070782c15cb8e86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4fa905ef786b6e5f30f6685bd4cb8404"></a>
@@ -139,7 +131,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00162">162</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00105">105</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -163,30 +155,9 @@ Variables</h2></td></tr>
 <p class="">However, it is now also used to turn off processing Windows messages in a special case situation. See the SysSemaphore::waitHandle() comments for more info. This is done on a per-thread basis, <a class="el" href="windows_2_misc_system_8cpp.html#ab49ed118f54f942a6aa479232d8de9a8">RexxSetProcessMessages()</a> must be invoked while executing on the proper thread.</p>
 <dl class="section return"><dt>Returns</dt><dd>TRUE always. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00194">194</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00137">137</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="windows_2_sys_semaphore_8hpp_source.html#l00110">SysSemaphore::setNoMessageLoop()</a>.</p>
-
-</div>
-</div>
-<a id="af9a313e54a0316e425d88d8c8d1e307b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a313e54a0316e425d88d8c8d1e307b">&#9670;&nbsp;</a></span>which_system_is_running()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int which_system_is_running </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00065">65</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="windows_2_misc_system_8cpp_source.html#l00062">version_info</a>.</p>
+<p class="reference">References <a class="el" href="windows_2_sys_semaphore_8hpp_source.html#l00126">SysSemaphore::setNoMessageLoop()</a>.</p>
 
 </div>
 </div>
@@ -206,34 +177,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00153">153</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0433fb1c906371af070782c15cb8e86a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0433fb1c906371af070782c15cb8e86a">&#9670;&nbsp;</a></span>version_info</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OSVERSIONINFO version_info ={0}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00062">62</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="windows_2_a_p_i_service_8cpp_source.html#l00115">isAtLeastVersion()</a>, <a class="el" href="rxwinsys_8cpp_source.html#l00260">IsRunningNT()</a>, and <a class="el" href="windows_2_misc_system_8cpp_source.html#l00065">which_system_is_running()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="windows_2_misc_system_8cpp_source.html#l00096">96</a> of file <a class="el" href="windows_2_misc_system_8cpp_source.html">windows/MiscSystem.cpp</a>.</p>
 
 </div>
 </div>

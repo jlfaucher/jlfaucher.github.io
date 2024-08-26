@@ -42,6 +42,7 @@ var hierarchy =
     [ "_SEMCONT", "struct___s_e_m_c_o_n_t.html", null ],
     [ "_SHVBLOCK", "struct___s_h_v_b_l_o_c_k.html", null ],
     [ "_SORT_MEM", "struct___s_o_r_t___m_e_m.html", null ],
+    [ "_ValueDescriptor", "struct___value_descriptor.html", null ],
     [ "ActivationFrame", "class_activation_frame.html", [
       [ "InternalActivationFrame", "class_internal_activation_frame.html", null ],
       [ "NativeActivationFrame", "class_native_activation_frame.html", null ],
@@ -69,6 +70,7 @@ var hierarchy =
     [ "BaseSortComparator", "class_base_sort_comparator.html", [
       [ "WithSortComparator", "class_with_sort_comparator.html", null ]
     ] ],
+    [ "BitSet< TMaxBits >", "class_bit_set.html", null ],
     [ "CallbackDispatcher", "class_callback_dispatcher.html", [
       [ "CommandHandlerDispatcher", "class_command_handler_dispatcher.html", null ],
       [ "ContextCommandHandlerDispatcher", "class_context_command_handler_dispatcher.html", null ],
@@ -81,6 +83,8 @@ var hierarchy =
     [ "CallContext", "struct_call_context.html", null ],
     [ "CallContextInterface", "struct_call_context_interface.html", null ],
     [ "CalloutBlock", "class_callout_block.html", null ],
+    [ "ConcurrencyInfos", "struct_concurrency_infos.html", null ],
+    [ "ConcurrencyInfosCollectorInitializer", "class_concurrency_infos_collector_initializer.html", null ],
     [ "copyElementParm", "structcopy_element_parm.html", null ],
     [ "DataQueue", "class_data_queue.html", null ],
     [ "DeadObject", "class_dead_object.html", null ],
@@ -89,6 +93,8 @@ var hierarchy =
     [ "ExitContext", "struct_exit_context.html", null ],
     [ "ExitContextInterface", "struct_exit_context_interface.html", null ],
     [ "ExitHandler", "class_exit_handler.html", null ],
+    [ "FlagSet< TEnum, TMaxFlags >", "class_flag_set.html", null ],
+    [ "FlagSet< TEnum, TMaxFlags >::FlagSetReference", "class_flag_set_1_1_flag_set_reference.html", null ],
     [ "GlobalProtectedObject", "class_global_protected_object.html", null ],
     [ "GuardLock", "class_guard_lock.html", null ],
     [ "InstanceApiContext", "class_instance_api_context.html", null ],
@@ -274,7 +280,8 @@ var hierarchy =
           [ "RexxClass", "class_rexx_class.html", [
             [ "RexxIntegerClass", "class_rexx_integer_class.html", null ],
             [ "RexxMutableBufferClass", "class_rexx_mutable_buffer_class.html", null ],
-            [ "RexxSupplierClass", "class_rexx_supplier_class.html", null ]
+            [ "RexxSupplierClass", "class_rexx_supplier_class.html", null ],
+            [ "RexxTextClass", "class_rexx_text_class.html", null ]
           ] ],
           [ "RexxClosure", "class_rexx_closure.html", null ],
           [ "RexxContext", "class_rexx_context.html", null ],
@@ -302,6 +309,7 @@ var hierarchy =
           [ "RexxSupplier", "class_rexx_supplier.html", null ],
           [ "RexxText", "class_rexx_text.html", null ],
           [ "StackFrameClass", "class_stack_frame_class.html", null ],
+          [ "Unicode", "class_unicode.html", null ],
           [ "WeakReference", "class_weak_reference.html", null ]
         ] ],
         [ "RexxSmartBuffer", "class_rexx_smart_buffer.html", null ],
@@ -383,6 +391,6 @@ var hierarchy =
     [ "UnsafeBlock", "class_unsafe_block.html", null ],
     [ "UseVariable", "class_use_variable.html", null ],
     [ "Utilities", "class_utilities.html", null ],
-    [ "ValueDescriptor", "struct_value_descriptor.html", null ],
+    [ "yyalloc", "unionyyalloc.html", null ],
     [ "YYSTYPE", "union_y_y_s_t_y_p_e.html", null ]
 ];

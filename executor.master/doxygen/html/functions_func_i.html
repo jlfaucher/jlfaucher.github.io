@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 : <a class="el" href="class_memory_segment_set.html#ab96d8b6b8db0e1a501b06807b15b4150">MemorySegmentSet</a>
 </li>
 <li>insertSet()
-: <a class="el" href="classautomaton.html#a556b0c7cd9c9f27a5d92daf8d1ec2859">automaton</a>
+: <a class="el" href="classautomaton.html#a4c9ac209887045d8ef2ba19d2f6d5784">automaton</a>
 </li>
 <li>inSharedObjectStorage()
 : <a class="el" href="class_rexx_memory.html#a50b408dd86d2400b1c0ecbe5dfbe5391">RexxMemory</a>
@@ -352,6 +352,15 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>is()
 : <a class="el" href="class_memory_segment_set.html#aba1bf702bafdf996cb19ffc1fb241aa0">MemorySegmentSet</a>
 </li>
+<li>isAbstract()
+: <a class="el" href="class_class_directive.html#a821792fece4a8bb7b730e1c99cd8ac84">ClassDirective</a>
+, <a class="el" href="class_rexx_class.html#a32cb259b4200e431571e2a23fcb2fdd7">RexxClass</a>
+, <a class="el" href="class_rexx_method.html#a6d0aea6340e1496502a795b739aa2426">RexxMethod</a>
+</li>
+<li>isAbstractRexx()
+: <a class="el" href="class_rexx_class.html#a7ab839104608a36f04c50f47f133840f">RexxClass</a>
+, <a class="el" href="class_rexx_method.html#a85896edd82898e5d9e17fcc0e4d29dd8">RexxMethod</a>
+</li>
 <li>isActive()
 : <a class="el" href="class_interpreter.html#a8e57a8bf343a29f2d457ff1f6dcb9572">Interpreter</a>
 , <a class="el" href="class_rexx_activity.html#a1cac6c268a85c8fd38b4dc79ea6d2455">RexxActivity</a>
@@ -364,16 +373,25 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="class_rexx_variable_base.html#ab096394e2700872f15e77265ef43fe46">RexxVariableBase</a>
 </li>
 <li>isASCII()
-: <a class="el" href="class_rexx_string.html#a28fea6ec6ded68cd9e4ff2469f17ee59">RexxString</a>
+: <a class="el" href="class_rexx_mutable_buffer.html#aaece76ea5106cff3eacf0be5a3752e0d">RexxMutableBuffer</a>
+, <a class="el" href="class_rexx_string.html#a28fea6ec6ded68cd9e4ff2469f17ee59">RexxString</a>
 </li>
 <li>isASCIIChecked()
-: <a class="el" href="class_rexx_string.html#a57fddf0e51f689ad2f05c8fd12532aa8">RexxString</a>
+: <a class="el" href="class_rexx_mutable_buffer.html#a547d8ef734852ecdd02847329a4910de">RexxMutableBuffer</a>
+, <a class="el" href="class_rexx_string.html#a57fddf0e51f689ad2f05c8fd12532aa8">RexxString</a>
 </li>
 <li>isASCIIRexx()
-: <a class="el" href="class_rexx_string.html#abf58f9af161d9ec6e062a2ff48fc064e">RexxString</a>
+: <a class="el" href="class_rexx_mutable_buffer.html#a05c8d0a63b69b0bb09fa062a13a838e6">RexxMutableBuffer</a>
+, <a class="el" href="class_rexx_string.html#abf58f9af161d9ec6e062a2ff48fc064e">RexxString</a>
 </li>
 <li>isAttached()
 : <a class="el" href="class_rexx_activity.html#a56b09d730405a0b6eb92052dfb9f0f0d">RexxActivity</a>
+</li>
+<li>isAttribute()
+: <a class="el" href="class_rexx_method.html#aee07e5334ff277dc417b8643e5866084">RexxMethod</a>
+</li>
+<li>isAttributeRexx()
+: <a class="el" href="class_rexx_method.html#a436d6218ea20fef995fc2742afdd07e3">RexxMethod</a>
 </li>
 <li>isBaseClass()
 : <a class="el" href="class_rexx_internal_object.html#a454696f9b52707db570f9fa7338244f7">RexxInternalObject</a>
@@ -398,7 +416,11 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 : <a class="el" href="class_rexx_class.html#aa1067865663e0cf3cdb0354c9e7645c3">RexxClass</a>
 </li>
 <li>isConstant()
-: <a class="el" href="class_rexx_token.html#aa9aa4dc556c5e80bb4c19b6a95be11ea">RexxToken</a>
+: <a class="el" href="class_rexx_method.html#ab3886fe1821a9e0362f5b66039a8b4e5">RexxMethod</a>
+, <a class="el" href="class_rexx_token.html#aa9aa4dc556c5e80bb4c19b6a95be11ea">RexxToken</a>
+</li>
+<li>isConstantRexx()
+: <a class="el" href="class_rexx_method.html#aca3700214a7796c9f5d21b102c1288e2">RexxMethod</a>
 </li>
 <li>isDevice()
 : <a class="el" href="class_sys_file.html#a4452c67b2e4b60b096f2c8f401a8332d">SysFile</a>
@@ -498,6 +520,10 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>isInactive()
 : <a class="el" href="class_rexx_activity.html#ac12e01cc2832b138a494a81851ff8c13">RexxActivity</a>
 </li>
+<li>isInRexxPackage()
+: <a class="el" href="class_object_header.html#af0273f2d60dc3615c56ac81fd4f60565">ObjectHeader</a>
+, <a class="el" href="class_rexx_internal_object.html#abe6f1f77130d2b2f422a2033979c917d">RexxInternalObject</a>
+</li>
 <li>isInSegment()
 : <a class="el" href="class_memory_segment.html#a060a71c109b892172455b1399a1252b1">MemorySegment</a>
 </li>
@@ -591,6 +617,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>isMetaClass()
 : <a class="el" href="class_rexx_class.html#afb4e2e51f7fede6c0870f85c856bc2cf">RexxClass</a>
 </li>
+<li>isMetaClassRexx()
+: <a class="el" href="class_rexx_class.html#a5b9ac728b310b9f5f8af062291c8d14c">RexxClass</a>
+</li>
 <li>isMethod()
 : <a class="el" href="class_rexx_activation.html#a8339f5a84264bfbe0acc2945752c0bc4">RexxActivation</a>
 </li>
@@ -598,7 +627,8 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 : <a class="el" href="class_rexx_activation.html#ab210bb3dbd2b20a3bf120085412048d5">RexxActivation</a>
 </li>
 <li>isMixinClass()
-: <a class="el" href="class_rexx_class.html#ae3ad14f26c94c5a55ff6e0a538d52c57">RexxClass</a>
+: <a class="el" href="class_class_directive.html#a04e6c73a763cde313e60dfb75b8ddeca">ClassDirective</a>
+, <a class="el" href="class_rexx_class.html#ae3ad14f26c94c5a55ff6e0a538d52c57">RexxClass</a>
 </li>
 <li>isMultiDimensional()
 : <a class="el" href="class_rexx_array.html#a79afef722b7bbaf5c10e880bceea74a7">RexxArray</a>
@@ -612,6 +642,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>isNewSpace()
 : <a class="el" href="class_object_header.html#a7db813392a9f7665cbdb3063b0d7e9bc">ObjectHeader</a>
 , <a class="el" href="class_rexx_internal_object.html#a32fcf21006cceefbd20f06ac21238d2f">RexxInternalObject</a>
+</li>
+<li>isNilRexx()
+: <a class="el" href="class_rexx_object.html#a90d965c16d58f7e126cc5d5ba564eff4">RexxObject</a>
 </li>
 <li>isNonPrimitive()
 : <a class="el" href="class_object_header.html#a66a0c6aa9cec0ec3056058c41aa2ab83">ObjectHeader</a>
@@ -652,6 +685,12 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>isOperator()
 : <a class="el" href="class_rexx_token.html#a9717ab34527ffd39e597519a4d94766f">RexxToken</a>
 </li>
+<li>isPackageRexx()
+: <a class="el" href="class_rexx_method.html#aa88d6f1226e06715acc1e05a0a9f1ed5">RexxMethod</a>
+</li>
+<li>isPackageScope()
+: <a class="el" href="class_rexx_method.html#a308e916e1786b9989b6c7975b1e5954d">RexxMethod</a>
+</li>
 <li>isPendingUninit()
 : <a class="el" href="class_rexx_memory.html#a5e52d011d852a1dde674254fe4637f4e">RexxMemory</a>
 </li>
@@ -688,6 +727,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 : <a class="el" href="class_object_header.html#a3bb3ad08f3780a9b6fed1dc042d25ba9">ObjectHeader</a>
 , <a class="el" href="class_rexx_internal_object.html#aa50304a27a752acb16fb195c4088562b">RexxInternalObject</a>
 </li>
+<li>isPublic()
+: <a class="el" href="class_class_directive.html#a4994262972e60fb19a634c1cc50abc6a">ClassDirective</a>
+</li>
 <li>isReadable()
 : <a class="el" href="class_sys_file.html#a81cb68abd7acf92b8c68aa382398eb0b">SysFile</a>
 </li>
@@ -709,8 +751,15 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>isRexxDefined()
 : <a class="el" href="class_rexx_class.html#a2e56ebb49d64f83ae4d40d3b9421f50c">RexxClass</a>
 </li>
+<li>isRexxPackage()
+: <a class="el" href="class_package_class.html#aa913984caef318ef06388a24189731db">PackageClass</a>
+</li>
 <li>isRoutine()
 : <a class="el" href="class_rexx_activation.html#a61434146e3b097ad2f83ed917a35848d">RexxActivation</a>
+</li>
+<li>isSamePackage()
+: <a class="el" href="class_base_code.html#a24adcfe2e95082b251613f319b1aa4b0">BaseCode</a>
+, <a class="el" href="class_rexx_method.html#aa322bab0bef3ef76df656dd327094be1">RexxMethod</a>
 </li>
 <li>isSameType()
 : <a class="el" href="class_rexx_internal_object.html#afc70f363e388860206a8be4b2905a897">RexxInternalObject</a>

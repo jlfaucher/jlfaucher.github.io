@@ -1,15 +1,15 @@
 <map id="SysSemaphore.hpp" name="SysSemaphore.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="189,6,327,34"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,83,83,111"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,83,169,111"/>
-<area shape="rect" id="node4" title=" " alt="" coords="195,83,255,111"/>
-<area shape="rect" id="node5" href="$rexx_8h.html" title=" " alt="" coords="298,161,355,189"/>
-<area shape="rect" id="node10" href="$unix_2_sys_debug_8hpp.html" title=" " alt="" coords="331,83,439,111"/>
-<area shape="rect" id="node11" href="$_utilities_8hpp.html" title=" " alt="" coords="464,83,553,111"/>
-<area shape="rect" id="node6" title=" " alt="" coords="76,238,183,266"/>
-<area shape="rect" id="node7" href="$rexxapidefs_8h.html" title=" " alt="" coords="207,238,307,266"/>
-<area shape="rect" id="node8" title=" " alt="" coords="332,238,463,266"/>
-<area shape="rect" id="node9" title=" " alt="" coords="487,238,616,266"/>
-<area shape="rect" id="node12" title=" " alt="" coords="413,161,501,189"/>
-<area shape="rect" id="node13" title=" " alt="" coords="525,161,595,189"/>
+<area shape="rect" id="node1" title=" " alt="" coords="187,5,323,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,80,168,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,80,252,107"/>
+<area shape="rect" id="node5" href="$rexx_8h.html" title=" " alt="" coords="318,155,376,182"/>
+<area shape="rect" id="node10" href="$unix_2_sys_debug_8hpp.html" title=" " alt="" coords="327,80,434,107"/>
+<area shape="rect" id="node11" href="$_utilities_8hpp.html" title=" " alt="" coords="458,80,548,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="98,230,204,257"/>
+<area shape="rect" id="node7" href="$rexxapidefs_8h.html" title=" " alt="" coords="228,230,327,257"/>
+<area shape="rect" id="node8" title=" " alt="" coords="352,230,481,257"/>
+<area shape="rect" id="node9" title=" " alt="" coords="506,230,634,257"/>
+<area shape="rect" id="node12" title=" " alt="" coords="406,155,496,182"/>
+<area shape="rect" id="node13" title=" " alt="" coords="520,155,588,182"/>
 </map>

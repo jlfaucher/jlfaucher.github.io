@@ -103,6 +103,8 @@ $(document).ready(function(){initNavTree('_object_class_8cpp.html',''); initResi
 <code>#include &quot;<a class="el" href="_source_file_8hpp_source.html">SourceFile.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_protected_object_8hpp_source.html">ProtectedObject.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_pointer_class_8hpp_source.html">PointerClass.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_text_class_8hpp_source.html">TextClass.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_package_class_8hpp_source.html">PackageClass.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ObjectClass.cpp:</div>
 <div class="dyncontent">
@@ -184,7 +186,7 @@ Functions</h2></td></tr>
 <div class="line">{\</div>
 <div class="line">    ProtectedObject result;              <span class="comment">/* returned result                   */</span>\</div>
 <div class="line">                                         <span class="comment">/* do a real message send            */</span>\</div>
-<div class="line">    this-&gt;<a class="code" href="class_rexx_object.html#a161f1c70eb90f54f33f4f5ca726f5063">messageSend</a>(OREF_##message, &amp;operand, 1, 0, result);                \</div>
+<div class="line">    this-&gt;<a class="code" href="class_rexx_object.html#aa391a7ab1ef09e457d4df307df372d11">messageSend</a>(OREF_##message, &amp;operand, 1, 0, result);                \</div>
 <div class="line">    if ((<a class="code" href="class_rexx_object.html">RexxObject</a> *)result == <a class="code" href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a>)   <span class="comment">/* in an expression and need a result*/</span> \</div>
 <div class="line">    {  \</div>
 <div class="line">        RexxObject *<span class="keyword">self</span> = <span class="keyword">this</span>; \</div>
@@ -195,12 +197,12 @@ Functions</h2></td></tr>
 <div class="line">    }  \</div>
 <div class="line">    return (<a class="code" href="class_rexx_object.html">RexxObject</a> *)result;         <span class="comment">/* return the final result           */</span> \</div>
 <div class="line">}\</div>
-<div class="ttc" id="a_rexx_core_8h_html_a181a36438ba4535dd7d22ab63239d1e1"><div class="ttname"><a href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a></div><div class="ttdeci">#define OREF_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00060">RexxCore.h:60</a></div></div>
-<div class="ttc" id="a_rexx_error_codes_8h_html_a1a54006419a34c5bf97ed0f076874399"><div class="ttname"><a href="_rexx_error_codes_8h.html#a1a54006419a34c5bf97ed0f076874399">Error_No_result_object_message</a></div><div class="ttdeci">#define Error_No_result_object_message</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_error_codes_8h_source.html#l00445">RexxErrorCodes.h:445</a></div></div>
-<div class="ttc" id="aclass_rexx_object_html"><div class="ttname"><a href="class_rexx_object.html">RexxObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8hpp_source.html#l00323">ObjectClass.hpp:323</a></div></div>
-<div class="ttc" id="aclass_rexx_object_html_a161f1c70eb90f54f33f4f5ca726f5063"><div class="ttname"><a href="class_rexx_object.html#a161f1c70eb90f54f33f4f5ca726f5063">RexxObject::messageSend</a></div><div class="ttdeci">bool messageSend(RexxString *, RexxObject **, size_t, size_t, ProtectedObject &amp;, bool processUnknown=true)</div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8cpp_source.html#l00787">ObjectClass.cpp:787</a></div></div>
+<div class="ttc" id="a_rexx_core_8h_html_a181a36438ba4535dd7d22ab63239d1e1"><div class="ttname"><a href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a></div><div class="ttdeci">#define OREF_NULL</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_core_8h_source.html#l00061">RexxCore.h:61</a></div></div>
+<div class="ttc" id="a_rexx_error_codes_8h_html_a1a54006419a34c5bf97ed0f076874399"><div class="ttname"><a href="_rexx_error_codes_8h.html#a1a54006419a34c5bf97ed0f076874399">Error_No_result_object_message</a></div><div class="ttdeci">#define Error_No_result_object_message</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_error_codes_8h_source.html#l00506">RexxErrorCodes.h:506</a></div></div>
+<div class="ttc" id="aclass_rexx_object_html"><div class="ttname"><a href="class_rexx_object.html">RexxObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8hpp_source.html#l00335">ObjectClass.hpp:335</a></div></div>
+<div class="ttc" id="aclass_rexx_object_html_aa391a7ab1ef09e457d4df307df372d11"><div class="ttname"><a href="class_rexx_object.html#aa391a7ab1ef09e457d4df307df372d11">RexxObject::messageSend</a></div><div class="ttdeci">bool messageSend(RexxString *, RexxObject **, size_t, size_t, ProtectedObject &amp;, bool processUnknown=true, bool dynamicTarget=true)</div><div class="ttdef"><b>Definition:</b> <a href="_object_class_8cpp_source.html#l00830">ObjectClass.cpp:830</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_object_class_8cpp_source.html#l02562">2562</a> of file <a class="el" href="_object_class_8cpp_source.html">ObjectClass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8cpp_source.html#l02739">2739</a> of file <a class="el" href="_object_class_8cpp_source.html">ObjectClass.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +235,7 @@ Functions</h2></td></tr>
 <div class="line">{\</div>
 <div class="line">    ProtectedObject result;              <span class="comment">/* returned result                   */</span>\</div>
 <div class="line">                                         <span class="comment">/* do a real message send            */</span>\</div>
-<div class="line">    this-&gt;<a class="code" href="class_rexx_object.html#a161f1c70eb90f54f33f4f5ca726f5063">messageSend</a>(OREF_##message, &amp;operand, operand == <a class="code" href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a> ? 0 : 1, 0, result); \</div>
+<div class="line">    this-&gt;<a class="code" href="class_rexx_object.html#aa391a7ab1ef09e457d4df307df372d11">messageSend</a>(OREF_##message, &amp;operand, operand == <a class="code" href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a> ? 0 : 1, 0, result); \</div>
 <div class="line">    if ((<a class="code" href="class_rexx_object.html">RexxObject</a> *)result == <a class="code" href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a>)             <span class="comment">/* in an expression and need a result*/</span> \</div>
 <div class="line">    {  \</div>
 <div class="line">        if (operand != <a class="code" href="_rexx_core_8h.html#a181a36438ba4535dd7d22ab63239d1e1">OREF_NULL</a>) \</div>
@@ -248,7 +250,7 @@ Functions</h2></td></tr>
 <div class="line">    return (<a class="code" href="class_rexx_object.html">RexxObject</a> *)result;         <span class="comment">/* return the final result           */</span> \</div>
 <div class="line">}\</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_object_class_8cpp_source.html#l02580">2580</a> of file <a class="el" href="_object_class_8cpp_source.html">ObjectClass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8cpp_source.html#l02757">2757</a> of file <a class="el" href="_object_class_8cpp_source.html">ObjectClass.cpp</a>.</p>
 
 </div>
 </div>

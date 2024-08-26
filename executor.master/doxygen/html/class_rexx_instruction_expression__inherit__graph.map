@@ -1,15 +1,15 @@
 <map id="RexxInstructionExpression" name="RexxInstructionExpression">
-<area shape="rect" id="node1" title=" " alt="" coords="520,213,699,241"/>
-<area shape="rect" id="node5" href="$class_rexx_instruction_command.html" title=" " alt="" coords="747,5,922,33"/>
-<area shape="rect" id="node6" href="$class_rexx_instruction_exit.html" title=" " alt="" coords="767,57,902,85"/>
-<area shape="rect" id="node7" href="$class_rexx_instruction_interpret.html" title=" " alt="" coords="753,109,916,137"/>
-<area shape="rect" id="node8" href="$class_rexx_instruction_numeric.html" title=" " alt="" coords="753,161,916,189"/>
-<area shape="rect" id="node9" href="$class_rexx_instruction_options.html" title=" " alt="" coords="755,213,914,241"/>
-<area shape="rect" id="node10" href="$class_rexx_instruction_queue.html" title=" " alt="" coords="758,265,911,293"/>
-<area shape="rect" id="node11" href="$class_rexx_instruction_reply.html" title=" " alt="" coords="761,317,908,345"/>
-<area shape="rect" id="node12" href="$class_rexx_instruction_return.html" title=" " alt="" coords="758,369,911,397"/>
-<area shape="rect" id="node13" href="$class_rexx_instruction_say.html" title=" " alt="" coords="767,421,903,449"/>
-<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="358,213,471,241"/>
-<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="174,213,309,241"/>
-<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="6,213,125,241"/>
+<area shape="rect" id="node1" title=" " alt="" coords="515,208,694,235"/>
+<area shape="rect" id="node5" href="$class_rexx_instruction_command.html" title=" " alt="" coords="742,5,915,32"/>
+<area shape="rect" id="node6" href="$class_rexx_instruction_exit.html" title=" " alt="" coords="760,56,896,83"/>
+<area shape="rect" id="node7" href="$class_rexx_instruction_interpret.html" title=" " alt="" coords="748,107,909,134"/>
+<area shape="rect" id="node8" href="$class_rexx_instruction_numeric.html" title=" " alt="" coords="747,157,910,184"/>
+<area shape="rect" id="node9" href="$class_rexx_instruction_options.html" title=" " alt="" coords="749,208,908,235"/>
+<area shape="rect" id="node10" href="$class_rexx_instruction_queue.html" title=" " alt="" coords="753,259,904,286"/>
+<area shape="rect" id="node11" href="$class_rexx_instruction_reply.html" title=" " alt="" coords="755,309,902,336"/>
+<area shape="rect" id="node12" href="$class_rexx_instruction_return.html" title=" " alt="" coords="752,360,904,387"/>
+<area shape="rect" id="node13" href="$class_rexx_instruction_say.html" title=" " alt="" coords="760,411,896,438"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="354,208,467,235"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,208,306,235"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,208,125,235"/>
 </map>

@@ -1,52 +1,52 @@
 <map id="CallbackDispatcher.cpp" name="CallbackDispatcher.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="2713,6,2874,34"/>
-<area shape="rect" id="node2" href="$_rexx_core_8h.html" title=" " alt="" coords="1598,161,1690,189"/>
-<area shape="rect" id="node41" href="$_callback_dispatcher_8hpp.html" title=" " alt="" coords="2724,393,2884,421"/>
-<area shape="rect" id="node28" href="$_interpreter_8hpp.html" title=" " alt="" coords="1684,393,1791,421"/>
-<area shape="rect" id="node48" href="$_interpreter_instance_8hpp.html" title=" " alt="" coords="2655,83,2814,111"/>
-<area shape="rect" id="node33" href="$_rexx_activity_8hpp.html" title=" " alt="" coords="2993,238,3111,266"/>
-<area shape="rect" id="node50" href="$_rexx_native_activation_8hpp.html" title=" " alt="" coords="2947,83,3119,111"/>
-<area shape="rect" id="node3" href="$oorexxapi_8h.html" title=" " alt="" coords="1737,238,1826,266"/>
-<area shape="rect" id="node6" title=" " alt="" coords="2067,238,2127,266"/>
-<area shape="rect" id="node7" title=" " alt="" coords="2152,238,2222,266"/>
-<area shape="rect" id="node8" title=" " alt="" coords="2245,238,2310,266"/>
-<area shape="rect" id="node9" title=" " alt="" coords="2335,238,2399,266"/>
-<area shape="rect" id="node10" title=" " alt="" coords="30,238,92,266"/>
-<area shape="rect" id="node11" href="$_rexx_platform_definitions_8h.html" title=" " alt="" coords="117,238,291,266"/>
-<area shape="rect" id="node14" href="$_rexx_constants_8hpp.html" title=" " alt="" coords="315,238,452,266"/>
-<area shape="rect" id="node15" href="$_class_type_codes_8h.html" title=" " alt="" coords="230,393,362,421"/>
-<area shape="rect" id="node16" href="$_global_names_8h.html" title=" " alt="" coords="528,238,640,266"/>
-<area shape="rect" id="node17" href="$_object_class_8hpp.html" title=" " alt="" coords="813,238,931,266"/>
-<area shape="rect" id="node20" href="$_table_class_8hpp.html" title=" " alt="" coords="559,393,671,421"/>
-<area shape="rect" id="node22" href="$_stack_class_8hpp.html" title=" " alt="" coords="955,238,1068,266"/>
-<area shape="rect" id="node23" href="$_rexx_memory_8hpp.html" title=" " alt="" coords="665,238,788,266"/>
-<area shape="rect" id="node29" href="$_rexx_behaviour_8hpp.html" title=" " alt="" coords="1576,238,1712,266"/>
-<area shape="rect" id="node31" href="$_class_class_8hpp.html" title=" " alt="" coords="1281,238,1394,266"/>
-<area shape="rect" id="node32" href="$_rexx_envelope_8hpp.html" title=" " alt="" coords="1419,238,1551,266"/>
-<area shape="rect" id="node44" href="$_number_string_class_8hpp.html" title=" " alt="" coords="1094,238,1256,266"/>
-<area shape="rect" id="node46" href="$_activity_manager_8hpp.html" title=" " alt="" coords="1851,238,1992,266"/>
-<area shape="rect" id="node4" href="$rexx_8h.html" title=" " alt="" coords="1832,315,1888,343"/>
-<area shape="rect" id="node5" href="$oorexxerrors_8h.html" title=" " alt="" coords="1700,315,1807,343"/>
-<area shape="rect" id="node12" title=" " alt="" coords="239,315,383,343"/>
-<area shape="rect" id="node13" href="$_rexx_error_codes_8h.html" title=" " alt="" coords="84,315,215,343"/>
-<area shape="rect" id="node18" href="$_numerics_8hpp.html" title=" " alt="" coords="1123,315,1226,343"/>
-<area shape="rect" id="node19" title=" " alt="" coords="995,393,1063,421"/>
-<area shape="rect" id="node21" href="$_rexx_collection_8hpp.html" title=" " alt="" coords="547,470,683,498"/>
-<area shape="rect" id="node24" title=" " alt="" coords="1376,470,1514,498"/>
-<area shape="rect" id="node25" href="$_identity_table_class_8hpp.html" title=" " alt="" coords="669,315,824,343"/>
-<area shape="rect" id="node26" href="$_memory_stats_8hpp.html" title=" " alt="" coords="520,315,646,343"/>
-<area shape="rect" id="node27" href="$_memory_segment_8hpp.html" title=" " alt="" coords="899,315,1047,343"/>
-<area shape="rect" id="node30" href="$_primitive_behaviour_names_8h.html" title=" " alt="" coords="1490,315,1675,343"/>
-<area shape="rect" id="node34" href="$_list_class_8hpp.html" title=" " alt="" coords="3026,315,3127,343"/>
-<area shape="rect" id="node35" href="$_rexx_internal_stack_8hpp.html" title=" " alt="" coords="3151,315,3306,343"/>
-<area shape="rect" id="node36" href="$_rexx_activation_stack_8hpp.html" title=" " alt="" coords="3331,315,3499,343"/>
-<area shape="rect" id="node37" href="$_expression_stack_8hpp.html" title=" " alt="" coords="3523,315,3668,343"/>
-<area shape="rect" id="node38" href="$_rexx_local_variables_8hpp.html" title=" " alt="" coords="3694,315,3858,343"/>
-<area shape="rect" id="node39" href="$_source_location_8hpp.html" title=" " alt="" coords="3882,315,4022,343"/>
-<area shape="rect" id="node40" href="$_exit_handler_8hpp.html" title=" " alt="" coords="2700,315,2815,343"/>
-<area shape="rect" id="node42" href="$_activation_api_contexts_8hpp.html" title=" " alt="" coords="2499,315,2675,343"/>
-<area shape="rect" id="node43" title=" " alt="" coords="2890,315,3000,343"/>
-<area shape="rect" id="node45" href="$_number_string_math_8hpp.html" title=" " alt="" coords="1251,315,1410,343"/>
-<area shape="rect" id="node47" title=" " alt="" coords="1914,315,1971,343"/>
-<area shape="rect" id="node49" title=" " alt="" coords="2524,161,2706,189"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2745,5,2905,32"/>
+<area shape="rect" id="node2" href="$_rexx_core_8h.html" title=" " alt="" coords="1579,155,1671,182"/>
+<area shape="rect" id="node29" href="$_interpreter_8hpp.html" title=" " alt="" coords="296,380,400,407"/>
+<area shape="rect" id="node34" href="$_rexx_activity_8hpp.html" title=" " alt="" coords="2944,230,3063,257"/>
+<area shape="rect" id="node42" href="$_callback_dispatcher_8hpp.html" title=" " alt="" coords="3047,380,3206,407"/>
+<area shape="rect" id="node48" href="$_interpreter_instance_8hpp.html" title=" " alt="" coords="2621,80,2776,107"/>
+<area shape="rect" id="node50" href="$_rexx_native_activation_8hpp.html" title=" " alt="" coords="2989,80,3162,107"/>
+<area shape="rect" id="node3" href="$oorexxapi_8h.html" title=" " alt="" coords="1466,230,1554,257"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1630,230,1690,257"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1714,230,1782,257"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1806,230,1870,257"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1894,230,1958,257"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2181,230,2245,257"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2268,230,2347,257"/>
+<area shape="rect" id="node12" href="$_rexx_platform_definitions_8h.html" title=" " alt="" coords="1983,230,2158,257"/>
+<area shape="rect" id="node15" href="$_rexx_constants_8hpp.html" title=" " alt="" coords="2422,230,2559,257"/>
+<area shape="rect" id="node16" href="$_class_type_codes_8h.html" title=" " alt="" coords="1092,380,1224,407"/>
+<area shape="rect" id="node17" href="$_global_names_8h.html" title=" " alt="" coords="104,230,215,257"/>
+<area shape="rect" id="node18" href="$_object_class_8hpp.html" title=" " alt="" coords="524,230,643,257"/>
+<area shape="rect" id="node21" href="$_table_class_8hpp.html" title=" " alt="" coords="17,380,129,407"/>
+<area shape="rect" id="node23" href="$_stack_class_8hpp.html" title=" " alt="" coords="386,230,501,257"/>
+<area shape="rect" id="node24" href="$_rexx_memory_8hpp.html" title=" " alt="" coords="240,230,362,257"/>
+<area shape="rect" id="node30" href="$_rexx_behaviour_8hpp.html" title=" " alt="" coords="960,230,1095,257"/>
+<area shape="rect" id="node32" href="$_class_class_8hpp.html" title=" " alt="" coords="666,230,781,257"/>
+<area shape="rect" id="node33" href="$_rexx_envelope_8hpp.html" title=" " alt="" coords="805,230,936,257"/>
+<area shape="rect" id="node45" href="$_number_string_class_8hpp.html" title=" " alt="" coords="1282,230,1442,257"/>
+<area shape="rect" id="node47" href="$_activity_manager_8hpp.html" title=" " alt="" coords="1119,230,1259,257"/>
+<area shape="rect" id="node4" href="$rexx_8h.html" title=" " alt="" coords="1496,305,1554,332"/>
+<area shape="rect" id="node5" href="$oorexxerrors_8h.html" title=" " alt="" coords="1368,305,1472,332"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1919,305,2062,332"/>
+<area shape="rect" id="node14" href="$_rexx_error_codes_8h.html" title=" " alt="" coords="2086,305,2215,332"/>
+<area shape="rect" id="node19" href="$_numerics_8hpp.html" title=" " alt="" coords="756,305,859,332"/>
+<area shape="rect" id="node20" title=" " alt="" coords="567,380,635,407"/>
+<area shape="rect" id="node22" href="$_rexx_collection_8hpp.html" title=" " alt="" coords="5,455,141,482"/>
+<area shape="rect" id="node25" title=" " alt="" coords="339,455,474,482"/>
+<area shape="rect" id="node26" href="$_identity_table_class_8hpp.html" title=" " alt="" coords="104,305,258,332"/>
+<area shape="rect" id="node27" href="$_memory_stats_8hpp.html" title=" " alt="" coords="503,305,627,332"/>
+<area shape="rect" id="node28" href="$_memory_segment_8hpp.html" title=" " alt="" coords="282,305,427,332"/>
+<area shape="rect" id="node31" href="$_primitive_behaviour_names_8h.html" title=" " alt="" coords="936,305,1119,332"/>
+<area shape="rect" id="node35" href="$_list_class_8hpp.html" title=" " alt="" coords="2982,305,3084,332"/>
+<area shape="rect" id="node36" href="$_rexx_internal_stack_8hpp.html" title=" " alt="" coords="3108,305,3262,332"/>
+<area shape="rect" id="node37" href="$_rexx_activation_stack_8hpp.html" title=" " alt="" coords="3286,305,3455,332"/>
+<area shape="rect" id="node38" href="$_expression_stack_8hpp.html" title=" " alt="" coords="3479,305,3624,332"/>
+<area shape="rect" id="node39" href="$_rexx_local_variables_8hpp.html" title=" " alt="" coords="3648,305,3810,332"/>
+<area shape="rect" id="node40" href="$_source_location_8hpp.html" title=" " alt="" coords="2686,305,2822,332"/>
+<area shape="rect" id="node41" href="$_exit_handler_8hpp.html" title=" " alt="" coords="2348,305,2462,332"/>
+<area shape="rect" id="node43" href="$_activation_api_contexts_8hpp.html" title=" " alt="" coords="2486,305,2662,332"/>
+<area shape="rect" id="node44" title=" " alt="" coords="2847,305,2958,332"/>
+<area shape="rect" id="node46" href="$_number_string_math_8hpp.html" title=" " alt="" coords="1189,305,1344,332"/>
+<area shape="rect" id="node49" title=" " alt="" coords="2736,155,2914,182"/>
 </map>

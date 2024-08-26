@@ -144,6 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66a0c6aa9cec0ec3056058c41aa2ab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800e3f9d1a74c5c67883080c98551a9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_header.html#a800e3f9d1a74c5c67883080c98551a9f">isPrimitive</a> ()</td></tr>
 <tr class="separator:a800e3f9d1a74c5c67883080c98551a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0b63a544dca0755db42af4bd97f0f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_header.html#aee0b63a544dca0755db42af4bd97f0f2">setInRexxPackage</a> ()</td></tr>
+<tr class="separator:aee0b63a544dca0755db42af4bd97f0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0273f2d60dc3615c56ac81fd4f60565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_header.html#af0273f2d60dc3615c56ac81fd4f60565">isInRexxPackage</a> ()</td></tr>
+<tr class="separator:af0273f2d60dc3615c56ac81fd4f60565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedf0d305aa25cccab07ea3aff26ec529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_header.html#aedf0d305aa25cccab07ea3aff26ec529">initHeader</a> (size_t l, size_t mark)</td></tr>
 <tr class="separator:aedf0d305aa25cccab07ea3aff26ec529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532f3a1e9e1911bab2a62879746057ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_header.html#a532f3a1e9e1911bab2a62879746057ab">initHeader</a> (size_t mark)</td></tr>
@@ -159,6 +163,7 @@ Protected Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="class_object_header.html#afdd0ff8258e7068a115ae532a5eec0f6a59a5bb9745ca1afcfd7fdcfd44837013">IsNonPrimitive</a> = 0x0010
 , <a class="el" href="class_object_header.html#afdd0ff8258e7068a115ae532a5eec0f6adbd397c61e0fbca0c04efef939195698">NoRefBit</a> = 0x0020
+, <a class="el" href="class_object_header.html#afdd0ff8258e7068a115ae532a5eec0f6a04f3d1e659e8d0baecfb717e94337919">IsInRexxPackage</a> = 0x0040
 <br />
  }</td></tr>
 <tr class="separator:afdd0ff8258e7068a115ae532a5eec0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +182,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00083">83</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00085">85</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="afdd0ff8258e7068a115ae532a5eec0f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afdd0ff8258e7068a115ae532a5eec0f6">&#9670;&nbsp;</a></span>anonymous enum</h2>
@@ -205,9 +210,10 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="afdd0ff8258e7068a115ae532a5eec0f6a481210aa71784be0d9d184522bbf832b"></a>ProxyObject&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afdd0ff8258e7068a115ae532a5eec0f6a59a5bb9745ca1afcfd7fdcfd44837013"></a>IsNonPrimitive&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afdd0ff8258e7068a115ae532a5eec0f6adbd397c61e0fbca0c04efef939195698"></a>NoRefBit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afdd0ff8258e7068a115ae532a5eec0f6a04f3d1e659e8d0baecfb717e94337919"></a>IsInRexxPackage&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00134">134</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00138">138</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
 </div>
 </div>
@@ -235,9 +241,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00109">109</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00111">111</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">objectSize</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00151">objectSize</a>.</p>
 
 </div>
 </div>
@@ -264,11 +270,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00104">104</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00106">106</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00072">LiveMask</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00074">LiveMask</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00261">RexxInternalObject::clearObjectMark()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00105">setObjectMark()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00268">RexxInternalObject::clearObjectMark()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00107">setObjectMark()</a>.</p>
 
 </div>
 </div>
@@ -295,11 +301,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00111">111</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00113">113</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00074">OldSpaceBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00076">OldSpaceBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00112">setNewSpace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00114">setNewSpace()</a>.</p>
 
 </div>
 </div>
@@ -326,11 +332,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00094">94</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00096">96</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00146">objectSize</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00151">objectSize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00236">RexxInternalObject::getObjectSize()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00085">DeadObject::getObjectSize()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00107">DeadObject::isHeader()</a>, and <a class="el" href="_dead_object_8hpp_source.html#l00106">DeadObject::isReal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00241">RexxInternalObject::getObjectSize()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00085">DeadObject::getObjectSize()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00107">DeadObject::isHeader()</a>, and <a class="el" href="_dead_object_8hpp_source.html#l00106">DeadObject::isReal()</a>.</p>
 
 </div>
 </div>
@@ -357,11 +363,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00118">118</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00120">120</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00142">NoRefBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">NoRefBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00254">RexxInternalObject::hasNoReferences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00259">RexxInternalObject::hasNoReferences()</a>.</p>
 
 </div>
 </div>
@@ -388,11 +394,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00117">117</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00119">119</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00142">NoRefBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">NoRefBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00253">RexxInternalObject::hasReferences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00258">RexxInternalObject::hasReferences()</a>.</p>
 
 </div>
 </div>
@@ -430,11 +436,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00123">123</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00127">127</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">objectSize</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00151">objectSize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00352">RexxObject::initializeNewObject()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00247">RexxInternalObject::setInitHeader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00364">RexxObject::initializeNewObject()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00252">RexxInternalObject::setInitHeader()</a>.</p>
 
 </div>
 </div>
@@ -462,9 +468,40 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00128">128</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00132">132</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>.</p>
+
+</div>
+</div>
+<a id="af0273f2d60dc3615c56ac81fd4f60565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0273f2d60dc3615c56ac81fd4f60565">&#9670;&nbsp;</a></span>isInRexxPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ObjectHeader::isInRexxPackage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00126">126</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00147">IsInRexxPackage</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00265">RexxInternalObject::isInRexxPackage()</a>.</p>
 
 </div>
 </div>
@@ -491,11 +528,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00114">114</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00116">116</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00074">OldSpaceBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00076">OldSpaceBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00265">RexxInternalObject::isNewSpace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00272">RexxInternalObject::isNewSpace()</a>.</p>
 
 </div>
 </div>
@@ -522,11 +559,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00121">121</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00123">123</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00141">IsNonPrimitive</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00145">IsNonPrimitive</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00258">RexxInternalObject::isNonPrimitive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00263">RexxInternalObject::isNonPrimitive()</a>.</p>
 
 </div>
 </div>
@@ -554,11 +591,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00108">108</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00110">110</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00073">MarkMask</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00075">MarkMask</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00263">RexxInternalObject::isObjectDead()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00270">RexxInternalObject::isObjectDead()</a>.</p>
 
 </div>
 </div>
@@ -586,11 +623,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00107">107</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00109">109</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00073">MarkMask</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00075">MarkMask</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00262">RexxInternalObject::isObjectLive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00269">RexxInternalObject::isObjectLive()</a>.</p>
 
 </div>
 </div>
@@ -618,11 +655,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00106">106</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00108">108</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00259">RexxInternalObject::isObjectMarked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00266">RexxInternalObject::isObjectMarked()</a>.</p>
 
 </div>
 </div>
@@ -649,11 +686,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00113">113</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00115">115</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00074">OldSpaceBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00076">OldSpaceBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00264">RexxInternalObject::isOldSpace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00271">RexxInternalObject::isOldSpace()</a>.</p>
 
 </div>
 </div>
@@ -680,11 +717,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00122">122</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00124">124</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00141">IsNonPrimitive</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00145">IsNonPrimitive</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00257">RexxInternalObject::isPrimitive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00262">RexxInternalObject::isPrimitive()</a>.</p>
 
 </div>
 </div>
@@ -711,11 +748,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00103">103</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00105">105</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00140">ProxyObject</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00144">ProxyObject</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00269">RexxInternalObject::isProxyObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00276">RexxInternalObject::isProxyObject()</a>.</p>
 
 </div>
 </div>
@@ -742,11 +779,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00100">100</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00102">102</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00139">ProxiedObject</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00143">ProxiedObject</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00268">RexxInternalObject::makeProxiedObject()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00275">RexxInternalObject::makeProxiedObject()</a>.</p>
 
 </div>
 </div>
@@ -773,9 +810,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00102">102</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00104">104</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00140">ProxyObject</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00144">ProxyObject</a>.</p>
 
 </div>
 </div>
@@ -803,9 +840,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00086">86</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00088">88</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">objectSize</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00151">objectSize</a>.</p>
 
 </div>
 </div>
@@ -832,9 +869,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00101">101</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00103">103</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00139">ProxiedObject</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00143">ProxiedObject</a>.</p>
 
 </div>
 </div>
@@ -861,11 +898,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00115">115</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00117">117</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00142">NoRefBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">NoRefBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00252">RexxInternalObject::setHasNoReferences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00257">RexxInternalObject::setHasNoReferences()</a>.</p>
 
 </div>
 </div>
@@ -892,11 +929,42 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00116">116</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00118">118</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00142">NoRefBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00146">NoRefBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00251">RexxInternalObject::setHasReferences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00256">RexxInternalObject::setHasReferences()</a>.</p>
+
+</div>
+</div>
+<a id="aee0b63a544dca0755db42af4bd97f0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0b63a544dca0755db42af4bd97f0f2">&#9670;&nbsp;</a></span>setInRexxPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectHeader::setInRexxPackage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00125">125</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00147">IsInRexxPackage</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00264">RexxInternalObject::setInRexxPackage()</a>.</p>
 
 </div>
 </div>
@@ -923,11 +991,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00112">112</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00114">114</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00111">clearOldSpace()</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00113">clearOldSpace()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00266">RexxInternalObject::setNewSpace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00273">RexxInternalObject::setNewSpace()</a>.</p>
 
 </div>
 </div>
@@ -954,11 +1022,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00119">119</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00121">121</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00141">IsNonPrimitive</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00145">IsNonPrimitive</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00256">RexxInternalObject::setNonPrimitive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00261">RexxInternalObject::setNonPrimitive()</a>.</p>
 
 </div>
 </div>
@@ -986,11 +1054,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00105">105</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00107">107</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00104">clearObjectMark()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00106">clearObjectMark()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00250">RexxInternalObject::setObjectLive()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00260">RexxInternalObject::setObjectMark()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00255">RexxInternalObject::setObjectLive()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00267">RexxInternalObject::setObjectMark()</a>.</p>
 
 </div>
 </div>
@@ -1018,11 +1086,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00095">95</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00097">97</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00146">objectSize</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00151">objectSize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_dead_object_8hpp_source.html#l00067">DeadObject::DeadObject()</a>, <a class="el" href="_rexx_behaviour_8cpp_source.html#l00055">RexxBehaviour::RexxBehaviour()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00084">DeadObject::setObjectSize()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00237">RexxInternalObject::setObjectSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_dead_object_8hpp_source.html#l00067">DeadObject::DeadObject()</a>, <a class="el" href="_rexx_behaviour_8cpp_source.html#l00055">RexxBehaviour::RexxBehaviour()</a>, <a class="el" href="_dead_object_8hpp_source.html#l00084">DeadObject::setObjectSize()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00242">RexxInternalObject::setObjectSize()</a>.</p>
 
 </div>
 </div>
@@ -1049,11 +1117,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00110">110</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00112">112</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00074">OldSpaceBit</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00076">OldSpaceBit</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00267">RexxInternalObject::setOldSpace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00274">RexxInternalObject::setOldSpace()</a>.</p>
 
 </div>
 </div>
@@ -1080,11 +1148,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00120">120</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00122">122</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00149">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00141">IsNonPrimitive</a>.</p>
+<p class="reference">References <a class="el" href="_object_class_8hpp_source.html#l00154">flags</a>, and <a class="el" href="_object_class_8hpp_source.html#l00145">IsNonPrimitive</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00255">RexxInternalObject::setPrimitive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00260">RexxInternalObject::setPrimitive()</a>.</p>
 
 </div>
 </div>
@@ -1115,9 +1183,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00149">149</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00154">154</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00109">clear()</a>, <a class="el" href="_object_class_8hpp_source.html#l00104">clearObjectMark()</a>, <a class="el" href="_object_class_8hpp_source.html#l00111">clearOldSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00118">hasNoReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00117">hasReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00123">initHeader()</a>, <a class="el" href="_object_class_8hpp_source.html#l00114">isNewSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00121">isNonPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00108">isObjectDead()</a>, <a class="el" href="_object_class_8hpp_source.html#l00107">isObjectLive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00106">isObjectMarked()</a>, <a class="el" href="_object_class_8hpp_source.html#l00113">isOldSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00122">isPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00103">isProxyObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00100">makeProxiedObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00102">makeProxy()</a>, <a class="el" href="_object_class_8hpp_source.html#l00086">operator=()</a>, <a class="el" href="_object_class_8hpp_source.html#l00101">requiresProxyObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00115">setHasNoReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00116">setHasReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00119">setNonPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00105">setObjectMark()</a>, <a class="el" href="_object_class_8hpp_source.html#l00110">setOldSpace()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00120">setPrimitive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00111">clear()</a>, <a class="el" href="_object_class_8hpp_source.html#l00106">clearObjectMark()</a>, <a class="el" href="_object_class_8hpp_source.html#l00113">clearOldSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00120">hasNoReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00119">hasReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00127">initHeader()</a>, <a class="el" href="_object_class_8hpp_source.html#l00126">isInRexxPackage()</a>, <a class="el" href="_object_class_8hpp_source.html#l00116">isNewSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00123">isNonPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00110">isObjectDead()</a>, <a class="el" href="_object_class_8hpp_source.html#l00109">isObjectLive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00108">isObjectMarked()</a>, <a class="el" href="_object_class_8hpp_source.html#l00115">isOldSpace()</a>, <a class="el" href="_object_class_8hpp_source.html#l00124">isPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00105">isProxyObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00102">makeProxiedObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00104">makeProxy()</a>, <a class="el" href="_object_class_8hpp_source.html#l00088">operator=()</a>, <a class="el" href="_object_class_8hpp_source.html#l00103">requiresProxyObject()</a>, <a class="el" href="_object_class_8hpp_source.html#l00117">setHasNoReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00118">setHasReferences()</a>, <a class="el" href="_object_class_8hpp_source.html#l00125">setInRexxPackage()</a>, <a class="el" href="_object_class_8hpp_source.html#l00121">setNonPrimitive()</a>, <a class="el" href="_object_class_8hpp_source.html#l00107">setObjectMark()</a>, <a class="el" href="_object_class_8hpp_source.html#l00112">setOldSpace()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00122">setPrimitive()</a>.</p>
 
 </div>
 </div>
@@ -1141,9 +1209,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00146">146</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00151">151</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00109">clear()</a>, <a class="el" href="_object_class_8hpp_source.html#l00094">getObjectSize()</a>, <a class="el" href="_object_class_8hpp_source.html#l00123">initHeader()</a>, <a class="el" href="_object_class_8hpp_source.html#l00086">operator=()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00095">setObjectSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_object_class_8hpp_source.html#l00111">clear()</a>, <a class="el" href="_object_class_8hpp_source.html#l00096">getObjectSize()</a>, <a class="el" href="_object_class_8hpp_source.html#l00127">initHeader()</a>, <a class="el" href="_object_class_8hpp_source.html#l00088">operator=()</a>, and <a class="el" href="_object_class_8hpp_source.html#l00097">setObjectSize()</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1227,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00150">150</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_object_class_8hpp_source.html#l00155">155</a> of file <a class="el" href="_object_class_8hpp_source.html">ObjectClass.hpp</a>.</p>
 
 </div>
 </div>

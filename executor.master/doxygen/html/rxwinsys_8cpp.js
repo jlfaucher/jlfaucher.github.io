@@ -71,7 +71,6 @@ var rxwinsys_8cpp =
     [ "InstWinSysFuncs", "rxwinsys_8cpp.html#a2bf76a4c885462297fa33be50621f23d", null ],
     [ "isGoodEventType", "rxwinsys_8cpp.html#a89f130df48a2cead2ca86ede05b19785", null ],
     [ "isHex", "rxwinsys_8cpp.html#a979f67d6cbf3d7a5ae0e2a1138243055", null ],
-    [ "IsRunningNT", "rxwinsys_8cpp.html#af10dd7888fc203e5e55113f2b00769b7", null ],
     [ "LeavePM", "rxwinsys_8cpp.html#a6aebe62a6353288e498c27ba2b73fd06", null ],
     [ "Little2BigEndian", "rxwinsys_8cpp.html#ae2ae07cabb9563d821ca8deec2e453e4", null ],
     [ "lookupMessageFile", "rxwinsys_8cpp.html#a43db62bb156d454cda719114b57c7ad7", null ],

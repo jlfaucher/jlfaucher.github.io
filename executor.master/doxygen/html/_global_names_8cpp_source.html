@@ -139,54 +139,79 @@ $(document).ready(function(){initNavTree('_global_names_8cpp_source.html',''); i
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                       <span class="comment">/* to create each of the strings     */</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#undef GLOBAL_NAME</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define GLOBAL_NAME(name, value) OREF_##name = getGlobalName(value);</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now create the strings            */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">   64</a></span>&#160;<a class="code" href="class_rexx_array.html">RexxArray</a> *<a class="code" href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">RexxMemory::saveStrings</a>()</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* Function:  Create all globally available string objects                    */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                       <span class="comment">/* to count the number of string     */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                       <span class="comment">/* objects we need to save           */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) stringCount++;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">size_t</span> stringCount = 0;              <span class="comment">/* no strings yet                    */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now create the strings            */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// get an array to contain all of the string values</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="class_rexx_array.html">RexxArray</a> *stringArray = <a class="code" href="_array_class_8hpp.html#ab7c1014bab3c11a879f5620e77392b68">new_array</a>(stringCount);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                       <span class="comment">/* to save each string in the array  */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                       <span class="comment">/* at its relative offset            */</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) stringArray-&gt;put((RexxObject *)OREF_##name, stringCount); stringCount++;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  stringCount = 1;                     <span class="comment">/* start with the first string       */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now save the strings              */</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">return</span> stringArray;                  <span class="comment">// and return the saved string array</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">RexxMemory::restoreStrings</a>(<a class="code" href="class_rexx_array.html">RexxArray</a> *stringArray)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/* Function:  Create all globally available string objects                    */</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                       <span class="comment">/* to create and give a count of the */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                       <span class="comment">/* strings created                   */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) OREF_##name = *strings++;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="class_rexx_string.html">RexxString</a> **strings = (<a class="code" href="class_rexx_string.html">RexxString</a> **)stringArray-&gt;<a class="code" href="class_rexx_array.html#af916152f9162652ea3c7aece44416340">data</a>();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>                 <span class="comment">/* now restore the strings           */</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if debug_encoding </span><span class="comment">// debug encoding</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Never had a PANIC</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #define GLOBAL_NAME(name, value) \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        OREF_##name = getGlobalName(value); \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        if (OREF_##name-&gt;getEncoding() != OREF_NULL &amp;&amp; OREF_##name-&gt;getEncoding() != OREF_##name) printf(&quot;RexxMemory::createStrings PANIC string=%p encoding=%p %s\n&quot;</span>, OREF_##name, OREF_##name-&gt;getEncoding(), OREF_##name-&gt;getStringData());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    #define GLOBAL_NAME(name, value) OREF_##name = getGlobalName(value);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now create the strings            */</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">   71</a></span>&#160;<a class="code" href="class_rexx_array.html">RexxArray</a> *<a class="code" href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">RexxMemory::saveStrings</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Function:  Create all globally available string objects                    */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                       <span class="comment">/* to count the number of string     */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                       <span class="comment">/* objects we need to save           */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) stringCount++;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">size_t</span> stringCount = 0;              <span class="comment">/* no strings yet                    */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now create the strings            */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// get an array to contain all of the string values</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="class_rexx_array.html">RexxArray</a> *stringArray = <a class="code" href="_array_class_8hpp.html#ab7c1014bab3c11a879f5620e77392b68">new_array</a>(stringCount);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                       <span class="comment">/* to save each string in the array  */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                       <span class="comment">/* at its relative offset            */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#if debug_encoding </span><span class="comment">// debug encoding</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) \</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">      stringArray-&gt;put((RexxObject *)OREF_##name, stringCount); stringCount++; \</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">      if (OREF_##name-&gt;getEncoding() != OREF_NULL &amp;&amp; OREF_##name-&gt;getEncoding() != OREF_##name) printf(&quot;RexxMemory::saveStrings PANIC string=%p encoding=%p %s\n&quot;</span>, OREF_##name, OREF_##name-&gt;getEncoding(), OREF_##name-&gt;getStringData());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) stringArray-&gt;put((RexxObject *)OREF_##name, stringCount); stringCount++;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  stringCount = 1;                     <span class="comment">/* start with the first string       */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>             <span class="comment">/* now save the strings              */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">return</span> stringArray;                  <span class="comment">// and return the saved string array</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">RexxMemory::restoreStrings</a>(<a class="code" href="class_rexx_array.html">RexxArray</a> *stringArray)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">/* Function:  Create all globally available string objects                    */</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                       <span class="comment">/* redefine the GLOBAL_NAME macro    */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                       <span class="comment">/* to create and give a count of the */</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                       <span class="comment">/* strings created                   */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">  #undef GLOBAL_NAME</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if debug_encoding </span><span class="comment">// debug encoding</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">// there is indeed a PANIC if I don&#39;t initialize text and encoding</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// initialize text and encoding to NULL (otherwise I have a non-NULL value which is an invalid pointer, don&#39; know why)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// #define GLOBAL_NAME(name, value) OREF_##name = *strings++;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) \</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">      OREF_##name = *strings++; \</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">      if (OREF_##name-&gt;getEncoding() != OREF_NULL &amp;&amp; OREF_##name-&gt;getEncoding() != OREF_##name) printf(&quot;RexxMemory::restoreStrings PANIC string=%p encoding=%p %s\n&quot;</span>, OREF_##name, OREF_##name-&gt;getEncoding(), OREF_##name-&gt;getStringData()); \</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      printf(&quot;RexxMemory::restoreStrings before initialize OREF_##name=%p text=%p encoding=%p %s\n&quot;, OREF_##name, OREF_##name-&gt;getText(), OREF_##name-&gt;getEncoding(), OREF_##name-&gt;getStringData()); \</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      OREF_##name-&gt;setText(OREF_NULL); \</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      OREF_##name-&gt;setEncoding(OREF_NULL);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">  #define GLOBAL_NAME(name, value) OREF_##name = *strings++;</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="class_rexx_string.html">RexxString</a> **strings = (<a class="code" href="class_rexx_string.html">RexxString</a> **)stringArray-&gt;<a class="code" href="class_rexx_array.html#af916152f9162652ea3c7aece44416340">data</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="_global_names_8h.html">GlobalNames.h</a>&quot;</span>                 <span class="comment">/* now restore the strings           */</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 <div class="ttc" id="a_array_class_8hpp_html"><div class="ttname"><a href="_array_class_8hpp.html">ArrayClass.hpp</a></div></div>
 <div class="ttc" id="a_array_class_8hpp_html_ab7c1014bab3c11a879f5620e77392b68"><div class="ttname"><a href="_array_class_8hpp.html#ab7c1014bab3c11a879f5620e77392b68">new_array</a></div><div class="ttdeci">RexxArray * new_array(size_t s)</div><div class="ttdef"><b>Definition:</b> <a href="_array_class_8hpp_source.html#l00259">ArrayClass.hpp:259</a></div></div>
 <div class="ttc" id="a_directory_class_8hpp_html"><div class="ttname"><a href="_directory_class_8hpp.html">DirectoryClass.hpp</a></div></div>
@@ -195,11 +220,11 @@ $(document).ready(function(){initNavTree('_global_names_8cpp_source.html',''); i
 <div class="ttc" id="a_rexx_core_8h_html"><div class="ttname"><a href="_rexx_core_8h.html">RexxCore.h</a></div></div>
 <div class="ttc" id="aclass_rexx_array_html"><div class="ttname"><a href="class_rexx_array.html">RexxArray</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_class_8hpp_source.html#l00100">ArrayClass.hpp:100</a></div></div>
 <div class="ttc" id="aclass_rexx_array_html_af916152f9162652ea3c7aece44416340"><div class="ttname"><a href="class_rexx_array.html#af916152f9162652ea3c7aece44416340">RexxArray::data</a></div><div class="ttdeci">RexxObject ** data()</div><div class="ttdef"><b>Definition:</b> <a href="_array_class_8hpp_source.html#l00204">ArrayClass.hpp:204</a></div></div>
-<div class="ttc" id="aclass_rexx_memory_html_a344d05d1aa6e523b7294e5bcc85570b5"><div class="ttname"><a href="class_rexx_memory.html#a344d05d1aa6e523b7294e5bcc85570b5">RexxMemory::globalStrings</a></div><div class="ttdeci">static RexxDirectory * globalStrings</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_memory_8hpp_source.html#l00413">RexxMemory.hpp:413</a></div></div>
+<div class="ttc" id="aclass_rexx_memory_html_a344d05d1aa6e523b7294e5bcc85570b5"><div class="ttname"><a href="class_rexx_memory.html#a344d05d1aa6e523b7294e5bcc85570b5">RexxMemory::globalStrings</a></div><div class="ttdeci">static RexxDirectory * globalStrings</div><div class="ttdef"><b>Definition:</b> <a href="_rexx_memory_8hpp_source.html#l00418">RexxMemory.hpp:418</a></div></div>
 <div class="ttc" id="aclass_rexx_memory_html_a36062e9bcff74f96b4e7a09d5ae1a911"><div class="ttname"><a href="class_rexx_memory.html#a36062e9bcff74f96b4e7a09d5ae1a911">RexxMemory::createStrings</a></div><div class="ttdeci">static void createStrings()</div><div class="ttdef"><b>Definition:</b> <a href="_global_names_8cpp_source.html#l00047">GlobalNames.cpp:47</a></div></div>
-<div class="ttc" id="aclass_rexx_memory_html_a5a75d64e7d1bce760e4302aedf533126"><div class="ttname"><a href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">RexxMemory::saveStrings</a></div><div class="ttdeci">static RexxArray * saveStrings()</div><div class="ttdef"><b>Definition:</b> <a href="_global_names_8cpp_source.html#l00064">GlobalNames.cpp:64</a></div></div>
-<div class="ttc" id="aclass_rexx_memory_html_a7e47a6507f97216218026d7148f6f87b"><div class="ttname"><a href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">RexxMemory::restoreStrings</a></div><div class="ttdeci">static void restoreStrings(RexxArray *stringArray)</div><div class="ttdef"><b>Definition:</b> <a href="_global_names_8cpp_source.html#l00092">GlobalNames.cpp:92</a></div></div>
-<div class="ttc" id="aclass_rexx_string_html"><div class="ttname"><a href="class_rexx_string.html">RexxString</a></div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00121">StringClass.hpp:121</a></div></div>
+<div class="ttc" id="aclass_rexx_memory_html_a5a75d64e7d1bce760e4302aedf533126"><div class="ttname"><a href="class_rexx_memory.html#a5a75d64e7d1bce760e4302aedf533126">RexxMemory::saveStrings</a></div><div class="ttdeci">static RexxArray * saveStrings()</div><div class="ttdef"><b>Definition:</b> <a href="_global_names_8cpp_source.html#l00071">GlobalNames.cpp:71</a></div></div>
+<div class="ttc" id="aclass_rexx_memory_html_a7e47a6507f97216218026d7148f6f87b"><div class="ttname"><a href="class_rexx_memory.html#a7e47a6507f97216218026d7148f6f87b">RexxMemory::restoreStrings</a></div><div class="ttdeci">static void restoreStrings(RexxArray *stringArray)</div><div class="ttdef"><b>Definition:</b> <a href="_global_names_8cpp_source.html#l00105">GlobalNames.cpp:105</a></div></div>
+<div class="ttc" id="aclass_rexx_string_html"><div class="ttname"><a href="class_rexx_string.html">RexxString</a></div><div class="ttdef"><b>Definition:</b> <a href="_string_class_8hpp_source.html#l00122">StringClass.hpp:122</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.2-->

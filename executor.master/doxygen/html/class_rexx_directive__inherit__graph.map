@@ -1,10 +1,10 @@
 <map id="RexxDirective" name="RexxDirective">
-<area shape="rect" id="node1" title=" " alt="" coords="222,238,324,266"/>
-<area shape="rect" id="node5" href="$class_class_directive.html" title=" " alt="" coords="4,315,109,343"/>
-<area shape="rect" id="node6" href="$class_extension_directive.html" title=" " alt="" coords="134,315,265,343"/>
-<area shape="rect" id="node7" href="$class_library_directive.html" title=" " alt="" coords="290,315,403,343"/>
-<area shape="rect" id="node8" href="$class_requires_directive.html" title=" " alt="" coords="427,315,553,343"/>
-<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="217,161,329,189"/>
-<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="206,83,340,111"/>
-<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="214,6,332,34"/>
+<area shape="rect" id="node1" title=" " alt="" coords="223,230,327,257"/>
+<area shape="rect" id="node5" href="$class_class_directive.html" title=" " alt="" coords="5,305,113,332"/>
+<area shape="rect" id="node6" href="$class_extension_directive.html" title=" " alt="" coords="137,305,269,332"/>
+<area shape="rect" id="node7" href="$class_library_directive.html" title=" " alt="" coords="292,305,404,332"/>
+<area shape="rect" id="node8" href="$class_requires_directive.html" title=" " alt="" coords="428,305,554,332"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="218,155,332,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="208,80,342,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="215,5,335,32"/>
 </map>

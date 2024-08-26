@@ -222,6 +222,7 @@ var _token_8hpp =
     [ "SUBDIRECTIVE_MIXINCLASS", "_token_8hpp.html#a18e3aa25f524089089166627a980571c", null ],
     [ "SUBDIRECTIVE_NOCOMMANDS", "_token_8hpp.html#a0ac6a334a80eb3fe961115eed0612eb2", null ],
     [ "SUBDIRECTIVE_NOMACROSPACE", "_token_8hpp.html#a98b573682475851197fbcf1caf746ae3", null ],
+    [ "SUBDIRECTIVE_PACKAGE", "_token_8hpp.html#a2079d1720c44c72286d4c539d8194bf6", null ],
     [ "SUBDIRECTIVE_PRIVATE", "_token_8hpp.html#ab4b8cb85e5f16929a524772f7bd7bdb8", null ],
     [ "SUBDIRECTIVE_PROTECTED", "_token_8hpp.html#af0145fb8088afcde1c4198c411034dd4", null ],
     [ "SUBDIRECTIVE_PUBLIC", "_token_8hpp.html#acd18f78ebf6cda65b152e7b782c11ccf", null ],

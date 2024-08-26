@@ -1,6 +1,10 @@
 var hostemu_8h =
 [
     [ "_EXECIO_OPTIONS", "struct___e_x_e_c_i_o___o_p_t_i_o_n_s.html", "struct___e_x_e_c_i_o___o_p_t_i_o_n_s" ],
+    [ "ERR_EXECIO_BAD_PLIST", "hostemu_8h.html#af17288ea9d6a5b6145d3267cc0f8542e", null ],
+    [ "ERR_EXECIO_EOF", "hostemu_8h.html#ae0fca867f94430b3a636bfb6c93db9e0", null ],
+    [ "ERR_EXECIO_NO_STORAGE", "hostemu_8h.html#a97ce04594e23a736d7c4ae87e66b779e", null ],
+    [ "ERR_EXECIO_VAR_INVALID", "hostemu_8h.html#a51953337f463ef9b9ebf6c614c3a8a13", null ],
     [ "EXECIO_STMT", "hostemu_8h.html#aa42a1024ccd047b22014ca7e0b4bb380", null ],
     [ "HI_STMT", "hostemu_8h.html#a15eac27b0e48a28632897a1d03559120", null ],
     [ "SYMTABLESIZE", "hostemu_8h.html#acbdd1c2665d114bb63155073460d76a8", null ],

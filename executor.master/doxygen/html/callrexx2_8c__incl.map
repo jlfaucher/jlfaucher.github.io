@@ -1,14 +1,14 @@
 <map id="callrexx2.c" name="callrexx2.c">
-<area shape="rect" id="node1" title=" " alt="" coords="254,6,337,34"/>
-<area shape="rect" id="node2" title=" " alt="" coords="4,83,67,111"/>
-<area shape="rect" id="node3" title=" " alt="" coords="92,83,152,111"/>
-<area shape="rect" id="node4" title=" " alt="" coords="177,83,241,111"/>
-<area shape="rect" id="node5" title=" " alt="" coords="266,83,325,111"/>
-<area shape="rect" id="node6" title=" " alt="" coords="351,83,428,111"/>
-<area shape="rect" id="node7" title=" " alt="" coords="452,83,515,111"/>
-<area shape="rect" id="node8" href="$rexx_8h.html" title=" " alt="" coords="539,83,596,111"/>
-<area shape="rect" id="node9" title=" " alt="" coords="316,161,423,189"/>
-<area shape="rect" id="node10" href="$rexxapidefs_8h.html" title=" " alt="" coords="447,161,547,189"/>
-<area shape="rect" id="node11" title=" " alt="" coords="572,161,703,189"/>
-<area shape="rect" id="node12" title=" " alt="" coords="727,161,856,189"/>
+<area shape="rect" id="node1" title=" " alt="" coords="254,5,338,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="92,80,152,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="177,80,241,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="266,80,326,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="349,80,429,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="453,80,514,107"/>
+<area shape="rect" id="node8" href="$rexx_8h.html" title=" " alt="" coords="539,80,596,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="318,155,425,182"/>
+<area shape="rect" id="node10" href="$rexxapidefs_8h.html" title=" " alt="" coords="449,155,548,182"/>
+<area shape="rect" id="node11" title=" " alt="" coords="572,155,702,182"/>
+<area shape="rect" id="node12" title=" " alt="" coords="726,155,854,182"/>
 </map>

@@ -131,6 +131,8 @@ var _primitive_behaviour_names_8h =
     [ "TheTokenBehaviour", "_primitive_behaviour_names_8h.html#a024fd382671bbbeb7e5cbd35d040bf60", null ],
     [ "TheTraceInstructionBehaviour", "_primitive_behaviour_names_8h.html#a2fb2101a1edc3d35aeefa166538ff06f", null ],
     [ "TheUnaryOperatorTermBehaviour", "_primitive_behaviour_names_8h.html#a29454f726a6a7b89973cc4ec9b545e88", null ],
+    [ "TheUnicodeBehaviour", "_primitive_behaviour_names_8h.html#a687061d2964accc420f0af6bcaace666", null ],
+    [ "TheUnicodeClassBehaviour", "_primitive_behaviour_names_8h.html#a32f8b065ca0acc79a5c4198c93e3bf3d", null ],
     [ "TheUpperInstructionBehaviour", "_primitive_behaviour_names_8h.html#a4189b3b93d0ededbb285f7ed9db8ac28", null ],
     [ "TheUseInstructionBehaviour", "_primitive_behaviour_names_8h.html#afa3b05681fd3fad903bccc2c6e6255ce", null ],
     [ "TheVariableBehaviour", "_primitive_behaviour_names_8h.html#ae03c7401cd4d73606c14256ead356265", null ],

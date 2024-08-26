@@ -1,7 +1,7 @@
 <map id="rexxutil" name="rexxutil">
-<area shape="rect" id="node2" href="dir_da82a56450c1465ee658593a35899280.html" title="platform" alt="" coords="37,64,109,112"/>
-<area shape="rect" id="node3" href="dir_362247ee011c51bb6078fba078fa4338.html" title="api" alt="" coords="37,160,109,208"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000079_000048.html" title="2" alt="" coords="78,134,85,150"/>
-<area shape="rect" id="clust2" href="dir_ed6260cdad95d33bad1e950aadf28838.html" alt="" coords="27,53,216,123"/>
-<area shape="rect" id="clust1" href="dir_810b14902c641731e177eb53eeb0aca8.html" title="extensions" alt="" coords="16,16,227,133"/>
+<area shape="rect" id="node2" href="dir_da82a56450c1465ee658593a35899280.html" title="platform" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node3" href="dir_362247ee011c51bb6078fba078fa4338.html" title="api" alt="" coords="133,159,205,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000079_000048.html" title="2" alt="" coords="174,133,181,148"/>
+<area shape="rect" id="clust2" href="dir_ed6260cdad95d33bad1e950aadf28838.html" alt="" coords="27,52,216,122"/>
+<area shape="rect" id="clust1" href="dir_810b14902c641731e177eb53eeb0aca8.html" title="extensions" alt="" coords="16,16,227,132"/>
 </map>

@@ -6,6 +6,7 @@ var class_base_code =
     [ "getPackage", "class_base_code.html#aac2cb845c238c5ec5ba8b41942cb93f6", null ],
     [ "getSource", "class_base_code.html#a822e288594d9a0542d53e409419afb94", null ],
     [ "getSourceObject", "class_base_code.html#aa00b185eb182a03bb7fb2173d62f6e3f", null ],
+    [ "isSamePackage", "class_base_code.html#a24adcfe2e95082b251613f319b1aa4b0", null ],
     [ "run", "class_base_code.html#a8c026caa03373acae63ddc457d7d39c2", null ],
     [ "setSecurityManager", "class_base_code.html#ada66d8d78b11d82f9da02f51d8118b63", null ],
     [ "setSourceObject", "class_base_code.html#a03fcd4ecb161a3b5b0d8b9a3b0d50fc3", null ]

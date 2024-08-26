@@ -8,7 +8,6 @@ var rxsockfn_8cpp =
     [ "RexxRoutine0", "rxsockfn_8cpp.html#ac14c01ea738d65b409f6ac1088c1a221", null ],
     [ "RexxRoutine1", "rxsockfn_8cpp.html#aea2910e8709429edbae0e09223c73ca7", null ],
     [ "RexxRoutine1", "rxsockfn_8cpp.html#a89ac34f0a6b7d48d482d3e9f74e5b763", null ],
-    [ "RexxRoutine1", "rxsockfn_8cpp.html#a83cb1c32c7aa3597a9edf14af942216c", null ],
     [ "RexxRoutine2", "rxsockfn_8cpp.html#a652cbee0208c280e1732ca8aed62eaa0", null ],
     [ "RexxRoutine2", "rxsockfn_8cpp.html#a5ce7e3b820e77d39e32210e679e5c8be", null ],
     [ "RexxRoutine2", "rxsockfn_8cpp.html#a55cc5ef7482d0fadd5093d7b97300342", null ],

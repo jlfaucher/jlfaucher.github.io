@@ -1,12 +1,19 @@
 var searchData=
 [
-  ['namedargument_9605',['NamedArgument',['../struct_named_argument.html',1,'']]],
-  ['namedarguments_9606',['NamedArguments',['../class_named_arguments.html',1,'']]],
-  ['nametable_9607',['NameTable',['../class_name_table.html',1,'']]],
-  ['nativeactivationframe_9608',['NativeActivationFrame',['../class_native_activation_frame.html',1,'']]],
-  ['nativecontextblock_9609',['NativeContextBlock',['../class_native_context_block.html',1,'']]],
-  ['normalsegmentset_9610',['NormalSegmentSet',['../class_normal_segment_set.html',1,'']]],
-  ['numericformatter_9611',['NumericFormatter',['../class_numeric_formatter.html',1,'']]],
-  ['numerics_9612',['Numerics',['../class_numerics.html',1,'']]],
-  ['numericsettings_9613',['NumericSettings',['../class_numeric_settings.html',1,'']]]
+  ['macroitem_10104',['MacroItem',['../class_macro_item.html',1,'']]],
+  ['macrospacedescriptor_10105',['MacroSpaceDescriptor',['../class_macro_space_descriptor.html',1,'']]],
+  ['macrospacefile_10106',['MacroSpaceFile',['../class_macro_space_file.html',1,'']]],
+  ['macrospacefileheader_10107',['MacroSpaceFileHeader',['../class_macro_space_file_header.html',1,'']]],
+  ['macrotable_10108',['MacroTable',['../class_macro_table.html',1,'']]],
+  ['managedrxstring_10109',['ManagedRxstring',['../class_managed_rxstring.html',1,'']]],
+  ['memorysegment_10110',['MemorySegment',['../class_memory_segment.html',1,'']]],
+  ['memorysegmentheader_10111',['MemorySegmentHeader',['../class_memory_segment_header.html',1,'']]],
+  ['memorysegmentpool_10112',['MemorySegmentPool',['../class_memory_segment_pool.html',1,'']]],
+  ['memorysegmentpoolheader_10113',['MemorySegmentPoolHeader',['../class_memory_segment_pool_header.html',1,'']]],
+  ['memorysegmentset_10114',['MemorySegmentSet',['../class_memory_segment_set.html',1,'']]],
+  ['memorystats_10115',['MemoryStats',['../class_memory_stats.html',1,'']]],
+  ['messagedispatcher_10116',['MessageDispatcher',['../class_message_dispatcher.html',1,'']]],
+  ['methodcontext_10117',['MethodContext',['../struct_method_context.html',1,'']]],
+  ['methodcontextinterface_10118',['MethodContextInterface',['../struct_method_context_interface.html',1,'']]],
+  ['msgentry_10119',['msgEntry',['../structmsg_entry.html',1,'']]]
 ];

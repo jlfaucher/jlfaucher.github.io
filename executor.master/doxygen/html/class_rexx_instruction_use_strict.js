@@ -1,8 +1,8 @@
 var class_rexx_instruction_use_strict =
 [
-    [ "RexxInstructionUseStrict", "class_rexx_instruction_use_strict.html#a7e40a663152ab4bd9197b2d6e3d286f8", null ],
+    [ "RexxInstructionUseStrict", "class_rexx_instruction_use_strict.html#a040732d164caaa57827256f391e8c51a", null ],
     [ "RexxInstructionUseStrict", "class_rexx_instruction_use_strict.html#a1e8e8a799865be471fd1148de42a887e", null ],
-    [ "checkNamedArguments", "class_rexx_instruction_use_strict.html#a1946fda9ce594ea3ce9ef069606f3ec9", null ],
+    [ "checkNamedArguments", "class_rexx_instruction_use_strict.html#a22e04840604f1d1ab8ae131182f31889", null ],
     [ "execute", "class_rexx_instruction_use_strict.html#a019a2a47170fd43dcceb3c1c8627ccf7", null ],
     [ "executeNamedArguments", "class_rexx_instruction_use_strict.html#a3383b4b36a94355e0d30d6882a73c8b0", null ],
     [ "executePositionalArguments", "class_rexx_instruction_use_strict.html#a5d97c9dc04f2a9fa47d47f86ee9096cc", null ],

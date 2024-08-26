@@ -48,6 +48,9 @@ var files_dup =
     [ "automaton.hpp", "automaton_8hpp.html", [
       [ "automaton", "classautomaton.html", "classautomaton" ]
     ] ],
+    [ "BitSet.hpp", "_bit_set_8hpp.html", [
+      [ "BitSet", "class_bit_set.html", "class_bit_set" ]
+    ] ],
     [ "BlockClass.cpp", "_block_class_8cpp.html", null ],
     [ "BlockClass.hpp", "_block_class_8hpp.html", [
       [ "RexxSourceLiteral", "class_rexx_source_literal.html", "class_rexx_source_literal" ],
@@ -215,6 +218,10 @@ var files_dup =
     [ "FileNative.cpp", "_file_native_8cpp.html", "_file_native_8cpp" ],
     [ "unix/FileSystem.cpp", "unix_2_file_system_8cpp.html", null ],
     [ "windows/FileSystem.cpp", "windows_2_file_system_8cpp.html", "windows_2_file_system_8cpp" ],
+    [ "FlagSet.hpp", "_flag_set_8hpp.html", [
+      [ "FlagSet", "class_flag_set.html", "class_flag_set" ],
+      [ "FlagSetReference", "class_flag_set_1_1_flag_set_reference.html", "class_flag_set_1_1_flag_set_reference" ]
+    ] ],
     [ "ForwardInstruction.cpp", "_forward_instruction_8cpp.html", null ],
     [ "ForwardInstruction.hpp", "_forward_instruction_8hpp.html", "_forward_instruction_8hpp" ],
     [ "GlobalData.cpp", "_global_data_8cpp.html", "_global_data_8cpp" ],
@@ -546,7 +553,7 @@ var files_dup =
     [ "unix/rxsubcom.cpp", "unix_2rxsubcom_8cpp.html", "unix_2rxsubcom_8cpp" ],
     [ "windows/rxsubcom.cpp", "windows_2rxsubcom_8cpp.html", "windows_2rxsubcom_8cpp" ],
     [ "rxunixsys.cpp", "rxunixsys_8cpp.html", "rxunixsys_8cpp" ],
-    [ "rxunixsys.h", "rxunixsys_8h.html", null ],
+    [ "rxunixsys.h", "rxunixsys_8h.html", "rxunixsys_8h" ],
     [ "rxwinsys.cpp", "rxwinsys_8cpp.html", "rxwinsys_8cpp" ],
     [ "SayInstruction.cpp", "_say_instruction_8cpp.html", null ],
     [ "SayInstruction.hpp", "_say_instruction_8hpp.html", [
@@ -586,7 +593,7 @@ var files_dup =
     [ "StreamCommandParser.h", "_stream_command_parser_8h.html", "_stream_command_parser_8h" ],
     [ "StreamNative.cpp", "_stream_native_8cpp.html", "_stream_native_8cpp" ],
     [ "StreamNative.hpp", "_stream_native_8hpp.html", "_stream_native_8hpp" ],
-    [ "StringClass.cpp", "_string_class_8cpp.html", null ],
+    [ "StringClass.cpp", "_string_class_8cpp.html", "_string_class_8cpp" ],
     [ "StringClass.hpp", "_string_class_8hpp.html", "_string_class_8hpp" ],
     [ "StringClassBit.cpp", "_string_class_bit_8cpp.html", null ],
     [ "StringClassConversion.cpp", "_string_class_conversion_8cpp.html", null ],
@@ -705,6 +712,8 @@ var files_dup =
     [ "windows/SysUtilities.cpp", "windows_2_sys_utilities_8cpp.html", "windows_2_sys_utilities_8cpp" ],
     [ "TableClass.cpp", "_table_class_8cpp.html", null ],
     [ "TableClass.hpp", "_table_class_8hpp.html", "_table_class_8hpp" ],
+    [ "TextClass.cpp", "_text_class_8cpp.html", "_text_class_8cpp" ],
+    [ "TextClass.hpp", "_text_class_8hpp.html", "_text_class_8hpp" ],
     [ "ThenInstruction.cpp", "_then_instruction_8cpp.html", null ],
     [ "ThenInstruction.hpp", "_then_instruction_8hpp.html", [
       [ "RexxInstructionThen", "class_rexx_instruction_then.html", "class_rexx_instruction_then" ]
@@ -737,12 +746,12 @@ var files_dup =
     ] ],
     [ "unix/UseridFunction.cpp", "unix_2_userid_function_8cpp.html", "unix_2_userid_function_8cpp" ],
     [ "windows/UseridFunction.cpp", "windows_2_userid_function_8cpp.html", "windows_2_userid_function_8cpp" ],
-    [ "UseStrictInstruction.cpp", "_use_strict_instruction_8cpp.html", null ],
+    [ "UseStrictInstruction.cpp", "_use_strict_instruction_8cpp.html", "_use_strict_instruction_8cpp" ],
     [ "UseStrictInstruction.hpp", "_use_strict_instruction_8hpp.html", [
       [ "UseVariable", "class_use_variable.html", "class_use_variable" ],
       [ "RexxInstructionUseStrict", "class_rexx_instruction_use_strict.html", "class_rexx_instruction_use_strict" ]
     ] ],
-    [ "Utilities.cpp", "_utilities_8cpp.html", null ],
+    [ "Utilities.cpp", "_utilities_8cpp.html", "_utilities_8cpp" ],
     [ "Utilities.hpp", "_utilities_8hpp.html", "_utilities_8hpp" ],
     [ "unix/ValueFunction.cpp", "unix_2_value_function_8cpp.html", "unix_2_value_function_8cpp" ],
     [ "windows/ValueFunction.cpp", "windows_2_value_function_8cpp.html", "windows_2_value_function_8cpp" ],

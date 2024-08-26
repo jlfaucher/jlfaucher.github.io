@@ -1,5 +1,5 @@
 <map id="SysSocketConnection" name="SysSocketConnection">
-<area shape="rect" id="node1" title=" " alt="" coords="69,6,220,34"/>
-<area shape="rect" id="node2" href="$class_sys_client_stream.html" title=" " alt="" coords="5,83,125,111"/>
-<area shape="rect" id="node3" href="$class_sys_server_connection.html" title=" " alt="" coords="150,83,300,111"/>
+<area shape="rect" id="node1" title=" " alt="" coords="68,5,220,32"/>
+<area shape="rect" id="node2" href="$class_sys_client_stream.html" title=" " alt="" coords="5,80,126,107"/>
+<area shape="rect" id="node3" href="$class_sys_server_connection.html" title=" " alt="" coords="150,80,298,107"/>
 </map>

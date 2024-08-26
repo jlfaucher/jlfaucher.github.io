@@ -51,6 +51,7 @@ var windows_2rexxutil_8cpp =
     [ "SORT_CASEIGNORE", "windows_2rexxutil_8cpp.html#a8d2fa71ddc3683adb805fa0a0680731d", null ],
     [ "SORT_CASESENSITIVE", "windows_2rexxutil_8cpp.html#aa34ca575266a3f4b79b915c067dc275e", null ],
     [ "SORT_DECENDING", "windows_2rexxutil_8cpp.html#acda2338325b3044d2e9cae8c83de6a8b", null ],
+    [ "STATUS_SUCCESS", "windows_2rexxutil_8cpp.html#ae56fdb340b23940f7a64ed2e37c1774a", null ],
     [ "USED", "windows_2rexxutil_8cpp.html#abcd0a22ee4346cad5706adb6d2119429", null ],
     [ "VALID_ROUTINE", "windows_2rexxutil_8cpp.html#a5d442f6d8ad1ae6a5e00c3bc1ea09d26", null ],
     [ "WC_ERR_INVALID_CHARS", "windows_2rexxutil_8cpp.html#a8f2d1bc0ebfe7e951cbdfaae730143c2", null ],

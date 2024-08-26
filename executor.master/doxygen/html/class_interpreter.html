@@ -150,8 +150,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad7a76540eee0e0a3c8143fa398665ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa745286edf0e86180e93cdb9037d6c65"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpreter.html#aa745286edf0e86180e93cdb9037d6c65">isBigEndian</a> ()</td></tr>
 <tr class="separator:aa745286edf0e86180e93cdb9037d6c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ac2ba024b6581b6542ab04e2f2e1a3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpreter.html#a35ac2ba024b6581b6542ab04e2f2e1a3">logicError</a> (const char *desc)</td></tr>
-<tr class="separator:a35ac2ba024b6581b6542ab04e2f2e1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1643a7956556647b354181f445d7d394"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpreter.html#a1643a7956556647b354181f445d7d394">logicError</a> (const char *desc, const char *info1=NULL, size_t info2=0)</td></tr>
+<tr class="separator:a1643a7956556647b354181f445d7d394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5636c9a2effc1838b5a33152d948967d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpreter.html#a5636c9a2effc1838b5a33152d948967d">messageNumber</a> (<a class="el" href="class_rexx_string.html">RexxString</a> *)</td></tr>
 <tr class="separator:a5636c9a2effc1838b5a33152d948967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e77fee92bf408d508084b22d41ede7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interpreter.html#ae4e77fee92bf408d508084b22d41ede7">setTimeSliceElapsed</a> ()</td></tr>
@@ -268,7 +268,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8hpp_source.html#l00083">83</a> of file <a class="el" href="_interpreter_8hpp_source.html">Interpreter.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8cpp_source.html#l00308">SysMutex::close()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
+<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8cpp_source.html#l00324">SysMutex::close()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_8cpp_source.html#l00109">processShutdown()</a>.</p>
 
@@ -326,9 +326,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00258">258</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00095">createInterpreterInstance()</a>, <a class="el" href="_rexx_activity_8hpp_source.html#l00271">RexxActivity::deactivate()</a>, <a class="el" href="_interpreter_instance_8hpp_source.html#l00108">InterpreterInstance::getInstanceContext()</a>, <a class="el" href="_interpreter_instance_8hpp_source.html#l00074">InterpreterInstance::getRootActivity()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00737">InterpreterInstance::getRootThreadContext()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l02251">RexxActivity::releaseAccess()</a>, and <a class="el" href="rexxapidefs_8h_source.html#l00061">RXAPI_MEMFAIL</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00095">createInterpreterInstance()</a>, <a class="el" href="_rexx_activity_8hpp_source.html#l00271">RexxActivity::deactivate()</a>, <a class="el" href="_interpreter_instance_8hpp_source.html#l00108">InterpreterInstance::getInstanceContext()</a>, <a class="el" href="_interpreter_instance_8hpp_source.html#l00074">InterpreterInstance::getRootActivity()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00737">InterpreterInstance::getRootThreadContext()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l02255">RexxActivity::releaseAccess()</a>, and <a class="el" href="rexxapidefs_8h_source.html#l00061">RXAPI_MEMFAIL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00380">RexxCreateInterpreter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00381">RexxCreateInterpreter()</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00095">createInterpreterInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00146">RexxMemory::createImage()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00258">createInstance()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00095">createInterpreterInstance()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00376">InstanceBlock::InstanceBlock()</a>, and <a class="el" href="_activity_manager_8cpp_source.html#l00871">NativeContextBlock::NativeContextBlock()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00219">RexxMemory::createImage()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00258">createInstance()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00095">createInterpreterInstance()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00376">InstanceBlock::InstanceBlock()</a>, and <a class="el" href="_activity_manager_8cpp_source.html#l00871">NativeContextBlock::NativeContextBlock()</a>.</p>
 
 </div>
 </div>
@@ -398,7 +398,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00293">293</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_list_class_8cpp_source.html#l00538">RexxList::append()</a>, <a class="el" href="_activity_manager_8cpp_source.html#l00680">ActivityManager::getRootActivity()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00126">InterpreterInstance::initialize()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_interpreter_8hpp_source.html#l00065">RUN_MODE</a>, and <a class="el" href="_interpreter_8cpp_source.html#l00124">startInterpreter()</a>.</p>
+<p class="reference">References <a class="el" href="_list_class_8cpp_source.html#l00538">RexxList::append()</a>, <a class="el" href="_activity_manager_8cpp_source.html#l00680">ActivityManager::getRootActivity()</a>, <a class="el" href="_interpreter_instance_8cpp_source.html#l00126">InterpreterInstance::initialize()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_interpreter_8hpp_source.html#l00065">RUN_MODE</a>, and <a class="el" href="_interpreter_8cpp_source.html#l00124">startInterpreter()</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8hpp_source.html#l00078">78</a> of file <a class="el" href="_interpreter_8hpp_source.html">Interpreter.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8cpp_source.html#l00259">SysMutex::create()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
+<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8cpp_source.html#l00275">SysMutex::create()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_8cpp_source.html#l00100">processStartup()</a>.</p>
 
@@ -477,7 +477,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00462">462</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l00432">RexxCondition::additional</a>, <a class="el" href="_directory_class_8cpp_source.html#l00575">RexxDirectory::at()</a>, <a class="el" href="oorexxapi_8h_source.html#l00424">RexxCondition::code</a>, <a class="el" href="oorexxapi_8h_source.html#l00427">RexxCondition::conditionName</a>, <a class="el" href="oorexxapi_8h_source.html#l00431">RexxCondition::description</a>, <a class="el" href="oorexxapi_8h_source.html#l00429">RexxCondition::errortext</a>, <a class="el" href="oorexxapi_8h_source.html#l00428">RexxCondition::message</a>, <a class="el" href="_interpreter_8cpp_source.html#l00565">messageNumber()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="oorexxapi_8h_source.html#l00426">RexxCondition::position</a>, <a class="el" href="oorexxapi_8h_source.html#l00430">RexxCondition::program</a>, and <a class="el" href="oorexxapi_8h_source.html#l00425">RexxCondition::rc</a>.</p>
+<p class="reference">References <a class="el" href="oorexxapi_8h_source.html#l00432">RexxCondition::additional</a>, <a class="el" href="_directory_class_8cpp_source.html#l00575">RexxDirectory::at()</a>, <a class="el" href="oorexxapi_8h_source.html#l00424">RexxCondition::code</a>, <a class="el" href="oorexxapi_8h_source.html#l00427">RexxCondition::conditionName</a>, <a class="el" href="oorexxapi_8h_source.html#l00431">RexxCondition::description</a>, <a class="el" href="oorexxapi_8h_source.html#l00429">RexxCondition::errortext</a>, <a class="el" href="oorexxapi_8h_source.html#l00428">RexxCondition::message</a>, <a class="el" href="_interpreter_8cpp_source.html#l00566">messageNumber()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="oorexxapi_8h_source.html#l00426">RexxCondition::position</a>, <a class="el" href="oorexxapi_8h_source.html#l00430">RexxCondition::program</a>, and <a class="el" href="oorexxapi_8h_source.html#l00425">RexxCondition::rc</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_thread_context_stubs_8cpp_source.html#l01883">DecodeConditionInfo()</a>.</p>
 
@@ -517,9 +517,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00522">522</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00839">ActivityManager::getLocalEnvironment()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_rexx_core_8h_source.html#l00174">TheEnvironment</a>, and <a class="el" href="_string_class_8cpp_source.html#l01758">RexxString::upper()</a>.</p>
+<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00839">ActivityManager::getLocalEnvironment()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_rexx_core_8h_source.html#l00183">TheEnvironment</a>, and <a class="el" href="_string_class_8cpp_source.html#l01868">RexxString::upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_native_activation_8cpp_source.html#l02808">RexxNativeActivation::findCallerClass()</a>, <a class="el" href="_method_class_8cpp_source.html#l00820">BaseCode::findClass()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l02778">RexxNativeActivation::findClass()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_native_activation_8cpp_source.html#l02808">RexxNativeActivation::findCallerClass()</a>, <a class="el" href="_method_class_8cpp_source.html#l00923">BaseCode::findClass()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l02778">RexxNativeActivation::findClass()</a>.</p>
 
 </div>
 </div>
@@ -550,9 +550,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00543">543</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00839">ActivityManager::getLocalEnvironment()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, and <a class="el" href="_object_class_8cpp_source.html#l00676">RexxObject::sendMessage()</a>.</p>
+<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00839">ActivityManager::getLocalEnvironment()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, and <a class="el" href="_object_class_8cpp_source.html#l00719">RexxObject::sendMessage()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_activity_8cpp_source.html#l02533">RexxActivity::callFunctionExit()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l01426">RexxNativeActivation::callRegisteredRoutine()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l03079">RexxNativeActivation::variablePoolFetchPrivate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_activity_8cpp_source.html#l02537">RexxActivity::callFunctionExit()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l01426">RexxNativeActivation::callRegisteredRoutine()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l03079">RexxNativeActivation::variablePoolFetchPrivate()</a>.</p>
 
 </div>
 </div>
@@ -689,9 +689,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_version_8cpp_source.html#l00052">52</a> of file <a class="el" href="_version_8cpp_source.html">Version.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_version_8cpp_source.html#l00048">build_date</a>, <a class="el" href="_string_class_8hpp_source.html#l00568">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>, and <a class="el" href="unix_2rxqueue_8cpp_source.html#l00082">work</a>.</p>
+<p class="reference">References <a class="el" href="_version_8cpp_source.html#l00048">build_date</a>, <a class="el" href="_string_class_8hpp_source.html#l00600">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>, and <a class="el" href="unix_2rxqueue_8cpp_source.html#l00082">work</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00146">RexxMemory::createImage()</a>, <a class="el" href="_parse_instruction_8cpp_source.html#l00080">RexxInstructionParse::execute()</a>, <a class="el" href="_program_meta_data_8cpp_source.html#l00072">ProgramMetaData::ProgramMetaData()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l03079">RexxNativeActivation::variablePoolFetchPrivate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00219">RexxMemory::createImage()</a>, <a class="el" href="_parse_instruction_8cpp_source.html#l00080">RexxInstructionParse::execute()</a>, <a class="el" href="_program_meta_data_8cpp_source.html#l00072">ProgramMetaData::ProgramMetaData()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l03079">RexxNativeActivation::variablePoolFetchPrivate()</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00144">timeSliceElapsed</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_activation_8cpp_source.html#l00484">RexxActivation::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_activation_8cpp_source.html#l00517">RexxActivation::run()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, and <a class="el" href="_list_class_8hpp_source.html#l00147">new_list()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00146">RexxMemory::createImage()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l02342">RexxMemory::restore()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_setup_8cpp_source.html#l00219">RexxMemory::createImage()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l02388">RexxMemory::restore()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +847,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00167">167</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_object_class_8cpp_source.html#l00787">RexxObject::messageSend()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_object_class_8cpp_source.html#l00830">RexxObject::messageSend()</a>, and <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_instance_8cpp_source.html#l00126">InterpreterInstance::initialize()</a>.</p>
 
@@ -880,7 +880,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00146">active</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00271">RexxHaltThread()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00327">RexxResetThreadTrace()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00306">RexxSetThreadTrace()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00124">startInterpreter()</a>, and <a class="el" href="_interpreter_8cpp_source.html#l00187">terminateInterpreter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00272">RexxHaltThread()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00328">RexxResetThreadTrace()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00307">RexxSetThreadTrace()</a>, <a class="el" href="_interpreter_8cpp_source.html#l00124">startInterpreter()</a>, and <a class="el" href="_interpreter_8cpp_source.html#l00187">terminateInterpreter()</a>.</p>
 
 </div>
 </div>
@@ -1005,9 +1005,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00083">83</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00445">memory_mark</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00450">memory_mark</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l00922">RexxMemory::live()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l00939">RexxMemory::live()</a>.</p>
 
 </div>
 </div>
@@ -1037,14 +1037,14 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00090">90</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00446">memory_mark_general</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00085">memoryObject</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00217">RexxMemory::savingImage()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00451">memory_mark_general</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00086">memoryObject</a>, <a class="el" href="_rexx_memory_8hpp_source.html#l00217">RexxMemory::savingImage()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00147">versionNumber</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l00956">RexxMemory::liveGeneral()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_rexx_memory_8cpp_source.html#l00974">RexxMemory::liveGeneral()</a>.</p>
 
 </div>
 </div>
-<a id="a35ac2ba024b6581b6542ab04e2f2e1a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ac2ba024b6581b6542ab04e2f2e1a3">&#9670;&nbsp;</a></span>logicError()</h2>
+<a id="a1643a7956556647b354181f445d7d394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1643a7956556647b354181f445d7d394">&#9670;&nbsp;</a></span>logicError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1056,8 +1056,24 @@ Static Protected Attributes</h2></td></tr>
           <td class="memname">void Interpreter::logicError </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>desc</em></td><td>)</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>info1</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>info2</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1069,9 +1085,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00556">556</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00257">RC_LOGIC_ERROR</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00269">RC_LOGIC_ERROR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_dead_object_8cpp_source.html#l00201">DeadObjectPool::checkObjectGrain()</a>, <a class="el" href="_dead_object_8cpp_source.html#l00212">DeadObjectPool::checkObjectOverlap()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02091">RexxMemory::checkSetOref()</a>, <a class="el" href="_setup_8cpp_source.html#l00146">RexxMemory::createImage()</a>, <a class="el" href="unix_2_file_system_8cpp_source.html#l00142">SystemInterpreter::loadImage()</a>, <a class="el" href="_rexx_collection_8cpp_source.html#l00092">RexxHashTableCollection::makeProxy()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01434">RexxMemory::markGeneral()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01563">RexxMemory::orphanCheckMark()</a>, <a class="el" href="_library_package_8cpp_source.html#l00480">LibraryPackage::reload()</a>, <a class="el" href="_c_p_p_code_8cpp_source.html#l01113">CPPCode::resolveExportedMethod()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l01495">RexxMemory::saveImageMark()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_dead_object_8cpp_source.html#l00201">DeadObjectPool::checkObjectGrain()</a>, <a class="el" href="_dead_object_8cpp_source.html#l00212">DeadObjectPool::checkObjectOverlap()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02128">RexxMemory::checkSetOref()</a>, <a class="el" href="_setup_8cpp_source.html#l00219">RexxMemory::createImage()</a>, <a class="el" href="unix_2_file_system_8cpp_source.html#l00142">SystemInterpreter::loadImage()</a>, <a class="el" href="_rexx_collection_8cpp_source.html#l00092">RexxHashTableCollection::makeProxy()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01453">RexxMemory::markGeneral()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l01586">RexxMemory::orphanCheckMark()</a>, <a class="el" href="_library_package_8cpp_source.html#l00480">LibraryPackage::reload()</a>, <a class="el" href="_c_p_p_code_8cpp_source.html#l01218">CPPCode::resolveExportedMethod()</a>, and <a class="el" href="_rexx_memory_8cpp_source.html#l01514">RexxMemory::saveImageMark()</a>.</p>
 
 </div>
 </div>
@@ -1099,11 +1115,11 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00565">565</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00566">566</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00265">Error_Expression_result_raise</a>, <a class="el" href="_string_class_8hpp_source.html#l00342">RexxString::getBLength()</a>, <a class="el" href="_string_class_8hpp_source.html#l00355">RexxString::getStringData()</a>, <a class="el" href="_string_class_8hpp_source.html#l00568">new_string()</a>, <a class="el" href="_string_class_8cpp_source.html#l00249">RexxString::numberValue()</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_string_class_8cpp_source.html#l00189">RexxString::stringValue()</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_error_codes_8h_source.html#l00300">Error_Expression_result_raise</a>, <a class="el" href="_string_class_8hpp_source.html#l00341">RexxString::getLength()</a>, <a class="el" href="_string_class_8hpp_source.html#l00344">RexxString::getStringData()</a>, <a class="el" href="_string_class_8hpp_source.html#l00600">new_string()</a>, <a class="el" href="_string_class_8cpp_source.html#l00407">RexxString::numberValue()</a>, <a class="el" href="_activity_manager_8hpp_source.html#l00139">reportException()</a>, and <a class="el" href="_string_class_8cpp_source.html#l00347">RexxString::stringValue()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_interpreter_8cpp_source.html#l00462">decodeConditionData()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l01475">RexxActivity::display()</a>, <a class="el" href="_raise_instruction_8cpp_source.html#l00156">RexxInstructionRaise::execute()</a>, and <a class="el" href="_rexx_activity_8cpp_source.html#l01398">RexxActivity::reraiseException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_interpreter_8cpp_source.html#l00462">decodeConditionData()</a>, <a class="el" href="_rexx_activity_8cpp_source.html#l01479">RexxActivity::display()</a>, <a class="el" href="_raise_instruction_8cpp_source.html#l00156">RexxInstructionRaise::execute()</a>, and <a class="el" href="_rexx_activity_8cpp_source.html#l01402">RexxActivity::reraiseException()</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1148,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00109">109</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00592">ActivityManager::closeLocks()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02281">RexxMemory::closeLocks()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00083">closeLocks()</a>.</p>
+<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00592">ActivityManager::closeLocks()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02318">RexxMemory::closeLocks()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00083">closeLocks()</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1177,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00100">100</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00581">ActivityManager::createLocks()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02268">RexxMemory::createLocks()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00078">createLocks()</a>.</p>
+<p class="reference">References <a class="el" href="_activity_manager_8cpp_source.html#l00581">ActivityManager::createLocks()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l02305">RexxMemory::createLocks()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00078">createLocks()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00067">SystemInterpreter::processShutdown()</a>, and <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00060">SystemInterpreter::processStartup()</a>.</p>
 
@@ -1203,7 +1219,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8hpp_source.html#l00077">77</a> of file <a class="el" href="_interpreter_8hpp_source.html">Interpreter.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8hpp_source.html#l00098">SysMutex::release()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
+<p class="reference">References <a class="el" href="unix_2_sys_semaphore_8hpp_source.html#l00106">SysMutex::release()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00142">resourceLock</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_8hpp_source.html#l00171">ResourceSection::release()</a>, and <a class="el" href="_interpreter_8hpp_source.html#l00163">ResourceSection::~ResourceSection()</a>.</p>
 
@@ -1283,7 +1299,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00124">124</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00146">active</a>, <a class="el" href="_rexx_core_8h_source.html#l00220">env_find</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00172">RexxMemory::initialize()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00092">isActive()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00085">memoryObject</a>, <a class="el" href="_object_class_8cpp_source.html#l00787">RexxObject::messageSend()</a>, <a class="el" href="_list_class_8hpp_source.html#l00147">new_list()</a>, <a class="el" href="_string_class_8hpp_source.html#l00568">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>, <a class="el" href="_queues_a_p_i_8cpp_source.html#l00366">RexxCreateSessionQueue()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00065">RUN_MODE</a>, and <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00127">SystemInterpreter::startInterpreter()</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00146">active</a>, <a class="el" href="_rexx_core_8h_source.html#l00232">env_find</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00179">RexxMemory::initialize()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00092">isActive()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00138">localServer</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00086">memoryObject</a>, <a class="el" href="_object_class_8cpp_source.html#l00830">RexxObject::messageSend()</a>, <a class="el" href="_list_class_8hpp_source.html#l00147">new_list()</a>, <a class="el" href="_string_class_8hpp_source.html#l00600">new_string()</a>, <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>, <a class="el" href="_queues_a_p_i_8cpp_source.html#l00366">RexxCreateSessionQueue()</a>, <a class="el" href="_interpreter_8hpp_source.html#l00065">RUN_MODE</a>, and <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00127">SystemInterpreter::startInterpreter()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_8cpp_source.html#l00293">createInterpreterInstance()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00093">RexxCreateInterpreterImage()</a>, and <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00076">RexxInitialize()</a>.</p>
 
@@ -1316,7 +1332,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_interpreter_8cpp_source.html#l00187">187</a> of file <a class="el" href="_interpreter_8cpp_source.html">Interpreter.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00092">isActive()</a>, <a class="el" href="_list_class_8hpp_source.html#l00097">RexxList::items()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00510">RexxMemory::lastChanceUninit()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00085">memoryObject</a>, <a class="el" href="_queues_a_p_i_8cpp_source.html#l00353">RexxDeleteSessionQueue()</a>, <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00157">SystemInterpreter::terminateInterpreter()</a>, <a class="el" href="_package_manager_8cpp_source.html#l00625">PackageManager::unload()</a>, and <a class="el" href="_rexx_memory_8hpp_source.html#l00240">RexxMemory::verboseMessage()</a>.</p>
+<p class="reference">References <a class="el" href="_interpreter_8hpp_source.html#l00145">interpreterInstances</a>, <a class="el" href="_interpreter_8hpp_source.html#l00092">isActive()</a>, <a class="el" href="_list_class_8hpp_source.html#l00097">RexxList::items()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00517">RexxMemory::lastChanceUninit()</a>, <a class="el" href="_rexx_memory_8cpp_source.html#l00086">memoryObject</a>, <a class="el" href="_queues_a_p_i_8cpp_source.html#l00353">RexxDeleteSessionQueue()</a>, <a class="el" href="unix_2_system_interpreter_8cpp_source.html#l00157">SystemInterpreter::terminateInterpreter()</a>, <a class="el" href="_package_manager_8cpp_source.html#l00625">PackageManager::unload()</a>, and <a class="el" href="_rexx_memory_8hpp_source.html#l00240">RexxMemory::verboseMessage()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00119">RexxStart()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00065">RexxTerminate()</a>, <a class="el" href="_interpreter_a_p_i_8cpp_source.html#l00185">RexxTranslateProgram()</a>, and <a class="el" href="_interpreter_instance_stubs_8cpp_source.html#l00052">Terminate()</a>.</p>
 

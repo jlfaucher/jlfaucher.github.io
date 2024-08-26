@@ -1,11 +1,11 @@
 <map id="RexxVariableBase" name="RexxVariableBase">
-<area shape="rect" id="node1" title=" " alt="" coords="358,135,488,163"/>
-<area shape="rect" id="node4" href="$class_rexx_compound_variable.html" title=" " alt="" coords="540,5,705,33"/>
-<area shape="rect" id="node5" href="$class_rexx_dot_variable.html" title=" " alt="" coords="562,57,683,85"/>
-<area shape="rect" id="node6" href="$class_rexx_expression_message.html" title=" " alt="" coords="537,109,709,137"/>
-<area shape="rect" id="node7" href="$class_rexx_parse_variable.html" title=" " alt="" coords="555,161,690,189"/>
-<area shape="rect" id="node8" href="$class_rexx_stem_variable.html" title=" " alt="" coords="557,213,688,241"/>
-<area shape="rect" id="node9" href="$class_rexx_variable_reference.html" title=" " alt="" coords="542,265,703,293"/>
-<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="174,135,309,163"/>
-<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="6,135,125,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="354,132,482,159"/>
+<area shape="rect" id="node4" href="$class_rexx_compound_variable.html" title=" " alt="" coords="535,5,696,32"/>
+<area shape="rect" id="node5" href="$class_rexx_dot_variable.html" title=" " alt="" coords="556,56,675,83"/>
+<area shape="rect" id="node6" href="$class_rexx_expression_message.html" title=" " alt="" coords="530,107,701,134"/>
+<area shape="rect" id="node7" href="$class_rexx_parse_variable.html" title=" " alt="" coords="549,157,682,184"/>
+<area shape="rect" id="node8" href="$class_rexx_stem_variable.html" title=" " alt="" coords="551,208,680,235"/>
+<area shape="rect" id="node9" href="$class_rexx_variable_reference.html" title=" " alt="" coords="536,259,695,286"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,132,306,159"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,132,125,159"/>
 </map>

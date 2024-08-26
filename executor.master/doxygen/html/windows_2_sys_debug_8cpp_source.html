@@ -136,8 +136,13 @@ $(document).ready(function(){initNavTree('windows_2_sys_debug_8cpp_source.html',
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    n = _vsnprintf(p, <span class="keyword">sizeof</span> buf - 1, format, args);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    va_end(args);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    OutputDebugString(buf);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// I follow for Windows the decision I have taken for MacOs:</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Tired to fight under MacOs with syslogd, /etc/syslog.conf, /etc/asl.conf to have something somewhere.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Now using a good old printf</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// OutputDebugString(buf);</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;%s&quot;</span>, buf);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="ttc" id="awindows_2_sys_debug_8cpp_html_a2e8dd9ef5b640e18e39b0b93a48ee877"><div class="ttname"><a href="windows_2_sys_debug_8cpp.html#a2e8dd9ef5b640e18e39b0b93a48ee877">dbgprintf</a></div><div class="ttdeci">void dbgprintf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="windows_2_sys_debug_8cpp_source.html#l00044">windows/SysDebug.cpp:44</a></div></div>
 <div class="ttc" id="awindows_2_sys_debug_8hpp_html"><div class="ttname"><a href="windows_2_sys_debug_8hpp.html">SysDebug.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

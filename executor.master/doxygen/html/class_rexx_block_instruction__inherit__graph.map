@@ -1,8 +1,8 @@
 <map id="RexxBlockInstruction" name="RexxBlockInstruction">
-<area shape="rect" id="node1" title=" " alt="" coords="78,238,223,266"/>
-<area shape="rect" id="node5" href="$class_rexx_instruction_do.html" title=" " alt="" coords="4,315,133,343"/>
-<area shape="rect" id="node6" href="$class_rexx_instruction_select.html" title=" " alt="" coords="158,315,308,343"/>
-<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="94,161,207,189"/>
-<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="83,83,217,111"/>
-<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="91,6,209,34"/>
+<area shape="rect" id="node1" title=" " alt="" coords="79,230,225,257"/>
+<area shape="rect" id="node5" href="$class_rexx_instruction_do.html" title=" " alt="" coords="5,305,136,332"/>
+<area shape="rect" id="node6" href="$class_rexx_instruction_select.html" title=" " alt="" coords="159,305,310,332"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="95,155,208,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="85,80,218,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="92,5,212,32"/>
 </map>

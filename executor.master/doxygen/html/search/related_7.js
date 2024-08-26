@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queuetable_15600',['QueueTable',['../class_data_queue.html#a4e4d4bb28bec4c3bc361c744249c1b6e',1,'DataQueue::QueueTable()'],['../class_server_queue_manager.html#a4e4d4bb28bec4c3bc361c744249c1b6e',1,'ServerQueueManager::QueueTable()']]]
+  ['protectedobject_16246',['ProtectedObject',['../class_rexx_activity.html#a2c2ac1b22fce4886a4f67befc258dd07',1,'RexxActivity']]]
 ];

@@ -28,7 +28,7 @@ var class_interpreter =
     [ "lastInstance", "class_interpreter.html#a0e6515b8f4034e1673eff57b1012c63a", null ],
     [ "live", "class_interpreter.html#a210abecb037deb0bad35801f340f1a25", null ],
     [ "liveGeneral", "class_interpreter.html#ab69ab60da7a0385d0e252aafbde5b770", null ],
-    [ "logicError", "class_interpreter.html#a35ac2ba024b6581b6542ab04e2f2e1a3", null ],
+    [ "logicError", "class_interpreter.html#a1643a7956556647b354181f445d7d394", null ],
     [ "messageNumber", "class_interpreter.html#a5636c9a2effc1838b5a33152d948967d", null ],
     [ "processShutdown", "class_interpreter.html#aeddb01f59d2a62bb72630fe777d6a5be", null ],
     [ "processStartup", "class_interpreter.html#ad54bdb61c113b33ab64145c4170325a2", null ],

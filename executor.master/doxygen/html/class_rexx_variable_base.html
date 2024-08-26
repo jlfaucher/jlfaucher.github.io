@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('class_rexx_variable_base.html',''); in
 <div class="dynheader">
 Inheritance diagram for RexxVariableBase:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_rexx_variable_base__inherit__graph.svg" width="100%" height="523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_rexx_variable_base__inherit__graph.svg" width="100%" height="518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -179,6 +179,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4b4cee47b6a1c6f94b2d49b2a45efcd inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd700c43a15c98749f72e68fd3099f81 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#abd700c43a15c98749f72e68fd3099f81">isNonPrimitive</a> ()</td></tr>
 <tr class="separator:abd700c43a15c98749f72e68fd3099f81 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c232807871ac8b8f1520e0c94730fb inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a67c232807871ac8b8f1520e0c94730fb">setInRexxPackage</a> ()</td></tr>
+<tr class="separator:a67c232807871ac8b8f1520e0c94730fb inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6f1f77130d2b2f422a2033979c917d inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#abe6f1f77130d2b2f422a2033979c917d">isInRexxPackage</a> ()</td></tr>
+<tr class="separator:abe6f1f77130d2b2f422a2033979c917d inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6203a88b0295f435cee618d953f918f inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#ab6203a88b0295f435cee618d953f918f">isObjectMarked</a> (size_t markword)</td></tr>
 <tr class="separator:ab6203a88b0295f435cee618d953f918f inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ae790a50c3982e1aeaded23c19c9de0 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a0ae790a50c3982e1aeaded23c19c9de0">setObjectMark</a> (size_t markword)</td></tr>
@@ -245,14 +249,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afbb82800b44d700018dd75e6510300be inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bb78b8792c115d1f32eab85a055cae inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_string.html">RexxString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a76bb78b8792c115d1f32eab85a055cae">makeString</a> ()</td></tr>
 <tr class="separator:a76bb78b8792c115d1f32eab85a055cae inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3371c6f4d0e891fd33e9d71c7dafb2c3 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_text.html">RexxText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a3371c6f4d0e891fd33e9d71c7dafb2c3">makeText</a> ()</td></tr>
+<tr class="separator:a3371c6f4d0e891fd33e9d71c7dafb2c3 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac094651439d393f782632bd30057e155 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#ac094651439d393f782632bd30057e155">copyIntoTail</a> (<a class="el" href="class_rexx_compound_tail.html">RexxCompoundTail</a> *buffer)</td></tr>
 <tr class="separator:ac094651439d393f782632bd30057e155 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18fd398afbde4a5eeb7c604ae67095c6 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_string.html">RexxString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a18fd398afbde4a5eeb7c604ae67095c6">primitiveMakeString</a> ()</td></tr>
 <tr class="separator:a18fd398afbde4a5eeb7c604ae67095c6 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa823288c6fa89a6eab282e955a626bbd inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_text.html">RexxText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#aa823288c6fa89a6eab282e955a626bbd">primitiveMakeText</a> ()</td></tr>
+<tr class="separator:aa823288c6fa89a6eab282e955a626bbd inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe4634ab50b4d4c968dbb53550e4a3a inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_array.html">RexxArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a9fe4634ab50b4d4c968dbb53550e4a3a">makeArray</a> ()</td></tr>
 <tr class="separator:a9fe4634ab50b4d4c968dbb53550e4a3a inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2f26e4a982a609d916e2ce4e623191 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_string.html">RexxString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a5d2f26e4a982a609d916e2ce4e623191">stringValue</a> ()</td></tr>
 <tr class="separator:a5d2f26e4a982a609d916e2ce4e623191 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f5d087357fa4d50cc5decbfe17b834 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_text.html">RexxText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#ad9f5d087357fa4d50cc5decbfe17b834">textValue</a> ()</td></tr>
+<tr class="separator:ad9f5d087357fa4d50cc5decbfe17b834 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8a54e0c886f573cb3e035d9361aace inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_integer.html">RexxInteger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a0b8a54e0c886f573cb3e035d9361aace">integerValue</a> (size_t)</td></tr>
 <tr class="separator:a0b8a54e0c886f573cb3e035d9361aace inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c1ec5e204c6192ac5a57e37f34febf inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a87c1ec5e204c6192ac5a57e37f34febf">numberValue</a> (<a class="el" href="rexx_8h.html#aa0199524ada35d939fa20d4625d27d55">wholenumber_t</a> &amp;result, size_t precision)</td></tr>
@@ -275,6 +285,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadf5d0abaf32c404d16ab778bc6619ea inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e8918efc7e0af881f1cd048898c953 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_supplier.html">RexxSupplier</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#a70e8918efc7e0af881f1cd048898c953">instanceMethods</a> (<a class="el" href="class_rexx_class.html">RexxClass</a> *)</td></tr>
 <tr class="separator:a70e8918efc7e0af881f1cd048898c953 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadde20ea28a02603221edda9b357aebd inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_rexx_object.html">RexxObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#aadde20ea28a02603221edda9b357aebd">dynamicTarget</a> (<a class="el" href="class_rexx_object.html">RexxObject</a> **arguments, size_t count, size_t named_count)</td></tr>
+<tr class="separator:aadde20ea28a02603221edda9b357aebd inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c82a4be81c9c9fb857e6551095a382 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#af1c82a4be81c9c9fb857e6551095a382">hasUninit</a> ()</td></tr>
 <tr class="separator:af1c82a4be81c9c9fb857e6551095a382 inherit pub_methods_class_rexx_internal_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09b376d3c7ba9b19075d49fd2f5f565 inherit pub_methods_class_rexx_internal_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rexx_internal_object.html#ae09b376d3c7ba9b19075d49fd2f5f565">removedUninit</a> ()</td></tr>
@@ -385,7 +397,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00053">53</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_builtin_functions_8cpp_source.html#l01870">BUILTIN()</a>, <a class="el" href="_do_instruction_8cpp_source.html#l00575">RexxInstructionDo::checkOver()</a>, <a class="el" href="_do_instruction_8cpp_source.html#l00454">RexxInstructionDo::controlSetup()</a>, <a class="el" href="_assignment_instruction_8cpp_source.html#l00098">RexxInstructionAssignment::execute()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00293">RexxInstructionUseStrict::executeNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00176">RexxInstructionUseStrict::executePositionalArguments()</a>, and <a class="el" href="_parse_trigger_8cpp_source.html#l00103">RexxTrigger::parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_builtin_functions_8cpp_source.html#l02007">BUILTIN()</a>, <a class="el" href="_do_instruction_8cpp_source.html#l00582">RexxInstructionDo::checkOver()</a>, <a class="el" href="_do_instruction_8cpp_source.html#l00459">RexxInstructionDo::controlSetup()</a>, <a class="el" href="_assignment_instruction_8cpp_source.html#l00098">RexxInstructionAssignment::execute()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00285">RexxInstructionUseStrict::executeNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00168">RexxInstructionUseStrict::executePositionalArguments()</a>, and <a class="el" href="_parse_trigger_8cpp_source.html#l00103">RexxTrigger::parse()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +461,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00054">54</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00140">RexxVariableReference::drop()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02670">RexxNativeActivation::dropContextVariable()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02752">RexxNativeActivation::dropObjectVariable()</a>, <a class="el" href="_drop_instruction_8cpp_source.html#l00120">RexxInstructionDrop::execute()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00293">RexxInstructionUseStrict::executeNamedArguments()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00176">RexxInstructionUseStrict::executePositionalArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00140">RexxVariableReference::drop()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02670">RexxNativeActivation::dropContextVariable()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02752">RexxNativeActivation::dropObjectVariable()</a>, <a class="el" href="_drop_instruction_8cpp_source.html#l00120">RexxInstructionDrop::execute()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00285">RexxInstructionUseStrict::executeNamedArguments()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00168">RexxInstructionUseStrict::executePositionalArguments()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00050">50</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_builtin_functions_8cpp_source.html#l01805">BUILTIN()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00293">RexxInstructionUseStrict::executeNamedArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_builtin_functions_8cpp_source.html#l01942">BUILTIN()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00285">RexxInstructionUseStrict::executeNamedArguments()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +571,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00058">58</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00186">RexxVariableReference::expose()</a>, and <a class="el" href="_rexx_activation_8cpp_source.html#l01385">RexxActivation::expose()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00186">RexxVariableReference::expose()</a>, and <a class="el" href="_rexx_activation_8cpp_source.html#l01418">RexxActivation::expose()</a>.</p>
 
 </div>
 </div>
@@ -590,9 +602,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00061">61</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00060">OREF_NULL</a>.</p>
+<p class="reference">References <a class="el" href="_rexx_core_8h_source.html#l00061">OREF_NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00431">RexxInstructionUseStrict::checkNamedArguments()</a>, and <a class="el" href="_use_strict_instruction_8cpp_source.html#l00293">RexxInstructionUseStrict::executeNamedArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_use_strict_instruction_8cpp_source.html#l00423">RexxInstructionUseStrict::checkNamedArguments()</a>, <a class="el" href="_use_strict_instruction_8cpp_source.html#l00285">RexxInstructionUseStrict::executeNamedArguments()</a>, and <a class="el" href="_instruction_parser_8cpp_source.html#l02520">RexxSource::useNew()</a>.</p>
 
 </div>
 </div>
@@ -622,6 +634,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_rexx_expression_message.html#ab2a684ce7c802d3517f3ce3ebd530dad">RexxExpressionMessage</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00062">62</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_instruction_parser_8cpp_source.html#l02520">RexxSource::useNew()</a>.</p>
 
 </div>
 </div>
@@ -669,7 +683,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00059">59</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00161">RexxVariableReference::procedureExpose()</a>, and <a class="el" href="_rexx_activation_8cpp_source.html#l01356">RexxActivation::procedureExpose()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_indirect_variable_reference_8cpp_source.html#l00161">RexxVariableReference::procedureExpose()</a>, and <a class="el" href="_rexx_activation_8cpp_source.html#l01389">RexxActivation::procedureExpose()</a>.</p>
 
 </div>
 </div>
@@ -711,7 +725,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_expression_base_variable_8hpp_source.html#l00051">51</a> of file <a class="el" href="_expression_base_variable_8hpp_source.html">ExpressionBaseVariable.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_do_instruction_8cpp_source.html#l00608">RexxInstructionDo::checkControl()</a>, <a class="el" href="_c_p_p_code_8cpp_source.html#l00353">AttributeSetterCode::run()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02649">RexxNativeActivation::setContextVariable()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l02729">RexxNativeActivation::setObjectVariable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_do_instruction_8cpp_source.html#l00615">RexxInstructionDo::checkControl()</a>, <a class="el" href="_c_p_p_code_8cpp_source.html#l00374">AttributeSetterCode::run()</a>, <a class="el" href="_rexx_native_activation_8cpp_source.html#l02649">RexxNativeActivation::setContextVariable()</a>, and <a class="el" href="_rexx_native_activation_8cpp_source.html#l02729">RexxNativeActivation::setObjectVariable()</a>.</p>
 
 </div>
 </div>

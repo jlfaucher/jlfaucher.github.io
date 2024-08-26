@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_macro_table.html" title=" " alt="" coords="6,5,96,33"/>
+<area shape="rect" id="node1" href="$class_local_a_p_i_subsystem.html" title=" " alt="" coords="5,56,146,83"/>
+<area shape="rect" id="node2" href="$class_local_macro_space_manager.html" title=" " alt="" coords="194,5,369,32"/>
+<area shape="rect" id="node3" href="$class_local_queue_manager.html" title=" " alt="" coords="211,56,352,83"/>
+<area shape="rect" id="node4" href="$class_local_registration_manager.html" title=" " alt="" coords="195,107,368,134"/>
 </map>

@@ -14,6 +14,7 @@ var class_protected_object =
     [ "operator RexxObject *", "class_protected_object.html#a80052b6f6846ebb8179f4424a1f5e4dd", null ],
     [ "operator RexxObjectPtr", "class_protected_object.html#ae195d977fbba21459ad65d4d66034373", null ],
     [ "operator RexxString *", "class_protected_object.html#a7b04cd1bb31e0d08b3934283791cdee2", null ],
+    [ "operator RexxText *", "class_protected_object.html#a9d1af8bb6b946beb5856819bd334c396", null ],
     [ "operator void *", "class_protected_object.html#af7a91ba401b5cc538a80c2d3370b8108", null ],
     [ "operator!=", "class_protected_object.html#a17ab63a8d8c4b0e54c570a164dc1bfdf", null ],
     [ "operator=", "class_protected_object.html#a96babc2e9efcb558d2a62a5badca318e", null ],

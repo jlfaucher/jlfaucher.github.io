@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oldsegmentset_15598',['OldSegmentSet',['../class_memory_segment_header.html#ae11d979054c7da1821df6853e027e069',1,'MemorySegmentHeader::OldSegmentSet()'],['../class_memory_segment.html#ae11d979054c7da1821df6853e027e069',1,'MemorySegment::OldSegmentSet()']]]
+  ['normalsegmentset_16244',['NormalSegmentSet',['../class_memory_segment_header.html#ae429b0b4e6c1f770d2104d209fbe7516',1,'MemorySegmentHeader::NormalSegmentSet()'],['../class_memory_segment.html#ae429b0b4e6c1f770d2104d209fbe7516',1,'MemorySegment::NormalSegmentSet()']]]
 ];
