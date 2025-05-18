@@ -1,9 +1,26 @@
-ChatGPT discussions about Unicode
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>ChatGPT on Unicode-2023.01.26.txt</title>
+</head>
+<body>
+<pre>
+<hr><h1 id="ChatGPT_discussions_on_Unicode__2023_01_26_">ChatGPT discussions on Unicode (2023.01.26)</h1><hr>
+Contents:
+    <a href="#How_to_support_Unicode_strings_with_ooRexx_">How to support Unicode strings with ooRexx?</a>
+    <a href="#Same_level_of_Unicode_support_as_in_Swift_">Same level of Unicode support as in Swift?</a>
+    <a href="#Layer_above_the_native_strings_">Layer above the native strings?</a>
+    <a href="#Indexer__cache_">Indexer, cache?</a>
+    <a href="#Examples_of_text_processing_libraries_">Examples of text processing libraries?</a>
+    <a href="#Direct_access_to_the_graphemes_">Direct access to the graphemes?</a>
+    <a href="#Multi_stage_tables_">Multi-stage tables?</a>
+    <a href="#ObjectIcon_indexes_">ObjectIcon indexes?</a>
+    <a href="#What_means__canonically_equivalent__">What means "canonically equivalent"?</a>
+    <a href="#Swift_normalization_">Swift normalization?</a>
+    <a href="#Swift_source_code_for_string_comparison_">Swift source code for string comparison?</a>
 
-================================================================================
-How to support Unicode strings with ooRexx?
-================================================================================
-
+<hr><h2 id="How_to_support_Unicode_strings_with_ooRexx_">How to support Unicode strings with ooRexx?</h2><hr>
 I would like a support at grapheme level.
 For example: "Noël"~length should return 4
 
@@ -21,10 +38,7 @@ to work with Unicode strings in ooRexx, so you may need to experiment to find
 the best solution for your specific use case.
 
 
-================================================================================
-Same level of Unicode support as in Swift?
-================================================================================
-
+<hr><h2 id="Same_level_of_Unicode_support_as_in_Swift_">Same level of Unicode support as in Swift?</h2><hr>
 Is it possible to have in ooRexx the same level of Unicode support as in Swift?
 
 Answer:
@@ -52,10 +66,7 @@ Overall, while it is possible to achieve a similar level of Unicode support in
 ooRexx as in Swift, it may require more effort and workarounds.
 
 
-================================================================================
-Layer above the native strings?
-================================================================================
-
+<hr><h2 id="Layer_above_the_native_strings_">Layer above the native strings?</h2><hr>
 ooRexx supports only byte-encoded strings. I plan to add a layer above the native
 strings to support Unicode. This layer will use the Unicode algorithms to
 decompose a string in graphemes, and to normalize strings for comparison.
@@ -99,10 +110,7 @@ Overall, your approach seems reasonable, but I would recommend testing it
 thoroughly and measuring its performance to ensure that it meets your requirements.
 
 
-================================================================================
-Indexer, cache?
-================================================================================
-
+<hr><h2 id="Indexer__cache_">Indexer, cache?</h2><hr>
 For the performance, I plan to use an indexer on-demand (incremental) and to
 cache some intermediate transformations.
 For example, if I want to extract the 10 first characters of a string then I
@@ -129,10 +137,7 @@ This is similar to what you plan to do in your implementation, caching the NFC
 transformation of a string so that the next time it's needed, it's immediate.
 
 
-================================================================================
-Examples of text processing libraries?
-================================================================================
-
+<hr><h2 id="Examples_of_text_processing_libraries_">Examples of text processing libraries?</h2><hr>
 Can you give me some examples of text processing libraries that implement these
 optimizations?
 
@@ -164,10 +169,7 @@ direct access to grapheme clusters and it also caches intermediate results to
 improve performance.
 
 
-================================================================================
-Direct access to the graphemes?
-================================================================================
-
+<hr><h2 id="Direct_access_to_the_graphemes_">Direct access to the graphemes?</h2><hr>
 Are you sure that these libraries support a DIRECT access to the graphemes?
 To my knowledge, they are all using iterators, so it's a SEQUENTIAL access.
 I would love to find a library that really implements a direct access to any grapheme.
@@ -198,10 +200,7 @@ previously mentioned, rather than relying on an existing library.
 Please let me know if there is anything else I can assist you with.
 
 
-================================================================================
-Multi-stage tables?
-================================================================================
-
+<hr><h2 id="Multi_stage_tables_">Multi-stage tables?</h2><hr>
 I started to implement a prototype using utf8proc and ICU, and I'm quite happy
 with the functionalities already implemented.
 I'm quite aware that my approach is not the approach recommended by most people
@@ -245,10 +244,7 @@ structures, the first one is small and fast, the second one is bigger and slower
 and so on. Depending on the size of the string, it will use one of the stages
 
 
-================================================================================
-ObjectIcon indexes?
-================================================================================
-
+<hr><h2 id="ObjectIcon_indexes_">ObjectIcon indexes?</h2><hr>
 I have read that the language ObjectIcon maintains an index of offsets into the
 utf-8 string to make random access faster.
 Can you tell me more about their implementation of this index?
@@ -280,10 +276,7 @@ store the index, and that the index would need to be updated whenever the utf-8
 string is modified.
 
 
-================================================================================
-What means "canonically equivalent"?
-================================================================================
-
+<hr><h2 id="What_means__canonically_equivalent__">What means "canonically equivalent"?</h2><hr>
 In the Swift language, two String values are considered equal if their extended
 grapheme clusters are canonically equivalent.
 Could you explain what means "canonically equivalent"?
@@ -300,10 +293,7 @@ but the most commonly used forms are NFC (Canonical Decomposition, followed by
 Canoncial composition) and NFD (Canonical Decomposition).
 
 
-================================================================================
-Swift normalization?
-================================================================================
-
+<hr><h2 id="Swift_normalization_">Swift normalization?</h2><hr>
 Which normalization form is used internally by Swift?
 
 Answer:
@@ -317,10 +307,7 @@ according to their combining class. This results in a unique representation of
 a string, which allows for more efficient string comparison and sorting.
 
 
-================================================================================
-Swift source code for string comparison?
-================================================================================
-
+<hr><h2 id="Swift_source_code_for_string_comparison_">Swift source code for string comparison?</h2><hr>
 Can you show me the Swift source code which implements this string comparison?
 
 Answer:
@@ -348,3 +335,6 @@ It's also important to note that the comparison is done in a case-sensitive way
 and that the comparison is done after normalizing the string to NFC (Unicode
  Normalization Form C)
 
+</pre>
+</body>
+</html>
