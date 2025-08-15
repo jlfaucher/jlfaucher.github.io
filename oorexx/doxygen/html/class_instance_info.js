@@ -1,0 +1,55 @@
+var class_instance_info =
+[
+    [ "ExitConfig", "class_instance_info_1_1_exit_config.html", "class_instance_info_1_1_exit_config" ],
+    [ "CallType", "class_instance_info.html#aaa58ad7145daca1a9ceae02bafa206bb", [
+      [ "INSTANCE", "class_instance_info.html#aaa58ad7145daca1a9ceae02bafa206bba9a48da7d578bdb039af94258d3d376c3", null ],
+      [ "REXXSTART", "class_instance_info.html#aaa58ad7145daca1a9ceae02bafa206bba50ec5c2baa82c3085a3d8566a58bf133", null ]
+    ] ],
+    [ "ExitAction", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0f", [
+      [ "DISABLED", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa523b3589557ccb2188bf2c03ae8e1581", null ],
+      [ "SKIP", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fab7154f0cc650ac86218aacdb234329a9", null ],
+      [ "EXIT_ERROR", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa9b79ade725f0777b2783bf5262462c1a", null ],
+      [ "RAISE", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa157c353402fdd3ea6c0e0a95aa90de2e", null ],
+      [ "HANDLE", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fae714c23ecde416968aa90b4d3288a91c", null ],
+      [ "TRACEON", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0faa3613e1b7474bebd30595b3d39dc985a", null ],
+      [ "TRACEOFF", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa87d06208639e1b903a5c7b3b0ef6e911", null ],
+      [ "HALT", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa36c960fa074e09fdacf7279f0470c596", null ],
+      [ "NOHALT", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa9e3d1e7fb775e5311903854fb1e5678d", null ],
+      [ "ALL", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fac71bcfdbe0c4368a9a5f38706d8d06f7", null ],
+      [ "CONSOLE", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fad4256658abdee73c9d2b923a006f8161", null ],
+      [ "CONSOLE_DEBUG", "class_instance_info.html#a99c5ea8d0981b075309ff5fac5780c0fa9f76fe1f91baa867f3fb2bb4b870b707", null ]
+    ] ],
+    [ "ExitType", "class_instance_info.html#ae4aa4f670d514c50be21063e2b96fc84", [
+      [ "NONE", "class_instance_info.html#ae4aa4f670d514c50be21063e2b96fc84a969536c58085884a42132652f671d0c9", null ],
+      [ "CONTEXT", "class_instance_info.html#ae4aa4f670d514c50be21063e2b96fc84a480e7359d3a47ebfb5580b4f0b29319e", null ],
+      [ "REGISTERED_DLL", "class_instance_info.html#ae4aa4f670d514c50be21063e2b96fc84a3e25f712d5bd79a6b6260438e7ff25f9", null ],
+      [ "REGISTERED_EXE", "class_instance_info.html#ae4aa4f670d514c50be21063e2b96fc84a48c0413aab99610a85d906cba3f031f0", null ]
+    ] ],
+    [ "InstanceInfo", "class_instance_info.html#a18fe37d755e498417f70fd73e63d8137", null ],
+    [ "operator delete", "class_instance_info.html#acc00d66ab1193ddbdb1d4a8bbbe38c8f", null ],
+    [ "operator new", "class_instance_info.html#a3960682723111c0ff19fe69c3cc5a2ba", null ],
+    [ "argCount", "class_instance_info.html#a4b82708f05c3591a3d23398c4dc0a081", null ],
+    [ "arguments", "class_instance_info.html#aef5d452fc7628380ed80637cdf992431", null ],
+    [ "callType", "class_instance_info.html#acb98e0cd0e43959dbedcd34186952bd7", null ],
+    [ "cmd", "class_instance_info.html#a2b9364d325a4d86ed628ede33aa7587d", null ],
+    [ "code", "class_instance_info.html#abdacac4dd4c2aab34acfedf9d0e179f9", null ],
+    [ "exf", "class_instance_info.html#a913b1c7ebf92383ff95db8d3b794861e", null ],
+    [ "exitStyle", "class_instance_info.html#ad2a89cb501a15221b3ff03f35747413a", null ],
+    [ "extensionPath", "class_instance_info.html#a26c3daa3cdf5c5375ed070138971f1a8", null ],
+    [ "extensions", "class_instance_info.html#a368f2c9b64333dca8edd42c9ba16dd2b", null ],
+    [ "fnc", "class_instance_info.html#ae5b705312ad1e1c440924e4d2b6324d8", null ],
+    [ "hlt", "class_instance_info.html#ae949a2326ea1a01f10915a5de6ac89f7", null ],
+    [ "ini", "class_instance_info.html#a23ef28140a3eb514862331a207ce8f47", null ],
+    [ "initialAddress", "class_instance_info.html#a75d1d65ac43d394db21b64988db8762d", null ],
+    [ "loadLibrary", "class_instance_info.html#a2feefed06daad053b74ae3a8e157ffb7", null ],
+    [ "msq", "class_instance_info.html#a2a157d7fb5072967fa2781ad296843cc", null ],
+    [ "ofnc", "class_instance_info.html#ab92a09a23358d40981ad27580da8281c", null ],
+    [ "programName", "class_instance_info.html#a86827638b6cbebd74a3770ace206e9a9", null ],
+    [ "rc", "class_instance_info.html#ac9edb191ad38a13ecce6a9c2717bb13c", null ],
+    [ "returnResult", "class_instance_info.html#a9d8e1965b166071cadd7972983ce1c1e", null ],
+    [ "sio", "class_instance_info.html#a74b598dbe978493c190973c07fd03819", null ],
+    [ "ter", "class_instance_info.html#af2b15cc3561d42bb30afe6f36699e126", null ],
+    [ "trc", "class_instance_info.html#a1c5213762aecb60b5469d12458c4abfa", null ],
+    [ "val", "class_instance_info.html#a90ba7341c075c5a73bdc5a440a87c041", null ],
+    [ "var", "class_instance_info.html#a3ef67f7d98c89a04455a30e9390e43a4", null ]
+];

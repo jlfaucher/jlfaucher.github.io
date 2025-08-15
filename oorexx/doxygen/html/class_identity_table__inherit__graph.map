@@ -1,0 +1,8 @@
+<map id="IdentityTable" name="IdentityTable">
+<area shape="rect" id="node1" title=" " alt="" coords="34,380,130,407"/>
+<area shape="rect" id="node2" href="$class_identity_hash_collection.html" title=" " alt="" coords="5,305,159,332"/>
+<area shape="rect" id="node3" href="$class_hash_collection.html" title=" " alt="" coords="27,230,137,257"/>
+<area shape="rect" id="node4" href="$class_rexx_object.html" title=" " alt="" coords="37,155,127,182"/>
+<area shape="rect" id="node5" href="$class_rexx_internal_object.html" title=" " alt="" coords="15,80,149,107"/>
+<area shape="rect" id="node6" href="$class_rexx_virtual_base.html" title=" " alt="" coords="22,5,142,32"/>
+</map>

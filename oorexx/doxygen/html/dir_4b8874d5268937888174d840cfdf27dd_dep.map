@@ -1,0 +1,12 @@
+<map id="windows" name="windows">
+<area shape="rect" id="node1" href="dir_4b8874d5268937888174d840cfdf27dd.html" title="windows" alt="" coords="53,52,126,100"/>
+<area shape="rect" id="node2" href="dir_07b471ff108ade29d714c67783960c47.html" title="interpreter" alt="" coords="50,148,129,196"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000116_000004.html" title="1" alt="" coords="94,123,101,138"/>
+<area shape="rect" id="node3" href="dir_19153e9772a0a669b668c0714a289e75.html" title="api" alt="" coords="5,244,77,292"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000116_000082.html" title="1" alt="" coords="38,217,45,232"/>
+<area shape="rect" id="node4" href="dir_483b34426c5bbf1dce47c63ef54f04c5.html" title="lib" alt="" coords="116,244,188,292"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000116_000123.html" title="1" alt="" coords="159,218,166,233"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000082.html" title="9" alt="" coords="65,224,72,239"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000123.html" title="16" alt="" coords="127,217,141,232"/>
+<area shape="rect" id="clust1" href="dir_cf28ac411872b6255c0fc904222faaae.html" title="platform" alt="" coords="43,16,136,111"/>
+</map>

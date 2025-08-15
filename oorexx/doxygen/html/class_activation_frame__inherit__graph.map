@@ -1,0 +1,7 @@
+<map id="ActivationFrame" name="ActivationFrame">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,122,108"/>
+<area shape="rect" id="node2" href="$class_compile_activation_frame.html" title=" " alt="" coords="170,5,334,32"/>
+<area shape="rect" id="node3" href="$class_internal_activation_frame.html" title=" " alt="" coords="172,56,332,83"/>
+<area shape="rect" id="node4" href="$class_native_activation_frame.html" title=" " alt="" coords="175,107,329,134"/>
+<area shape="rect" id="node5" href="$class_rexx_activation_frame.html" title=" " alt="" coords="178,157,326,184"/>
+</map>

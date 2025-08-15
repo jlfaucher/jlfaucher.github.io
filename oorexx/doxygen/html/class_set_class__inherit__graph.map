@@ -1,0 +1,9 @@
+<map id="SetClass" name="SetClass">
+<area shape="rect" id="node1" title=" " alt="" coords="52,455,128,482"/>
+<area shape="rect" id="node2" href="$class_index_only_hash_collection.html" title=" " alt="" coords="5,380,175,407"/>
+<area shape="rect" id="node3" href="$class_equality_hash_collection.html" title=" " alt="" coords="11,305,169,332"/>
+<area shape="rect" id="node4" href="$class_hash_collection.html" title=" " alt="" coords="35,230,145,257"/>
+<area shape="rect" id="node5" href="$class_rexx_object.html" title=" " alt="" coords="45,155,135,182"/>
+<area shape="rect" id="node6" href="$class_rexx_internal_object.html" title=" " alt="" coords="23,80,157,107"/>
+<area shape="rect" id="node7" href="$class_rexx_virtual_base.html" title=" " alt="" coords="30,5,150,32"/>
+</map>

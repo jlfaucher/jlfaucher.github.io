@@ -1,0 +1,6 @@
+<map id="SysSocketConnection" name="SysSocketConnection">
+<area shape="rect" id="node1" title=" " alt="" coords="116,80,268,107"/>
+<area shape="rect" id="node3" href="$class_sys_inet_socket_connection.html" title=" " alt="" coords="5,155,179,182"/>
+<area shape="rect" id="node4" href="$class_sys_local_socket_connection.html" title=" " alt="" coords="202,155,384,182"/>
+<area shape="rect" id="node2" href="$class_api_connection.html" title=" " alt="" coords="139,5,245,32"/>
+</map>

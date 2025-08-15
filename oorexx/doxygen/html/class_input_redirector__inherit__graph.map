@@ -1,0 +1,9 @@
+<map id="InputRedirector" name="InputRedirector">
+<area shape="rect" id="node1" title=" " alt="" coords="158,155,268,182"/>
+<area shape="rect" id="node4" href="$class_array_input_source.html" title=" " alt="" coords="5,230,128,257"/>
+<area shape="rect" id="node5" href="$class_stem_input_source.html" title=" " alt="" coords="152,230,274,257"/>
+<area shape="rect" id="node6" href="$class_stream_object_input_source.html" title=" " alt="" coords="298,230,470,257"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="146,80,280,107"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="154,5,273,32"/>
+<area shape="rect" id="node7" href="$class_stream_input_source.html" title=" " alt="" coords="317,305,450,332"/>
+</map>

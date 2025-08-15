@@ -1,0 +1,11 @@
+<map id="OutputRedirector" name="OutputRedirector">
+<area shape="rect" id="node1" title=" " alt="" coords="354,107,474,134"/>
+<area shape="rect" id="node4" href="$class_buffering_output_target.html" title=" " alt="" coords="536,5,685,32"/>
+<area shape="rect" id="node5" href="$class_collection_output_target.html" title=" " alt="" coords="533,56,688,83"/>
+<area shape="rect" id="node6" href="$class_rexx_queue_output_target.html" title=" " alt="" coords="528,107,693,134"/>
+<area shape="rect" id="node7" href="$class_stem_output_target.html" title=" " alt="" coords="547,157,674,184"/>
+<area shape="rect" id="node8" href="$class_stream_object_output_target.html" title=" " alt="" coords="522,208,699,235"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,107,306,134"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,107,125,134"/>
+<area shape="rect" id="node9" href="$class_stream_output_target.html" title=" " alt="" coords="747,208,885,235"/>
+</map>

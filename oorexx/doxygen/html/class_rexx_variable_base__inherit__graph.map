@@ -1,0 +1,14 @@
+<map id="RexxVariableBase" name="RexxVariableBase">
+<area shape="rect" id="node1" title=" " alt="" coords="354,208,482,235"/>
+<area shape="rect" id="node4" href="$class_class_resolver.html" title=" " alt="" coords="562,5,669,32"/>
+<area shape="rect" id="node5" href="$class_rexx_compound_variable.html" title=" " alt="" coords="535,56,696,83"/>
+<area shape="rect" id="node6" href="$class_rexx_dot_variable.html" title=" " alt="" coords="556,107,675,134"/>
+<area shape="rect" id="node7" href="$class_rexx_expression_message.html" title=" " alt="" coords="530,157,701,184"/>
+<area shape="rect" id="node8" href="$class_rexx_simple_variable.html" title=" " alt="" coords="546,208,685,235"/>
+<area shape="rect" id="node9" href="$class_rexx_stem_variable.html" title=" " alt="" coords="551,259,680,286"/>
+<area shape="rect" id="node10" href="$class_rexx_variable_reference.html" title=" " alt="" coords="536,309,695,336"/>
+<area shape="rect" id="node11" href="$class_special_dot_variable.html" title=" " alt="" coords="550,360,681,387"/>
+<area shape="rect" id="node12" href="$class_use_arg_variable_ref.html" title=" " alt="" coords="549,411,682,438"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,208,306,235"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,208,125,235"/>
+</map>

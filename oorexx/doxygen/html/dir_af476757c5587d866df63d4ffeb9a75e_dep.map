@@ -1,0 +1,8 @@
+<map id="platform" name="platform">
+<area shape="rect" id="node2" href="dir_d5bd68bcee9a21c0b402b8adb9a82aca.html" title="unix" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node3" href="dir_5c29f068ebe543ce14dd22eec7761f8c.html" title="windows" alt="" coords="229,63,302,111"/>
+<area shape="rect" id="node4" href="dir_16052fa8f0e8a47369c3fa825cf85415.html" title="common" alt="" coords="229,159,301,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000020_000055.html" title="1" alt="" coords="270,133,277,148"/>
+<area shape="rect" id="clust2" href="dir_af476757c5587d866df63d4ffeb9a75e.html" alt="" coords="27,52,312,122"/>
+<area shape="rect" id="clust1" href="dir_c78fd466b49f385cad2869e6584c7eda.html" title="server" alt="" coords="16,16,323,132"/>
+</map>

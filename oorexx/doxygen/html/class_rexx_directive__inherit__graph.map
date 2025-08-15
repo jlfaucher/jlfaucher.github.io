@@ -1,0 +1,10 @@
+<map id="RexxDirective" name="RexxDirective">
+<area shape="rect" id="node1" title=" " alt="" coords="220,230,324,257"/>
+<area shape="rect" id="node5" href="$class_class_directive.html" title=" " alt="" coords="5,305,113,332"/>
+<area shape="rect" id="node6" href="$class_constant_directive.html" title=" " alt="" coords="137,305,264,332"/>
+<area shape="rect" id="node7" href="$class_library_directive.html" title=" " alt="" coords="288,305,400,332"/>
+<area shape="rect" id="node8" href="$class_requires_directive.html" title=" " alt="" coords="424,305,550,332"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="216,155,329,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="206,80,339,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="213,5,332,32"/>
+</map>

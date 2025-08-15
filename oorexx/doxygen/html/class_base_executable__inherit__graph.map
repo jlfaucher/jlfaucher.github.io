@@ -1,0 +1,8 @@
+<map id="BaseExecutable" name="BaseExecutable">
+<area shape="rect" id="node1" title=" " alt="" coords="58,230,174,257"/>
+<area shape="rect" id="node5" href="$class_method_class.html" title=" " alt="" coords="5,305,104,332"/>
+<area shape="rect" id="node6" href="$class_routine_class.html" title=" " alt="" coords="128,305,229,332"/>
+<area shape="rect" id="node2" href="$class_rexx_object.html" title=" " alt="" coords="71,155,161,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="49,80,182,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="56,5,176,32"/>
+</map>

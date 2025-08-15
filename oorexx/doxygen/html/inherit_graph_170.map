@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_server_connection_manager.html" title=" " alt="" coords="5,46,181,73"/>
+<area shape="rect" id="node2" href="$class_sys_server_named_pipe_connection_manager.html" title=" " alt="" coords="229,5,445,47"/>
+<area shape="rect" id="node3" href="$class_sys_server_socket_connection_manager.html" title=" " alt="" coords="242,72,432,114"/>
+<area shape="rect" id="node4" href="$class_sys_server_inet_socket_connection_manager.html" title=" " alt="" coords="498,39,709,81"/>
+<area shape="rect" id="node5" href="$class_sys_server_local_socket_connection_manager.html" title=" " alt="" coords="493,105,713,147"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="RexxInstructionSet" name="RexxInstructionSet">
+<area shape="rect" id="node1" title=" " alt="" coords="515,107,649,134"/>
+<area shape="rect" id="node5" href="$class_rexx_instruction_case_when.html" title=" " alt="" coords="697,5,875,32"/>
+<area shape="rect" id="node6" href="$class_rexx_instruction_else.html" title=" " alt="" coords="716,56,856,83"/>
+<area shape="rect" id="node7" href="$class_rexx_instruction_end_if.html" title=" " alt="" coords="714,107,858,134"/>
+<area shape="rect" id="node8" href="$class_rexx_instruction_if.html" title=" " alt="" coords="725,157,846,184"/>
+<area shape="rect" id="node9" href="$class_rexx_instruction_then.html" title=" " alt="" coords="715,208,857,235"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="354,107,467,134"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,107,306,134"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,107,125,134"/>
+</map>

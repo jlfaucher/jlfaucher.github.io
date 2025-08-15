@@ -1,0 +1,8 @@
+<map id="RexxInstructionDynamicCallBase" name="RexxInstructionDynamicCallBase">
+<area shape="rect" id="node1" title=" " alt="" coords="100,230,318,257"/>
+<area shape="rect" id="node5" href="$class_rexx_instruction_dynamic_call.html" title=" " alt="" coords="5,305,194,332"/>
+<area shape="rect" id="node6" href="$class_rexx_instruction_dynamic_signal.html" title=" " alt="" coords="218,305,419,332"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction.html" title=" " alt="" coords="152,155,266,182"/>
+<area shape="rect" id="node3" href="$class_rexx_internal_object.html" title=" " alt="" coords="142,80,276,107"/>
+<area shape="rect" id="node4" href="$class_rexx_virtual_base.html" title=" " alt="" coords="149,5,268,32"/>
+</map>

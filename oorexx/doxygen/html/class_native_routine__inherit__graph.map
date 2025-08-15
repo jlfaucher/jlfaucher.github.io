@@ -1,0 +1,8 @@
+<map id="NativeRoutine" name="NativeRoutine">
+<area shape="rect" id="node1" title=" " alt="" coords="20,380,125,407"/>
+<area shape="rect" id="node2" href="$class_base_native_routine.html" title=" " alt="" coords="5,305,140,332"/>
+<area shape="rect" id="node3" href="$class_native_code.html" title=" " alt="" coords="27,230,118,257"/>
+<area shape="rect" id="node4" href="$class_base_code.html" title=" " alt="" coords="31,155,114,182"/>
+<area shape="rect" id="node5" href="$class_rexx_internal_object.html" title=" " alt="" coords="6,80,139,107"/>
+<area shape="rect" id="node6" href="$class_rexx_virtual_base.html" title=" " alt="" coords="13,5,132,32"/>
+</map>

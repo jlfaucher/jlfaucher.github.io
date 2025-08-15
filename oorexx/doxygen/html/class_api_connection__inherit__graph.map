@@ -1,0 +1,7 @@
+<map id="ApiConnection" name="ApiConnection">
+<area shape="rect" id="node1" title=" " alt="" coords="231,5,337,32"/>
+<area shape="rect" id="node2" href="$class_sys_named_pipe_connection.html" title=" " alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node3" href="$class_sys_socket_connection.html" title=" " alt="" coords="208,80,360,107"/>
+<area shape="rect" id="node4" href="$class_sys_inet_socket_connection.html" title=" " alt="" coords="96,155,269,182"/>
+<area shape="rect" id="node5" href="$class_sys_local_socket_connection.html" title=" " alt="" coords="293,155,475,182"/>
+</map>

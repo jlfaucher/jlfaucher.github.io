@@ -1,0 +1,26 @@
+var _exercise07_2_customer_2_customer_view_8h =
+[
+    [ "IDC_CUST_BTN_RECORDCHANGES", "_exercise07_2_customer_2_customer_view_8h.html#a1627f047064e5bc3cc4adaa21b622681", null ],
+    [ "IDC_CUST_BTN_SHOWLASTORDER", "_exercise07_2_customer_2_customer_view_8h.html#ab54761153743c90528cbccc52113e66e", null ],
+    [ "IDC_CUST_EDT_CUSTADDR", "_exercise07_2_customer_2_customer_view_8h.html#af6d34894945e4f958c2f4e10b041c92f", null ],
+    [ "IDC_CUST_EDT_CUSTNAME", "_exercise07_2_customer_2_customer_view_8h.html#a93b23e5816f3c7ce5fcde6946f296c81", null ],
+    [ "IDC_CUST_EDT_CUSTNO", "_exercise07_2_customer_2_customer_view_8h.html#a2a0cf26d6f86f52b8a6f4996c0ab2a48", null ],
+    [ "IDC_CUST_EDT_CUSTZIP", "_exercise07_2_customer_2_customer_view_8h.html#a731b0ff7c2a92201e06f9955a6548d9a", null ],
+    [ "IDC_CUST_EDT_DISCOUNT", "_exercise07_2_customer_2_customer_view_8h.html#a3401173abc066fad06070cff511ef027", null ],
+    [ "IDC_CUST_LBL_CUSTADDR", "_exercise07_2_customer_2_customer_view_8h.html#a47bd16c8248c05fe680dc1eb011d893f", null ],
+    [ "IDC_CUST_LBL_CUSTNAME", "_exercise07_2_customer_2_customer_view_8h.html#a71f2e20f6c34d34e689ae55c7b88d997", null ],
+    [ "IDC_CUST_LBL_CUSTNO", "_exercise07_2_customer_2_customer_view_8h.html#ae11666f03bae0892382b771b6a9c94b5", null ],
+    [ "IDC_CUST_LBL_DISCOUNT", "_exercise07_2_customer_2_customer_view_8h.html#a5ba1cdab4f6905a65e7b2652a8cfa946", null ],
+    [ "IDC_CUST_LBL_LASTORDER", "_exercise07_2_customer_2_customer_view_8h.html#a5cd2bddd5bd64c1370a430b418493b1e", null ],
+    [ "IDC_CUST_LBL_ZIP", "_exercise07_2_customer_2_customer_view_8h.html#a78b604d24f9022fbe065076dbac1876e", null ],
+    [ "IDC_CUST_STC_ERRORMSG", "_exercise07_2_customer_2_customer_view_8h.html#ad866c149d51a844f98828c90d7fb2a1b", null ],
+    [ "IDC_CUST_STC_LASTORDERDETAILS", "_exercise07_2_customer_2_customer_view_8h.html#ac51f284b3e681f8419734ef02f20b22e", null ],
+    [ "IDC_STATIC", "_exercise07_2_customer_2_customer_view_8h.html#ac93033490bc8943cfc82ec3b40e5cd74", null ],
+    [ "IDD_CUST_DIALOG", "_exercise07_2_customer_2_customer_view_8h.html#ab71ed6f85b7d429a8c879ade6088ae6e", null ],
+    [ "IDI_CUST_DLGICON", "_exercise07_2_customer_2_customer_view_8h.html#a349078c8de920349a9fe254dcc8a4640", null ],
+    [ "IDM_CUST_LAST_ORDER", "_exercise07_2_customer_2_customer_view_8h.html#aded16a602c3f820f64a9e68e397bb28c", null ],
+    [ "IDM_CUST_NEW", "_exercise07_2_customer_2_customer_view_8h.html#a412608ce800bbc46a4deb2a41af9ad6a", null ],
+    [ "IDM_CUST_PRINT", "_exercise07_2_customer_2_customer_view_8h.html#a58c2952f6b5121276f4d40be1bef9e65", null ],
+    [ "IDM_CUST_UPDATE", "_exercise07_2_customer_2_customer_view_8h.html#ad08092f39e6aac8c66a8e4de89f5e024", null ],
+    [ "IDR_CUST_MENU", "_exercise07_2_customer_2_customer_view_8h.html#aa96f47f2e354acf87e2a793967b28172", null ]
+];

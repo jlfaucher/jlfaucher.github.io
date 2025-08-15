@@ -1,0 +1,6 @@
+<map id="TrappingDispatcher" name="TrappingDispatcher">
+<area shape="rect" id="node1" title=" " alt="" coords="121,5,255,32"/>
+<area shape="rect" id="node2" href="$class_condition_trapping_dispatcher.html" title=" " alt="" coords="5,80,195,107"/>
+<area shape="rect" id="node4" href="$class_uninit_dispatcher.html" title=" " alt="" coords="218,80,336,107"/>
+<area shape="rect" id="node3" href="$class_redirection_dispatcher.html" title=" " alt="" coords="25,155,175,182"/>
+</map>

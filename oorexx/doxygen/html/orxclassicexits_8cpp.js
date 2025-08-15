@@ -1,0 +1,27 @@
+var orxclassicexits_8cpp =
+[
+    [ "buildRegisteredExitList", "orxclassicexits_8cpp.html#afb71845ffba976860d96554449152a87", null ],
+    [ "deregisterExits", "orxclassicexits_8cpp.html#a62b3abd11b64572576874c8b5d920587", null ],
+    [ "deregisterSubcomHandler", "orxclassicexits_8cpp.html#a3621d24269f63e88e74ef3bfeab4a712", null ],
+    [ "dropContextVariable", "orxclassicexits_8cpp.html#a6e6f3e758322b97cbe5d9f9019873a74", null ],
+    [ "getApplicationData", "orxclassicexits_8cpp.html#ae77c6fd7f661739f5c53ffd3c65b64a3", null ],
+    [ "getContextVariable", "orxclassicexits_8cpp.html#ab916355fa49608e4f9b22f44748740c1", null ],
+    [ "invokeRexxStart", "orxclassicexits_8cpp.html#a9ed34221ce10b7ffd954bed1662edfdc", null ],
+    [ "registerDllExits", "orxclassicexits_8cpp.html#ae3279389f9fdd4a8870a9d9f60a7eac9", null ],
+    [ "registerExeExits", "orxclassicexits_8cpp.html#ab275d48e09a8683ebfdc44ddf5112b35", null ],
+    [ "registerSubcomHandler", "orxclassicexits_8cpp.html#afdcf4561c9f003d0e12bec90fccff77e", null ],
+    [ "setContextVariable", "orxclassicexits_8cpp.html#ab018a5789e1bdb295aca8035a038fbf6", null ],
+    [ "TestCommandExit", "orxclassicexits_8cpp.html#a7871c56371ec3586efaf590101de11cd", null ],
+    [ "TestFunctionExit", "orxclassicexits_8cpp.html#aa7e2cb67e965ded142352155c256e970", null ],
+    [ "TestHaltExit", "orxclassicexits_8cpp.html#af8e12f6448a357d867fd866d48cda2c2", null ],
+    [ "TestInitExit", "orxclassicexits_8cpp.html#a7e0d3fee02f66225279ec1966c2a2cd7", null ],
+    [ "TestNovalueExit", "orxclassicexits_8cpp.html#a989e694e210a74c937c69f43b01f5fc3", null ],
+    [ "TestObjectFunctionExit", "orxclassicexits_8cpp.html#a66e13923031588ad69d5e2f8f5d5e673", null ],
+    [ "TestQueueExit", "orxclassicexits_8cpp.html#acbe32c7c00ec436012cb7d17f7addbe6", null ],
+    [ "TestScriptFunctionExit", "orxclassicexits_8cpp.html#a64d9a598482454ac5ea29e439a963333", null ],
+    [ "TestSessionIOExit", "orxclassicexits_8cpp.html#a44e487787c41cf2205d10a739026c4af", null ],
+    [ "TestSubcomHandler", "orxclassicexits_8cpp.html#aa81d9011d01cc5ccee607d0ca288a761", null ],
+    [ "TestTerminationExit", "orxclassicexits_8cpp.html#a3df2278bed46b19c6d8033c8565d9fc4", null ],
+    [ "TestTraceExit", "orxclassicexits_8cpp.html#a7c0e8b76ff41eac4d68c42a2198e220a", null ],
+    [ "TestValueExit", "orxclassicexits_8cpp.html#a3ca9da956858cefba7593b613d1c578d", null ]
+];

@@ -1,0 +1,25 @@
+var class_protected_object =
+[
+    [ "ProtectedObject", "class_protected_object.html#aa507d1f3479362f1f18a7949f685d603", null ],
+    [ "ProtectedObject", "class_protected_object.html#af638c7fd7b6135bf7b3514e4c36b1de0", null ],
+    [ "ProtectedObject", "class_protected_object.html#a040006f1f91b7e12d591e9ef58d36129", null ],
+    [ "ProtectedObject", "class_protected_object.html#ab9ef8ff18d4b2ac5b93c8a0707d00d76", null ],
+    [ "~ProtectedObject", "class_protected_object.html#a1df9d5951fd9faeacf22bef5765b982d", null ],
+    [ "isNull", "class_protected_object.html#a02e622d2b122ab61854d4eb42f09d4e3", null ],
+    [ "mark", "class_protected_object.html#ac439bb818f45ccc26fd3a7cd173e3754", null ],
+    [ "markGeneral", "class_protected_object.html#a2cbcf1b379dc399e094f713ded81cf98", null ],
+    [ "operator ArrayClass *", "class_protected_object.html#ab6a932a57b047249c19d7f68388deee1", null ],
+    [ "operator MethodClass *", "class_protected_object.html#a6dffaec85d4e9552b49392528bcdd802", null ],
+    [ "operator RexxClass *", "class_protected_object.html#a1d2fe778427637b5ec5e9a5fd4dcc254", null ],
+    [ "operator RexxInstruction *", "class_protected_object.html#aac97753fc153c14c92e46d84ec4731de", null ],
+    [ "operator RexxInternalObject *", "class_protected_object.html#a72ad5d0a07538fb194e7730e8bf581ba", null ],
+    [ "operator RexxObject *", "class_protected_object.html#a80052b6f6846ebb8179f4424a1f5e4dd", null ],
+    [ "operator RexxObjectPtr", "class_protected_object.html#ae195d977fbba21459ad65d4d66034373", null ],
+    [ "operator RexxString *", "class_protected_object.html#a7b04cd1bb31e0d08b3934283791cdee2", null ],
+    [ "operator void *", "class_protected_object.html#af7a91ba401b5cc538a80c2d3370b8108", null ],
+    [ "operator!=", "class_protected_object.html#a06911498eb57e642970e9686f20921d6", null ],
+    [ "operator->", "class_protected_object.html#aa4248963456f7f7e0b178de8d284d31e", null ],
+    [ "operator=", "class_protected_object.html#abf6b23c3a0c8a0cd1d1e041ebcab9ee7", null ],
+    [ "operator==", "class_protected_object.html#a682ac82ed0ac62b5ad063217f6b85fad", null ],
+    [ "protectedObject", "class_protected_object.html#a89a9560d7cd73e731d8fdf300a6acd9b", null ]
+];

@@ -1,0 +1,7 @@
+<map id="ServerConnectionManager" name="ServerConnectionManager">
+<area shape="rect" id="node1" title=" " alt="" coords="252,5,428,32"/>
+<area shape="rect" id="node2" href="$class_sys_server_named_pipe_connection_manager.html" title=" " alt="" coords="5,80,222,122"/>
+<area shape="rect" id="node3" href="$class_sys_server_socket_connection_manager.html" title=" " alt="" coords="246,80,435,122"/>
+<area shape="rect" id="node4" href="$class_sys_server_inet_socket_connection_manager.html" title=" " alt="" coords="114,170,326,212"/>
+<area shape="rect" id="node5" href="$class_sys_server_local_socket_connection_manager.html" title=" " alt="" coords="350,170,570,212"/>
+</map>

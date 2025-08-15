@@ -1,0 +1,26 @@
+var employe7_8h =
+[
+    [ "IDC_CB_CITY", "employe7_8h.html#a3b141422aef58e2e519d766ed2238738", null ],
+    [ "IDC_CHK_MARRIED", "employe7_8h.html#a9d1a8cbf0ab80611469542e51ca211f3", null ],
+    [ "IDC_EDIT_NAME", "employe7_8h.html#a74a8d69803478c8de42775bef83b9d05", null ],
+    [ "IDC_GB1", "employe7_8h.html#ac71bc7b2439943e41b72af268864efa4", null ],
+    [ "IDC_GB2", "employe7_8h.html#afc3337b07e91902a08a354b4c8469e69", null ],
+    [ "IDC_LB_EMPLOYEES_LIST", "employe7_8h.html#a0f20f016f520e58d93a6d322bbc1d01b", null ],
+    [ "IDC_LB_POSITION", "employe7_8h.html#a0581042a645412cefc917356e9836405", null ],
+    [ "IDC_PB_ADD", "employe7_8h.html#a2d92eab298c9cb3398e249ef91bd7e7d", null ],
+    [ "IDC_PB_LIST", "employe7_8h.html#ab2393e7ae8452d06943a251b8f10b21b", null ],
+    [ "IDC_PB_PRINT", "employe7_8h.html#a1ff24b248edef855d2d46651b076cc9b", null ],
+    [ "IDC_RB_ADD", "employe7_8h.html#ad4c0baee2fe25b7c12ebffe4c85d11b0", null ],
+    [ "IDC_RB_BROWSE", "employe7_8h.html#abddbff6a21dc233967e60abf8b927eca", null ],
+    [ "IDC_RB_FEMALE", "employe7_8h.html#ad01ebc74e2939709fc7566c491a98db8", null ],
+    [ "IDC_RB_MALE", "employe7_8h.html#ae5e2e42c58b963505ce39c6bd8d553b5", null ],
+    [ "IDC_STATIC", "employe7_8h.html#ac93033490bc8943cfc82ec3b40e5cd74", null ],
+    [ "IDC_UPD", "employe7_8h.html#aec1f8555aa1c16accb70932633847fca", null ],
+    [ "IDD_EMPLOYEE_LIST", "employe7_8h.html#a40b214493c1ab01545eefbc25aa3b6e8", null ],
+    [ "IDD_EMPLOYEES7", "employe7_8h.html#a1afceec54e4fe3d788b14d190bea2e55", null ],
+    [ "IDM_ABOUT", "employe7_8h.html#a589e0105bc3e8681893dbf51210ceeec", null ],
+    [ "IDM_ADD", "employe7_8h.html#a62bb5a15cd6a4b734cf6248fec624e15", null ],
+    [ "IDM_LIST", "employe7_8h.html#a955a7e1825099ca61906e43d0d2d5ff8", null ],
+    [ "IDM_MENUBAR", "employe7_8h.html#ae61b31aa45a87d098c6e40a09690eeb4", null ],
+    [ "IDM_PRINT", "employe7_8h.html#ab5cf10ee55ac81e9d3b752e217e78119", null ]
+];

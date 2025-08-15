@@ -1,0 +1,46 @@
+<map id="RexxObject" name="RexxObject">
+<area shape="rect" id="node1" title=" " alt="" coords="354,613,444,640"/>
+<area shape="rect" id="node4" href="$class_array_class.html" title=" " alt="" coords="528,31,614,58"/>
+<area shape="rect" id="node6" href="$class_base_executable.html" title=" " alt="" coords="513,107,629,134"/>
+<area shape="rect" id="node9" href="$class_buffer_class_base.html" title=" " alt="" coords="511,157,631,184"/>
+<area shape="rect" id="node11" href="$class_event_semaphore_class.html" title=" " alt="" coords="493,208,649,235"/>
+<area shape="rect" id="node12" href="$class_hash_collection.html" title=" " alt="" coords="516,259,626,286"/>
+<area shape="rect" id="node25" href="$class_list_class.html" title=" " alt="" coords="533,309,609,336"/>
+<area shape="rect" id="node26" href="$class_message_class.html" title=" " alt="" coords="517,360,625,387"/>
+<area shape="rect" id="node27" href="$class_mutable_buffer.html" title=" " alt="" coords="520,411,622,438"/>
+<area shape="rect" id="node28" href="$class_mutex_semaphore_class.html" title=" " alt="" coords="492,461,650,488"/>
+<area shape="rect" id="node29" href="$class_number_string_base.html" title=" " alt="" coords="505,512,637,539"/>
+<area shape="rect" id="node31" href="$class_package_class.html" title=" " alt="" coords="518,563,624,590"/>
+<area shape="rect" id="node32" href="$class_pointer_class.html" title=" " alt="" coords="523,613,619,640"/>
+<area shape="rect" id="node33" href="$class_rexx_class.html" title=" " alt="" coords="528,664,614,691"/>
+<area shape="rect" id="node35" href="$class_rexx_context.html" title=" " alt="" coords="522,715,620,742"/>
+<area shape="rect" id="node36" href="$class_rexx_info.html" title=" " alt="" coords="534,765,608,792"/>
+<area shape="rect" id="node37" href="$class_rexx_integer.html" title=" " alt="" coords="525,816,617,843"/>
+<area shape="rect" id="node38" href="$class_rexx_nil_object.html" title=" " alt="" coords="518,867,624,894"/>
+<area shape="rect" id="node39" href="$class_rexx_string.html" title=" " alt="" coords="528,917,614,944"/>
+<area shape="rect" id="node40" href="$class_stack_frame_class.html" title=" " alt="" coords="508,968,634,995"/>
+<area shape="rect" id="node41" href="$class_stem_class.html" title=" " alt="" coords="528,1019,614,1046"/>
+<area shape="rect" id="node42" href="$class_supplier_class.html" title=" " alt="" coords="520,1069,622,1096"/>
+<area shape="rect" id="node43" href="$class_variable_reference.html" title=" " alt="" coords="507,1120,635,1147"/>
+<area shape="rect" id="node44" href="$class_weak_reference.html" title=" " alt="" coords="514,1171,628,1198"/>
+<area shape="rect" id="node2" href="$class_rexx_internal_object.html" title=" " alt="" coords="173,613,306,640"/>
+<area shape="rect" id="node3" href="$class_rexx_virtual_base.html" title=" " alt="" coords="5,613,125,640"/>
+<area shape="rect" id="node5" href="$class_queue_class.html" title=" " alt="" coords="730,5,823,32"/>
+<area shape="rect" id="node7" href="$class_method_class.html" title=" " alt="" coords="727,56,826,83"/>
+<area shape="rect" id="node8" href="$class_routine_class.html" title=" " alt="" coords="726,107,826,134"/>
+<area shape="rect" id="node10" href="$class_buffer_class.html" title=" " alt="" coords="731,157,822,184"/>
+<area shape="rect" id="node13" href="$class_equality_hash_collection.html" title=" " alt="" coords="698,208,855,235"/>
+<area shape="rect" id="node19" href="$class_identity_hash_collection.html" title=" " alt="" coords="700,259,853,286"/>
+<area shape="rect" id="node21" href="$class_string_hash_collection.html" title=" " alt="" coords="704,335,848,362"/>
+<area shape="rect" id="node14" href="$class_index_only_hash_collection.html" title=" " alt="" coords="903,107,1072,134"/>
+<area shape="rect" id="node17" href="$class_relation_class.html" title=" " alt="" coords="936,157,1039,184"/>
+<area shape="rect" id="node18" href="$class_table_class.html" title=" " alt="" coords="944,208,1031,235"/>
+<area shape="rect" id="node15" href="$class_bag_class.html" title=" " alt="" coords="1120,81,1199,108"/>
+<area shape="rect" id="node16" href="$class_set_class.html" title=" " alt="" coords="1122,132,1197,159"/>
+<area shape="rect" id="node20" href="$class_identity_table.html" title=" " alt="" coords="940,259,1035,286"/>
+<area shape="rect" id="node22" href="$class_directory_class.html" title=" " alt="" coords="934,309,1042,336"/>
+<area shape="rect" id="node23" href="$class_method_dictionary.html" title=" " alt="" coords="926,360,1049,387"/>
+<area shape="rect" id="node24" href="$class_string_table.html" title=" " alt="" coords="944,411,1031,438"/>
+<area shape="rect" id="node30" href="$class_number_string.html" title=" " alt="" coords="726,512,827,539"/>
+<area shape="rect" id="node34" href="$class_rexx_integer_class.html" title=" " alt="" coords="713,664,840,691"/>
+</map>

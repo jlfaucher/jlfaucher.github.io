@@ -1,0 +1,26 @@
+var _a_p_i_definitions_8h =
+[
+    [ "apireg_node", "structapireg__node.html", "structapireg__node" ],
+    [ "_MACRO", "struct___m_a_c_r_o.html", "struct___m_a_c_r_o" ],
+    [ "_SEMCONT", "struct___s_e_m_c_o_n_t.html", "struct___s_e_m_c_o_n_t" ],
+    [ "APISIZE", "_a_p_i_definitions_8h.html#a04bd109b10d62293fa59240f7344c57a", null ],
+    [ "EVENT", "_a_p_i_definitions_8h.html#a7877e997621e1161f058fce90febd464", null ],
+    [ "MACROSIZE", "_a_p_i_definitions_8h.html#a99eb51df632acc37cd6da122a9e15613", null ],
+    [ "MAXARGS", "_a_p_i_definitions_8h.html#a41101847771d39a4f0a7f9395061c629", null ],
+    [ "MAXNAME", "_a_p_i_definitions_8h.html#ac881f02a50b29d3ffa5b1f4a0e4f9568", null ],
+    [ "MUTEX", "_a_p_i_definitions_8h.html#a2cf3c22d8cacfe663a4eec13d0fb26ef", null ],
+    [ "NAMESIZE", "_a_p_i_definitions_8h.html#ad79aefee6a8990632311a15e98d9a65f", null ],
+    [ "NAMESIZE", "_a_p_i_definitions_8h.html#ad79aefee6a8990632311a15e98d9a65f", null ],
+    [ "NO", "_a_p_i_definitions_8h.html#a996bde01ecac342918f0a2c4e7ce7bd5", null ],
+    [ "PMNULL", "_a_p_i_definitions_8h.html#aa331b5d4d6cb2c1b44120b366de3524d", null ],
+    [ "REGNOOFTYPES", "_a_p_i_definitions_8h.html#a31bcaa1d00dff30aaeecd77819878c6c", null ],
+    [ "SZSTR", "_a_p_i_definitions_8h.html#af4550842b7f0d1204c321b180e617e41", null ],
+    [ "SZSTR", "_a_p_i_definitions_8h.html#af4550842b7f0d1204c321b180e617e41", null ],
+    [ "USERLENGTH", "_a_p_i_definitions_8h.html#ad5fa554da8f915a4f7334c811790cc0b", null ],
+    [ "YES", "_a_p_i_definitions_8h.html#a7ebc9a785e5ab85457c98595aac81589", null ],
+    [ "APIBLOCK", "_a_p_i_definitions_8h.html#a5b830cb7d0d78a542240b5ec31f5b500", null ],
+    [ "MACRO", "_a_p_i_definitions_8h.html#a82e5f991197e3274b467b3b774a674ac", null ],
+    [ "PAPIBLOCK", "_a_p_i_definitions_8h.html#a365228a4001a7c48a327f9ef2a497a1d", null ],
+    [ "PMACRO", "_a_p_i_definitions_8h.html#a0df7d5de63b712e91f3f53fbc090465b", null ],
+    [ "SEMCONT", "_a_p_i_definitions_8h.html#a004a9508a0043d492c78042b39e7dcb0", null ]
+];

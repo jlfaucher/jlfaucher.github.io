@@ -1,0 +1,26 @@
+var class_large_segment_set =
+[
+    [ "LargeSegmentSet", "class_large_segment_set.html#a6589632e959b5f5a5df501d1ca8e54ff", null ],
+    [ "LargeSegmentSet", "class_large_segment_set.html#a988b4db07caefc45c4901b09bf5901cf", null ],
+    [ "~LargeSegmentSet", "class_large_segment_set.html#a737d7ad55d99cb5c3744a98b2852ea85", null ],
+    [ "addDeadObject", "class_large_segment_set.html#a3da979744f7094ecdda1223b8482794e", null ],
+    [ "addDeadObject", "class_large_segment_set.html#adc93820c32c0c55424d5e996fde636bc", null ],
+    [ "allocateObject", "class_large_segment_set.html#aecba2e06efa8817d3959456ab4562cb9", null ],
+    [ "allocateSegment", "class_large_segment_set.html#a1eab1cc57fee31edf8eac1ca1e0c3c20", null ],
+    [ "completeSweepOperation", "class_large_segment_set.html#adf88a331b8cb23f1d89f456aa0fdc60a", null ],
+    [ "donateObject", "class_large_segment_set.html#aafee994e80a84473f94fd63f380b6397", null ],
+    [ "dumpMemoryProfile", "class_large_segment_set.html#ab661934df97756ee34f1b294a063470a", null ],
+    [ "expandSegmentSet", "class_large_segment_set.html#ace7f34cf0d63489a930972159d52a3a6", null ],
+    [ "findObject", "class_large_segment_set.html#a7038811a309f01aec8d4dbfc31d704d1", null ],
+    [ "getInitialSet", "class_large_segment_set.html#a2efd071bdfe9192a875dce9ae0c5f454", null ],
+    [ "handleAllocationFailure", "class_large_segment_set.html#af2e250f01d568897cac871dc75eed37c", null ],
+    [ "prepareForSweep", "class_large_segment_set.html#a627b3a7ab90754f1a763b60cb46aaadf", null ],
+    [ "recommendedMemorySize", "class_large_segment_set.html#a0b67dc9c2ee77fdad8f025fe98a7772d", null ],
+    [ "suggestMemoryExpansion", "class_large_segment_set.html#a625d886243ef18cf5e11add7ca883f07", null ],
+    [ "deadCache", "class_large_segment_set.html#a084c3dbb390dc5ac34132c37918514b5", null ],
+    [ "InitialLargeSegmentSpace", "class_large_segment_set.html#a6bde617989f98a5d2acda8945583bfaf", null ],
+    [ "LargeMemoryExpansionThreshold", "class_large_segment_set.html#a8031f0f6c4a3b279ea3e42d946023d66", null ],
+    [ "largestObject", "class_large_segment_set.html#a6e70daef4cd5141ef6fd0c7af65f72e0", null ],
+    [ "requests", "class_large_segment_set.html#a5e3a6cfdc23172c833c8bbf2227afa66", null ],
+    [ "smallestObject", "class_large_segment_set.html#abe5f58ce25f514baf594af822ab29a3a", null ]
+];

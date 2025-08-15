@@ -1,0 +1,26 @@
+var osf_dialogs_8h =
+[
+    [ "IDC_CK_CLS", "osf_dialogs_8h.html#a846f4774fcd2525aefd284f384ed2921", null ],
+    [ "IDC_CK_DLL", "osf_dialogs_8h.html#a40280057785d31eb05bc1225fae03823", null ],
+    [ "IDC_CK_EXE", "osf_dialogs_8h.html#ab75520421deaa45b5a1abe8c8610b0de", null ],
+    [ "IDC_CK_NONE", "osf_dialogs_8h.html#a77f958e1c692ca63d5347d196650b34d", null ],
+    [ "IDC_EDIT", "osf_dialogs_8h.html#a5a8b1efae13651004551d6eccbec92c5", null ],
+    [ "IDC_EDIT_OSF", "osf_dialogs_8h.html#a268cf1ce42a69029417495e5bb19bee0", null ],
+    [ "IDC_PB_SHOW", "osf_dialogs_8h.html#af8b4d047b2fd4a14284f71e1b24c4c52", null ],
+    [ "IDC_PB_SHOW_OSF", "osf_dialogs_8h.html#a652f251ca09e6fddf969caefcd9a0425", null ],
+    [ "IDC_RB_OPEN", "osf_dialogs_8h.html#a27086da287f598396870ab4c3471968c", null ],
+    [ "IDC_RB_OPEN_CUSTOM", "osf_dialogs_8h.html#aba59448dadb44248534b5c49548f4df8", null ],
+    [ "IDC_RB_OPEN_FOLDER", "osf_dialogs_8h.html#a67bc7831e2a849ce5ef408c59781fa97", null ],
+    [ "IDC_RB_OPEN_MULTI", "osf_dialogs_8h.html#a3e282828e43d8da059a2689de67ccc1e", null ],
+    [ "IDC_RB_SAVE", "osf_dialogs_8h.html#a3543c0fecbd8aaec02b6b61ab58aa98e", null ],
+    [ "IDC_RB_SAVE_DEFAULT", "osf_dialogs_8h.html#a37ae4039f879197fb3ee755fc438025e", null ],
+    [ "IDC_STATIC", "osf_dialogs_8h.html#ac93033490bc8943cfc82ec3b40e5cd74", null ],
+    [ "IDC_TT_OPEN", "osf_dialogs_8h.html#a401c43eb8124dd85ba4a716d3b3e85d4", null ],
+    [ "IDC_TT_OPEN_CUSTOM", "osf_dialogs_8h.html#afdf04bbf8faf48bb43f20816c6ddae46", null ],
+    [ "IDC_TT_OPEN_FOLDER", "osf_dialogs_8h.html#ae17d0b10797cf27ca8bcda43cc8f2fa2", null ],
+    [ "IDC_TT_OPEN_MULTI", "osf_dialogs_8h.html#a0446de55c2f8c8d968f029313cc70cde", null ],
+    [ "IDC_TT_SAVE", "osf_dialogs_8h.html#ad89b92430147e61520baba0d5221d722", null ],
+    [ "IDC_TT_SAVE_DEFAULT", "osf_dialogs_8h.html#a2e645a6047372230203fb0f48ae64df9", null ],
+    [ "IDD_SAVE_FILE", "osf_dialogs_8h.html#aad5de5e5fd8183c251711a373a850541", null ],
+    [ "IDD_SIMPLE_OSF_DIALOGS", "osf_dialogs_8h.html#ac396ef154c405b7f2c27c50cfcc2cc48", null ]
+];

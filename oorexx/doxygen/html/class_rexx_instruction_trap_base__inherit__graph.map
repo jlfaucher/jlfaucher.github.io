@@ -1,0 +1,9 @@
+<map id="RexxInstructionTrapBase" name="RexxInstructionTrapBase">
+<area shape="rect" id="node1" title=" " alt="" coords="89,305,259,332"/>
+<area shape="rect" id="node6" href="$class_rexx_instruction_call_on.html" title=" " alt="" coords="5,380,159,407"/>
+<area shape="rect" id="node7" href="$class_rexx_instruction_signal_on.html" title=" " alt="" coords="183,380,349,407"/>
+<area shape="rect" id="node2" href="$class_rexx_instruction_call_base.html" title=" " alt="" coords="91,230,257,257"/>
+<area shape="rect" id="node3" href="$class_rexx_instruction.html" title=" " alt="" coords="117,155,231,182"/>
+<area shape="rect" id="node4" href="$class_rexx_internal_object.html" title=" " alt="" coords="107,80,241,107"/>
+<area shape="rect" id="node5" href="$class_rexx_virtual_base.html" title=" " alt="" coords="114,5,234,32"/>
+</map>

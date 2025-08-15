@@ -1,0 +1,36 @@
+var class_activation_base =
+[
+    [ "GuardStatus", "class_activation_base.html#ad98422295412b566e8121bcffe0dfa60", [
+      [ "SCOPE_RELEASED", "class_activation_base.html#ad98422295412b566e8121bcffe0dfa60acae16b606e7b5b204fbe6a27a47227c5", null ],
+      [ "SCOPE_RESERVED", "class_activation_base.html#ad98422295412b566e8121bcffe0dfa60a5d60de4444909f1922961d83023439e0", null ]
+    ] ],
+    [ "ActivationBase", "class_activation_base.html#a9cece634f7bdb3995570125b69830b9a", null ],
+    [ "ActivationBase", "class_activation_base.html#af46b3ebe0f3b0e5cefb5afdcae838b8f", null ],
+    [ "digits", "class_activation_base.html#a8e8066eef209208f6442391a779bc883", null ],
+    [ "dispatch", "class_activation_base.html#aac084a4e16e02803df42a3e2046df7d3", null ],
+    [ "findRexxContext", "class_activation_base.html#aaafc93e0530380bddf62861925756b04", null ],
+    [ "form", "class_activation_base.html#a749591f57a69e1a9b839babca1d0396b", null ],
+    [ "fuzz", "class_activation_base.html#a6855040e4be6b6492f1492b37af39382", null ],
+    [ "getExecutable", "class_activation_base.html#ac1d0e274e397dec78988220143b2a935", null ],
+    [ "getExecutableObject", "class_activation_base.html#a0259edc0b22a5425cb3f2a176aeee481", null ],
+    [ "getNumericSettings", "class_activation_base.html#aada79b2b0f0559d514e9ab9fe3345c89", null ],
+    [ "getPackage", "class_activation_base.html#a27c3a77dfb7233d683e98322cdb4fd42", null ],
+    [ "getPreviousStackFrame", "class_activation_base.html#a10b458b98766e5fc56bc69bc19f60b1e", null ],
+    [ "getReceiver", "class_activation_base.html#a914adf3213f88ea05bb344e90013f776", null ],
+    [ "getRexxContext", "class_activation_base.html#a8f1bb0f63e3217adcd2bdba5a3191a00", null ],
+    [ "getSecurityManager", "class_activation_base.html#a08097ceea51a3cf8d288fdf26795b383", null ],
+    [ "isForwarded", "class_activation_base.html#a4d78926631f95c12b38ab7d3cadf53e9", null ],
+    [ "isRexxContext", "class_activation_base.html#aca48988f2199c084b8a520f6c4e83094", null ],
+    [ "isStackBase", "class_activation_base.html#ad05d15fafcc0cce3d487799fef72d245", null ],
+    [ "setDigits", "class_activation_base.html#a3337b94bdcc0a41a712a5f62a8b1b09b", null ],
+    [ "setForm", "class_activation_base.html#aadaf35831a89998e1fdd8025fdafa4b4", null ],
+    [ "setFuzz", "class_activation_base.html#a8a8bf004741b57a712e48b5ee258c3c5", null ],
+    [ "setObjNotify", "class_activation_base.html#a56ee555fafc98de139650047a4e6af4a", null ],
+    [ "setPreviousStackFrame", "class_activation_base.html#ab478d0f13ac7ed401aaaafe3070aae43", null ],
+    [ "termination", "class_activation_base.html#aa896e0b9cc80b37b329e5d76856df82f", null ],
+    [ "trap", "class_activation_base.html#a771232869fba108f44db6df072927ec5", null ],
+    [ "willTrap", "class_activation_base.html#a3bae783a45acea61f2dc8607bcc79595", null ],
+    [ "executable", "class_activation_base.html#a1078fc6ac4c44f0f0498e1d30bb8526e", null ],
+    [ "objectScope", "class_activation_base.html#aa6ace31a48aadd20f8cea304f755060b", null ],
+    [ "previous", "class_activation_base.html#a3a6c9a1742c119bf77f3fbd5e7396faa", null ]
+];
