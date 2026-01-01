@@ -9,4 +9,10 @@ rexx-dark.css (this is the default style)
 rexx-light.css
 
 Contribution from Dr. Rony G. Flatscher (https://research.wu.ac.at/en/persons/rony-g-flatscher-3/)
-rexx-vim-light-zellner.css (this is the style I chose for Executor)
+rexx-vim-[dark|light]-*.css
+
+rexx-vim-light-zellner.css is the style I chose for Executor.
+
+markdown4xtr.css is a .css file for Executor, used by scripts/md2html4xtr.rex:
+- my preferences for font size
+- a TOC with draggable vertical separator (thanks, chatGPT)

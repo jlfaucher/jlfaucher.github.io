@@ -1,0 +1,191 @@
+/******************************************************************************/
+/* JLF preferences */
+/******************************************************************************/
+
+h1      {font-size:20px;}
+h2      {font-size:19px;}
+h2 code {font-size:18px;}
+h3      {font-size:18px;}
+h3 code {font-size:17px;}
+h4      {font-size:17px;}
+h4 code {font-size:16px;}
+h5      {font-size:16px;}
+h5 code {font-size:15px;}
+h6      {font-size:15px;}
+h6 code {font-size:14px;}
+
+p {font-size:14px;}
+strong {font-size:14px;}
+a {font-size:14px;}
+em {font-size:14px;}
+li {font-size:14px;}
+div {font-size:14px;}
+
+pre {font-size:12px; /*border:none;*/}
+code {font-size:12px;}
+
+
+/******************************************************************************/
+/* Github-like Outline */
+/******************************************************************************/
+
+.layout-main {
+  display: flex;
+  align-items: stretch;
+}
+
+.layout-main > [class*="col-"] {
+  float: none;      /* disables Bootstrap 3 floats */
+}
+
+.col-md-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row.layout-main {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container {overflow: visible;}
+.row {overflow: visible;}
+.col-md-3 {overflow: visible;}
+
+.outline {
+  position: relative;
+  overflow: visible;
+  flex: 1 1 auto; /* optional */
+}
+
+#toc {
+  position: sticky;
+  top: 0px;                         /* sticky offset */
+  font-size: 12px;
+  /* border-left: 1px solid #d0d7de; */     /* no longer needed with the draggable vertical separator */
+  padding-left: 0px;
+
+  flex: 1 1 auto;                   /* grow/shrink inside sidebar column */
+  max-height: calc(100vh - 0px);    /* viewport minus sticky offset */
+  overflow-y: auto;                 /* vertical scrollbar when needed */
+  width: 100%;                      /* fill sidebar */
+  padding-right: 0px;               /* optional, prevent scrollbar overlap */
+  margin-right: 0px;
+  height: calc(100vh);
+}
+
+#toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+#toc li {
+  /* margin: 6px 0; */
+}
+
+#toc a {
+  text-decoration: none;
+  color: #57606a;
+  font-size: 11px;
+}
+
+#toc a.active {
+  color: #0969da;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.level-h2 {
+  margin-left: 0;
+}
+
+.level-h3 {
+  margin-left: 16px;
+}
+
+.level-h4 {
+  margin-left: 32px;
+}
+
+.level-h2 a,
+.level-h3 a,
+.level-h4 a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*cursor: help;*/     /* (doesn't work) Show full title on hover */
+}
+
+/*----------------------------------------------------------------------------*/
+/*
+Resizable split layout:
+A draggable vertical separator that changes the relative widths of:
+- the main content column
+- the TOC sidebar
+*/
+
+.content-pane {
+  flex: 1 1 auto;       /* main content takes remaining space */
+  min-width: 400px;     /* safety guard */
+}
+
+.toc-pane {
+  flex: 0 0 280px;      /* initial TOC width */
+  min-width: 180px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resize-handle {
+  position: relative;
+  width: 10px;              /* easier to grab */
+  cursor: col-resize;
+}
+
+.resize-handle::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #d0d7de;      /* visible separator */
+}
+
+.resize-handle:hover::before {
+  background: #0969da;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* GitHub hides the outline on small screens. */
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .outline {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .resize-handle {
+    display: none;
+  }
+}
+
+
+/* On small screens, you might want to disable sticky + scrollbar */
+@media (max-width: 1024px) {
+  #toc {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
