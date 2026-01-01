@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+https://www.reddit.com/r/ProgrammingLanguages/comments/1m2xx4h/custom_languages_on_github/
+
+Custom languages on GitHub
+I've found that it is possible to enable (some) syntax highlighting on GitHub for custom languages by putting this:
+
+    *.ext linguist-language=SupportedLanguage linguist-vendored
+
+to the .gitattributes file.
+Just change the ext to the file extension your language is using and use the most similar supported language.
+    https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml
+The linguist-vendored is to make sure it's not counted as the similar language.
+More info in the docs.
+    https://github.com/github-linguist/linguist/blob/main/docs/overrides.md
+
+
+Additionally it is needed to put this:
+
+    root = true
+
+    [*.ext]
+    indent_style = tab
+    indent_size = 4
+
+to the .editorconfig file to set the tab size. More info in the docs.
+    https://editorconfig.org/
