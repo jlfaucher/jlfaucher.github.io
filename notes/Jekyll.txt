@@ -1,0 +1,97 @@
+To use the Cayman Jekyll theme on your GitHub Pages site:
+
+    1. In your repository, open the publishing source branch and edit _config.yml.
+
+    2. Add this line (or update the existing theme line): theme: jekyll-theme-cayman
+
+    3. Commit the change (create a branch + PR if you're on the default branch).
+
+    4. (Optional) Customize CSS:
+       create assets/css/style.scss and add at top: @import "{{ site.theme }}";
+       then add your custom CSS/Sass below that line and commit.
+
+    5. (Optional) Customize HTML layout:
+       copy _layouts/_default.html from the theme repo
+       (https://github.com/pages-themes/cayman)
+       into your site as _layouts/default.html and edit.
+
+    6. Preview locally: install Jekyll and Bundler, run bundle install, then bundle exec jekyll serve and visit http://localhost:4000.
+
+Notes:
+
+    . Cayman is one of the supported GitHub Pages themes, so using
+      theme: jekyll-theme-cayman will let Pages build your site automatically.
+
+    . If you need unsupported plugins or other custom build steps, build locally
+      or via Actions and push the generated static files.
+
+
+cd /local/github
+mkdir cayman
+cd cayman
+git clone https://github.com/pages-themes/cayman.git git
+
+--------------------------------------------------------------------------------
+https://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass/51423768#51423768
+What's the difference between SCSS and Sass?
+
+--------------------------------------------------------------------------------
+Convert .scss to .css
+
+There are several methods to convert SCSS files to CSS, ranging from command-line tools to online converters.
+
+Using the command-line tool sass, which is part of the Sass ecosystem, is a common approach.
+First, install Sass using one of the following methods:
+   via Ruby's gem system with gem install sass
+ , using Homebrew on macOS with brew install sass/sass/sass
+ , or via Node.js with npm install -g sass.
+
+ Once installed, navigate to the directory containing your SCSS file using the terminal.
+
+ To compile a single SCSS file to CSS, run the command sass input.scss output.css.
+
+ To automatically recompile the CSS whenever changes are saved in the SCSS file, use the --watch flag:
+    sass --watch input.scss output.css.
+ This command can also be used with directories, such as
+     sass --watch app/sass:public/stylesheets
+ to watch a folder and output compiled CSS to another folder.
+
+
+Alternatively, online tools provide a quick and easy way to convert SCSS to CSS without installing any software. Websites such as
+   CodeShack        https://codeshack.io/scss-to-css-converter/
+ , GeeksforGeeks    https://www.geeksforgeeks.org/utilities/scss-to-css-converter/
+ , Json2CSharp      https://json2csharp.com/css-tools/scss-to-css
+ , olacss.com       https://olacss.com/scss-to-css-converter
+ , LambdaTest       https://www.lambdatest.com/free-online-tools/scss-to-css
+ , bfotool          https://bfotool.com/scss-to-css
+ , CodeBeautify     https://codebeautify.org/scss-to-css-converter
+ , and others allow you to paste your SCSS code directly into a web form or upload an SCSS file.
+ After clicking a "Convert" button, the tool instantly generates the corresponding CSS, which can be copied or downloaded.
+ These tools support common SCSS features like variables, nesting, mixins, and functions.
+
+
+I install with Homebrew:
+brew install node-sass
+
+cd /local/github/cayman/git/_sass
+sass jekyll-theme-cayman.scss
+
+
+--------------------------------------------------------------------------------
+https://sass-lang.com/d/import
+
+Breaking Change: @import and global built-in functions
+
+    Originally, Sass used @import rules to load other files with a single global namespace,
+    with all built-in functions also available globally. We’re deprecating both Sass @import
+    rules and global built-in functions now that the module system (@use and @forward rules)
+    has been available for several years.
+
+
+Automatic MigrationAutomatic Migration permalink
+    You can use the Sass migrator to automatically update your stylesheets to use the module system.
+
+    $ npm install -g sass-migrator
+    $ sass-migrator module --migrate-deps your-entrypoint.scss
+    If you want to migrate away from global built-in functions, but aren’t yet ready to fully migrate your @import rules,
+    you can pass the --built-in-only flag to migrate the functions while leaving @import rules as-is.
