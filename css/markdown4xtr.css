@@ -61,7 +61,7 @@ code {font-size:12px;}
 #toc {
   position: sticky;
   top: 0px;                         /* sticky offset */
-  font-size: 12px;
+  font-size: 11px;
   /* border-left: 1px solid #d0d7de; */     /* no longer needed with the draggable vertical separator */
   padding-left: 0px;
 
@@ -77,27 +77,63 @@ code {font-size:12px;}
 #toc ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 12px;
+  /*margin-top: 12px;*/             /* interline space in the TOC, I want no interline space */
 }
 
 #toc li {
-  /* margin: 6px 0; */
+  /*margin: 6px 0; */               /* don't use it: that breaks the indentation */
+}
+
+#toc li > ul {
+  /*margin-left: 16px;*/            /* don't use it: the identation is too big */
+}
+
+/* collapsed state */
+#toc li.collapsed > ul {
+  display: none;
+}
+
+/* Show caret only for expandable entries */
+li.has-children > a > .toc-caret::before {
+  content: "▾";
+}
+
+li.collapsed > a > .toc-caret::before {
+  content: "▸";
 }
 
 #toc a {
   text-decoration: none;
   color: #57606a;
   font-size: 11px;
+  position: relative;
+  display: flex;
+  /*gap: 4px;*/
+  min-width: 0;
+  align-items: flex-start;
 }
 
-#toc a.active {
-  color: #0969da;
-  font-weight: 600;
-  font-size: 11px;
+.toc-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.toc-caret {
+  width: 12px;
+  flex: 0 0 12px;
+  cursor: pointer;
+}
+
+.level-h1 {
+  margin-left: 0;
 }
 
 .level-h2 {
-  margin-left: 0;
+  margin-left: 16px;
 }
 
 .level-h3 {
@@ -105,18 +141,29 @@ code {font-size:12px;}
 }
 
 .level-h4 {
-  margin-left: 32px;
+  margin-left: 16px;
 }
 
-.level-h2 a,
-.level-h3 a,
-.level-h4 a {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /*cursor: help;*/     /* (doesn't work) Show full title on hover */
+/* only collapsed parents to be blue (not expanded ones) */
+#toc li.collapsed.active-parent > a {
+  color: #0969da;
+  font-weight: 600;
 }
+
+/* Active parent entries (collapsed or expanded) */
+/*
+#toc li.active-parent > a {
+  color: #0969da;
+  font-weight: 500;
+}
+*/
+
+#toc a.active {
+  color: #0969da;
+  font-weight: 600;
+  /*font-size: 11px;*/
+}
+
 
 /*----------------------------------------------------------------------------*/
 /*
