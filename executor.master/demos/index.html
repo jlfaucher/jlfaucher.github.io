@@ -7,7 +7,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#157878">
-        <link rel="stylesheet" href="https://jlfaucher.github.io/assets/css/style.css">
+
+        <!-- Use a local version of https://jlfaucher.github.io/assets/css/style.css -->
+        <link rel="stylesheet" href="style.css">
+
         <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
 
         <!-- https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217 -->
@@ -32,7 +35,14 @@
             #toc_container li, #toc_container ul, #toc_container ul li{
                 list-style: outside none none !important;
             }
+
+            .cast-wrapper {
+                border: 2px solid #157878;
+            }
+
         </style>
+
+        <script src="asciinema-player.min.js"></script>
 
     </head>
     <body>
@@ -77,50 +87,56 @@
 
             <h3 id="interpreters">ooRexxshell interpreters</h3>
             <p><a href="ooRexxShell-demo-interpreters-output.html">Demo output</a></p>
-            <div id="demo-interpreters"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-interpreters"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('ooRexxShell-demo-interpreters.cast', document.getElementById('demo-interpreters'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('ooRexxShell-demo-interpreters.cast', document.getElementById('demo-interpreters'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="queries">ooRexxshell queries</h3>
             <p><a href="ooRexxShell-demo-queries-output.html">Demo output</a></p>
-            <div id="demo-queries"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-queries"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('ooRexxShell-demo-queries.cast', document.getElementById('demo-queries'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('ooRexxShell-demo-queries.cast', document.getElementById('demo-queries'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="helpers">ooRexxshell helpers</h3>
             <p><a href="ooRexxShell-demo-helpers-output.html">Demo output</a></p>
-            <div id="demo-helpers"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-helpers"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('ooRexxShell-demo-helpers.cast', document.getElementById('demo-helpers'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('ooRexxShell-demo-helpers.cast', document.getElementById('demo-helpers'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="classic_rexx">Executor classic rexx</h3>
             <p><a href="executor-demo-classic_rexx-output.html">Demo output</a></p>
-            <div id="demo-classic_rexx"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-classic_rexx"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-classic_rexx.cast', document.getElementById('demo-classic_rexx'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-classic_rexx.cast', document.getElementById('demo-classic_rexx'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="extensions">Executor extensions</h3>
             <p><a href="executor-demo-extensions-output.html">Demo output</a></p>
-            <div id="demo-extensions"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-extensions"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-extensions.cast', document.getElementById('demo-extensions'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-extensions.cast', document.getElementById('demo-extensions'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="array_foundations">Executor array foundations</h3>
             <p><a href="executor-demo-array-output.html">Demo output</a></p>
-            <div id="demo-array_foundations"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-array_foundations"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-array.cast', document.getElementById('demo-array_foundations'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-array.cast', document.getElementById('demo-array_foundations'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="array_programming">Executor array programming</h3>
@@ -128,42 +144,47 @@
 
             <h3 id="unicode_intro">Executor Unicode intro</h3>
             <p><a href="executor-demo-text-output.html">Demo output</a></p>
-            <div id="demo-unicode_intro"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-unicode_intro"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-text.cast', document.getElementById('demo-unicode_intro'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-text.cast', document.getElementById('demo-unicode_intro'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="unicode_checks">Executor Unicode checks</h3>
             <p><a href="executor-demo-text-internal_checks-output.html">Demo output</a></p>
-            <div id="demo-unicode_checks"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-unicode_checks"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-text-internal_checks.cast', document.getElementById('demo-unicode_checks'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-text-internal_checks.cast', document.getElementById('demo-unicode_checks'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="unicode_services">Executor Unicode services</h3>
             <p><a href="executor-demo-text-unicode-output.html">Demo output</a></p>
-            <div id="demo-unicode_services"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-unicode_services"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-text-unicode.cast', document.getElementById('demo-unicode_services'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-text-unicode.cast', document.getElementById('demo-unicode_services'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="unicode_string_compatibility">Executor Unicode String compatibility</h3>
             <p><a href="executor-demo-text-compatibility-output.html">Demo output</a></p>
-            <div id="demo-unicode_string_compatibility"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-unicode_string_compatibility"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-text-compatibility.cast', document.getElementById('demo-unicode_string_compatibility'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-text-compatibility.cast', document.getElementById('demo-unicode_string_compatibility'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <h3 id="unicode_string_compatibility_auto_conv">Executor Unicode String compatibility (no ~text)</h3>
             <p><a href="executor-demo-text-compatibility-auto-conv-output.html">Demo output</a></p>
-            <div id="demo-unicode_string_compatibility_auto_conv"></div>
-            <script src="asciinema-player.min.js"></script>
+            <div class="cast-wrapper">
+                <div id="demo-unicode_string_compatibility_auto_conv"></div>
+            </div>
             <script>
-                AsciinemaPlayer.create('executor-demo-text-compatibility-auto-conv.cast', document.getElementById('demo-unicode_string_compatibility_auto_conv'), {cols:135, rows:45, fit:false, poster:"npt:0:30"});
+                AsciinemaPlayer.create('executor-demo-text-compatibility-auto-conv.cast', document.getElementById('demo-unicode_string_compatibility_auto_conv'), {cols:135, rows:45, fit:"width", poster:"npt:0:30", controls:true});
             </script>
 
             <footer class="site-footer" style="font-size: 12px;">
