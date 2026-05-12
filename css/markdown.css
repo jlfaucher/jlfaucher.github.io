@@ -8,11 +8,11 @@ body {background-color:#eee;}
 
 code {color:#222; background-color:#f0f0f0;}
 
-h1.websection {color: #ad564a; font-weight:normal;}
+h1.pagetitle {color: #ad564a; font-weight:normal;}
 
 .navbar-default .navbar-nav>li>a.secundario, .navbar-default .secundario {color: #952424;}
 
-span.versalita {font-variant:small-caps;}
+span.smallcaps {font-variant:small-caps;}
 
 div.content {
   font-size:18px; /* font-family: 'Times New Roman', Times, serif;text-align:justify; */
@@ -41,6 +41,7 @@ h1.part {
 
   h1.title {
     text-align: center;
+    text-align-last: center;
     font-size:36px;
     margin-top:50px;
     margin-bottom:0px;
@@ -48,6 +49,7 @@ h1.part {
   }
   h2.subtitle {
     text-align: center;
+    text-align-last: center;
     font-size:24px;
     margin-top:0;
     margin-bottom:0px;
@@ -55,6 +57,7 @@ h1.part {
   }
   h2.event {
     text-align: center;
+    text-align-last: center;
     font-size:22px;
     margin-top:20;
     margin-bottom:5px;
@@ -62,44 +65,49 @@ h1.part {
   }
   h3.venue {
     text-align: center;
+    text-align-last: center;
     font-size:14px;
     margin-top:0;
     color:blue;
   }
   h2.author {
     text-align: center;
+    text-align-last: center;
     font-size:26px;
     margin-top:30px;
     margin-bottom:5px;
   }
   h3.email {
     text-align: center;
+    text-align-last: center;
     font-size:16px;
     margin-top:0;
     font-family: monospace, monospace;
   }
   h2.institution {
-    font-family: "Questrial", serif;
     text-align: center;
+    text-align-last: center;
     font-size:20px;
     margin-top:30px;
     margin-bottom:5px;
   }
   h3.address {
-    font-family: "Questrial", serif;
     text-align: center;
+    text-align-last: center;
     font-size:14px;
     margin-top:0;
     margin-bottom:5px;
   }
   h3.phone {
     text-align: center;
+    text-align-last: center;
     font-size:16px;
     margin-top:0;
     font-style: italic;
   }
   h2.date {
     text-align: center;
+    text-align-last: center;
     font-size:25px;
     margin-top:25px;
     margin-bottom:50px;
@@ -107,6 +115,7 @@ h1.part {
 
   h1.center{
     text-align: center;
+    text-align-last: center;
   }
 
 h1 {font-size:35px;}
@@ -138,7 +147,7 @@ pre code {
   overflow-x: auto;
 }
 
-/* Horizontal scrollbar for images */
+/* Horizontal scrollbar for images -- Contribution by JLF (Thanks!) */
 
 /*
 Usage:
@@ -159,6 +168,7 @@ In this context, an HTML attribute is preferable to a CSS property like
 <img style="width: 1400px">
 because CSS widths are subject to flex shrinking, while HTML intrinsic sizes
 are not unless explicitly allowed.
+
 Don't use % widths, because % is relative to the container.
 */
 
@@ -177,3 +187,5 @@ Don't use % widths, because % is relative to the container.
   max-width: none;
   height: auto;
 }
+
+/* End of contribution by JLF */
