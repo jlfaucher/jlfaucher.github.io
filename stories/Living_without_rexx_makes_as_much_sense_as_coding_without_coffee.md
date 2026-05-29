@@ -2,7 +2,11 @@
 
 Story and illustration by ChatGPT.  
 This article was inspired by the following comment:  
-[https://github.com/adesutherland/CREXX/issues/571#issuecomment-4572538762][need_coffee]
+[https://github.com/adesutherland/CREXX/issues/571#issuecomment-4572538762][need_coffee]  
+
+Update: the CREXX committer changed the macro definition.  
+The illustration still shows the old definition.  
+The story has been updated with the new definition.
 
 <img src="Living_without_rexx_makes_as_much_sense_as_coding_without_coffee.png" alt="Living without REXX makes as much sense as coding without coffee">
 
@@ -69,7 +73,7 @@ CREXX opened a terminal anyway.
 He typed furiously:
 
 ```rexx
-##define foreach(stem) {__keys=stem.keylist(); do current_index=1 to __keys[0]; current_key=__keys[current_index]}
+##define cmd foreach(inkey inkw stem)  {__keys=stem.keylist(); do current_index=1 to __keys[0]; inkey=__keys[current_index]; /* inkw */}
 ```
 
 The screen glowed.
@@ -81,8 +85,8 @@ Rexx raised one eyebrow.
 CREXX continued:
 
 ```rexx
-foreach(parts)
-  say current_index left(current_key,12) parts.current_key
+foreach mykey IN parts
+  say current_index left(mykey,12) parts.mykey
 end
 ```
 
