@@ -10,8 +10,11 @@
 
 [Extension battle][extension_battle]
 
+[RexxHTTP assistants.md][rexxhttp_assistants]
+
 [compatibility_matters]: stories/Compatibility_matters.md
 [extension_battle]: stories/Extension_battle.md
 [living_without_rexx_makes_as_much_sense_as_coding_without_coffee]: stories/Living_without_rexx_makes_as_much_sense_as_coding_without_coffee.md
+[rexxhttp_assistants]: stories/RexxHTTP_assistants.md
 [ruyi_bridge]: https://en.wikipedia.org/wiki/Ruyi_Bridge
 [tilde_waves_become_bridges]: stories/Tilde_waves_become_bridges.md
