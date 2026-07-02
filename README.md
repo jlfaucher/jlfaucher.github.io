@@ -10,7 +10,7 @@
 
 [Extension battle][extension_battle]
 
-[RexxHTTP assistants.md][rexxhttp_assistants]
+[RexxHTTP assistants][rexxhttp_assistants]
 
 [compatibility_matters]: stories/Compatibility_matters.md
 [extension_battle]: stories/Extension_battle.md
