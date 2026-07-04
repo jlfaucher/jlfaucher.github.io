@@ -1,4 +1,4 @@
-# RexxHTTP assistants
+# RexxHTTP's Assistants
 
 Illustration by ChatGPT.
 
