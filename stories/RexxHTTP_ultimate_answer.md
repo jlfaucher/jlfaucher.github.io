@@ -5,7 +5,7 @@ Story and illustration by ChatGPT.
 <img src="RexxHTTP_answer_should_be_42.png" alt="RexxHTTP's answer should be 42">
 
 
-There are many excellent places in the universe to debug software.
+There are many places in the universe to debug software.
 
 Most of them are terrible.
 
