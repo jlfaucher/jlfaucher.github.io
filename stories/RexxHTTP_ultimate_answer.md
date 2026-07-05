@@ -85,3 +85,7 @@ Seven and a half million years later, it had reached a preliminary conclusion:
 
 Software developers are perfectly capable of inventing questions whose answers make no sense whatsoever.
 
+<br/>
+<br/>
+
+<img src="404_contributions.png" alt="404 contributions" width="100%">
