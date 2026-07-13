@@ -26,6 +26,7 @@
 /* 20250630         Add support for doc-comment subelements                   */
 /* 20250722         Add styles for rx-dskw                                    */
 /* 20251109         use rexx-dark as template for vim colorschemes            */
+/* 20260713    [jlf] Replace comment color #ff0000 (red) by #0066FF (blue)    */
 /*                                                                            */
 /******************************************************************************/
 
@@ -94,7 +95,7 @@
 
   .rx-cm,                               /* Classic, block comments            */
   .rx-lncm {                            /* Line comments                      */
-    /* %COMMENT%    */ color: #ff0000 ;
+    /* %COMMENT%    */ color: #0066FF ;
   }
 
 /******************************************************************************/
@@ -107,24 +108,24 @@
 
                                         /* Default values (for "block"..      */
                                         /* ..highlighting.                    */
-    /* %COMMENT%    */ color: #ff0000 ;
+    /* %COMMENT%    */ color: #0066FF ;
 
     &.rx-doc-comment-armature,          /* Armature, whitespace and main      */
     &.rx-doc-comment-whitespace,        /* description share the same style.  */
     &.rx-doc-comment-main-description {
-        /* %COMMENT%    */ color: #ff0000 ;
+        /* %COMMENT%    */ color: #0066FF ;
     }
     &.rx-doc-comment-summary {          /* Initial summary statement.         */
-        /* %COMMENT%    */ color: #ff0000 ;
+        /* %COMMENT%    */ color: #0066FF ;
     }
     &.rx-doc-comment-tag {              /* @block-tag                         */
-        /* %COMMENT%    */ color: #ff0000 ;
+        /* %COMMENT%    */ color: #0066FF ;
     }
     &.rx-doc-comment-tag-value {        /* As the name in "@param name".      */
-        /* %COMMENT%    */ color: #ff0000 ;
+        /* %COMMENT%    */ color: #0066FF ;
     }
     &.rx-doc-comment-tag-description {  /* Text after @deprecated.            */
-        /* %COMMENT%    */ color: #ff0000 ;
+        /* %COMMENT%    */ color: #0066FF ;
     }
   }
 
@@ -351,7 +352,7 @@
 
   /* Resource ignored stuff                                                   */
   .rx-res-ignore {
-   /* %COMMENT%    */ color: #ff0000 ;
+   /* %COMMENT%    */ color: #0066FF ;
   }
 
 /******************************************************************************/
