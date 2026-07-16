@@ -2,17 +2,40 @@
 /* JLF preferences */
 /******************************************************************************/
 
-h1      {font-size:20px;}
-h2      {font-size:19px;}
-h2 code {font-size:18px;}
-h3      {font-size:18px;}
-h3 code {font-size:17px;}
-h4      {font-size:17px;}
+/* Github font sizes */
+h1      {font-size:32px;}
+h2      {font-size:24px;}
+h2 code {font-size:23px;}
+h3      {font-size:20px;}
+h3 code {font-size:19px;}
+
+/* Not Github font sizes, I use slightly larger values */
+h4      {font-size:17px;}   /* Github: 16px */
 h4 code {font-size:16px;}
-h5      {font-size:16px;}
+h5      {font-size:16px;}   /* Github: 14px */
 h5 code {font-size:15px;}
-h6      {font-size:15px;}
+h6      {font-size:15px;}   /* Github: 13.6px */
 h6 code {font-size:14px;}
+
+/* Github settings */
+h1 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #d0d7de;
+}
+
+/* Github settings */
+h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #d0d7de;
+}
+
+/* Github settings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
 
 p {font-size:14px;}
 strong {font-size:14px;}
