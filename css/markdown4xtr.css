@@ -53,6 +53,16 @@ code {font-size:12px;}
     overscroll-behavior: none;
 }
 
+/* Table with thin borders */
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #d0d7de;
+    padding: 4px 6px;
+    line-height: 0.9;
+}
+
 
 /******************************************************************************/
 /* Github-like Outline */
