@@ -63,6 +63,14 @@ th, td {
     line-height: 0.9;
 }
 
+/* Links were not underlined in <code>,
+   declare this more general rule */
+a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
 
 /******************************************************************************/
 /* Github-like Outline */
