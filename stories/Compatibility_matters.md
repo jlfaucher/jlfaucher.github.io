@@ -4,6 +4,12 @@ Illustration by ChatGPT.
 
 ## Bloody murder
 
+This cartoon was inspired by the following comments:  
+[https://sourceforge.net/p/oorexx/mailman/message/26063984/](https://sourceforge.net/p/oorexx/mailman/message/26063984/)  
+[https://sourceforge.net/p/oorexx/mailman/message/37777611/](https://sourceforge.net/p/oorexx/mailman/message/37777611/)  
+[https://sourceforge.net/p/oorexx/mailman/message/59344398/](https://sourceforge.net/p/oorexx/mailman/message/59344398/)  
+[https://rexxla-members.groups.io/g/main/topic/comment_issues/119343328](https://rexxla-members.groups.io/g/main/topic/comment_issues/119343328)  
+
 <img src="Bloody_murder.png" alt="Bloody murder">
 
 <br/>
