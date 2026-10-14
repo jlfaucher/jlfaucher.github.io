@@ -30,9 +30,10 @@
 </span><span style="font-weight:bold;color:green;">loadPackage OK for oorexxshell_queries.cls
 </span><span style="font-weight:bold;color:green;">loadPackage OK for pipeline/pipe_extension.cls
 </span><span style="font-weight:bold;color:green;">loadPackage OK for rgf_util2/rgf_util2_wrappers.rex
+</span><span style="font-weight:bold;color:green;">loadPackage OK for icu4oorexx.cls
 </span><span style="font-weight:bold;color:green;">
-</span><span style="font-weight:bold;color:green;">REXX-ooRexx_4.3.0(MT)_64-bit 6.04 1 Mar 2026
-</span><span style="font-weight:bold;color:green;">Input queue name: Sb0b4Q6000019d5860
+</span><span style="font-weight:bold;color:green;">REXX-ooRexx_4.3.0(MT)_64-bit 6.04 13 Oct 2026
+</span><span style="font-weight:bold;color:green;">Input queue name: Se499Q76d01dc00
 </span>
 ooRexx&gt; <span style="font-weight:bold;color:purple;">call loadUnicodeCharacterNames</span>
 <span style="font-weight:bold;color:green;">Load the Unicode character names 17.0.0 
@@ -436,13 +437,13 @@ ooRexx&gt; <span style="font-weight:bold;color:purple;">&quot;Père&quot;~text~s
 </span><span style="font-weight:bold;color:blue;">Examples:
 </span><span style="font-weight:bold;color:blue;">*/
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">&quot;Noel&quot;~bytes==</span>
-a ByteSupplier 
+a ByteSupplier
  1 :  78
  2 :  111
  3 :  101
  4 :  108
 ooRexx&gt; <span style="font-weight:bold;color:purple;">&quot;Noël&quot;~bytes==</span>
-a ByteSupplier 
+a ByteSupplier
  1 :  78
  2 :  111
  3 :  195
@@ -2202,7 +2203,7 @@ ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;Noël🤶&quot
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;byte&quot;)~c2g=                                               </span><span style="font-weight:bold;color:blue;">-- 'FF FE FD FC'</span>
 'FF FE FD FC'
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;byte&quot;)~codepoints==</span>
-a CodePointSupplier 
+a CodePointSupplier
  1 :  255
  2 :  254
  3 :  253
@@ -2223,7 +2224,7 @@ ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&qu
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;utf8&quot;)~c2u=                                               </span><span style="font-weight:bold;color:blue;">-- 'U+FFFD U+FFFD U+FFFD U+FFFD'</span>
 'U+FFFD U+FFFD U+FFFD U+FFFD'
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;utf8&quot;)~codepoints==</span>
-a CodePointSupplier 
+a CodePointSupplier
  1 :  65533
  2 :  65533
  3 :  65533
@@ -2234,7 +2235,7 @@ ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&qu
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;unicode8&quot;)~c2g=                                           </span><span style="font-weight:bold;color:blue;">-- 'FF FE FD FC'</span>
 'FF FE FD FC'
 ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;FF FE FD FC&quot;x~text(&quot;unicode8&quot;)~codepoints==</span>
-a CodePointSupplier 
+a CodePointSupplier
  1 :  255
  2 :  254
  3 :  253
@@ -4635,7 +4636,6 @@ a Directory (10 items)
 </span><span style="font-weight:bold;color:blue;">-- Frequency of each character, ignoring the accents:
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">&quot;Notre père Noël 🎅&quot;~text~transform(stripMark:)~reduce(by: &quot;characters&quot;, initial: .stem~new~~put(0)){accu[item~string] += 1}=</span>
 a Stem (9 items)
-'🎅' :  1
 ' '    :  3
 'e'    :  4
 'l'    :  1
@@ -4644,6 +4644,7 @@ a Stem (9 items)
 'p'    :  1
 'r'    :  2
 't'    :  1
+'🎅' :  1
 
 <span style="font-weight:bold;color:blue;">-- Add support for generator methods to RexxText.
 </span>
@@ -5905,7 +5906,7 @@ ooRexx&gt; <span style="font-weight:bold;color:purple;">    &quot;hello\u{U+20}J
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">.unicode[&quot;zwj&quot;]~utf8~join(&quot;ab&quot;, &quot;cd&quot;, .unicode[&quot;woman&quot;]~utf8, .unicode[&quot;father christmas&quot;]~utf8)~c2g=  </span><span style="font-weight:bold;color:blue;">-- '61 62E2808D 63 64E2808D F09F91A9E2808DF09F8E85'</span>
 '61 62E2808D 63 64E2808D F09F91A9E2808DF09F8E85'
 ooRexx&gt; <span style="font-weight:bold;color:purple;">.unicode[&quot;zwj&quot;]~utf8~join(&quot;ab&quot;, &quot;cd&quot;, .unicode[&quot;woman&quot;]~utf8, .unicode[&quot;father christmas&quot;]~utf8)~graphemes==</span>
-a CharacterSupplier 
+a CharacterSupplier
  1 : T'a'
  2 : T'b‍'
  3 : T'c'
@@ -5930,7 +5931,7 @@ an Array (shape [12], 12 items)
 <span style="font-weight:bold;color:blue;">-- https://www.unicode.org/reports/tr29/#Grapheme_Cluster_Boundaries
 </span><span style="font-weight:bold;color:blue;">-- Do not break within emoji modifier sequences or emoji zwj sequences (GB11).
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">&quot;noël👩‍👨‍👩‍👧🎅&quot;~text~graphemes==</span>
-a CharacterSupplier 
+a CharacterSupplier
  1 : T'n'
  2 : T'o'
  3 : T'ë'
@@ -6166,7 +6167,7 @@ an Array (shape [58], 58 items)
 </span><span style="font-weight:bold;color:blue;">internal array which are codepoint+2.
 </span><span style="font-weight:bold;color:blue;">*/
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">.unicode~characters==</span>
-an UnicodeCharacterSupplier 
+an UnicodeCharacterSupplier
  0    : ( &quot;&quot;    U+0000 Cc 0 &quot;&quot;, &quot;NULL&quot;, &quot;NUL&quot; )
  1    : ( &quot;&quot;    U+0001 Cc 0 &quot;&quot;, &quot;START OF HEADING&quot;, &quot;SOH&quot; )
  2    : ( &quot;&quot;    U+0002 Cc 0 &quot;&quot;, &quot;START OF TEXT&quot;, &quot;STX&quot; )
@@ -7178,7 +7179,7 @@ an UnicodeCharacterSupplier
 </span><span style="font-weight:bold;color:blue;">    isExpanded
 </span><span style="font-weight:bold;color:blue;">*/
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">.unicode~characterIntervals==</span>
-an UnicodeCharacterIntervalSupplier 
+an UnicodeCharacterIntervalSupplier
  1  : (U+3400..U+4DBF &quot;CJK UNIFIED IDEOGRAPH-*&quot; 6591 characters)
  2  : (U+4E00..U+9FFF &quot;CJK UNIFIED IDEOGRAPH-*&quot; 20991 characters)
  3  : (U+F900..U+FA6D &quot;CJK COMPATIBILITY IDEOGRAPH-*&quot; 365 characters)
@@ -7259,7 +7260,7 @@ a Directory (14 items)
 </span><span style="font-weight:bold;color:blue;">*/
 </span><span style="font-weight:bold;color:blue;">-- All the Unicode characters (sparse array).
 </span>ooRexx&gt; <span style="font-weight:bold;color:purple;">.unicode~characters==</span>
-an UnicodeCharacterSupplier 
+an UnicodeCharacterSupplier
  0    : ( &quot;&quot;    U+0000 Cc 0 &quot;&quot;, &quot;NULL&quot;, &quot;NUL&quot; )
  1    : ( &quot;&quot;    U+0001 Cc 0 &quot;&quot;, &quot;START OF HEADING&quot;, &quot;SOH&quot; )
  2    : ( &quot;&quot;    U+0002 Cc 0 &quot;&quot;, &quot;START OF TEXT&quot;, &quot;STX&quot; )
@@ -8839,9 +8840,9 @@ P.         'CodePointSupplier'                : (stringIndexer.cls)
 P.         'Encoding'                         : (encoding.cls)
 P.         'IBM1252_Encoding'                 : (ibm-1252_encoding.cls)
 P.         'IBM437_Encoding'                  : (ibm-437_encoding.cls)
-P.         'ISO88591_Encoding'                : (iso-8859-1_encoding.cls)
 PM         'IndexerHelpers'                   : (stringInterface.cls)
 PM         'IndexerStringInterface'           : (stringInterface.cls)
+P.         'ISO88591_Encoding'                : (iso-8859-1_encoding.cls)
 P.         'RexxText'                         : (REXX)
 .M         'RexxTextContents'                 : (text.cls)
 .M         'RexxTextInitializer'              : (text.cls)
@@ -8852,11 +8853,6 @@ PM         'RexxTextMapper'                   : (functionals.cls)
 P.         'RexxTextTransformer'              : (stringIndexer.cls)
 PM         'StringIndexer'                    : (stringIndexer.cls)
 .M         'StringRexxTextInterface'          : (text.cls)
-P.         'UTF16BE_Encoding'                 : (utf16_encoding.cls)
-P.         'UTF16LE_Encoding'                 : (utf16_encoding.cls)
-P.         'UTF32BE_Encoding'                 : (utf32_encoding.cls)
-P.         'UTF32LE_Encoding'                 : (utf32_encoding.cls)
-P.         'UTF8_Encoding'                    : (utf8_encoding.cls)
 P.         'Unicode'                          : (REXX)
 P.         'Unicode16_Encoding'               : (unicode16_encoding.cls)
 P.         'Unicode32_Encoding'               : (unicode32_encoding.cls)
@@ -8868,6 +8864,11 @@ P.         'UnicodeCharacterIntervalSupplier' : (unicode.cls)
 P.         'UnicodeCharacterSupplier'         : (unicode.cls)
 PM         'UnicodeN_Encoding'                : (unicodeN_encoding.cls)
 PM         'Unicode_CommonServices'           : (unicode_common.cls)
+P.         'UTF16BE_Encoding'                 : (utf16_encoding.cls)
+P.         'UTF16LE_Encoding'                 : (utf16_encoding.cls)
+P.         'UTF32BE_Encoding'                 : (utf32_encoding.cls)
+P.         'UTF32LE_Encoding'                 : (utf32_encoding.cls)
+P.         'UTF8_Encoding'                    : (utf8_encoding.cls)
 P.         'WINDOWS1252_Encoding'             : (windows-1252_encoding.cls)
 P.         'WTF16BE_Encoding'                 : (wtf16_encoding.cls)
 P.         'WTF16LE_Encoding'                 : (wtf16_encoding.cls)
